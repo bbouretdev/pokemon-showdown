@@ -21,7 +21,7 @@
     "permessage-deflate": "^0.1.7",
     "pg": "^8.11.3",
     "sql-template-strings": "^2.2.2",
-    "sqlite": "^3.0.6",
+    "sqlite": "^5.1.1",
     "sucrase": "^3.15.0"
   },
   "secretDependencies": {
@@ -75,7 +75,7 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "eslint": "8.5.0",
-    "mocha": "^8.2.0",
+    "mocha": "^10.7.3",
     "smogon": "^3.0.0",
     "typescript": "^5.0.4"
   }
