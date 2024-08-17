@@ -4217,7 +4217,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	nidorina: {
 		learnset: {
-			aerialace: ["7M", "6M", "5M", "4M", "3M"],
+			aerialace: ["9M","7M", "6M", "5M", "4M", "3M"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			beatup: ["8M"],
 			bide: ["7V"],
