@@ -498,8 +498,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 	},
 	mukalola: {
-		tier: "NU",
-		doublesTier: "(DUU)",
+		tier: "Illegal",
 	},
 	shellder: {
 		tier: "LC",
@@ -694,8 +693,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	kleavor: {
-		tier: "RU",
-		doublesTier: "(DUU)",
+		tier: "Illegal",
 	},
 	smoochum: {
 		tier: "LC",
