@@ -860,9 +860,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 	},
 	moltresgalar: {
-		tier: "Illegal"
-		doublesTier: "DUU",
-		natDexTier: "RUBL",
+		tier: "Illegal",
 	},
 	dratini: {
 		tier: "LC",
