@@ -5655,7 +5655,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	// Dav
 	wallmaker: {
 		onStart(pokemon) {
-			const side = pokemon.side.foe;
+			const side = pokemon.side;
 			this.add('-activate', pokemon, 'ability: Wall Maker');
 			side.addSideCondition('reflect', pokemon);
 		},
