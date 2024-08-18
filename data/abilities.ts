@@ -5666,14 +5666,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tresamigos: {
 		onModifyMove(move) {
-			move.multihit = 3;
-			if (move.secondaries) {
-				delete move.secondaries;
+			if (move.category !== 'Status') {
+				move.multihit = 3;
+				if (move.secondaries) {
+					delete move.secondaries;
+				}
 			}
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			return this.chainModify(0.33);
+			if (move.category !== 'Status') {
+				return this.chainModify(0.33);
+			}
+			return;
 		},
 		name: "Tres Amigos",
 		rating: 2.5,
