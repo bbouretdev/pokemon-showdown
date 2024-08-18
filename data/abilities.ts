@@ -5656,8 +5656,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	wallmaker: {
 		onStart(pokemon) {
 			const side = pokemon.side;
-			this.add('-activate', pokemon, 'ability: Wall Maker');
-			side.addSideCondition('reflect', pokemon);
+			const reflect = side.sideConditions['reflect'];
+			if (!reflect) {
+				this.add('-activate', pokemon, 'ability: Wall Maker');
+				side.addSideCondition('reflect', pokemon);
+			}
 		},
 		flags: {},
 		name: "Wall Maker",
