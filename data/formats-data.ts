@@ -885,7 +885,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DUU)",
 	},
 	chikorita: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	bayleef: {
 	tier: "Illegal",
