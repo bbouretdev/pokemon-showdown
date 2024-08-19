@@ -5667,6 +5667,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10000,
 	},
+	copycatprodigy: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move.id === 'reflect' || move.id === 'lightscreen' || move.id === 'copycat') {
+				move.pranksterBoosted = true;
+				return priority + 1;
+			}
+		},
+		flags: {},
+		name: "Copycat Prodigy",
+		rating: 4,
+		num: 10001,
+	},
 	tresamigos: {
 		onModifyMove(move) {
 			if (move.category !== 'Status') {
@@ -5685,6 +5697,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		name: "Tres Amigos",
 		rating: 2.5,
-		num: 10001,
+		num: 10002,
 	},
 };
