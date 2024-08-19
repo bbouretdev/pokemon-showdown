@@ -2264,4 +2264,18 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	wallmaker: {
+		name: "Wall Maker",
+		shortDesc: "On switch-in, this Pokemon summons Reflect.",
+	},
+	copycatprodigy: {
+		name: "Copycat Prodigy",
+		desc: "This Pokemon's Reflect, Light Screen and Copycat moves have their priority increased by 1.",
+		shortDesc: "This Pokemon's Reflect, Light Screen and Copycat moves have priority raised by 1.",
+	},
+	tresamigos: {
+		name: "Tres Amigos",
+		desc: "Turns offensive moves into 3-hit ones, distributing move's base power into each individual hit. Removes secondary effects.",
+		shortDesc: "Offensive hits become 3-hit for same global BP. Removes secondary effects.",
+	},
 };
