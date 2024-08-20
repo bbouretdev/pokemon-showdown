@@ -7546,4 +7546,6 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+
+	//DAV
 };

@@ -5652,7 +5652,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: -4,
 	},
 
-	// Dav
+	// DAV
 	wallmaker: {
 		onStart(pokemon) {
 			const side = pokemon.side;
@@ -5681,7 +5681,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tresamigos: {
 		onModifyMove(move) {
-			if (move.category !== 'Status') {
+			if (move.category !== 'Status' && !move.multihit) {
 				move.multihit = 3;
 				if (move.secondaries) {
 					delete move.secondaries;

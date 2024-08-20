@@ -2264,6 +2264,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+
+	//DAV
 	wallmaker: {
 		name: "Wall Maker",
 		shortDesc: "On switch-in, this Pokemon summons Reflect.",

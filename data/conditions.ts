@@ -84,40 +84,12 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		name: 'frz',
 		effectType: 'Status',
 		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === 'Ability') {
-				this.add('-status', target, 'frz', '[from] ability: ' + sourceEffect.name, '[of] ' + source);
-			} else {
-				this.add('-status', target, 'frz');
-			}
-			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
-				target.formeChange('Shaymin', this.effect, true);
-			}
+			this.add('-status', target, 'frz');
 		},
-		onBeforeMovePriority: 10,
-		onBeforeMove(pokemon, target, move) {
-			if (move.flags['defrost']) return;
-			if (this.randomChance(1, 5)) {
-				pokemon.cureStatus();
-				return;
-			}
-			this.add('cant', pokemon, 'frz');
-			return false;
-		},
-		onModifyMove(move, pokemon) {
-			if (move.flags['defrost']) {
-				this.add('-curestatus', pokemon, 'frz', '[from] move: ' + move);
-				pokemon.clearStatus();
-			}
-		},
-		onAfterMoveSecondary(target, source, move) {
-			if (move.thawsTarget) {
-				target.cureStatus();
-			}
-		},
-		onDamagingHit(damage, target, source, move) {
-			if (move.type === 'Fire' && move.category !== 'Status') {
-				target.cureStatus();
-			}
+		// Damage reduction is handled directly in the sim/battle.js damage function
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
 		},
 	},
 	psn: {
@@ -157,6 +129,28 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				this.effectState.stage++;
 			}
 			this.damage(this.clampIntRange(pokemon.baseMaxhp / 16, 1) * this.effectState.stage);
+		},
+	},
+	ero: {
+		name: 'ero',
+		effectType: 'Status',
+		onStart(target, source, sourceEffect) {
+			this.add('-status', target, 'ero');
+		},
+		// Damage increase is handled directly in the sim/battle.js damage function
+		onDeductPP(target, source) {
+			return 1;
+		},
+	},
+	dis: {
+		name: 'dis',
+		effectType: 'Status',
+		onStart(target, source, sourceEffect) {
+			this.add('-status', target, 'dis');
+		},
+		// Damage increase is handled directly in the sim/battle.js damage function
+		onDeductPP(target, source) {
+			return 1;
 		},
 	},
 	confusion: {

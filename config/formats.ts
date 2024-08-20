@@ -1884,6 +1884,20 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 					}
 				}
 
+				if (pokemon.status === 'frz' && move.category === 'Special' && !pokemon.hasAbility('guts')) {
+					if (this.battle.gen < 6 || move.id !== 'facade') {
+						baseDamage = this.battle.modify(baseDamage, 0.5);
+					}
+				}
+		
+				if (target.status === 'ero' && move.category === 'Physical') {
+					baseDamage = this.battle.modify(baseDamage, 1.33);
+				}
+		
+				if (target.status === 'dis' && move.category === 'Special') {
+					baseDamage = this.battle.modify(baseDamage, 1.33);
+				}
+
 				// Generation 5, but nothing later, sets damage to 1 before the final damage modifiers
 				if (this.battle.gen === 5 && !baseDamage) baseDamage = 1;
 
