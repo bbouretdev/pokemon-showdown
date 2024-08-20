@@ -138,7 +138,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-status', target, 'ero');
 		},
 		// Damage increase is handled directly in the sim/battle.js damage function
-		onDeductPP(target, source) {
+		onFoeDeductPP(target, source) {
 			return 1;
 		},
 	},
@@ -149,7 +149,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-status', target, 'dis');
 		},
 		// Damage increase is handled directly in the sim/battle.js damage function
-		onDeductPP(target, source) {
+		onFoeDeductPP(target, source) {
 			return 1;
 		},
 	},
