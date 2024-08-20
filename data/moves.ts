@@ -22072,7 +22072,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	//DAV
 	erode: {
 		num: 10000,
-		accuracy: 100,
+		accuracy: 85,
 		basePower: 0,
 		category: "Status",
 		name: "Erode",
@@ -22088,7 +22088,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	disrupt: {
 		num: 10001,
-		accuracy: 100,
+		accuracy: 85,
 		basePower: 0,
 		category: "Status",
 		name: "Disrupt",

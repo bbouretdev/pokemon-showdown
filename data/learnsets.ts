@@ -3816,6 +3816,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			workup: ["9M", "8M"],
 			xscissor: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
+			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		eventData: [
 			{generation: 3, level: 12, gender: "M", nature: "Docile", ivs: {hp: 4, atk: 23, def: 8, spa: 31, spd: 1, spe: 25}, moves: ["scratch", "defensecurl", "sandattack", "poisonsting"], pokeball: "pokeball"},
@@ -9366,6 +9367,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wonderroom: ["9M", "8M", "7T", "6T", "5T"],
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 6},
@@ -13485,6 +13487,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M", "4E", "3E"],
 			wonderroom: ["9M", "8M", "7T", "6T", "5T"],
 			zapcannon: ["9M", "7V"],
+			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 18},
@@ -13830,6 +13833,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			twister: ["9M", "4T"],
 			wideguard: ["9M", "8E", "7E"],
+			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 13},
@@ -14053,6 +14057,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wish: ["9M", "3S0"],
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "9L29", "7T", "7L41", "6T", "6L41", "5T", "5L41", "4T", "4L50"],
+			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, abilities: ["insomnia"], moves: ["bellydrum", "wish"], pokeball: "pokeball"},
@@ -15052,6 +15057,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			watergun: ["9M", "7V"],
+			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 16},
