@@ -22086,12 +22086,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {boost: {atk: 1}},
 		contestType: "Beautiful",
 	},
-	distort: {
+	disrupt: {
 		num: 10001,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
-		name: "Distort",
+		name: "Disrupt",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, metronome: 1},

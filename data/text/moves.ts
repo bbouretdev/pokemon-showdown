@@ -7548,4 +7548,14 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 
 	//DAV
+	disrupt: {
+		name: "Disrupt",
+		desc: "Disrupts the target.",
+		shortDesc: "Disrupts the target.",
+	},
+	erode: {
+		name: "Erode",
+		desc: "Erodes the target.",
+		shortDesc: "Erodes the target.",
+	},
 };
