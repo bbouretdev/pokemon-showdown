@@ -1812,10 +1812,8 @@ export class BattleActions {
 			}
 		}
 
-		if (pokemon.status === 'frz' && move.category === 'Special' && !pokemon.hasAbility('guts')) {
-			if (this.battle.gen < 6 || move.id !== 'facade') {
-				baseDamage = this.battle.modify(baseDamage, 0.5);
-			}
+		if (pokemon.status === 'frz' && move.category === 'Special') {
+			baseDamage = this.battle.modify(baseDamage, 0.5);
 		}
 
 		if (target.status === 'ero' && move.category === 'Physical') {
