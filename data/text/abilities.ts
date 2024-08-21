@@ -2280,4 +2280,11 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Turns offensive moves into 3-hit ones, distributing move's base power into each individual hit. Removes secondary effects.",
 		shortDesc: "Offensive hits become 3-hit for same global BP. Removes secondary effects.",
 	},
+	vaporization: {
+		name: "Vaporization",
+		desc: "This Pokemon is immune to Water-type moves and does damage to all water types equal to 1/16 of their total health every turn.",
+		shortDesc: "This Pokemon is immune to Water-type moves and hurts all water types every turn.",
+
+		damage: "  [POKEMON] is vaporizing!",
+	},
 };
