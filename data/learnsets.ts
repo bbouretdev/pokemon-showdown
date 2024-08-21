@@ -23451,8 +23451,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	chikorita: {
 		learnset: {
-			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
-			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 			ancientpower: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 			aromatherapy: ["9M", "7L42", "7E", "6L42", "6E", "5L42", "5E", "4L42", "4E"],
 			attract: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -23530,6 +23528,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["9M", "7M"],
 			worryseed: ["9M", "7T", "6T", "5T", "4T"],
 			wringout: ["9M", "7E", "6E", "5E", "4E"],
+			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "razorleaf"], pokeball: "pokeball"},

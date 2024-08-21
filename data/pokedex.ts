@@ -3323,7 +3323,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Grass"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 45, atk: 49, def: 65, spa: 49, spd: 65, spe: 45},
-		abilities: {0: "Overgrow", 1: "Tres Amigos", H: "Leaf Guard"},
+		abilities: {0: "Overgrow", 1: "Vaporization", H: "Leaf Guard"},
 		heightm: 0.9,
 		weightkg: 6.4,
 		color: "Green",

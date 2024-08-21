@@ -5699,4 +5699,31 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: 10002,
 	},
+	vaporization: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				this.add('-immune', target, '[from] ability: Vaporization');
+				return null;
+			}
+		},
+		onResidual(pokemon) {
+			if (!pokemon.hp) return;
+			for (const target of pokemon.side.foe.active) {
+				if (!target || !target.hp) continue;
+				if (target.hasType('Water')) {
+					this.damage(target.maxhp / 8, target, pokemon);
+				}
+			}
+			for (const target of pokemon.side.active) {
+				if (!target || !target.hp) continue;
+				if (target.hasType('Water')) {
+					this.damage(target.maxhp / 8, target, pokemon);
+				}
+			}
+		},
+		name: "Vaporization",
+		flags: {breakable: 1},
+		rating: 3.5,
+		num: 10003,
+	},
 };
