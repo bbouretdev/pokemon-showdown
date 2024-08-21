@@ -74,10 +74,10 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Terastal Clause'],
 		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Sand Veil', 'Shadow Tag', 'Snow Cloak', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail'],
-		checkCanLearn(move, template, lsetData, set) {
-			if (['hiddenpower'].includes(move.id)) return null;
-			return this.checkCanLearn(move, template, lsetData, set);
-		},
+		// checkCanLearn(move, template, lsetData, set) {
+		// 	if (['hiddenpower'].includes(move.id)) return null;
+		// 	return this.checkCanLearn(move, template, lsetData, set);
+		// },
 	},
 	{
 		name: "[Gen 9] Ubers",
