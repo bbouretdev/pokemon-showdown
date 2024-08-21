@@ -32,48 +32,52 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		team: 'random',
 		ruleset: ['PotD', 'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod', 'Terastal Clause'],
 	},
-	{
-		name: "[Gen 9] Unrated Random Battle",
-		mod: 'gen9',
-		team: 'random',
-		challengeShow: false,
-		rated: false,
-		ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod', 'Terastal Clause'],
-	},
-	{
-		name: "[Gen 9] Free-For-All Random Battle",
-		mod: 'gen9',
-		team: 'random',
-		gameType: 'freeforall',
-		tournamentShow: false,
-		rated: false,
-		ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod', 'Terastal Clause'],
-	},
-	{
-		name: "[Gen 9] Random Battle (Blitz)",
-		mod: 'gen9',
-		team: 'random',
-		ruleset: ['[Gen 9] Random Battle', 'Blitz', 'Terastal Clause'],
-	},
-	{
-		name: "[Gen 9] Multi Random Battle",
-		mod: 'gen9',
-		team: 'random',
-		gameType: 'multi',
-		searchShow: false,
-		tournamentShow: false,
-		rated: false,
-		ruleset: [
-			'Max Team Size = 3',
-			'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod',
-			'Terastal Clause'
-		],
-	},
+	// {
+	// 	name: "[Gen 9] Unrated Random Battle",
+	// 	mod: 'gen9',
+	// 	team: 'random',
+	// 	challengeShow: false,
+	// 	rated: false,
+	// 	ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod', 'Terastal Clause'],
+	// },
+	// {
+	// 	name: "[Gen 9] Free-For-All Random Battle",
+	// 	mod: 'gen9',
+	// 	team: 'random',
+	// 	gameType: 'freeforall',
+	// 	tournamentShow: false,
+	// 	rated: false,
+	// 	ruleset: ['Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod', 'Terastal Clause'],
+	// },
+	// {
+	// 	name: "[Gen 9] Random Battle (Blitz)",
+	// 	mod: 'gen9',
+	// 	team: 'random',
+	// 	ruleset: ['[Gen 9] Random Battle', 'Blitz', 'Terastal Clause'],
+	// },
+	// {
+	// 	name: "[Gen 9] Multi Random Battle",
+	// 	mod: 'gen9',
+	// 	team: 'random',
+	// 	gameType: 'multi',
+	// 	searchShow: false,
+	// 	tournamentShow: false,
+	// 	rated: false,
+	// 	ruleset: [
+	// 		'Max Team Size = 3',
+	// 		'Obtainable', 'Species Clause', 'HP Percentage Mod', 'Cancel Mod', 'Sleep Clause Mod', 'Illusion Level Mod',
+	// 		'Terastal Clause'
+	// 	],
+	// },
 	{
 		name: "[Gen 9] OU",
 		mod: 'gen9',
 		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Terastal Clause'],
 		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Sand Veil', 'Shadow Tag', 'Snow Cloak', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail'],
+		checkCanLearn(move, template, lsetData, set) {
+			if (['hiddenpower'].includes(move.id)) return null;
+			return this.checkCanLearn(move, template, lsetData, set);
+		},
 	},
 	{
 		name: "[Gen 9] Ubers",
