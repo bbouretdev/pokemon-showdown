@@ -12678,6 +12678,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["9M", "7L7", "6L7", "5L7", "4L7"],
 			weatherball: ["9M"],
 			whirlpool: ["9M", "7V", "4M"],
+			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 23, abilities: ["thickfat"], moves: ["helpinghand", "surf", "safeguard", "icebeam"]},
@@ -12773,6 +12774,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "7T", "6T", "4M", "3M"],
 			weatherball: ["9M"],
 			whirlpool: ["9M", "7V", "4M"],
+			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		encounters: [
 			{generation: 1, level: 15},
@@ -13284,6 +13286,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "9E", "8E", "7T", "7E", "6T", "6E", "5E", "4M", "3M"],
 			whirlpool: ["9M", "9L16", "8M", "8L16", "7L40", "7V", "6L40", "5L40", "4M", "4L37"],
 			withdraw: ["9M", "9L4", "8L4", "8V", "7L4", "7V", "6L4", "5L4", "5D", "4L4", "3L1", "3S0", "3S1"],
+			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 24, gender: "F", nature: "Brave", ivs: {hp: 5, atk: 19, def: 18, spa: 5, spd: 11, spe: 13}, abilities: ["shellarmor"], moves: ["withdraw", "iciclespear", "supersonic", "aurorabeam"], pokeball: "pokeball"},
@@ -20069,6 +20072,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "7E", "7V", "6E", "5E", "4M", "4E"],
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 44, moves: ["hydropump", "raindance", "blizzard", "healbell"]},

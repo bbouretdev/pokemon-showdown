@@ -7558,4 +7558,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Erodes the target.",
 		shortDesc: "Erodes the target.",
 	},
+	frostbite: {
+		name: "Frostbite",
+		desc: "Freezes the target.",
+		shortDesc: "Freezes the target.",
+	},
 };
