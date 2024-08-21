@@ -72,7 +72,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] OU",
 		mod: 'gen9',
-		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Terastal Clause'],
+		ruleset: ['Standard', '!Sleep Clause Mod', 'Terastal Clause'],
 		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Sand Veil', 'Shadow Tag', 'Snow Cloak', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail'],
 		// checkCanLearn(move, template, lsetData, set) {
 		// 	if (['hiddenpower'].includes(move.id)) return null;
