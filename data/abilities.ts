@@ -5726,4 +5726,81 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 10003,
 	},
+	cryomend: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.status && ['hail', 'snow'].includes(pokemon.effectiveWeather())) {
+				this.debug('cryomend');
+				this.add('-activate', pokemon, 'ability: Cryo Mend');
+				pokemon.cureStatus();
+			}
+		},
+		onWeather(target, source, effect) {
+			if (effect.id === 'hail' || effect.id === 'snow') {
+				this.heal(target.baseMaxhp / 16);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'hail') return false;
+		},
+		flags: {},
+		name: "Cryo Mend",
+		rating: 1.5,
+		num: 10004,
+	},
+	petrify: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Petrify', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spe: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Petrify",
+		rating: 3.5,
+		num: 10005,
+	},
+	chrysalisshield: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({def: 1});
+			}
+		},
+		flags: {},
+		name: "Chrysalis Shield",
+		rating: 4.5,
+		num: 10006,
+	},
+	mentalprojection: {
+		onModifyMove(move, pokemon, target) {
+			if (move.category === 'Physical') {
+				move.category = 'Special';
+			}
+		},
+		name: "Mental Projection",
+		rating: 2,
+		num: 10007,
+	},
+	vampirism: {
+        onModifyMove(move) {
+            if (move.flags['bite']) {
+                move.flags['heal'] = 1;
+                move.drain = [1,3];
+            }
+        },
+        name: "Vampirism",
+        rating: 3,
+        num: 10008,
+    },
 };

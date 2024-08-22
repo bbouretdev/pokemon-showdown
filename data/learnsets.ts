@@ -1059,6 +1059,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			harden: ["9M", "8L0", "8V", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			irondefense: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			stringshot: ["9M", "4T"],
+			stickyweb: ["9M", "4T"],
+			leechlife: ["9M", "4T"],
 		},
 		encounters: [
 			{generation: 1, level: 4},
@@ -12580,6 +12582,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "9L26", "7T", "7L29", "6T", "6L23", "5T", "5L23", "4T", "4L23", "3L38"],
 			whirlwind: ["9M", "7V"],
 			workup: ["9M", "7M", "5M"],
+			flamecharge: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 34, moves: ["batonpass", "drillpeck", "agility", "triattack"]},
@@ -19953,6 +19956,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "7T", "6T", "4M", "3M"],
 			whirlpool: ["9M", "9L4", "8M", "8L4", "7V", "4M"],
 			zapcannon: ["9M", "7V"],
+			fishiousrend: ["9M", "7V"],
+			psychicfangs: ["9M", "7V"],
+			poisonfang: ["9M", "7V"],
+			thunderfang: ["9M", "7V"],
 		},
 		eventData: [
 			{generation: 6, level: 50, moves: ["waterfall", "earthquake", "icefang", "dragondance"], pokeball: "cherishball"},
