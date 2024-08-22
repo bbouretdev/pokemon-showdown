@@ -2280,4 +2280,36 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Turns offensive moves into 3-hit ones, distributing move's base power into each individual hit. Removes secondary effects.",
 		shortDesc: "Offensive hits become 3-hit for same global BP. Removes secondary effects.",
 	},
+	vaporization: {
+		name: "Vaporization",
+		desc: "This Pokemon is immune to Water-type moves and does damage to all water types equal to 1/16 of their total health every turn.",
+		shortDesc: "This Pokemon is immune to Water-type moves and hurts all water types every turn.",
+
+		damage: "  [POKEMON] is vaporizing!",
+	},
+	cryomend: {
+		name: "Cryo Mend",
+		desc: "This Pokemon has its non-volatile status condition cured at the end of each turn if Hail is active. This Pokemon heals 1/16 of its max HP each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "This Pokemon has its status cured and heals 1/16 of its max HP at the end of each turn if Hail is active.",
+	},
+	petrify: {
+		name: "Petrify",
+		desc: "On switch-in, this Pokemon lowers the Speed of opposing Pokemon by 1 stage.",
+		shortDesc: "On switch-in, this Pokemon lowers the Speed of opponents by 1 stage.",
+	},
+	chrysalisshield: {
+		name: "Chrysalis Shield",
+		desc: "This Pokemon's Def is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's Def is raised 1 stage at the end of each full turn on the field.",
+	},
+	mentalprojection: {
+		name: "Mental Projection",
+		desc: "Turns this Pokemon's physical moves into special ones.",
+		shortDesc: "Turns this Pokemon's physical moves into special ones.",
+	},
+	vampirism: {
+		name: "Vampirism",
+		desc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
+		shortDesc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
+	},
 };

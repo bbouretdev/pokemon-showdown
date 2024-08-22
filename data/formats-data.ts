@@ -491,7 +491,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	grimeralola: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	muk: {
 		tier: "ZU",
@@ -525,7 +525,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	onix: {
-		tier: "LC",
+		tier: "OU",
 	},
 	steelix: {
 		tier: "RU",
@@ -693,7 +693,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "Illegal",
 	},
 	kleavor: {
-		tier: "Illegal",
+		tier: "OU",
 	},
 	smoochum: {
 		tier: "LC",
