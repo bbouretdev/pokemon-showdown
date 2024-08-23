@@ -21932,8 +21932,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	featherpunch: {
-		num: 8,
-		accuracy: 10004,
+		num: 10004,
+		accuracy: 100,
 		basePower: 75,
 		category: "Physical",
 		name: "Feather Punch",
