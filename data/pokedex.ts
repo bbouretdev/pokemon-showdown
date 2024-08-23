@@ -3062,10 +3062,10 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	kabutops: {
 		num: 141,
 		name: "Kabutops",
-		types: ["Rock", "Water"],
+		types: ["Rock", "Dark"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 60, atk: 115, def: 105, spa: 65, spd: 70, spe: 80},
-		abilities: {0: "Swift Swim", 1: "Battle Armor", H: "Weak Armor"},
+		abilities: {0: "Swift Swim", 1: "Sharpness", H: "Weak Armor"},
 		heightm: 1.3,
 		weightkg: 40.5,
 		color: "Brown",
