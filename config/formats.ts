@@ -85,40 +85,40 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		ruleset: ['Standard', 'Terastal Clause'],
 		banlist: ['AG', 'Moody', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects'],
 	},
-	{
-		name: "[Gen 9] UU",
-		mod: 'gen9',
-		ruleset: ['[Gen 9] OU'],
-		banlist: ['OU', 'UUBL'],
-	},
-	{
-		name: "[Gen 9] RU",
-		mod: 'gen9',
-		ruleset: ['[Gen 9] UU'],
-		banlist: ['UU', 'RUBL', 'Light Clay'],
-	},
-	{
-		name: "[Gen 9] NU",
-		mod: 'gen9',
-		ruleset: ['[Gen 9] RU'],
-		banlist: ['RU', 'NUBL', 'Drought', 'Quick Claw'],
-	},
-	{
-		name: "[Gen 9] PU",
-		mod: 'gen9',
-		ruleset: ['[Gen 9] NU'],
-		banlist: ['NU', 'PUBL', 'Damp Rock'],
-	},
-	{
-		name: "[Gen 9] LC",
-		mod: 'gen9',
-		ruleset: ['Little Cup', 'Standard'],
-		banlist: [
-			'Aipom', 'Basculin-White-Striped', 'Cutiefly', 'Diglett-Base', 'Dunsparce', 'Duraludon', 'Flittle', 'Gastly', 'Girafarig', 'Gligar',
-			'Meditite', 'Misdreavus', 'Murkrow', 'Porygon', 'Qwilfish-Hisui', 'Rufflet', 'Scraggy', 'Scyther', 'Sneasel', 'Sneasel-Hisui',
-			'Snivy', 'Stantler', 'Vulpix', 'Vulpix-Alola', 'Yanma', 'Moody', 'Baton Pass', 'Sticky Web',
-		],
-	},
+	// {
+	// 	name: "[Gen 9] UU",
+	// 	mod: 'gen9',
+	// 	ruleset: ['[Gen 9] OU'],
+	// 	banlist: ['OU', 'UUBL'],
+	// },
+	// {
+	// 	name: "[Gen 9] RU",
+	// 	mod: 'gen9',
+	// 	ruleset: ['[Gen 9] UU'],
+	// 	banlist: ['UU', 'RUBL', 'Light Clay'],
+	// },
+	// {
+	// 	name: "[Gen 9] NU",
+	// 	mod: 'gen9',
+	// 	ruleset: ['[Gen 9] RU'],
+	// 	banlist: ['RU', 'NUBL', 'Drought', 'Quick Claw'],
+	// },
+	// {
+	// 	name: "[Gen 9] PU",
+	// 	mod: 'gen9',
+	// 	ruleset: ['[Gen 9] NU'],
+	// 	banlist: ['NU', 'PUBL', 'Damp Rock'],
+	// },
+	// {
+	// 	name: "[Gen 9] LC",
+	// 	mod: 'gen9',
+	// 	ruleset: ['Little Cup', 'Standard'],
+	// 	banlist: [
+	// 		'Aipom', 'Basculin-White-Striped', 'Cutiefly', 'Diglett-Base', 'Dunsparce', 'Duraludon', 'Flittle', 'Gastly', 'Girafarig', 'Gligar',
+	// 		'Meditite', 'Misdreavus', 'Murkrow', 'Porygon', 'Qwilfish-Hisui', 'Rufflet', 'Scraggy', 'Scyther', 'Sneasel', 'Sneasel-Hisui',
+	// 		'Snivy', 'Stantler', 'Vulpix', 'Vulpix-Alola', 'Yanma', 'Moody', 'Baton Pass', 'Sticky Web',
+	// 	],
+	// },
 	{
 		name: "[Gen 9] Monotype",
 		mod: 'gen9',
@@ -295,11 +295,11 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	// 		'Perish Song', 'Swagger',
 	// 	],
 	// },
-	// {
-	// 	name: "[Gen 9] Anything Goes",
-	// 	mod: 'gen9',
-	// 	ruleset: ['Min Source Gen = 9', 'Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
-	// },
+	{
+		name: "[Gen 9] Anything Goes",
+		mod: 'gen9',
+		ruleset: ['Min Source Gen = 9', 'Obtainable', 'Team Preview', 'HP Percentage Mod', 'Cancel Mod', 'Endless Battle Clause'],
+	},
 	// {
 	// 	name: "[Gen 9] Ubers UU",
 	// 	mod: 'gen9',
