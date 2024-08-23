@@ -4576,7 +4576,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Normal"],
 		gender: "N",
 		baseStats: {hp: 85, atk: 80, def: 90, spa: 105, spd: 95, spe: 60},
-		abilities: {0: "Trace", 1: "Download", H: "Analytic"},
+		abilities: {0: "Data Steal", 1: "Download", H: "Analytic"},
 		heightm: 0.6,
 		weightkg: 32.5,
 		color: "Red",

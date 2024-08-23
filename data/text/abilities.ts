@@ -2330,4 +2330,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Vinetrap",
 		shortDesc: "A Pokemon making contact with this Pokemon will be trapped for 2 turns.",
 	},
+	datasteal: {
+		name: "Data Steal",
+		desc: "This Pokemon's stat is raised by 1 stage accordingly to the foe's best stat if it attacks and knocks out. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+		shortDesc: "This Pokemon's stat is raised by 1 stage accordingly to the foe's best if it attacks and KOes.",
+	},
 };

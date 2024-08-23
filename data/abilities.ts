@@ -5854,6 +5854,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Vine Trap",
 		rating: 2,
-		num: 9,
+		num: 10012,
+	},
+	datasteal: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				const bestStat = target.getBestStat(true, true);
+				this.boost({[bestStat]: length}, source);
+			}
+		},
+		flags: {},
+		name: "Data Steal",
+		rating: 3.5,
+		num: 10013,
 	},
 };
