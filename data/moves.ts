@@ -9303,7 +9303,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Hydro Pump",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, cannon: 1},
 		secondary: null,
 		target: "normal",
 		type: "Water",
