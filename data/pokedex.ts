@@ -8219,7 +8219,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Tangrowth",
 		types: ["Grass"],
 		baseStats: {hp: 100, atk: 100, def: 125, spa: 110, spd: 50, spe: 50},
-		abilities: {0: "Chlorophyll", 1: "Leaf Guard", H: "Regenerator"},
+		abilities: {0: "Chlorophyll", 1: "Vine Trap", H: "Regenerator"},
 		heightm: 2,
 		weightkg: 128.6,
 		color: "Blue",

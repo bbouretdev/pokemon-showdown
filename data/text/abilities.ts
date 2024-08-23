@@ -2326,4 +2326,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Lightning Fists",
 		shortDesc: "This Pokemon punch moves have their priority increased by 1.",
 	},
+	vinetrap: {
+		name: "Vinetrap",
+		shortDesc: "A Pokemon making contact with this Pokemon will be trapped for 2 turns.",
+	},
 };

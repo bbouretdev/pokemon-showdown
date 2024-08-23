@@ -244,6 +244,30 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
 		},
 	},
+	vinetrapped: {
+		name: 'vinetrapped',
+		duration: 2,
+		onStart(pokemon, source) {
+			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
+			this.effectState.boundDivisor = source.hasItem('bindingband') ? 6 : 8;
+		},
+		onResidualOrder: 13,
+		onResidual(pokemon) {
+			const source = this.effectState.source;
+			if (source && (!source.isActive || source.hp <= 0 || !source.activeTurns)) {
+				delete pokemon.volatiles['vinetrapped'];
+				this.add('-end', pokemon, this.effectState.sourceEffect, '[vinetrapped]', '[silent]');
+				return;
+			}
+			//this.damage(pokemon.baseMaxhp / this.effectState.boundDivisor);
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, this.effectState.sourceEffect, '[vinetrapped]');
+		},
+		onTrapPokemon(pokemon) {
+			if (this.effectState.source?.isActive) pokemon.tryTrap();
+		},
+	},
 	lockedmove: {
 		// Outrage, Thrash, Petal Dance...
 		name: 'lockedmove',
