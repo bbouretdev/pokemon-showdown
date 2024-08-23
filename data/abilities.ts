@@ -5845,8 +5845,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	vinetrap: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target)) {
-				this.add('-ability', target, 'Vine Trap');
-				source.addVolatile('vinetrapped');
+				if (!source.getVolatile('vinetrapped')) {
+					this.add('-ability', target, 'Vine Trap');
+					source.addVolatile('vinetrapped');
+				}
 			}
 		},
 		flags: {},
