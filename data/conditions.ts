@@ -246,7 +246,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	vinetrapped: {
 		name: 'vinetrapped',
-		duration: 2,
+		duration: 3,
 		onStart(pokemon, source) {
 			this.add('-activate', pokemon, 'move: ' + this.effectState.sourceEffect, '[of] ' + source);
 			this.effectState.boundDivisor = source.hasItem('bindingband') ? 6 : 8;
