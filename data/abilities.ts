@@ -5813,4 +5813,33 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         rating: 3,
         num: 10009,
     },
+	predatorsgaze: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Predators Gaze', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({def: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Predators Gaze",
+		rating: 3.5,
+		num: 10010,
+	},
+	lightningfists: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move.flags['punch']) return priority + 1;
+		},
+		flags: {},
+		name: "Lightning Fists",
+		rating: 1.5,
+		num: 10011,
+	},
 };

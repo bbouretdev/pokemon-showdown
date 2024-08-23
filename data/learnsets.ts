@@ -15667,6 +15667,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M"],
 			vacuumwave: ["9M", "9L8", "8L1", "7L26", "6L26", "5L26", "4T", "4L26"],
 			workup: ["9M", "8M", "7M", "5M"],
+			featherpunch: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 38, abilities: ["keeneye"], moves: ["helpinghand", "skyuppercut", "mindreader", "megapunch"]},

@@ -2317,4 +2317,13 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Cannon moves do not check accuracy.",
 		shortDesc: "Cannon moves do not check accuracy.",
 	},
+	predatorsgaze: {
+		name: "Predators Gaze",
+		desc: "On switch-in, this Pokemon lowers the Defense of opposing Pokemon by 1 stage.",
+		shortDesc: "On switch-in, this Pokemon lowers the Defense of opponents by 1 stage.",
+	},
+	lightningfists: {
+		name: "Lightning Fists",
+		shortDesc: "This Pokemon punch moves have their priority increased by 1.",
+	},
 };
