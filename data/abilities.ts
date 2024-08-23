@@ -5860,6 +5860,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
 				const bestStat = target.getBestStat(true, true);
+				this.add('-ability', source, 'Data Steal');
 				this.boost({[bestStat]: length}, source);
 			}
 		},
@@ -5867,5 +5868,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Data Steal",
 		rating: 3.5,
 		num: 10013,
+	},
+	tearfulgoodbye: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				this.boost({atk: -1, spa: -1}, source);
+			}
+		},
+		flags: {},
+		name: "Tearful Goodbye",
+		rating: 2,
+		num: 10014,
 	},
 };

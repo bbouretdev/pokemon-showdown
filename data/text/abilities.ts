@@ -2335,4 +2335,11 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's stat is raised by 1 stage accordingly to the foe's best stat if it attacks and knocks out. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
 		shortDesc: "This Pokemon's stat is raised by 1 stage accordingly to the foe's best if it attacks and KOes.",
 	},
+	tearfulgoodbye: {
+		name: "Tearful Goodbye",
+		desc: "If this Pokemon is knocked out, lowers the Attack and Special Attack of opponents by 1 stage.",
+		shortDesc: "If this Pokemon is KOed, lowers the Attack and Special Attack of opponents by 1 stage.",
+
+		damage: "  [POKEMON] is filled with pity.",
+	},
 };
