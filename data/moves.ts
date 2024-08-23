@@ -21936,7 +21936,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 10004,
 		basePower: 75,
 		category: "Physical",
-		name: "Ice Punch",
+		name: "Feather Punch",
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1},
