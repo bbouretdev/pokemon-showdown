@@ -5803,4 +5803,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         rating: 3,
         num: 10008,
     },
+	gunner: {
+        onModifyMove(move) {
+            if (move.flags['cannon']) {
+                move.accuracy = true;
+            }
+        },
+        name: "Gunner",
+        rating: 3,
+        num: 10009,
+    },
 };

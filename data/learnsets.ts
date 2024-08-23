@@ -1035,6 +1035,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			zapcannon: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			fleurcannon: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["protect", "raindance", "skullbash", "hydropump"], pokeball: "pokeball"},
@@ -12023,6 +12024,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9M", "9L52", "8L52", "7L49", "7V", "6L49", "5L57", "4L54", "3L50"],
+			mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		encounters: [
 			{generation: 1, level: 16},
@@ -12108,6 +12110,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9M", "9L64", "8L64", "7L1", "7V", "6L1", "5L66", "4L60", "3L62"],
+			mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 30, moves: ["refresh", "doubleedge", "raindance", "thunder"]},
@@ -12201,6 +12204,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9M", "9L64", "8L64", "7L1", "6L1", "5L66", "4L60"],
+			mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 	},
 	farfetchd: {

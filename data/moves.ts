@@ -5833,7 +5833,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flash Cannon",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, cannon: 1},
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -5871,7 +5871,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Fleur Cannon",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1},
+		flags: {protect: 1, mirror: 1, cannon: 1},
 		self: {
 			boosts: {
 				spa: -2,
@@ -9286,7 +9286,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Hydro Cannon",
 		pp: 5,
 		priority: 0,
-		flags: {recharge: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {recharge: 1, protect: 1, mirror: 1, metronome: 1, cannon: 1},
 		self: {
 			volatileStatus: 'mustrecharge',
 		},
@@ -17985,7 +17985,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Spike Cannon",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, cannon: 1},
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
@@ -21796,7 +21796,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Zap Cannon",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, bullet: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, bullet: 1, cannon: 1},
 		secondary: {
 			chance: 100,
 			status: 'par',
@@ -21909,6 +21909,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 		zMove: {boost: {atk: 1}},
+		contestType: "Beautiful",
+	},
+	mysticshrapnel: {
+		num: 10003,
+		accuracy: 70,
+		basePower: 120,
+		category: "Special",
+		name: "Mystic Shrapnel",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1, cannon: 1},
+		secondary: {
+			chance: 10,
+			boosts: {
+				spd: -1,
+			},
+		},
+		target: "normal",
+		type: "Steel",
 		contestType: "Beautiful",
 	},
 };

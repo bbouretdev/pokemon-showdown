@@ -7563,4 +7563,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Freezes the target.",
 		shortDesc: "Freezes the target.",
 	},
+	mysticshrapnel: {
+		name: "Mystic Shrapnel",
+		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
+	},
 };

@@ -2312,4 +2312,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
 		shortDesc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
 	},
+	gunner: {
+		name: "Gunner",
+		desc: "Cannon moves do not check accuracy.",
+		shortDesc: "Cannon moves do not check accuracy.",
+	},
 };
