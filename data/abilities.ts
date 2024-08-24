@@ -5873,6 +5873,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp) {
+				this.add('-ability', target, 'Tearful Goodbye');
 				this.boost({atk: -1, spa: -1}, source);
 			}
 		},
@@ -5884,6 +5885,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	swarmfrenzy: {
 		onSourceAfterFaint(length, target, source, effect) {
 			if (effect && effect.effectType === 'Move') {
+				this.add('-ability', source, 'Swarm Frenzy');
 				this.boost({atk: length, spe: length}, source);
 			}
 		},
@@ -5907,5 +5909,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Hamstring",
 		rating: 3,
 		num: 10016,
+	},
+	spiritualvengeance: {
+		onStart(pokemon) {
+			if (pokemon.side.faintedLastTurn) {
+				this.add('-ability', pokemon, 'Spiritual Vengeance');
+				this.boost({atk: 1});
+			}
+		},
+		flags: {},
+		name: "Spiritual Vengeance",
+		rating: 3.5,
+		num: 10017,
 	},
 };
