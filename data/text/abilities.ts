@@ -2347,4 +2347,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.",
 		shortDesc: "This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.",
 	},
+	hamstring: {
+		name: "Hamstring",
+		desc: "This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.",
+		shortDesc: "This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.",
+	},
 };

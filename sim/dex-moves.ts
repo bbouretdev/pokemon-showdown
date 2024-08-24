@@ -66,6 +66,7 @@ interface MoveFlags {
 
 	// DAV
 	cannon?: 1; // Accuracy is not checked when used by a Pokemon with the Ability Gunner.
+	kick?: 1; //
 }
 
 export interface HitEffect {

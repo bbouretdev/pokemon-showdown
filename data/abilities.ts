@@ -5892,4 +5892,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10015,
 	},
+	hamstring: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['kick']) {
+				move.secondaries.push({
+					chance: 100,
+					boosts: {
+						spe: -1,
+					},
+				});
+			}
+		},
+		flags: {},
+		name: "Hamstring",
+		rating: 3,
+		num: 10016,
+	},
 };
