@@ -84,6 +84,7 @@ export class Side {
 	 */
 	dynamaxUsed: boolean;
 
+	faintedBeforeLastTurn: Pokemon | null;
 	faintedLastTurn: Pokemon | null;
 	faintedThisTurn: Pokemon | null;
 	totalFainted: number;

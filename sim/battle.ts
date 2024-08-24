@@ -1578,6 +1578,7 @@ export class Battle {
 			}
 			trappedBySide.push(sideTrapped);
 			stalenessBySide.push(sideStaleness);
+			side.faintedBeforeLastTurn = side.faintedLastTurn;
 			side.faintedLastTurn = side.faintedThisTurn;
 			side.faintedThisTurn = null;
 		}
