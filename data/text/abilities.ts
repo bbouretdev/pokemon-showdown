@@ -2342,4 +2342,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 
 		damage: "  [POKEMON] is filled with pity.",
 	},
+	swarmfrenzy: {
+		name: "Swarm Frenzy",
+		desc: "This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.",
+		shortDesc: "This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.",
+	},
 };

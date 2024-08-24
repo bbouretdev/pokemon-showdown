@@ -5881,4 +5881,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10014,
 	},
+	swarmfrenzy: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				this.boost({atk: length, spe: length}, source);
+			}
+		},
+		flags: {},
+		name: "Swarm Frenzy",
+		rating: 3,
+		num: 10015,
+	},
 };
