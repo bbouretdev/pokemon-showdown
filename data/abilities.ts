@@ -5911,7 +5911,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10016,
 	},
 	spiritualvengeance: {
-		onStart(pokemon) {
+		onSwitchIn(pokemon) {
 			if (pokemon.side.faintedLastTurn) {
 				this.add('-ability', pokemon, 'Spiritual Vengeance');
 				this.boost({atk: 1}, pokemon);
