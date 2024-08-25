@@ -5921,5 +5921,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Spiritual Vengeance",
 		rating: 3.5,
 		num: 10017,
+		custom: true,
 	},
 };
