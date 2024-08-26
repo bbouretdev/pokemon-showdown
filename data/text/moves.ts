@@ -7573,4 +7573,19 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Has a 30% chance to make the target flinch.",
 		shortDesc: "30% chance to make the target flinch.",
 	},
+	scorchrush: {
+		name: "Scorch Rush",
+		desc: "Power doubles if the target is burnt.",
+		shortDesc: "Power doubles if the target is burnt.",
+	},
+	shatter: {
+		name: "Shatter",
+		desc: "Power doubles if the target is burnt.",
+		shortDesc: "Power doubles if the target is burnt.",
+	},
+	paralash: {
+		name: "Paralash",
+		desc: "Power doubles if the target is burnt.",
+		shortDesc: "Power doubles if the target is burnt.",
+	},
 };

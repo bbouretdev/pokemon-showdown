@@ -5912,6 +5912,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	spiritualvengeance: {
 		onStart(pokemon) {
+			// TO DEBUG
 			console.log(pokemon.side);
 			if (pokemon.side.faintedBeforeLastTurn) {
 				this.add('-ability', pokemon, 'Spiritual Vengeance');
@@ -5923,5 +5924,88 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 10017,
 		custom: true,
+	},
+	sunderarmor: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['contact']) {
+				move.secondaries.push({
+					chance: 100,
+					boosts: {
+						def: -1,
+					},
+				});
+			}
+		},
+		flags: {},
+		name: "Sunder Armor",
+		rating: 3,
+		num: 10018,
+	},
+	shellprotection: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.hp >= target.maxhp && move.category === 'Physical') {
+				this.debug('Shell Protection weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {breakable: 1},
+		name: "Shell Protection",
+		rating: 3.5,
+		num: 10019,
+	},
+	restfulslumber: {
+		onDamagePriority: 1,
+		onResidual(target, source, effect) {
+			if (effect.id === 'slp') {
+				this.heal(target.baseMaxhp / 8);
+				return false;
+			}
+		},
+		flags: {},
+		name: "Restful Slumber",
+		rating: 4,
+		num: 10020,
+	},
+	conflagrant: {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.category !== 'Status') {
+				if (this.randomChance(3, 10)) {
+					target.trySetStatus('brn', source);
+				}
+			}
+		},
+		flags: {},
+		name: "Conflagrant",
+		rating: 2,
+		num: 10021,
+	},
+	chillingtouch: {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.category !== 'Status') {
+				if (this.randomChance(3, 10)) {
+					target.trySetStatus('frz', source);
+				}
+			}
+		},
+		flags: {},
+		name: "Chilling Touch",
+		rating: 2,
+		num: 10022,
+	},
+	thunderstruck: {
+		onSourceDamagingHit(damage, target, source, move) {
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (move.category !== 'Status') {	
+				if (this.randomChance(3, 10)) {
+					target.trySetStatus('par', source);
+				}
+			}
+		},
+		flags: {},
+		name: "Thunderstruck",
+		rating: 2,
+		num: 10023,
 	},
 };

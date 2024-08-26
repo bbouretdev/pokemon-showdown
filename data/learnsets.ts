@@ -18842,6 +18842,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wonderroom: ["9M", "8M", "7T"],
 			wringout: ["9M", "7L49", "6L49", "5L49", "4L44"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			shatter: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
+			frostbite: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 		},
 		encounters: [
 			{generation: 1, level: 15},
@@ -19042,6 +19044,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			voltswitch: ["9M", "8M", "7M", "6M", "5M"],
 			wildcharge: ["9M", "8M", "7M", "6M", "5M"],
 			zapcannon: ["9M", "7V"],
+			paralash: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["quickattack", "leer", "thunderpunch"], pokeball: "pokeball"},
@@ -19343,6 +19346,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			uproar: ["9M", "8M"],
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
+			scorchrush: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["leer", "smog", "firepunch", "ember"], pokeball: "pokeball"},

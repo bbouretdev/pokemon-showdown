@@ -2357,4 +2357,33 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
 		shortDesc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
 	},
+	sunderarmor: {
+		name: "Sunder Armor",
+		desc: "This Pokemon's kick-based attacks also lower Defense of Opponents by & stage.",
+		shortDesc: "This Pokemon's kick-based attacks also lower Defense of Opponents by & stage.",
+	},
+	shellprotection: {
+		name: "Shell Protection",
+		shortDesc: "If this Pokemon is at full HP, damage taken from physical attacks is halved.",
+	},
+	restfulslumber: {
+		name: "Restful Slumber",
+		desc: "If this Pokemon is asleep, it restores 1/8 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "This Pokemon is healed by 1/8 of its max HP each turn when asleep.",
+	},
+	conflagrant: {
+		name: "Conflagrant",
+		desc: "This Pokemon's offensive moves have a 30% chance of burning. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's offensive moves have a 30% chance of burning.",
+	},
+	chillingtouch: {
+		name: "Chilling Touch",
+		desc: "This Pokemon's offensive moves have a 30% chance of freezing. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's offensive moves have a 30% chance of freezing.",
+	},
+	thunderstruck: {
+		name: "Thunderstruck",
+		desc: "This Pokemon's offensive moves have a 30% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's offensive moves have a 30% chance of paralyzing.",
+	},
 };

@@ -21948,4 +21948,70 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Beautiful",
 	},
+	scorchrush: {
+		num: 10005,
+		accuracy: 100,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'brn') {
+				this.debug('BP doubled from burn condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Physical",
+		name: "Scorch Rush",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		zMove: {basePower: 160},
+		contestType: "Clever",
+	},
+	shatter: {
+		num: 10006,
+		accuracy: 100,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'frz') {
+				this.debug('BP doubled from frozen condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		name: "Shatter",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		zMove: {basePower: 160},
+		contestType: "Clever",
+	},
+	paralash: {
+		num: 10007,
+		accuracy: 100,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'par') {
+				this.debug('BP doubled from paralyzed condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		name: "Paralash",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		zMove: {basePower: 160},
+		contestType: "Clever",
+	},
 };
