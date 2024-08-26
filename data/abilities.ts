@@ -6009,9 +6009,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10023,
 	},
 	acidrain: {
-		onWeather(target, source, effect) {
-			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
-				target.trySetStatus('psn');
+		onResidual(pokemon) {
+			if (this.field.isWeather(['raindance', 'primordialsea'])) {
+				for (const target of pokemon.foes()) {
+					target.trySetStatus('psn');
+					// if (target.status === 'slp' || target.hasAbility('comatose')) {
+					// 	this.damage(target.baseMaxhp / 8, target, pokemon);
+					// }
+				}
 			}
 		},
 		flags: {},
