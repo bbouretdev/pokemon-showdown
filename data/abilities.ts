@@ -6011,7 +6011,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	acidrain: {
 		onWeather(target, source, effect) {
 			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
-				source.trySetStatus('psn', target);
+				target.trySetStatus('psn');
 			}
 		},
 		flags: {},
