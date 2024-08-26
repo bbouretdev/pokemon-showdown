@@ -1508,6 +1508,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlwind: ["9M", "8V", "7L17", "7V", "6L17", "5L17", "5S0", "4L17", "3L20"],
 			wingattack: ["9M", "8V", "7L38", "7V", "6L38", "5L38", "5S0", "4L38", "3L27"],
 			workup: ["9M", "7M", "5M"],
+			focusblast: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
+			flyingpress: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 		},
 		eventData: [
 			{generation: 5, level: 61, gender: "M", nature: "Naughty", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, abilities: ["keeneye"], moves: ["whirlwind", "wingattack", "skyattack", "mirrormove"], pokeball: "cherishball"},
