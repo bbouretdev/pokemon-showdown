@@ -1035,13 +1035,16 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			frostbite: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			zapcannon: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			fleurcannon: ["9M", "8M", "7T", "6T", "5T", "4T"],
-			mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			// mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
-			{generation: 3, level: 70, moves: ["protect", "raindance", "skullbash", "hydropump"], pokeball: "pokeball"},
-			{generation: 6, level: 100, isHidden: true, moves: ["hydropump", "hydrocannon", "irondefense", "waterpledge"], pokeball: "cherishball"},
-			{generation: 9, level: 100, isHidden: true, moves: ["frostbite", "zapcannon", "fleurcannon", "mysticshrapnel", "workup"], pokeball: "pokeball"},
+			{generation: 3, level: 100, isHidden: true, moves: ["zapcannon", "fleurcannon", "mysticshrapnel", "workup"], pokeball: "pokeball"},
 		],
+		// eventData: [
+		// 	{generation: 3, level: 70, moves: ["protect", "raindance", "skullbash", "hydropump"], pokeball: "pokeball"},
+		// 	{generation: 6, level: 100, isHidden: true, moves: ["hydropump", "hydrocannon", "irondefense", "waterpledge"], pokeball: "cherishball"},
+		// 	{generation: 9, level: 100, isHidden: true, moves: ["frostbite", "zapcannon", "fleurcannon", "mysticshrapnel", "workup"], pokeball: "pokeball"},
+		// ],
 	},
 	caterpie: {
 		learnset: {
