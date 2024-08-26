@@ -5913,7 +5913,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	spiritualvengeance: {
 		onStart(pokemon) {
 			// TO DEBUG
-			console.log(pokemon.side);
+			// console.log(pokemon.side);
 			if (pokemon.side.faintedBeforeLastTurn) {
 				this.add('-ability', pokemon, 'Spiritual Vengeance');
 				this.boost({atk: 1}, pokemon);
@@ -6007,5 +6007,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Thunderstruck",
 		rating: 2,
 		num: 10023,
+	},
+	acidrain: {
+		onWeather(target, source, effect) {
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				target.trySetStatus('psn', source);
+			}
+		},
+		flags: {},
+		name: "Acid Rain",
+		rating: 2,
+		num: 10024,
 	},
 };

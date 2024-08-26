@@ -511,9 +511,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-weather', 'RainDance', '[upkeep]');
 			this.eachEvent('Weather');
 		},
-		onWeather(target, source) {
-			target.trySetStatus('psn', source);
-		},
 		onFieldEnd() {
 			this.add('-weather', 'none');
 		},
