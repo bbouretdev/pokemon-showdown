@@ -810,16 +810,16 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			yawn: ["9M", "9E", "8E", "7E", "6E", "5E", "4E", "3E"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
-		eventData: [
-			{generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball"},
-			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tackle", "tailwhip", "bubble", "withdraw"]},
-			{generation: 5, level: 1, shiny: 1, ivs: {hp: 31}, moves: ["falseswipe", "block", "hydrocannon", "followme"], pokeball: "pokeball"},
-			{generation: 6, level: 5, moves: ["tailwhip", "watergun", "withdraw", "bubble"], pokeball: "cherishball"},
-			{generation: 6, level: 5, isHidden: true, moves: ["tackle", "tailwhip", "celebrate"], pokeball: "cherishball"},
-		],
-		encounters: [
-			{generation: 1, level: 5},
-		],
+		// eventData: [
+		// 	{generation: 3, level: 10, gender: "M", moves: ["tackle", "tailwhip", "bubble", "withdraw"], pokeball: "pokeball"},
+		// 	{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tackle", "tailwhip", "bubble", "withdraw"]},
+		// 	{generation: 5, level: 1, shiny: 1, ivs: {hp: 31}, moves: ["falseswipe", "block", "hydrocannon", "followme"], pokeball: "pokeball"},
+		// 	{generation: 6, level: 5, moves: ["tailwhip", "watergun", "withdraw", "bubble"], pokeball: "cherishball"},
+		// 	{generation: 6, level: 5, isHidden: true, moves: ["tackle", "tailwhip", "celebrate"], pokeball: "cherishball"},
+		// ],
+		// encounters: [
+		// 	{generation: 1, level: 5},
+		// ],
 	},
 	wartortle: {
 		learnset: {
@@ -1038,7 +1038,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			// mysticshrapnel: ["9M", "8M", "7T", "6T", "5T", "4T"],
 		},
 		eventData: [
-			{generation: 3, level: 100, isHidden: true, moves: ["zapcannon", "fleurcannon", "mysticshrapnel", "workup"], pokeball: "pokeball"},
+			{generation: 3, level: 10, moves: ["zapcannon", "fleurcannon", "mysticshrapnel", "workup"], pokeball: "pokeball"},
 		],
 		// eventData: [
 		// 	{generation: 3, level: 70, moves: ["protect", "raindance", "skullbash", "hydropump"], pokeball: "pokeball"},
