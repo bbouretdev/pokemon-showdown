@@ -2395,4 +2395,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Slippy Skin",
 		shortDesc: "This Pokemon is immune to pivot moves.",
 	},
+	hypnoticspiral: {
+		name: "Hypnotic Spiral",
+		desc: "On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn.",
+	}
 };

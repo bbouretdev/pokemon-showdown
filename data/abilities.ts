@@ -6053,7 +6053,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
 				if (!activated) {
-					this.add('-ability', pokemon, 'Hypontic Spiral');
+					this.add('-ability', pokemon, 'Hypnotic Spiral');
 					activated = true;
 				}
 				if (target.volatiles['substitute']) {
