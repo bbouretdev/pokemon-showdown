@@ -6104,7 +6104,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 10028,
 	},
-	nightmarecurse: {
+	hauntingpact: {
 		onResidual(pokemon) {
 			if (!pokemon.hp) return;
 			for (const foe of pokemon.foes()) {
@@ -6115,7 +6115,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: {},
-		name: "Nightmare Curse",
+		name: "Haunting Pact",
 		rating: 2,
 		num: 10028,
 	},

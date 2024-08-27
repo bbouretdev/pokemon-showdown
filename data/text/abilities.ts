@@ -2410,8 +2410,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
 	},
-	nightmarecurse: {
-		name: "Nightmare Curse",
+	hauntingpact: {
+		name: "Haunting Pact",
 		desc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
 	},
