@@ -6016,12 +6016,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target.cureStatus();
 						target.trySetStatus('tox');
 					}
-					else if (target.volatiles['koffing'] && !target.status) {
+					else if (target.volatiles['coughing'] && !target.status) {
 						target.trySetStatus('psn');
 					}
-					else if (!target.volatiles['koffing'] && !target.status) {
-						this.add('-activate', source, 'koffing');
-						target.addVolatile('koffing');
+					else if (!target.volatiles['coughing'] && !target.status) {
+						target.addVolatile('coughing');
 					}
 				}
 			}
