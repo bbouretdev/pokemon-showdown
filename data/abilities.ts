@@ -6150,7 +6150,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	setvolatile: {
 		onStart(target, source, sourceEffect) {
 			this.add('-start', target, 'customvolatile');
-			source.addVolatile('customvolatile');
+			target.addVolatile('customvolatile');
 		},
 		flags: {},
 		name: "Set Volatile",
