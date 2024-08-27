@@ -2415,4 +2415,14 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
 	},
+	stoneshard: {
+		name: "Stone Shard",
+		desc: "If this Pokemon is hit by a physical attack, Stealth Rock are set on the opposing side. Attacker loses 1/8 of their maximum HP, rounded down.",
+		shortDesc: "If this Pokemon is hit by a physical attack, Stealth Rock are set on the opposing side. Attacker loses 1/8 of their maximum HP, rounded down.",
+	},
+	holdbane: {
+		name: "Hold Bane",
+		desc: "On switch-in, this Pokemon disables the target's held item for 5 turns. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items.",
+		shortDesc: "On switch-in, this Pokemon disables the target's item for 5 turns.",
+	},
 };

@@ -6119,4 +6119,32 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10028,
 	},
+	stoneshard: {
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const stealthrock = side.sideConditions['stealthrock'];
+			if (move.category === 'Physical' && (!stealthrock)) {
+				this.add('-activate', target, 'ability: Stone Shard');
+				side.addSideCondition('stealthrock', target);
+			}
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.damage(source.baseMaxhp / 8, source, target);
+			}
+		},
+		flags: {},
+		name: "Stone Shard",
+		rating: 3.5,
+		num: 10029,
+	},
+	holdbane: {
+		onStart(source) {
+			for (const foe of source.foes()) {
+				if (!foe.volatiles['embargo']) foe.addVolatile('embargo');
+			}
+		},
+		flags: {},
+		name: "Hold Bane",
+		rating: 4,
+		num: 10030,
+	},
 };
