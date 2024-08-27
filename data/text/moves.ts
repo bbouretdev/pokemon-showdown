@@ -7575,17 +7575,17 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	scorchrush: {
 		name: "Scorch Rush",
-		desc: "Power doubles if the target is burnt.",
-		shortDesc: "Power doubles if the target is burnt.",
+		desc: "Usually goes first. Power doubles if the target is burnt.",
+		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
 	},
 	shatter: {
 		name: "Shatter",
-		desc: "Power doubles if the target is burnt.",
-		shortDesc: "Power doubles if the target is burnt.",
+		desc: "Usually goes first. Power doubles if the target is burnt.",
+		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
 	},
 	paralash: {
 		name: "Paralash",
-		desc: "Power doubles if the target is burnt.",
-		shortDesc: "Power doubles if the target is burnt.",
+		desc: "Usually goes first. Power doubles if the target is burnt.",
+		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
 	},
 };
