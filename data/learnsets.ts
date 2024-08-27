@@ -18051,6 +18051,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			doubleslap: ["9M", "8V", "7L11", "7V", "6L11", "5L11", "4L15", "3L15"],
 			doubleteam: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			drainpunch: ["9M", "8M", "7T", "6T", "5T", "4M"],
+			drainingkiss: ["9M", "8M", "7T", "6T", "5T", "4M"],
 			dreameater: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3T"],
 			dynamicpunch: ["9M", "7V"],
 			encore: ["9M", "8M", "8L1", "8V", "7L18", "7V", "6L18", "5L11", "4L11", "3L25", "3S0"],

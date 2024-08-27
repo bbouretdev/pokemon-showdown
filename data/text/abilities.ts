@@ -2407,8 +2407,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	moltencore: {
 		name: "Molten Core",
-		desc: "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire type and have 1.2x power.",
 	},
 	hauntingpact: {
 		name: "Haunting Pact",
