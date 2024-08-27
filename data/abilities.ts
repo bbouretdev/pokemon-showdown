@@ -6036,4 +6036,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10024,
 	},
+	slippyskin: {
+		onTryHit(pokemon, target, move) {
+			if (move.flags['pivot']) {
+				this.add('-immune', pokemon, '[from] ability: Slippy Skin');
+				return null;
+			}
+		},
+		flags: {breakable: 1},
+		name: "Slippy Skin",
+		rating: 3,
+		num: 10025,
+	},
 };

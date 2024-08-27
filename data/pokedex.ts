@@ -1500,7 +1500,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Poliwrath",
 		types: ["Water", "Fighting"],
 		baseStats: {hp: 90, atk: 95, def: 95, spa: 70, spd: 90, spe: 70},
-		abilities: {0: "Water Absorb", 1: "Damp", H: "Swift Swim"},
+		abilities: {0: "Water Absorb", 1: "Slippy Skin", H: "Swift Swim"},
 		heightm: 1.3,
 		weightkg: 54,
 		color: "Blue",

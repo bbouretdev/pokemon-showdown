@@ -2391,4 +2391,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
 		shortDesc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
 	},
+	slippyskin: {
+		name: "Slippy Skin",
+		shortDesc: "This Pokemon is immune to pivot moves.",
+	},
 };
