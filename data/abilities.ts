@@ -6020,6 +6020,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target.trySetStatus('psn');
 					}
 					else if (!target.volatiles['acidrain'] && !target.status) {
+						this.add('-activate', source, 'ability: Acid Rain' + target.species);
 						target.addVolatile('acidrain');
 					}
 				}
