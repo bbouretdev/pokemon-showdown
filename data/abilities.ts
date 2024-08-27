@@ -6012,12 +6012,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onWeather(pokemon, source, effect) {
 			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
 				for (const target of pokemon.foes()) {
-					if (target.status === 'psn') {
+					if (target.volatiles['acidrain'] && !target.status) {
+						target.trySetStatus('psn');
+					}
+					else if (target.volatiles['acidrain'] && target.status === 'psn') {
 						target.cureStatus();
 						target.trySetStatus('tox');
-					}
-					else if (target.volatiles['acidrain'] && !target.status) {
-						target.trySetStatus('psn');
 					}
 					else if (!target.volatiles['acidrain'] && !target.status) {
 						this.add('-start', target, 'acidrain');
