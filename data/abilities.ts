@@ -6065,4 +6065,58 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10026,
 	},
+	maelstromgrip: {
+		onFoeTrapPokemon(pokemon) {
+			if (pokemon.hasType('Water') && pokemon.isAdjacent(this.effectState.target)) {
+				pokemon.tryTrap(true);
+			}
+		},
+		onFoeMaybeTrapPokemon(pokemon, source) {
+			if (!source) source = this.effectState.target;
+			if (!source || !pokemon.isAdjacent(source)) return;
+			if (!pokemon.knownType || pokemon.hasType('Water')) {
+				pokemon.maybeTrapped = true;
+			}
+		},
+		flags: {},
+		name: "Maelstrom Grip",
+		rating: 4,
+		num: 10027,
+	},
+	moltencore: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && !noModifyType.includes(move.id) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Fire';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: {},
+		name: "Molten Core",
+		rating: 4,
+		num: 10028,
+	},
+	nightmarecurse: {
+		onResidual(pokemon) {
+			if (!pokemon.hp) return;
+			for (const foe of pokemon.foes()) {
+				this.damage(foe.baseMaxhp / 8, foe, pokemon);
+			}
+			for (const ally of pokemon.alliesAndSelf()) {
+				this.damage(ally.baseMaxhp / 16, ally, pokemon);
+			}
+		},
+		flags: {},
+		name: "Nightmare Curse",
+		rating: 2,
+		num: 10028,
+	},
 };

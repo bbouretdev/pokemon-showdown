@@ -2388,8 +2388,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	acidrain: {
 		name: "Acid Rain",
-		desc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
-		shortDesc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
+		desc: "If Rain Dance is active, all Pokémons on the field are poisoned at the end of the next turn. If poisoned already, Pokémons are badly poisoned.",
+		shortDesc: "If Rain Dance is active, all Pokémons on the field are poisoned at the end of the next turn. If poisoned already, Pokémons are badly poisoned.",
 	},
 	slippyskin: {
 		name: "Slippy Skin",
@@ -2399,5 +2399,20 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Hypnotic Spiral",
 		desc: "On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn.",
-	}
+	},
+	maelstromgrip: {
+		name: "Maelstrom Grip",
+		desc: "Prevents opposing Water-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
+		shortDesc: "Prevents opposing Water-type Pokemon from choosing to switch out.",
+	},
+	moltencore: {
+		name: "Molten Core",
+		desc: "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
+	},
+	nightmarecurse: {
+		name: "Nightmare Curse",
+		desc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.",
+	},
 };
