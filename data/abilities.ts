@@ -6020,6 +6020,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target.trySetStatus('tox');
 					}
 				}
+				for (const target of pokemon.allies()) {
+					if (!target.status) {
+						target.trySetStatus('psn');
+					}
+					else if (target.status === 'psn') {
+						target.cureStatus();
+						target.trySetStatus('tox');
+					}
+				}
 			}
 		},
 		flags: {},

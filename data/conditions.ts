@@ -511,18 +511,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-weather', 'RainDance', '[upkeep]');
 			this.eachEvent('Weather');
 		},
-		// onWeather(pokemon) {
-		// 	const noFoeHasAcidRain = pokemon.foes().every(foe => !foe.hasAbility('acidrain'));
-		// 	const noAllyHasAcidRain = pokemon.allies().every(ally => !ally.hasAbility('acidrain'));
-		// 	if (noFoeHasAcidRain && noAllyHasAcidRain) return;
-		// 	if (!pokemon.status) {
-		// 		pokemon.trySetStatus('psn');
-		// 	}
-		// 	else if (pokemon.status === 'psn') {
-		// 		pokemon.cureStatus();
-		// 		pokemon.trySetStatus('tox');
-		// 	}
-		// },
 		onFieldEnd() {
 			this.add('-weather', 'none');
 		},
