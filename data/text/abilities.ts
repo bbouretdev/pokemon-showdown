@@ -2386,4 +2386,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's offensive moves have a 30% chance of paralyzing. This effect comes after a move's inherent secondary effect chance.",
 		shortDesc: "This Pokemon's offensive moves have a 30% chance of paralyzing.",
 	},
+	acidrain: {
+		name: "Acid Rain",
+		desc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
+		shortDesc: "If Rain Dance is active, all Pokémons on the field are poisoned. If poisoned already, Pokémons are badly poisoned.",
+	},
 };

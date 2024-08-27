@@ -6009,16 +6009,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10023,
 	},
 	acidrain: {
-		// onResidual(pokemon, source) {
-		// 	if (this.field.isWeather(['raindance', 'primordialsea'])) {
-		// 		for (const target of pokemon.foes()) {
-		// 			target.trySetStatus('psn', source);
-		// 			// if (target.status === 'slp' || target.hasAbility('comatose')) {
-		// 			// 	this.damage(target.baseMaxhp / 8, target, pokemon);
-		// 			// }
-		// 		}
-		// 	}
-		// },
+		onWeather(pokemon, source, effect) {
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				if (!pokemon.status) {
+					pokemon.trySetStatus('psn');
+				}
+				else if (pokemon.status === 'psn') {
+					pokemon.cureStatus();
+					pokemon.trySetStatus('tox');
+				}
+			}
+		},
 		flags: {},
 		name: "Acid Rain",
 		rating: 2,
