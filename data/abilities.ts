@@ -6147,4 +6147,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 10030,
 	},
+	setvolatile: {
+		onStart(source) {
+				source.addVolatile('customvolatile');
+		},
+		flags: {},
+		name: "Set Volatile",
+		rating: 4,
+		num: 10031,
+	},
 };
