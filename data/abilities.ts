@@ -6020,6 +6020,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target.trySetStatus('psn');
 					}
 					else if (!target.volatiles['koffing'] && !target.status) {
+						this.add('-activate', source, 'koffing');
 						target.addVolatile('koffing');
 					}
 				}
