@@ -6019,6 +6019,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target.cureStatus();
 						target.trySetStatus('tox');
 					}
+					else if (!target.volatiles['acidrain'] && target.status === 'psn') {
+						this.add('-start', target, 'acidrain');
+						target.addVolatile('acidrain');
+					}
 					else if (!target.volatiles['acidrain'] && !target.status) {
 						this.add('-start', target, 'acidrain');
 						target.addVolatile('acidrain');
