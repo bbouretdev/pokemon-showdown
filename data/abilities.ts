@@ -6048,4 +6048,26 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10025,
 	},
+	hypnoticspiral: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Hypontic Spiral');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					if (!target.volatiles['yawn'] && target.status !== 'slp') {
+						target.addVolatile('yawn');
+					}
+				}
+			}
+		},
+		flags: {},
+		name: "Hypnotic Spiral",
+		rating: 3,
+		num: 10026,
+	},
 };
