@@ -7579,4 +7579,12 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Usually goes first. Power doubles if the target is burnt.",
 		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
 	},
+	coralreef: {
+		name: "Coral Reef",
+		desc: "For 5 turns, the user and its party members lose 1/8 of their maximum HP when using contact moves, rounded down.",
+		shortDesc: "For 5 turns, the user and its party members lose 1/8 of their maximum HP when using contact moves.",
+
+		start: "  Coral Reef made [TEAM] hurt itself with contact moves!",
+		end: "  [TEAM]'s Coral Reef wore off!",
+	},
 };
