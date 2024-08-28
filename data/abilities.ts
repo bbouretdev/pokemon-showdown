@@ -5914,7 +5914,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			// TO DEBUG
 			for (const ally of pokemon.allies()) {
-				console.log(ally.side);
+				console.log(ally);
 			}
 			if (pokemon.side.faintedBeforeLastTurn) {
 				this.add('-ability', pokemon, 'Spiritual Vengeance');
