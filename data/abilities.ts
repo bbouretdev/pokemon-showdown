@@ -6149,4 +6149,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 10030,
 	},
+	neutralizer: {
+		onFoeModifySTAB(stab, source, target, move) {
+			if (move.forceSTAB || source.hasType(move.type)) {
+				if (stab === 2) {
+					return 1;
+				}
+				return 1;
+			}
+		},
+		flags: {},
+		name: "Neutralizer",
+		rating: 4,
+		num: 10031,
+	},
 };

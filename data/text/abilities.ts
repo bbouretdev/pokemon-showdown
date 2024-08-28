@@ -2425,4 +2425,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon disables the target's held item for 5 turns. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items.",
 		shortDesc: "On switch-in, this Pokemon disables the target's item for 5 turns.",
 	},
+	neutralizer: {
+		name: "Neutralizer",
+		desc: "The Opponent's moves that match one of its types have a same-type attack bonus (STAB) of 1 instead of 1.5.",
+		shortDesc: "The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.",
+	},
 };

@@ -351,19 +351,10 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Has a 50% chance to poison the target. Power doubles if the target is already poisoned.",
 		shortDesc: "50% psn. 2x power if target already poisoned.",
 	},
-	barrage: {
-		name: "Barrage",
-		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
-		shortDesc: "Hits 2-5 times in one turn.",
-		gen4: {
-			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the target has a Focus Sash and had full HP when this move started, it will not be knocked out regardless of the number of hits.",
-		},
-		gen3: {
-			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
-		},
-		gen1: {
-			desc: "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
-		},
+	eggbarrage: {
+		name: "Egg Barrage",
+		desc: "Hits ten times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit ten times. If the user is holding Loaded Dice, this move hits four to ten times at random without checking accuracy between hits.",
+		shortDesc: "Hits 10 times. Each hit can miss.",
 	},
 	barrier: {
 		name: "Barrier",

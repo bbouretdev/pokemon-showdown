@@ -1080,20 +1080,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Poison",
 	},
-	barrage: {
+	eggbarrage: {
 		num: 140,
-		accuracy: 85,
-		basePower: 15,
+		accuracy: 90,
+		basePower: 20,
 		category: "Physical",
-		name: "Barrage",
-		pp: 20,
+		name: "Egg Barrage",
+		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1, bullet: 1},
-		multihit: [2, 5],
+		flags: {contact: 1, protect: 1, mirror: 1, slicing: 1},
+		multihit: 10,
+		multiaccuracy: true,
 		secondary: null,
 		target: "normal",
-		type: "Normal",
-		contestType: "Cute",
+		type: "Grass",
 	},
 	barrier: {
 		num: 112,
@@ -22014,4 +22014,45 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {basePower: 160},
 		contestType: "Clever",
 	},
+	coralreef: {
+		num: 10008,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Coral Reef",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, metronome: 1},
+		sideCondition: 'coralreef',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasItem('dampstone')) {
+					return 8;
+				}
+				return 5;
+			},
+			onDamagingHitOrder: 1,
+			onDamagingHit(damage, target, source, move) {
+				if (this.checkMoveMakesContact(move, source, target, true)) {
+					this.debug('Coral Reef damage');
+					this.damage(source.baseMaxhp / 8, source, target);
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Coral Reef');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Coral Reef');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Water",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+
 };
