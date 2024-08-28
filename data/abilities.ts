@@ -5897,7 +5897,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	hamstring: {
 		onModifyMove(move, pokemon, target) {
 			if (move.flags['kick']) {
-				move.secondaries.push({
+				move.secondaries?.push({
 					chance: 100,
 					boosts: {
 						spe: -1,
@@ -5910,20 +5910,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10016,
 	},
-	spiritualvengeance: {
+	sorrowfueled: {
 		onStart(pokemon) {
-			// TO DEBUG
-			// for (const ally of pokemon.allies()) {
-			// 	console.log(ally);
-			// }
-			// console.log(pokemon.side.faintedThisTurn);
 			if (pokemon.side.faintedThisTurn) {
-				this.add('-ability', pokemon, 'Spiritual Vengeance');
+				this.add('-ability', pokemon, 'Sorrow Fueled');
 				this.boost({atk: 1}, pokemon);
 			}
 		},
 		flags: {},
-		name: "Spiritual Vengeance",
+		name: "Sorrow Fueled",
 		rating: 3.5,
 		num: 10017,
 		custom: true,
@@ -5931,7 +5926,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	sunderarmor: {
 		onModifyMove(move, pokemon, target) {
 			if (move.flags['contact']) {
-				move.secondaries.push({
+				move.secondaries?.push({
 					chance: 100,
 					boosts: {
 						def: -1,
@@ -6153,15 +6148,5 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Hold Bane",
 		rating: 4,
 		num: 10030,
-	},
-	setvolatile: {
-		onStart(target, source, sourceEffect) {
-			this.add('-start', target, 'customvolatile');
-			target.addVolatile('customvolatile');
-		},
-		flags: {},
-		name: "Set Volatile",
-		rating: 4,
-		num: 10031,
 	},
 };

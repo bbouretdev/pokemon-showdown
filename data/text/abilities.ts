@@ -2352,8 +2352,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.",
 		shortDesc: "This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.",
 	},
-	spiritualvengeance: {
-		name: "Spiritual Vengeance",
+	sorrowfueled: {
+		name: "Sorrow Fueled",
 		desc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
 		shortDesc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
 	},
