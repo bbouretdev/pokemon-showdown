@@ -2457,7 +2457,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	netherward: {
 		name: "Nether Ward",
-		desc: "This Pokemon is immune to status moves if it is it's first turn on the field.",
-		shortDesc: "This Pokemon is immune to status moves if it is it's first turn on the field.",
+		desc: "This Pokemon is immune to status moves until it's first move.",
+		shortDesc: "This Pokemon is immune to status moves until it's first move.",
 	},
 };

@@ -6203,15 +6203,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10032,
 	},
 	symbioticlink: {
-		onFoeTryHeal(damage, target, source, effect) {
-			console.log('effect: ' + effect);
-			if (effect.effectType === "Move"){
+		onFoeModifyMove(move, pokemon, target) {
+			if (move.flags['heal'] && pokemon === target) {
 				for (const ally of target.foes()) {
 					this.add('-ability', ally, 'Symbiotic Link');
-					this.heal(damage, ally);
+					this.heal(ally.baseMaxhp / 4, ally);
 				}
 			}
 		},
+		// onFoe
+		// onFoeTryHeal(damage, target, source, effect) {
+		// 	console.log('effect: ' + effect);
+		// 	if (effect.effectType === "Move"){
+		// 		for (const ally of target.foes()) {
+		// 			this.add('-ability', ally, 'Symbiotic Link');
+		// 			this.heal(damage, ally);
+		// 		}
+		// 	}
+		// },
 		flags: {},
 		name: "Symbiotic Link",
 		rating: 2,
@@ -6260,7 +6269,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	netherward: {
 		onTryHitPriority: 2,
 		onTryHit(target, source, move) {
-			if (target.activeTurns = 1) {
+			if (target.activeMoveActions = 0) {
 				if (target !== source && move.category === 'Status') {
 					this.add('-activate', target, 'ability: Nether Ward');
 					return null;
