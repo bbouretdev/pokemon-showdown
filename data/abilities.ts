@@ -6165,7 +6165,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	suspicioustaste: {
 		onFoeTryHeal(damage, target, source, effect) {
-			console.log(effect);
 			if (!effect) return;
 			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Suspicious Taste');
@@ -6195,6 +6194,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			this.add('-activate', pokemon, 'ability: Suspicious Taste');
 		},
 		onFoeEatItem(item, pokemon) {
+			console.log('tryEat');
 			const weakenBerries = [
 				'Babiri Berry', 'Charti Berry', 'Chilan Berry', 'Chople Berry', 'Coba Berry', 'Colbur Berry', 'Haban Berry', 'Kasib Berry', 'Kebia Berry', 'Occa Berry', 'Passho Berry', 'Payapa Berry', 'Rindo Berry', 'Roseli Berry', 'Shuca Berry', 'Tanga Berry', 'Wacan Berry', 'Yache Berry',
 			];
