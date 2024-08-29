@@ -22102,4 +22102,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fighting",
 		contestType: "Cool",
 	},
+	swiftfin: {
+		num: 10011,
+		accuracy: 100,
+		basePower: 60,
+		category: "Physical",
+		name: "Swift Fin",
+		pp: 20,
+		priority: 2,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+		contestType: "Cool",
+	},
 };

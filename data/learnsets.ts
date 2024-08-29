@@ -17657,6 +17657,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "8L10", "7T", "7L16", "6T", "6L16", "5L17", "5D", "4M", "4L17", "3M"],
 			watersport: ["9M", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			whirlpool: ["9M", "8M", "4M"],
+			swiftfin: ["9M", "8M", "4M"],
 		},
 		encounters: [
 			{generation: 1, level: 5},
@@ -17738,6 +17739,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "8L1", "7T", "7L16", "6T", "6L16", "5L17", "5D", "4M", "4L17", "3M"],
 			watersport: ["9M", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			whirlpool: ["9M", "8M", "4M"],
+			swiftfin: ["9M", "8M", "4M"],
 		},
 		encounters: [
 			{generation: 1, level: 23},

@@ -7592,4 +7592,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "The opponent's secondary effects are removed.",
 		shortDesc: "The opponent's secondary effects are removed.",
 	},
+	swiftfin: {
+		name: "Swift Fin",
+		desc: "No additional effect.",
+		shortDesc: "Nearly always goes first.",
+	},
 };
