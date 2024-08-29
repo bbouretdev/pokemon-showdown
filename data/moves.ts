@@ -22054,5 +22054,52 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
 	},
-
+	electrodisable: {
+		num: 10009,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Electro Disable",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, metronome: 1},
+		volatileStatus: 'electrodisable',
+		condition: {
+			duration: 5,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Electro Disable');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Electro Disable');
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		zMove: {boost: {spa: 1}},
+		contestType: "Clever",
+	},
+	muteblow: {
+		num: 10010,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Mute Blow",
+		pp: 30,
+		priority: 1,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		volatileStatus: 'muteblow',
+		condition: {
+			onFoeModifyMove(move, pokemon, target) {
+				if (move.secondaries) delete move.secondaries;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
+		contestType: "Cool",
+	},
 };

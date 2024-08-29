@@ -2435,4 +2435,19 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "When this Pokemon eats certain Berries, the effects are reversed. Berries that restore HP or PP have the amount set to opposite, Berries that raise stat stages have the amount set to opposite, Berries that halve damage taken double it instead.",
 		shortDesc: "When this Pokemon eats certain Berries, the effects are reversed.",
 	},
+	symbioticlink: {
+		name: "Symbiotic Link",
+		desc: "When the opposite Pokemon heals itself, this Pokemon is healed of the same amount.",
+		shortDesc: "When the opposite Pokemon heals itself, this Pokemon is healed of the same amount.",
+	},
+	voltreturn: {
+		name: "Volt Return",
+		desc: "When this Pokemon is hit by an Electric-type move, the opposite Pokemon has 1/2 recoil.",
+		shortDesc: "When this Pokemon is hit by an Electric-type move, the opposite Pokemon has 1/2 recoil.",
+	},
+	polarityshift: {
+		name: "Polarity Shift",
+		desc: "On switch-in, this Pokemon disables the target's held item for 5 turns. An item's effect of causing forme changes is unaffected, but any other effects from such items are negated. During the effect, Fling and Natural Gift are prevented from being used by the target. Items thrown at the target with Fling will still activate for it. If the target uses Baton Pass, the replacement will remain unable to use items.",
+		shortDesc: "On switch-in, this Pokemon disables the target's item for 5 turns.",
+	},
 };

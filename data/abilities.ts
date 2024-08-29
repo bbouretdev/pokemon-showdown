@@ -6202,4 +6202,40 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10032,
 	},
+	symbioticlink: {
+		onFoeTryHeal(damage, target, source, effect) {
+			for (const ally of target.foes()) {
+				this.heal(damage, ally);
+			}
+		},
+		flags: {},
+		name: "Symbiotic Link",
+		rating: 2,
+		num: 10033,
+	},
+	voltreturn: {
+		onFoeModifyMove(move, pokemon, target) {
+			if (move.type === 'Electric') {
+				move.recoil = [1, 2];
+			}
+		},
+		flags: {},
+		name: "Volt Return",
+		rating: 2.5,
+		num: 10034,
+	},
+	polarityshift: {
+		onStart(source) {
+			for (const foe of source.foes()) {
+				if (!foe.volatiles['electrodisable']) {
+					this.add('-start', foe, 'electrodisable');
+					foe.addVolatile('electrodisable');
+				}
+			}
+		},
+		flags: {},
+		name: "Polarity Shift",
+		rating: 4,
+		num: 10035,
+	},
 };

@@ -8336,6 +8336,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9M", "8V", "7M", "6M", "5M", "4M"],
 			vacuumwave: ["9M", "4T"],
 			workup: ["9M", "7M", "5M"],
+			muteblow: ["9M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
@@ -8459,6 +8460,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9M", "8V", "7M", "6M", "5M", "4M"],
 			vacuumwave: ["9M", "4T"],
 			workup: ["9M", "7M", "5M"],
+			muteblow: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 34, abilities: ["vitalspirit"], moves: ["helpinghand", "crosschop", "focusenergy", "reversal"]},

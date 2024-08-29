@@ -7587,4 +7587,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  Coral Reef made [TEAM] hurt itself with contact moves!",
 		end: "  [TEAM]'s Coral Reef wore off!",
 	},
+	muteblow: {
+		name: "Mute Blow",
+		desc: "The opponent's secondary effects are removed.",
+		shortDesc: "The opponent's secondary effects are removed.",
+	},
 };
