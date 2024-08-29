@@ -6278,4 +6278,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 10036,
 	},
+	netherward: {
+		onTryHitPriority: 2,
+		onTryHit(target, source, move) {
+			if (target.activeMoveActions <= 1) {
+				if (target !== source && move.category === 'Status') {
+					this.add('-activate', target, 'ability: Nether Ward');
+					return;
+				}
+			}
+		},
+		flags: {},
+		name: "Nether Ward",
+		rating: 4,
+		num: 10035,
+	},
 };
