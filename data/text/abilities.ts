@@ -2452,9 +2452,12 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	telekineticfield: {
 		name: "Telekinetic Field",
-		desc: "On switch-in, this Pokemon summons Reflect.",
-		shortDesc: "On switch-in, this Pokemon summons Reflect.",
-
-		move: "#magiccoat",
+		desc: "On switch-in, this Pokemon summons Magic Bounce.",
+		shortDesc: "On switch-in, this Pokemon summons Magic Bounce.",
+	},
+	netherward: {
+		name: "Nether Ward",
+		desc: "This Pokemon is immune to status moves if it is it's first turn on the field.",
+		shortDesc: "This Pokemon is immune to status moves if it is it's first turn on the field.",
 	},
 };

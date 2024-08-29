@@ -6204,9 +6204,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	symbioticlink: {
 		onFoeTryHeal(damage, target, source, effect) {
-			for (const ally of target.foes()) {
-				this.add('-ability', ally, 'Symbiotic Link');
-				this.heal(damage, ally);
+			if (effect.effectType === "Move"){
+				for (const ally of target.foes()) {
+					this.add('-ability', ally, 'Symbiotic Link');
+					this.heal(damage, ally);
+				}
 			}
 		},
 		flags: {},
@@ -6243,48 +6245,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	telekineticfield: {
 		onStart(pokemon) {
 			const side = pokemon.side;
-			const reflect = side.sideConditions['magicbounce'];
-			if (!reflect) {
+			const telekineticfield = side.sideConditions['telekineticfield'];
+			if (!telekineticfield) {
 				this.add('-activate', pokemon, 'ability: Telekinetic Field');
-				side.addSideCondition('magicbounce', pokemon);
+				side.addSideCondition('telekineticfield', pokemon);
 			}
 		},
-		onTryHitPriority: 1,
-		onTryHit(target, source, move) {
-			if (target === source || move.hasBounced || !move.flags['reflectable']) {
-				return;
-			}
-			const newMove = this.dex.getActiveMove(move.id);
-			newMove.hasBounced = true;
-			newMove.pranksterBoosted = false;
-			this.actions.useMove(newMove, target, source);
-			return null;
-		},
-		onAllyTryHitSide(target, source, move) {
-			if (target.isAlly(source) || move.hasBounced || !move.flags['reflectable']) {
-				return;
-			}
-			const newMove = this.dex.getActiveMove(move.id);
-			newMove.hasBounced = true;
-			newMove.pranksterBoosted = false;
-			this.actions.useMove(newMove, this.effectState.target, source);
-			return null;
-		},
-		condition: {
-			duration: 3,
-		},
-		flags: {breakable: 1},
+		flags: {},
 		name: "Telekinetic Field",
-		rating: 4,
-		num: 10036,
+		rating: 2,
+		num: 10000,
 	},
 	netherward: {
 		onTryHitPriority: 2,
 		onTryHit(target, source, move) {
-			if (target.activeMoveActions <= 1) {
+			if (target.activeMoveActions <= 0) {
 				if (target !== source && move.category === 'Status') {
 					this.add('-activate', target, 'ability: Nether Ward');
-					return;
+					return null;
 				}
 			}
 		},

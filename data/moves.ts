@@ -22116,4 +22116,50 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		contestType: "Cool",
 	},
+	telekineticfield: {
+		num: 10012,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Telekinetic Field",
+		pp: 15,
+		priority: 4,
+		flags: {metronome: 1},
+		volatileStatus: 'telekineticfield',
+		condition: {
+			duration: 3,
+			onStart(target, source, effect) {
+				this.add('-singleturn', target, 'move: Telekinetic Field');
+				if (effect?.effectType === 'Move') {
+					this.effectState.pranksterBoosted = effect.pranksterBoosted;
+				}
+			},
+			onTryHitPriority: 2,
+			onTryHit(target, source, move) {
+				if (target === source || move.hasBounced || !move.flags['reflectable']) {
+					return;
+				}
+				const newMove = this.dex.getActiveMove(move.id);
+				newMove.hasBounced = true;
+				newMove.pranksterBoosted = this.effectState.pranksterBoosted;
+				this.actions.useMove(newMove, target, source);
+				return null;
+			},
+			onAllyTryHitSide(target, source, move) {
+				if (target.isAlly(source) || move.hasBounced || !move.flags['reflectable']) {
+					return;
+				}
+				const newMove = this.dex.getActiveMove(move.id);
+				newMove.hasBounced = true;
+				newMove.pranksterBoosted = false;
+				this.actions.useMove(newMove, this.effectState.target, source);
+				return null;
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Psychic",
+		zMove: {boost: {spd: 2}},
+		contestType: "Beautiful",
+	},
 };
