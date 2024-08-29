@@ -6204,6 +6204,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	symbioticlink: {
 		onFoeTryHeal(damage, target, source, effect) {
+			console.log('effect: ' + effect);
 			if (effect.effectType === "Move"){
 				for (const ally of target.foes()) {
 					this.add('-ability', ally, 'Symbiotic Link');
@@ -6259,7 +6260,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	netherward: {
 		onTryHitPriority: 2,
 		onTryHit(target, source, move) {
-			if (target.activeTurns = 0) {
+			if (target.activeTurns = 1) {
 				if (target !== source && move.category === 'Status') {
 					this.add('-activate', target, 'ability: Nether Ward');
 					return null;
