@@ -6169,21 +6169,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Suspicious Taste');
 			}
-			// if ((effect as Item).isBerry) {
-			// 	this.damage(damage * -1, target);
-			// }
 			if ((effect as Item).isBerry) {
 				this.damage(damage);
 				return 0;
 			}
 		},
-		onChangeBoost(boost, target, source, effect) {
-			if (effect && (effect as Item).isBerry) {
-				let b: BoostID;
-				for (b in boost) {
-					boost[b]! *= -1;
-				}
+		onFoeTryBoost(boost, target, source, effect) {
+			if (!source || target.isAlly(source)) {
+				return;
 			}
+			let i: BoostID;
+			for (i in boost) {
+				boost[i]! *= -1;
+			}	
 		},
 		onSourceModifyDamagePriority: -1,
 		onFoeModifyDamage(damage, source, target, move) {
