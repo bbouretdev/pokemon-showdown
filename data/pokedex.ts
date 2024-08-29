@@ -1136,7 +1136,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Gloom",
 		types: ["Grass", "Poison"],
 		baseStats: {hp: 60, atk: 65, def: 70, spa: 85, spd: 75, spe: 40},
-		abilities: {0: "Chlorophyll", H: "Stench"},
+		abilities: {0: "Chlorophyll", 1: "Suspicious Taste", H: "Stench"},
 		heightm: 0.8,
 		weightkg: 8.6,
 		color: "Blue",

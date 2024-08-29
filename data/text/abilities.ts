@@ -2430,4 +2430,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "The Opponent's moves that match one of its types have a same-type attack bonus (STAB) of 1 instead of 1.5.",
 		shortDesc: "The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.",
 	},
+	suspicioustaste: {
+		name: "Suspicious Taste",
+		desc: "When this Pokemon eats certain Berries, the effects are reversed. Berries that restore HP or PP have the amount set to opposite, Berries that raise stat stages have the amount set to opposite, Berries that halve damage taken double it instead.",
+		shortDesc: "When this Pokemon eats certain Berries, the effects are reversed.",
+	},
 };
