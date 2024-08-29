@@ -22155,6 +22155,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.actions.useMove(newMove, this.effectState.target, source);
 				return null;
 			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Telekinetic Field');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Telekinetic Field');
+			},
 		},
 		secondary: null,
 		target: "self",
