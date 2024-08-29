@@ -6165,7 +6165,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	suspicioustaste: {
 		onFoeTryHeal(damage, target, source, effect) {
-			console.log(effect);
 			if (!effect) return;
 			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Suspicious Taste');
@@ -6173,7 +6172,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// if ((effect as Item).isBerry) {
 			// 	this.damage(damage * -1, target);
 			// }
-			if ((effect as Item).isBerry) this.heal(damage * -1, target); // return this.chainModify(-1);
+			if ((effect as Item).isBerry) {
+				this.damage(damage);
+				return 0;
+			}
 		},
 		onChangeBoost(boost, target, source, effect) {
 			if (effect && (effect as Item).isBerry) {
