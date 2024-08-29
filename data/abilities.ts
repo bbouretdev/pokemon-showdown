@@ -6169,7 +6169,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Suspicious Taste');
 			}
-			if ((effect as Item).isBerry) return this.chainModify(-1);
+			if ((effect as Item).isBerry) return damage * -1;
+			// if ((effect as Item).isBerry) return this.chainModify(-1);
 		},
 		onChangeBoost(boost, target, source, effect) {
 			if (effect && (effect as Item).isBerry) {
@@ -6211,16 +6212,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		// onFoe
-		// onFoeTryHeal(damage, target, source, effect) {
-		// 	console.log('effect: ' + effect);
-		// 	if (effect.effectType === "Move"){
-		// 		for (const ally of target.foes()) {
-		// 			this.add('-ability', ally, 'Symbiotic Link');
-		// 			this.heal(damage, ally);
-		// 		}
-		// 	}
-		// },
 		flags: {},
 		name: "Symbiotic Link",
 		rating: 2,
@@ -6265,20 +6256,5 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Telekinetic Field",
 		rating: 2,
 		num: 10000,
-	},
-	netherward: {
-		onTryHitPriority: 2,
-		onTryHit(target, source, move) {
-			if (target.activeMoveActions = 0) {
-				if (target !== source && move.category === 'Status') {
-					this.add('-activate', target, 'ability: Nether Ward');
-					return null;
-				}
-			}
-		},
-		flags: {},
-		name: "Nether Ward",
-		rating: 4,
-		num: 10035,
 	},
 };
