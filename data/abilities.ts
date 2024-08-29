@@ -6170,6 +6170,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-activate', target, 'ability: Suspicious Taste');
 			}
 			if ((effect as Item).isBerry) {
+				console.log(effect);
 				this.damage(damage * -1, target);
 			}
 			// if ((effect as Item).isBerry) return this.chainModify(-1);
