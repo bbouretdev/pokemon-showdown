@@ -6169,7 +6169,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect.name === 'Berry Juice' || effect.name === 'Leftovers') {
 				this.add('-activate', target, 'ability: Suspicious Taste');
 			}
-			if ((effect as Item).isBerry) return damage * -1;
+			if ((effect as Item).isBerry) {
+				this.damage(damage * -1, target);
+			}
 			// if ((effect as Item).isBerry) return this.chainModify(-1);
 		},
 		onChangeBoost(boost, target, source, effect) {
