@@ -6175,10 +6175,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onFoeTryBoost(boost, target, source, effect) {
-			console.log(effect);
-			// if (!source || target.isAlly(source)) {
-			// 	return;
-			// }
 			if ((effect as Item).isBerry) {
 				let i: BoostID;
 				const alteredBoost: SparseBoostsTable = {};
@@ -6187,12 +6183,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (boost[i]! < 0) alteredBoost[i] = boost[i];
 					delete boost[i];
 				}
-				console.log(alteredBoost);
 				this.boost(alteredBoost, source, target, null, true);
 			}
 		},
 		onSourceModifyDamagePriority: -1,
 		onFoeModifyDamage(damage, source, target, move) {
+			console.log('onFoeModifyDamage');
 			if (target.abilityState.berryWeaken) {
 				target.abilityState.berryWeaken = false;
 				return this.chainModify(2);
@@ -6208,6 +6204,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			];
 			// Record if the pokemon ate a berry to resist the attack
 			pokemon.abilityState.berryWeaken = weakenBerries.includes(item.name);
+			console.log('onFoeEatItem');
 		},
 		flags: {},
 		name: "Suspicious Taste",
