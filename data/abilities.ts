@@ -6179,7 +6179,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// if (!source || target.isAlly(source)) {
 			// 	return;
 			// }
-			if (effect) {
+			if ((effect as Item).isBerry) {
 				let i: BoostID;
 				const alteredBoost: SparseBoostsTable = {};
 				for (i in boost) {
