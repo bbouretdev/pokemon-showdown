@@ -6174,30 +6174,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				return 0;
 			}
 		},
-		onChangeBoost(boost, target, source, effect) {
-			console.log('woof');
-			if (effect && effect.id === 'zpower') return;
-			let i: BoostID;
-			for (i in boost) {
-				boost[i]! *= -1;
+		onFoeTryBoost(boost, target, source, effect) {
+			// console.log(boost);
+			// if (!source || target.isAlly(source)) {
+			// 	return;
+			// }
+			if (effect) {
+				let i: BoostID;
+				const alteredBoost: SparseBoostsTable = {};
+				for (i in boost) {
+					boost[i]! *= -1;
+					if (boost[i]! < 0) alteredBoost[i] = boost[i];
+					delete boost[i];
+				}
+				console.log(alteredBoost);
+				// this.boost(alteredBoost, source, target, null, true);
 			}
 		},
-		// onFoeTryBoost(boost, target, source, effect) {
-		// 	// console.log(boost);
-		// 	// if (!source || target.isAlly(source)) {
-		// 	// 	return;
-		// 	// }
-		// 	if (effect) {
-		// 		let i: BoostID;
-		// 		const alteredBoost: SparseBoostsTable = {};
-		// 		for (i in boost) {
-		// 			boost[i]! *= -1;
-		// 			alteredBoost[i] = boost[i];
-		// 			delete boost[i];
-		// 		}
-		// 		this.boost(alteredBoost, source, target, null, true);
-		// 	}
-		// },
 		onSourceModifyDamagePriority: -1,
 		onFoeModifyDamage(damage, source, target, move) {
 			if (target.abilityState.berryWeaken) {
