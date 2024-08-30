@@ -6180,10 +6180,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			// 	return;
 			// }
 			let i: BoostID;
+			const alteredBoost: SparseBoostsTable = {};
 			for (i in boost) {
-				console.log(boost[i]);
-				this.boost({spa: 2}, target, target, null, false, true);
-			}	
+				boost[i]! *= -1;
+				alteredBoost[i] = boost[i];
+				delete boost[i];
+				this.boost(alteredBoost, source, target, null, true);
+			}
 		},
 		onSourceModifyDamagePriority: -1,
 		onFoeModifyDamage(damage, source, target, move) {
