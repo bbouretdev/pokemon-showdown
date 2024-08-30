@@ -6266,17 +6266,43 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	overcome: {
 		onModifyDamage(relayVar, source, target, move) {
 			let targetBasestats = target.species.baseStats;
-			// let targetBST = targetBasestats['hp']+targetBasestats['atk']+targetBasestats['def']+targetBasestats['spa']+targetBasestats['spd']+targetBasestats['spe'];
 			const targetBST = Object.values(targetBasestats).reduce((sum, stat) => sum + stat, 0);
 			let sourceBasestats = source.species.baseStats;
-			// let sourceBST = sourceBasestats['hp']+sourceBasestats['atk']+sourceBasestats['def']+sourceBasestats['spa']+sourceBasestats['spd']+sourceBasestats['spe'];
 			const sourceBST = Object.values(sourceBasestats).reduce((sum, stat) => sum + stat, 0);
-			console.log('sourceBST: ' + sourceBST+ '; targetBST: ' + targetBST);
 			if (sourceBST <= targetBST) return this.chainModify(1.5);
 		},
 		flags: {},
 		name: "Overcome",
 		rating: 2,
 		num: 10037,
+	},
+	budding: {
+		onModifySpDPriority: 5,
+		onModifySpD(spd, pokemon) {
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(1.5);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.heal(target.baseMaxhp / 16, target, target);
+			}
+		},
+		flags: {},
+		name: "Budding",
+		rating: 2,
+		num: 10038,
+	},
+	furytalons: {
+		onModifyMove(move, pokemon, target) {
+			if (move.multihit) {
+				move.critRatio = 2;
+			}
+		},
+		flags: {},
+		name: "Fury Talons",
+		rating: 2,
+		num: 10039,
 	},
 };

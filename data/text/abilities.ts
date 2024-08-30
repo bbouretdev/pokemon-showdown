@@ -2460,4 +2460,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.",
 		shortDesc: "If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.",
 	},
+	budding: {
+		name: "Budding",
+		desc: "If Sunny Day is active, this Pokemon's Special Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokemon's Sp. Def is 1.5x; heals 1/16 max HP per turn.",
+	},
 };

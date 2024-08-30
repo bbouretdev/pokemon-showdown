@@ -22170,4 +22170,24 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {boost: {spd: 2}},
 		contestType: "Beautiful",
 	},
+	galeassault: {
+		num: 10013,
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+		name: "Gale Assault",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 140},
+	},
 };

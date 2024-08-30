@@ -549,6 +549,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M", "8M"],
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 			workup: ["9M", "8M", "7M"],
+			closecombat: ["9M", "7V", "6M", "5M", "4M", "3M"],
 		},
 	},
 	charizard: {
@@ -915,6 +916,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			withdraw: ["9M", "9L1", "8L1", "8V", "7L10", "7V", "6L10", "5L10", "4L10", "3L10"],
 			workup: ["9M", "8M", "7M"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			closecombat: ["9M", "7V"],
 		},
 	},
 	blastoise: {
@@ -1432,6 +1434,13 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlwind: ["9M", "8V", "7L17", "7V", "6L17", "5L17", "4L17", "3L20"],
 			wingattack: ["9M", "8V", "7L37", "7V", "6L37", "5L37", "4L37", "3L27", "3S0"],
 			workup: ["9M", "7M", "5M"],
+			bulletseed: ["9M", "7M", "5M"],
+			doublehit: ["9M", "7M", "5M"],
+			dualwingbeat: ["9M", "7M", "5M"],
+			pinmissile: ["9M", "7M", "5M"],
+			rockblast: ["9M", "7M", "5M"],
+			tailslap: ["9M", "7M", "5M"],
+			galeassault: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, abilities: ["keeneye"], moves: ["refresh", "wingattack", "steelwing", "featherdance"]},
