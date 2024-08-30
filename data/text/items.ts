@@ -2425,4 +2425,8 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	protoite: {
+		name: "Protoite",
+		shortDesc: "If holder's species can evolve, its Attack and Sp. Atk are 1.5x.",
+	},
 };

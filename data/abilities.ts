@@ -6261,6 +6261,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Telekinetic Field",
 		rating: 2,
-		num: 10000,
+		num: 10036,
+	},
+	overcome: {
+		onModifyDamage(relayVar, source, target, move) {
+			let targetBasestats = target.species.baseStats;
+			let targetBST = targetBasestats['hp']+targetBasestats['atk']+targetBasestats['def']+targetBasestats['spa']+targetBasestats['spd']+targetBasestats['spe'];
+			let sourceBasestats = source.species.baseStats;
+			let sourceBST = sourceBasestats['hp']+sourceBasestats['atk']+sourceBasestats['def']+sourceBasestats['spa']+sourceBasestats['spd']+sourceBasestats['spe'];
+			if (sourceBST <= targetBST) return this.chainModify(1.5);
+		},
+		flags: {},
+		name: "Overcome",
+		rating: 2,
+		num: 10037,
 	},
 };
