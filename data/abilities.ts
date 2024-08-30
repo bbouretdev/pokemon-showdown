@@ -6266,9 +6266,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	overcome: {
 		onModifyDamage(relayVar, source, target, move) {
 			let targetBasestats = target.species.baseStats;
-			let targetBST = targetBasestats['hp']+targetBasestats['atk']+targetBasestats['def']+targetBasestats['spa']+targetBasestats['spd']+targetBasestats['spe'];
+			// let targetBST = targetBasestats['hp']+targetBasestats['atk']+targetBasestats['def']+targetBasestats['spa']+targetBasestats['spd']+targetBasestats['spe'];
+			const targetBST = Object.values(targetBasestats).reduce((sum, stat) => sum + stat, 0);
 			let sourceBasestats = source.species.baseStats;
-			let sourceBST = sourceBasestats['hp']+sourceBasestats['atk']+sourceBasestats['def']+sourceBasestats['spa']+sourceBasestats['spd']+sourceBasestats['spe'];
+			// let sourceBST = sourceBasestats['hp']+sourceBasestats['atk']+sourceBasestats['def']+sourceBasestats['spa']+sourceBasestats['spd']+sourceBasestats['spe'];
+			const sourceBST = Object.values(sourceBasestats).reduce((sum, stat) => sum + stat, 0);
+			console.log('sourceBST: ' + sourceBST+ '; targetBST: ' + targetBST);
 			if (sourceBST <= targetBST) return this.chainModify(1.5);
 		},
 		flags: {},
