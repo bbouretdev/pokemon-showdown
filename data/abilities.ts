@@ -6186,8 +6186,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost(alteredBoost, source, target, null, true);
 			}
 		},
+		onFoeSetStatus(status, target, source, effect) {
+			console.log(target.abilityState.berryStatused);
+			if (target.abilityState.berryStatused) {
+				target.abilityState.berryStatused = false;
+				// if (target.hasItem('pechaberry') && ['psn','tox'].includes(status.name)) {
+				if (target.hasItem('pechaberry')) {
+					target.setStatus('tox');
+				}
+			}
+		},
 		onAnyModifyDamage(damage, source, target, move) {
-			console.log('onAnyModifyDamage');
 			if (target.abilityState.berryWeaken) {
 				target.abilityState.berryWeaken = false;
 				// *4 instead of *2 because we cannot disable the previous *0.5 damage from berry effect
@@ -6202,9 +6211,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const weakenBerries = [
 				'Babiri Berry', 'Charti Berry', 'Chilan Berry', 'Chople Berry', 'Coba Berry', 'Colbur Berry', 'Haban Berry', 'Kasib Berry', 'Kebia Berry', 'Occa Berry', 'Passho Berry', 'Payapa Berry', 'Rindo Berry', 'Roseli Berry', 'Shuca Berry', 'Tanga Berry', 'Wacan Berry', 'Yache Berry',
 			];
+			const statusBerries = [
+				'Pecha Berry', 'Rawst Berry', 'Cheri Berry', 'Aspear Berry'
+			];
 			// Record if the pokemon ate a berry to resist the attack
 			pokemon.abilityState.berryWeaken = weakenBerries.includes(item.name);
-			console.log('onFoeEatItem');
+			pokemon.abilityState.berryStatused = statusBerries.includes(item.name);
 		},
 		flags: {},
 		name: "Suspicious Taste",
