@@ -6175,7 +6175,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onFoeTryBoost(boost, target, source, effect) {
-			// console.log(boost);
+			console.log(effect);
 			// if (!source || target.isAlly(source)) {
 			// 	return;
 			// }
@@ -6188,7 +6188,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					delete boost[i];
 				}
 				console.log(alteredBoost);
-				// this.boost(alteredBoost, source, target, null, true);
+				this.boost(alteredBoost, source, target, null, true);
 			}
 		},
 		onSourceModifyDamagePriority: -1,
