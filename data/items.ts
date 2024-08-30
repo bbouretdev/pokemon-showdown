@@ -305,8 +305,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onEat(pokemon) {
+			let foeHasSuspiciousTasteAbility = false;
 			if (pokemon.status === 'frz') {
-				pokemon.cureStatus();
+				for(const foe of pokemon.foes()) {
+					if (foe.ability === 'suspicioustaste') foeHasSuspiciousTasteAbility = true;
+				}
+				if (!foeHasSuspiciousTasteAbility) {
+					pokemon.cureStatus();
+				}
+				else {
+					pokemon.damage(pokemon.baseMaxhp / 4);
+				}
 			}
 		},
 		num: 153,
@@ -829,8 +838,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onEat(pokemon) {
+			let foeHasSuspiciousTasteAbility = false;
 			if (pokemon.status === 'par') {
-				pokemon.cureStatus();
+				for(const foe of pokemon.foes()) {
+					if (foe.ability === 'suspicioustaste') foeHasSuspiciousTasteAbility = true;
+				}
+				if (!foeHasSuspiciousTasteAbility) {
+					pokemon.cureStatus();
+				}
+				else {
+					pokemon.damage(pokemon.baseMaxhp / 4);
+				}
 			}
 		},
 		num: 149,
@@ -4128,8 +4146,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onEat(pokemon) {
+			let foeHasSuspiciousTasteAbility = false;
 			if (pokemon.status === 'psn' || pokemon.status === 'tox') {
-				pokemon.cureStatus();
+				for(const foe of pokemon.foes()) {
+					if (foe.ability === 'suspicioustaste') foeHasSuspiciousTasteAbility = true;
+				}
+				if (!foeHasSuspiciousTasteAbility) {
+					pokemon.cureStatus();
+				}
+				else {
+					pokemon.damage(pokemon.baseMaxhp / 4);
+				}
 			}
 		},
 		num: 151,
@@ -4657,8 +4684,17 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		onEat(pokemon) {
+			let foeHasSuspiciousTasteAbility = false;
 			if (pokemon.status === 'brn') {
-				pokemon.cureStatus();
+				for(const foe of pokemon.foes()) {
+					if (foe.ability === 'suspicioustaste') foeHasSuspiciousTasteAbility = true;
+				}
+				if (!foeHasSuspiciousTasteAbility) {
+					pokemon.cureStatus();
+				}
+				else {
+					pokemon.damage(pokemon.baseMaxhp / 4);
+				}
 			}
 		},
 		num: 152,
