@@ -6186,6 +6186,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost(alteredBoost, source, target, null, true);
 			}
 		},
+		onAnyModifyDamage(damage, source, target, move) {
+			console.log('onAnyModifyDamage');
+			if (target.abilityState.berryWeaken) {
+				target.abilityState.berryWeaken = false;
+				return this.chainModify(2);
+			}
+		},
 		onSourceModifyDamagePriority: -1,
 		onSourceModifyDamage(damage, source, target, move) {
 			console.log('onFoeModifyDamage');
