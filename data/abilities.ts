@@ -6175,6 +6175,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onFoeTryBoost(boost, target, source, effect) {
+			console.log(boost);
 			if (!source || target.isAlly(source)) {
 				return;
 			}
