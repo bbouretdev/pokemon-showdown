@@ -6187,7 +6187,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onSourceModifyDamagePriority: -1,
-		onFoeModifyDamage(damage, source, target, move) {
+		onSourceModifyDamage(damage, source, target, move) {
 			console.log('onFoeModifyDamage');
 			if (target.abilityState.berryWeaken) {
 				target.abilityState.berryWeaken = false;
