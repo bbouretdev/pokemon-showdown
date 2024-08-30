@@ -6190,15 +6190,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			console.log('onAnyModifyDamage');
 			if (target.abilityState.berryWeaken) {
 				target.abilityState.berryWeaken = false;
-				return this.chainModify(2);
-			}
-		},
-		onSourceModifyDamagePriority: -1,
-		onSourceModifyDamage(damage, source, target, move) {
-			console.log('onFoeModifyDamage');
-			if (target.abilityState.berryWeaken) {
-				target.abilityState.berryWeaken = false;
-				return this.chainModify(2);
+				// *4 instead of *2 because we cannot disable the previous *0.5 damage from berry effect
+				return this.chainModify(4);
 			}
 		},
 		onTryEatItemPriority: -1,
