@@ -6186,8 +6186,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					boost[i]! *= -1;
 					alteredBoost[i] = boost[i];
 					delete boost[i];
-					this.boost(alteredBoost, source, target, null, true);
 				}
+				this.boost(alteredBoost, source, target, null, true);
 			}
 		},
 		onSourceModifyDamagePriority: -1,
