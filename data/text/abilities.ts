@@ -2455,9 +2455,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon summons Magic Bounce.",
 		shortDesc: "On switch-in, this Pokemon summons Magic Bounce.",
 	},
-	netherward: {
-		name: "Nether Ward",
-		desc: "This Pokemon is immune to status moves until it's first move.",
-		shortDesc: "This Pokemon is immune to status moves until it's first move.",
+	overcome: {
+		name: "Overcome",
+		desc: "If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.",
+		shortDesc: "If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.",
 	},
 };

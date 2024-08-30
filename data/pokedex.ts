@@ -80,7 +80,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Fire"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 39, atk: 52, def: 43, spa: 60, spd: 50, spe: 65},
-		abilities: {0: "Blaze", H: "Solar Power"},
+		abilities: {0: "Blaze", 1: "Overcome", H: "Solar Power"},
 		heightm: 0.6,
 		weightkg: 8.5,
 		color: "Red",
