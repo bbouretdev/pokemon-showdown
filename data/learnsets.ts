@@ -5879,6 +5879,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["9M", "8M", "7M", "5M"],
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M"],
+			soothingsong: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
@@ -6041,6 +6042,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["9M", "8M", "7M", "5M"],
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M"],
+			soothingsong: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 22},

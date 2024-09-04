@@ -7672,9 +7672,17 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	sanddyke: {
 		name: "Sand Dyke",
 		desc: "For 5 turns, the user and its party members takes Water-type damage reduced by 0.75, rounded down. Also raises Defense by 2. Lasts for 8 turns if the user is holding Soft Sand.",
-		shortDesc: "For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit",
+		shortDesc: "For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit.",
 
 		start: "  Sand Dyke made [TEAM] stronger against Water moves!",
 		end: "  [TEAM]'s Sand Dyke wore off!",
+	},
+	soothingsong: {
+		name: "Soothing Song",
+		desc: "For 5 turns, the user and its party members are immune to Taunt.",
+		shortDesc: "For 5 turns, the user and its party members are immune to Taunt.",
+
+		start: "  Soothing Song made [TEAM] immune against Taunt!",
+		end: "  [TEAM]'s Soothing Song wore off!",
 	},
 };

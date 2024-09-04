@@ -22035,6 +22035,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onDamagingHitOrder: 1,
 			onDamagingHit(damage, target, source, move) {
 				if (this.checkMoveMakesContact(move, source, target, true)) {
+					this.add('-activate', target, 'move: Coral Reef');
 					this.debug('Coral Reef damage');
 					this.damage(source.baseMaxhp / 8, source, target);
 				}
@@ -22541,6 +22542,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onDamagingHit(damage, target, source, move) {
 				if (move.type === 'Water') {
 					this.debug('Sand Dyke boost');
+					this.add('-activate', target, 'move: Sand Dyke');
 					this.boost({def: 2});
 				}
 			},
@@ -22562,6 +22564,39 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "allySide",
 		type: "Ground",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	soothingsong: {
+		num: 10027,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Soothing Song",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, metronome: 1},
+		sideCondition: 'soothingsong',
+		condition: {
+			duration: 5,
+			onTryHit(pokemon, target, move) {
+				if (move.id === 'taunt') {
+					this.add('-immune', target, 'move: Soothing Song');
+					return null;
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Soothing Song');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Soothing Song');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Fairy",
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
 	},
