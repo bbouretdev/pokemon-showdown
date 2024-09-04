@@ -1624,7 +1624,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Body Slam",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1, rush: 1},
 		secondary: {
 			chance: 30,
 			status: 'par',
@@ -3981,7 +3981,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Double-Edge",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [33, 100],
 		secondary: null,
 		target: "normal",
@@ -4399,7 +4399,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Drill Run",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		critRatio: 2,
 		secondary: null,
 		target: "normal",
@@ -5798,7 +5798,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Flare Blitz",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, defrost: 1, metronome: 1, rush: 1},
 		recoil: [33, 100],
 		secondary: {
 			chance: 10,
@@ -6748,7 +6748,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Giga Impact",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		self: {
 			volatileStatus: 'mustrecharge',
 		},
@@ -8426,7 +8426,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Head Charge",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [1, 4],
 		secondary: null,
 		target: "normal",
@@ -8460,7 +8460,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Head Smash",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [1, 2],
 		secondary: null,
 		target: "normal",
@@ -9194,7 +9194,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Horn Attack",
 		pp: 25,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -9208,7 +9208,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Horn Drill",
 		pp: 5,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		ohko: true,
 		secondary: null,
 		target: "normal",
@@ -9977,7 +9977,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Iron Head",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		secondary: {
 			chance: 30,
 			volatileStatus: 'flinch',
@@ -11854,7 +11854,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Megahorn",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		secondary: null,
 		target: "normal",
 		type: "Bug",
@@ -13307,7 +13307,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Ominous Wind",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
 		secondary: {
 			chance: 10,
 			self: {
@@ -15168,7 +15168,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Razor Wind",
 		pp: 10,
 		priority: 0,
-		flags: {charge: 1, protect: 1, mirror: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1},
+		flags: {charge: 1, protect: 1, mirror: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1, wind: 1},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -16914,7 +16914,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Silver Wind",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
 		secondary: {
 			chance: 10,
 			self: {
@@ -17117,7 +17117,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Skull Bash",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1},
+		flags: {contact: 1, charge: 1, protect: 1, mirror: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1, rush: 1},
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile(move.id)) {
 				return;
@@ -19362,7 +19362,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Tackle",
 		pp: 35,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -19470,7 +19470,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Take Down",
 		pp: 20,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [1, 4],
 		secondary: null,
 		target: "normal",
@@ -21292,7 +21292,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wave Crash",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [33, 100],
 		secondary: null,
 		target: "normal",
@@ -21496,7 +21496,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Wild Charge",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		recoil: [1, 4],
 		secondary: null,
 		target: "normal",
@@ -21814,7 +21814,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Zen Headbutt",
 		pp: 15,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
 		secondary: {
 			chance: 20,
 			volatileStatus: 'flinch',
@@ -22189,5 +22189,380 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		zMove: {basePower: 120},
 		maxMove: {basePower: 140},
+	},
+	bullseyerush: {
+		num: 10014,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Bullseye Rush",
+		pp: 15,
+		priority: 0,
+		flags: {snatch: 1, metronome: 1},
+		boosts: {
+			spe: 1,
+			accuracy: 1,
+		},
+		secondary: null,
+		target: "self",
+		type: "Normal",
+		zMove: {boost: {atk: 1}},
+		contestType: "Cute",
+	},
+	tideblaster: {
+		num: 10015,
+		accuracy: 90,
+		basePower: 80,
+		category: "Special",
+		name: "Tide Blaster",
+		pp: 35,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, bullet: 1, pulse: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spa: 1,
+					accuracy: -1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Water",
+		contestType: "Cool",
+	},
+	thornyguard: {
+		num: 10016,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Thorny Guard",
+		pp: 10,
+		priority: 4,
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'thornyguard',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect');
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				const side = source.isAlly(target) ? source.side.foe : source.side;
+				const spikes = side.sideConditions['spikes'];
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				if (this.checkMoveMakesContact(move, source, target)) {
+					if (!spikes || spikes.layers < 3) {
+						side.addSideCondition('spikes', target);
+					}
+				}
+				return this.NOT_FAIL;
+			},
+			onHit(target, source, move) {
+				const side = source.isAlly(target) ? source.side.foe : source.side;
+				const spikes = side.sideConditions['spikes'];
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					if (!spikes || spikes.layers < 3) {
+						side.addSideCondition('spikes', target);
+					}
+				}
+			},
+		},
+		target: "self",
+		type: "Steel",
+	},
+	venomguard: {
+		num: 10017,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Venom Guard",
+		pp: 10,
+		priority: 4,
+		flags: {},
+		stallingMove: true,
+		volatileStatus: 'venomguard',
+		onPrepareHit(pokemon) {
+			return !!this.queue.willAct() && this.runEvent('StallMove', pokemon);
+		},
+		onHit(pokemon) {
+			pokemon.addVolatile('stall');
+		},
+		condition: {
+			duration: 1,
+			onStart(target) {
+				this.add('-singleturn', target, 'Protect');
+			},
+			onTryHitPriority: 3,
+			onTryHit(target, source, move) {
+				const side = source.isAlly(target) ? source.side.foe : source.side;
+				const toxicspikes = side.sideConditions['toxicspikes'];
+				if (!move.flags['protect'] || move.category === 'Status') {
+					if (move.isZ || move.isMax) target.getMoveHitData(move).zBrokeProtect = true;
+					return;
+				}
+				if (move.smartTarget) {
+					move.smartTarget = false;
+				} else {
+					this.add('-activate', target, 'move: Protect');
+				}
+				const lockedmove = source.getVolatile('lockedmove');
+				if (lockedmove) {
+					// Outrage counter is reset
+					if (source.volatiles['lockedmove'].duration === 2) {
+						delete source.volatiles['lockedmove'];
+					}
+				}
+				if (this.checkMoveMakesContact(move, source, target)) {
+					if (!toxicspikes || toxicspikes.layers < 2) {
+						side.addSideCondition('toxicspikes', target);
+					}
+				}
+				return this.NOT_FAIL;
+			},
+			onHit(target, source, move) {
+				const side = source.isAlly(target) ? source.side.foe : source.side;
+				const toxicspikes = side.sideConditions['toxicspikes'];
+				if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
+					if (!toxicspikes || toxicspikes.layers < 2) {
+						side.addSideCondition('toxicspikes', target);
+					}
+				}
+			},
+		},
+		target: "self",
+		type: "Poison",
+	},
+	triplestinger: {
+		num: 10018,
+		accuracy: 90,
+		basePower: 20,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+		name: "Triple Stinger",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		multihit: 3,
+		multiaccuracy: true,
+		secondary: {
+			chance: 10,
+			status: 'tox',
+		},
+		target: "normal",
+		type: "Poison",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 140},
+	},
+	aerodash: {
+		num: 10019,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Aero Dash",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		secondary: {
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Flying",
+		contestType: "Cool",
+	},
+	dunecyclone: {
+		num: 10020,
+		accuracy: 100,
+		basePower: 75,
+		basePowerCallback(pokemon, target, move) {
+			const rockWeakTypes = ['Ice','Flying','Bug','Fire'];
+			if (target?.effectiveWeather() === 'sandstorm') {
+				for (const weakType of rockWeakTypes) {
+					if (target.hasType(weakType)) {
+						return move.basePower * 1.5;
+					}
+				}
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		name: "Dune Cyclone",
+		pp: 35,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
+		weather: 'Sandstorm',
+		secondary: null,
+		target: "all",
+		type: "Flying",
+		contestType: "Clever",
+	},
+	biteandseek: {
+		num: 10021,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Bite And Seek",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, pivot: 1, bite: 1},
+		selfSwitch: true,
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Cute",
+	},
+	crueltalon: {
+		num: 10022,
+		accuracy: 100,
+		basePower: 80,
+		onModifyMove(move, pokemon, target) {
+			if (target?.status) move.willCrit = true;
+		},
+		category: "Physical",
+		name: "Cruel Talon",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+	},
+	slitherstrike: {
+		num: 10023,
+		accuracy: 100,
+		basePower: 90,
+		category: "Physical",
+		name: "Slither Strike",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
+		ignoreDefensive: true,
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Beautiful",
+	},
+	stonegaze: {
+		num: 10024,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Stone Gaze",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, allyanim: 1, metronome: 1},
+		onHit(target) {
+			if (target.getTypes().join() === 'Rock' || !target.setType('Rock')) {
+				this.add('-fail', target);
+				return null;
+			}
+			this.add('-start', target, 'typechange', 'Rock');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Rock",
+		zMove: {boost: {spa: 1}},
+		contestType: "Cute",
+	},
+	burrowstrike: {
+		num: 10025,
+		accuracy: 100,
+		basePower: 50,
+		category: "Physical",
+		name: "Burrow Strike",
+		pp: 10,
+		priority: 3,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onTry(source) {
+			if (source.activeMoveActions > 1) {
+				this.hint("Burrow Strike only works on your first turn out.");
+				return false;
+			}
+		},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Ground",
+		contestType: "Cute",
+	},
+	sanddyke: {
+		num: 10026,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Sand Dyke",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, metronome: 1},
+		sideCondition: 'sanddyke',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasItem('softsand')) {
+					return 8;
+				}
+				return 5;
+			},
+			onDamagingHitOrder: 1,
+			onDamagingHit(damage, target, source, move) {
+				if (move.type === 'Water') {
+					this.debug('Sand Dyke boost');
+					this.boost({def: 2});
+				}
+			},
+			onSourceModifyDamage(damage, source, target, move) {
+				if (move.type === 'Water') {
+					this.debug('Sand Dyke neutralize');
+					return this.chainModify(0.75);
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Sand Dyke');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Sand Dyke');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Ground",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
 	},
 };

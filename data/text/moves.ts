@@ -7581,7 +7581,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	coralreef: {
 		name: "Coral Reef",
-		desc: "For 5 turns, the user and its party members lose 1/8 of their maximum HP when using contact moves, rounded down.",
+		desc: "For 5 turns, the user and its party members lose 1/8 of their maximum HP when using contact moves, rounded down. Lasts for 8 turns if the user is holding Damp Rock.",
 		shortDesc: "For 5 turns, the user and its party members lose 1/8 of their maximum HP when using contact moves.",
 
 		start: "  Coral Reef made [TEAM] hurt itself with contact moves!",
@@ -7601,5 +7601,80 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		name: "Gale Assault",
 		desc: "Hits three times. Power increases to 40 for the second hit and 60 for the third. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
 		shortDesc: "Hits 3 times. Each hit can miss, but power rises.",
+	},
+	bullseyerush: {
+		name: "Bullseye Rush",
+		desc: "Raises the user's Speed and accuracy by 1 stage.",
+		shortDesc: "Raises the user's Speed and accuracy by 1.",
+	},
+	tideblaster: {
+		name: "Tide Blaster",
+		desc: "Has a 100% chance to raise the user's Special Attack and to lower Accuracy by 1 stage.",
+		shortDesc: "100% chance to raise the user's Special Attack and to lower Accuracy by 1.",
+	},
+	oceancleaner: {
+		name: "Ocean Cleaner",
+		desc: "This Pokemon offensive Water-type moves clear terrain and hazards on both sides.",
+		shortDesc: "This Pokemon offensive Water-type moves clear terrain and hazards on both sides.",
+	},
+	thornyguard: {
+		name: "Thorny Guard",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, any contact with the user will set 1 Spikes range. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: 1 Spikes range.",
+	},
+	venomguard: {
+		name: "Venom Guard",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, any contact with the user will set 1 Spikes range. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: 1 Spikes range.",
+	},
+	triplestinger: {
+		name: "Triple Stinger",
+		desc: "Hits three times. Power increases to 40 for the second hit and 60 for the third. Has a 10% chance to badly poison the target. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
+		shortDesc: "Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target",
+	},
+	aerodash: {
+		name: "Aero Dash",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	dunecyclone: {
+		name: "Dune Cyclone",
+		desc: "Sets Sandstorm. If Sandstorm is active, boosts 1.5 this move's damage against Ice, Flying, Fire and Bug types.",
+		shortDesc: "Sets Sandstorm. If Sandstorm active, damage against Ice, Flying, Fire and Bug are x1.5.",
+	},
+	biteandseek: {
+		name: "Bite And Seek",
+		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+		shortDesc: "User switches out after damaging the target.",
+
+		switchOut: "[POKEMON] went back to [TRAINER]!",
+	},
+	crueltalon: {
+		name: "Cruel Talon",
+		desc: "This move is always a critical hit if the opponent is statused, unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		shortDesc: "Always results in a critical hit if the opponent is statused.",
+	},
+	slitherstrike: {
+		name: "Slither Strike",
+		desc: "Ignores the target's stat stage changes, bypasses clones, may cause flinch.",
+		shortDesc: "Ignores the target's stat stage changes, bypasses clones, may cause flinch.",
+	},
+	stonegaze: {
+		name: "Stone Gaze",
+		desc: "Causes the target to become a Rock type. Fails if the target is an Arceus or a Silvally, if the target is already purely Rock type, or if the target is Terastallized.",
+		shortDesc: "Changes the target's type to Rock.",
+	},
+	burrowstrike: {
+		name: "Burrow Strike",
+		desc: "Has a 100% chance to make the target flinch. Fails unless it is the user's first turn on the field.",
+		shortDesc: "Hits first. First turn out only. 100% flinch chance.",
+	},
+	sanddyke: {
+		name: "Sand Dyke",
+		desc: "For 5 turns, the user and its party members takes Water-type damage reduced by 0.75, rounded down. Also raises Defense by 2. Lasts for 8 turns if the user is holding Soft Sand.",
+		shortDesc: "For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit",
+
+		start: "  Sand Dyke made [TEAM] stronger against Water moves!",
+		end: "  [TEAM]'s Sand Dyke wore off!",
 	},
 };

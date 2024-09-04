@@ -1267,14 +1267,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	poisonpoint: {
 		name: "Poison Point",
-		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be poisoned.",
-		gen4: {
-			desc: "30% chance a Pokemon making contact with this Pokemon will be poisoned. This effect does not happen if this Pokemon did not lose HP from the attack.",
-		},
-		gen3: {
-			desc: "1/3 chance a Pokemon making contact with this Pokemon will be poisoned. This effect does not happen if this Pokemon did not lose HP from the attack.",
-			shortDesc: "1/3 chance a Pokemon making contact with this Pokemon will be poisoned.",
-		},
+		shortDesc: "30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.",
 	},
 	poisonpuppeteer: {
 		name: "Poison Puppeteer",
@@ -2464,5 +2457,143 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Budding",
 		desc: "If Sunny Day is active, this Pokemon's Special Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sunny Day is active, this Pokemon's Sp. Def is 1.5x; heals 1/16 max HP per turn.",
+	},
+	furytalons: {
+		name: "Fury Talons",
+		desc: "Multihit moves do get an increased critical chance. They have their power multiplied by 1.3.",
+		shortDesc: "Multihit moves do get an increased critical chance. They have their power multiplied by 1.3.",
+	},
+	desertarmor: {
+		name: "Desert Armor",
+		desc: "If Sandstorm is active, this Pokemon's Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sandstorm is active, this Pokemon's Def is 1.5x; heals 1/16 max HP per turn.",
+	},
+	sporeburst: {
+		name: "Spore Burst",
+		desc: "If this Pokemon is knocked out with a fire move, that move's user faints.",
+		shortDesc: "If this Pokemon is KOed with a fire move, that move's user faints.",
+
+		damage: "  [POKEMON] was hurt!",
+	},
+	devourtoxins: {
+		name: "Devour Toxins",
+		desc: "The user recovers 1/3 the HP lost by the target when target is poisoned.",
+		shortDesc: "The user recovers 1/3 the HP lost by the target when target is poisoned.",
+	},
+	competitiverunner: {
+		name: "Competitive Runner",
+		shortDesc: "Raises the user's Speed by 12 stages when hit by a priority move.",
+	},
+	venomabsorb: {
+		name: "Venom Absorb",
+		desc: "If the opponent is poisoned, it restores 1/8 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "This Pokemon is healed by 1/8 of its max HP each turn when opponent is poisoned.",
+	},
+	sparkacceleration: {
+		name: "Spark Acceleration",
+		desc: "This Pokemon's Speed is raised by 1 stage when using Electric-type moves.",
+		shortDesc: "This Pokemon's Speed is raised by 1 stage when using Electric-type moves.",
+	},
+	battlemaster: {
+		name: "Battle Master",
+		desc: "When this Pokemon has used a Fighting, Flying and Normal move while staying on terrain, raises all stats by 1 stage.",
+		shortDesc: "When this Pokemon has used a Fighting, Flying and Normal move, raises all stats by 1 stage.",
+	},
+	voracity: {
+		name: "Voracity",
+		desc: "If this Pokemon holds a berry, eats it on offensive move. Without held item, will generate and eat one.",
+		shortDesc: "If this Pokemon holds a berry, eats it on offensive move. Without held item, will generate and eat one.",
+	},
+	magiceye: {
+		name: "Magic Eye",
+		shortDesc: "This Pokemon's moves ignore the target's protection, except Max Guard.",
+	},
+	astralmirror: {
+		name: "Astral Mirror",
+		shortDesc: "This Pokemon reflects 1/4 damage from supereffective attacks.",
+	},
+	unleashedfury: {
+		name: "Unleashed Fury",
+		desc: "If an attack hits this Pokemon, its Defense is lowered by 1 stage and its Speed is raised by 1 stage.",
+		shortDesc: "If a physical attack hits this Pokemon, Accuracy is lowered by 1, Attack is raised by 1.",
+	},
+	skybreaker: {
+		name: "Sky Breaker",
+		desc: "Damage on Flying-type or Levitate opponents is multiplied by 1.5.",
+		shortDesc: "Damage on Flying-type or Levitate opponents is multiplied by 1.5.",
+	},
+	abyssalperception: {
+		name: "Abyssal Perception",
+		desc: "This Pokemon's Accuracy is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's Accuracy is raised 1 stage at the end of each full turn on the field.",
+	},
+	dampeningfog: {
+		name: "Dampening Fog",
+		shortDesc: "This Pokemon's offensive moves reset opponents stats to 0.",
+	},
+	dragongrace: {
+		name: "Dragon Grace",
+		desc: "When this Pokemon uses a Dragon-type move, has 1/2 chance to raise its Speed and heal 1/4.",
+		shortDesc: "When this Pokemon uses a Dragon-type move, has 1/2 chance to raise its Speed and heal 1/4.",
+	},
+	flamemajesty: {
+		name: "Flame Majesty",
+		shortDesc: "This Pokemon Fire-type moves have their priority increased by 1.",
+		gen6: {
+			shortDesc: "This Pokemon Fire-type moves have their priority increased by 1.",
+		},
+	},
+	pestilentreaper: {
+		name: "Pestilent Reaper",
+		desc: "If the opponent is poisoned, this Pokemon's attacks have their power multiplied by 1.5.",
+		shortDesc: "If the opponent is poisoned, this Pokemon's attacks have their power multiplied by 1.5.",
+	},
+	ethereal: {
+		name: "Ethereal",
+		desc: "This Pokemon is immune to Physical moves on it's first turn. If avoids move, heals 1/8.",
+		shortDesc: "This Pokemon is immune to Physical moves on it's first turn. If avoids move, heals 1/8.",
+	},
+	conduction: {
+		name: "Conduction",
+		desc: "If Rain Dance is active, this Pokemon's Electric moves hit Ground.",
+		shortDesc: "If Rain Dance is active, this Pokemon's Electric moves hit Ground.",
+	},
+	deepsleep: {
+		name: "Deep Sleep",
+		shortDesc: "This Pokemon receives 1/2 damage while being asleep.",
+	},
+	ownmedicine: {
+		name: "Own Medicine",
+		shortDesc: "This Pokemon's moves are multiplied by 1.5 if the move's type is shared between itself and opponent.",
+	},
+	ambusher: {
+		name: "Ambusher",
+		desc: "If it is the user's first turn on the field, it's offensive moves will crit.",
+		shortDesc: "If it is the user's first turn on the field, it's offensive moves will crit.",
+	},
+	rhinorush: {
+		name: "Rhino Rush",
+		shortDesc: "If this Pokemon uses a recoil or rush move, its next move has it's priority increased by 1.",
+		desc: "If this Pokemon uses a recoil or rush move, its next move has it's priority increased by 1.",
+	},
+	drowsybreeze: {
+		name: "Drowsy Breeze",
+		desc: "This Pokemon's wind moves have a 30% chance of sleeping. This effect comes after a move's inherent secondary effect chance.",
+		shortDesc: "This Pokemon's wind moves have a 30% chance of sleeping.",
+	},
+	noxiousbarb: {
+		name: "Noxious Barb",
+		shortDesc: "This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.",
+		desc: "This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.",
+	},
+	scavenger: {
+		name: "Scavenger",
+		desc: "This Pokemon heals 1/2 of its max HP if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+		shortDesc: "This Pokemon heals 1/2 if it attacks and KOes another Pokemon.",
+	},
+	swiftness: {
+		name: "Swiftness",
+		desc: "This Pokemon Physical moves BasePower is raised of 10 by Speed boost active. Negative boosts are ignored.",
+		shortDesc: "This Pokemon Physical moves BP is raised of 10 by Speed boost active. Negative boosts are ignored.",
 	},
 };
