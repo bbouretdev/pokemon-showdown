@@ -22732,6 +22732,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				console.log('onBeforeMove');
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
+					move.sideCondition = '';
+					// return null;
+				}
+			},
+			onModifyMove(move, pokemon, target) {
+				console.log('onModifyMove');
+				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				if (hazards.includes(move.name)) {
+					delete move.sideCondition;
+					// return null;
+				}
+			},
+			onFoeModifyMove(move, pokemon, target) {
+				console.log('onFoeModifyMove');
+				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				if (hazards.includes(move.name)) {
 					delete move.sideCondition;
 					// return null;
 				}
