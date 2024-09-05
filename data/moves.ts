@@ -22720,6 +22720,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 5;
 			},
+			onTryHit(source, target, move) {
+				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				if (hazards.includes(move.name)) {
+					this.add('-immune', target, 'move: Ice Rink');
+					delete move.sideCondition;
+					return null;
+				}
+			},
 			onFoeTryMove(source, target, move) {
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
