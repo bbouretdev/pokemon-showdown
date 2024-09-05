@@ -22720,8 +22720,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 5;
 			},
+			onFoeTryMove(source, target, move) {
+				console.log('onFoeTryMove');
+			},
 			onTryHit(pokemon, target, move) {
-				if (move.target === 'foeSide') {
+				console.log('onTryHit');
+				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				if (hazards.includes(move.name)) {
 					this.add('-immune', pokemon, 'move: Ice Rink');
 					return null;
 				}
