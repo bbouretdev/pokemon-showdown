@@ -3608,15 +3608,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	lockon: {
 		name: "Lock-On",
-		desc: "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
-		shortDesc: "User's next move will not miss the target.",
-		gen4: {
-			desc: "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. When this effect is started against the target, this and Mind Reader's effects end for every other Pokemon against that target. If the target leaves the field using Baton Pass, the replacement remains under this effect. If the user leaves the field using Baton Pass, this effect is restarted against the same target for the replacement. The effect ends if either the user or the target leaves the field.",
-		},
-		gen2: {
-			desc: "The next accuracy check against the target succeeds. The target will still avoid Earthquake, Fissure, and Magnitude if it is using Fly. If the target leaves the field using Baton Pass, the replacement remains under this effect. This effect ends when the target leaves the field or an accuracy check is done against it.",
-			shortDesc: "The next move will not miss the target.",
-		},
+		desc: "For 5 turns, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
+		shortDesc: "User's 5 next turns moves will not miss the target.",
 
 		start: "  [SOURCE] took aim at [POKEMON]!",
 	},
@@ -4106,15 +4099,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	mindreader: {
 		name: "Mind Reader",
-		desc: "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
-		shortDesc: "User's next move will not miss the target.",
-		gen4: {
-			desc: "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. When this effect is started against the target, this and Lock-On's effects end for every other Pokemon against that target. If the target leaves the field using Baton Pass, the replacement remains under this effect. If the user leaves the field using Baton Pass, this effect is restarted against the same target for the replacement. The effect ends if either the user or the target leaves the field.",
-		},
-		gen2: {
-			desc: "The next accuracy check against the target succeeds. The target will still avoid Earthquake, Fissure, and Magnitude if it is using Fly. If the target leaves the field using Baton Pass, the replacement remains under this effect. This effect ends when the target leaves the field or an accuracy check is done against it.",
-			shortDesc: "The next move will not miss the target.",
-		},
+		desc: "For 5 turns, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
+		shortDesc: "User's 5 next turns moves will not miss the target.",
 
 		start: "#lockon",
 	},
@@ -7684,5 +7670,50 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 
 		start: "  Soothing Song made [TEAM] immune against Taunt!",
 		end: "  [TEAM]'s Soothing Song wore off!",
+	},
+	spookysnatch: {
+		name: "Spooky Snatch",
+		desc: "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities. Also lowers opponent Special Attack.",
+		shortDesc: "User switches out after damaging the target. Lowers opponent SpAtk.",
+
+		switchOut: "[POKEMON] went back to [TRAINER]!",
+	},
+	myceliumdrain: {
+		name: "Mycelium Drain",
+		desc: "Raises the user's Defense and lowers the opponent Defense by 1 stage.",
+		shortDesc: "Raises the user's Defense and lowers the opponent Defense by 1 stage.",
+	},
+	braindrain: {
+		name: "Brain Drain",
+		desc: "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	tribaldance: {
+		name: "Tribal Dance",
+		desc: "Raises the user's Attack by 1 stage. Also applies Taunt on opponents.",
+		shortDesc: "Raises the user's Attack by 1. Applies Taunt on opponents.",
+	},
+	wavepunch: {
+		name: "Wave Punch",
+		desc: "Causes the target to become a Water type. Fails if the target is an Arceus or a Silvally, if the target is already purely Water type, or if the target is Terastallized.",
+		shortDesc: "Changes the target's type to Water.",
+	},
+	icerink: {
+		name: "Ice Rink",
+		desc: "For 5 turns, no entry hazard can be set on ally side.",
+		shortDesc: "For 5 turns, no entry hazard can be set on ally side.",
+
+		start: "  Ice Rink made entry hazards slip away!",
+		end: "  [TEAM]'s Ice Rink melted!",
+	},
+	dreambreaker: {
+		name: "Dream Breaker",
+		desc: "Power doubles if the target is asleep. If the user has not fainted, the target wakes up.",
+		shortDesc: "Power doubles if target is asleep, and wakes it.",
+	},
+	lightball: {
+		name: "Light Ball",
+		desc: "Damage is calculated using the user's Speed stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
+		shortDesc: "Uses user's Spe stat as Atk in damage calculation.",
 	},
 };

@@ -1900,6 +1900,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
+		onModifyMove(move, pokemon, target) {
+			move.ignoreDefensive = true;
+		},
 		flags: {breakable: 1},
 		name: "Hyper Cutter",
 		rating: 1.5,
@@ -5698,7 +5701,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
 			if (move.category !== 'Status') {
-				return this.chainModify(0.33);
+				return this.chainModify(0.4);
 			}
 			return;
 		},
@@ -5806,6 +5809,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 move.drain = [1,3];
             }
         },
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bite']) {
+				return this.chainModify(1.2);
+			}
+		},
         name: "Vampirism",
         rating: 3,
         num: 10008,
@@ -6571,28 +6580,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10056,
 	},
 	ethereal: {
-		onStart(pokemon) {
-			pokemon.addVolatile('ethereal');	
+		onDamage(damage, target, source, effect) {
+			if (effect && ['stealthrock','spikes'].includes(effect.id)) {
+				return false;
+			}
 		},
-		onEnd(pokemon) {
-			pokemon.removeVolatile('ethereal');
-		},
-		condition: {
-			duration: 1,
-			noCopy: true,
-			onStart(target, source, effect) {
-				this.add('-start', source, 'ability: Ethereal');
-			},
-			onTryHit(target, source, move) {
-				if (target !== source && move.category === 'Physical' && target.volatiles['ethereal']) {
-					this.add('-immune', target, '[from] ability: Ethereal');
-					this.heal(target.baseMaxhp / 8, target);
-					return null;
-				}
-			},
-			onEnd(target) {
-				this.add('-end', target, 'ability: Ethereal', '[silent]');
-			},
+		onTryHit(target, source, move) {
+			if (move.category === 'Physical' && !target.activeTurns) {
+				this.add('-immune', target, '[from] ability: Ethereal');
+				return null;
+			}
 		},
 		flags: {breakable: 1},
 		name: "Ethereal",
@@ -6752,5 +6749,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Swiftness",
 		rating: 3.5,
 		num: 10067,
+	},
+	inseparable: {
+		onModifyMove(move) {
+			if (move.category !== 'Status' && !move.multihit) {
+				move.multihit = 2;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.category !== 'Status') {
+				return this.chainModify(0.5);
+			}
+			return;
+		},
+		name: "Inseparable",
+		rating: 2.5,
+		num: 10068,
 	},
 };

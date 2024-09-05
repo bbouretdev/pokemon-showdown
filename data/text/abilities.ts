@@ -698,7 +698,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	hypercutter: {
 		name: "Hyper Cutter",
-		shortDesc: "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
+		shortDesc: "Prevents other Pokemon from lowering this Pokemon's Attack stat stage. Ignores opponent's defensive boosts.",
 	},
 	icebody: {
 		name: "Ice Body",
@@ -2270,8 +2270,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	tresamigos: {
 		name: "Tres Amigos",
-		desc: "Turns offensive moves into 3-hit ones, distributing move's base power into each individual hit. Removes secondary effects.",
-		shortDesc: "Offensive hits become 3-hit for same global BP. Removes secondary effects.",
+		desc: "Turns offensive moves into 3-hit ones, distributing move's base power into each individual hit (x0.4 BP). Removes secondary effects.",
+		shortDesc: "Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.",
 	},
 	vaporization: {
 		name: "Vaporization",
@@ -2302,8 +2302,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	vampirism: {
 		name: "Vampirism",
-		desc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
-		shortDesc: "The user recovers 1/3 the HP lost by the target when using bite moves.",
+		desc: "The user recovers 1/3 the HP lost by the target when using bite moves. Bite-based attacks have their power multiplied by 1.2.",
+		shortDesc: "The user recovers 1/3 the HP lost by the target when using bite moves. Bite moves are x1.2.",
 	},
 	gunner: {
 		name: "Gunner",
@@ -2550,8 +2550,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	ethereal: {
 		name: "Ethereal",
-		desc: "This Pokemon is immune to Physical moves on it's first turn. If avoids move, heals 1/8.",
-		shortDesc: "This Pokemon is immune to Physical moves on it's first turn. If avoids move, heals 1/8.",
+		desc: "This Pokemon is immune to Physical moves on it's first turn.",
+		shortDesc: "This Pokemon is immune to Physical moves on it's first turn.",
 	},
 	conduction: {
 		name: "Conduction",
@@ -2595,5 +2595,10 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Swiftness",
 		desc: "This Pokemon Physical moves BasePower is raised of 10 by Speed boost active. Negative boosts are ignored.",
 		shortDesc: "This Pokemon Physical moves BP is raised of 10 by Speed boost active. Negative boosts are ignored.",
+	},
+	inseparable: {
+		name: "Inseparable",
+		desc: "Turns offensive moves into 2-hit ones, distributing move's base power into each individual hit.",
+		shortDesc: "Offensive hits become 2-hit for same global BP.",
 	},
 };

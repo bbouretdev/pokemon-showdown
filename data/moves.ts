@@ -10681,7 +10681,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
-			duration: 2,
+			duration: 5,
 			onSourceInvulnerabilityPriority: 1,
 			onSourceInvulnerability(target, source, move) {
 				if (move && source === this.effectState.target && target === this.effectState.source) return 0;
@@ -22580,8 +22580,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 5,
 			onTryHit(pokemon, target, move) {
-				if (move.id === 'taunt') {
-					this.add('-immune', target, 'move: Soothing Song');
+				if (move.id === 'taunt' || move.id === 'tribaldance') {
+					this.add('-immune', pokemon, 'move: Soothing Song');
 					return null;
 				}
 			},
@@ -22600,4 +22600,183 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {boost: {def: 1}},
 		contestType: "Clever",
 	},
+	spookysnatch: {
+		num: 10028,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Spooky Snatch",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, pivot: 1, bite: 1},
+		onHit(target, source, move) {
+			const success = this.boost({spa: -1}, target, source);
+			if (!success && !target.hasAbility('mirrorarmor')) {
+				delete move.selfSwitch;
+			}
+		},
+		selfSwitch: true,
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Cute",
+	},
+	myceliumdrain: {
+		num: 10029,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Mycelium Drain",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, metronome: 1},
+		boosts: {
+			def: 1,
+		},
+		onHit(target) {
+			for (const foe of target.side.foes()) {
+				this.boost({def: -1}, foe);
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Grass",
+		zMove: {boost: {atk: 1}},
+		contestType: "Clever",
+	},
+	braindrain: {
+		num: 10030,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Brain Drain",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, heal: 1, metronome: 1},
+		drain: [1, 2],
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Tough",
+	},
+	tribaldance: {
+		num: 10031,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Tribal Dance",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, dance: 1, metronome: 1},
+		boosts: {
+			atk: 1,
+		},
+		onHit(target) {
+			for (const foe of target.side.foes()) {
+				foe.addVolatile('taunt');
+			}
+		},
+		secondary: null,
+		target: "self",
+		type: "Fighting",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Cool",
+	},
+	wavepunch: {
+		num: 10032,
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Wave Punch",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1},
+		onHit(target) {
+			if (target.getTypes().join() === 'Water' || !target.setType('Water')) {
+				this.add('-fail', target);
+				return null;
+			}
+			this.add('-start', target, 'typechange', 'Water');
+		},
+		target: "normal",
+		type: "Water",
+		contestType: "Beautiful",
+	},
+	icerink: {
+		num: 10033,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Ice Rink",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1, metronome: 1},
+		sideCondition: 'icerink',
+		condition: {
+			duration: 5,
+			durationCallback(target, source, effect) {
+				if (source?.hasItem('icyrock')) {
+					return 8;
+				}
+				return 5;
+			},
+			onTryHit(pokemon, target, move) {
+				if (move.target === 'foeSide') {
+					this.add('-immune', pokemon, 'move: Ice Rink');
+					return null;
+				}
+			},
+			onSideStart(side) {
+				this.add('-sidestart', side, 'Ice Rink');
+			},
+			onSideResidualOrder: 26,
+			onSideResidualSubOrder: 1,
+			onSideEnd(side) {
+				this.add('-sideend', side, 'Ice Rink');
+			},
+		},
+		secondary: null,
+		target: "allySide",
+		type: "Ice",
+		zMove: {boost: {def: 1}},
+		contestType: "Clever",
+	},
+	dreambreaker: {
+		num: 10034,
+		accuracy: 100,
+		basePower: 70,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status === 'slp' || target.hasAbility('comatose')) {
+				this.debug('BP doubled on sleeping target');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		category: "Special",
+		name: "Dream Breaker",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onHit(target) {
+			if (target.status === 'slp') target.cureStatus();
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Tough",
+	},
+	lightball: {
+		num: 10035,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		name: "Light Ball",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		overrideOffensiveStat: 'spe',
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+	},	
 };
