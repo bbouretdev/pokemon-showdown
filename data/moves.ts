@@ -22720,57 +22720,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 5;
 			},
-			// onTryHit(source, target, move) {
-			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			// 	if (hazards.includes(move.name)) {
-			// 		this.add('-immune', target, 'move: Ice Rink');
-			// 		delete move.sideCondition;
-			// 		return null;
-			// 	}
-			// },
-			onBeforeMove(source, target, move) {
-				console.log('onBeforeMove');
-				console.log(move.name);
-				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				if (hazards.includes(move.name)) {
-					move.sideCondition = '';
-					// return null;
-				}
-			},
-			onModifyMove(move, pokemon, target) {
-				console.log('onModifyMove');
-				console.log(move.name);
-				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				if (hazards.includes(move.name)) {
-					delete move.sideCondition;
-					// return null;
-				}
-			},
 			onFoeModifyMove(move, pokemon, target) {
 				console.log('onFoeModifyMove');
 				console.log(move.name);
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				if (hazards.includes(move.name)) {
+				if (hazards.includes(move.id)) {
 					delete move.sideCondition;
-					// return null;
+					return null;
 				}
 			},
-			// onFoeTryMove(source, target, move) {
-			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			// 	if (hazards.includes(move.name)) {
-			// 		this.add('-immune', target, 'move: Ice Rink');
-			// 		delete move.sideCondition;
-			// 		return null;
-			// 	}
-			// },
-			// onFoeBeforeMove(source, target, move) {
-			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-			// 	if (hazards.includes(move.name)) {
-			// 		this.add('-immune', target, 'move: Ice Rink');
-			// 		delete move.sideCondition;
-			// 		return null;
-			// 	}
-			// },
 			onSideStart(side) {
 				this.add('-sidestart', side, 'Ice Rink');
 			},
