@@ -22724,6 +22724,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
 					this.add('-immune', target, 'move: Ice Rink');
+					delete move.sideCondition;
 					return null;
 				}
 			},
