@@ -22722,11 +22722,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onFoeModifyMove(move, pokemon, target) {
 				console.log('onFoeModifyMove');
-				console.log(move.name);
+				console.log(move.id);
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.id)) {
 					delete move.sideCondition;
-					return null;
+					return false;
 				}
 			},
 			onSideStart(side) {
