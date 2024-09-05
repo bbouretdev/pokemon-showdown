@@ -22728,18 +22728,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			// 		return null;
 			// 	}
 			// },
-			onAfterHit(source, target, move) {
-				console.log('onAfterHit');
+			onBeforeMove(source, target, move) {
+				console.log('onBeforeMove');
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
 					target.side.removeSideCondition(move.name);
-				}
-			},
-			onFoeAfterHit(source, target, move) {
-				console.log('onFoeAfterHit');
-				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				if (hazards.includes(move.name)) {
-					target.side.removeSideCondition(move.name);
+					return null;
 				}
 			},
 			// onFoeTryMove(source, target, move) {
