@@ -22720,30 +22720,44 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				return 5;
 			},
-			onTryHit(source, target, move) {
+			// onTryHit(source, target, move) {
+			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			// 	if (hazards.includes(move.name)) {
+			// 		this.add('-immune', target, 'move: Ice Rink');
+			// 		delete move.sideCondition;
+			// 		return null;
+			// 	}
+			// },
+			onAfterHit(source, target, move) {
+				console.log('onAfterHit');
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
-					this.add('-immune', target, 'move: Ice Rink');
-					delete move.sideCondition;
-					return null;
+					target.side.removeSideCondition(move.name);
 				}
 			},
-			onFoeTryMove(source, target, move) {
+			onFoeAfterHit(source, target, move) {
+				console.log('onFoeAfterHit');
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.name)) {
-					this.add('-immune', target, 'move: Ice Rink');
-					delete move.sideCondition;
-					return null;
+					target.side.removeSideCondition(move.name);
 				}
 			},
-			onFoeBeforeMove(source, target, move) {
-				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
-				if (hazards.includes(move.name)) {
-					this.add('-immune', target, 'move: Ice Rink');
-					delete move.sideCondition;
-					return null;
-				}
-			},
+			// onFoeTryMove(source, target, move) {
+			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			// 	if (hazards.includes(move.name)) {
+			// 		this.add('-immune', target, 'move: Ice Rink');
+			// 		delete move.sideCondition;
+			// 		return null;
+			// 	}
+			// },
+			// onFoeBeforeMove(source, target, move) {
+			// 	const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			// 	if (hazards.includes(move.name)) {
+			// 		this.add('-immune', target, 'move: Ice Rink');
+			// 		delete move.sideCondition;
+			// 		return null;
+			// 	}
+			// },
 			onSideStart(side) {
 				this.add('-sidestart', side, 'Ice Rink');
 			},
