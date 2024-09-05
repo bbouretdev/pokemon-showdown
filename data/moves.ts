@@ -22721,11 +22721,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return 5;
 			},
 			onFoeModifyMove(move, pokemon, target) {
-				console.log('onFoeModifyMove');
-				console.log(move.id);
 				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 				if (hazards.includes(move.id)) {
 					delete move.sideCondition;
+					this.add('cant', target, 'move: Ice Rink', move);
 					return false;
 				}
 			},
