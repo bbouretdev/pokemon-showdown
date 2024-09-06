@@ -6688,8 +6688,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyPriority(priority, pokemon, target, move) {
 			console.log('onModifyPriority');
 			if (pokemon.volatiles['rhinorush']) {
-				this.add('-end', pokemon, 'ability: Rhino Rush');
-				pokemon.removeVolatile('rhinorush');
+				// this.add('-end', pokemon, 'ability: Rhino Rush');
+				// pokemon.removeVolatile('rhinorush');
 				return priority + 1;
 			}
 		},
