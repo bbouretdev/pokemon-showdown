@@ -6393,13 +6393,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10044,
 	},
 	sparkacceleration: {
-		onModifyMovePriority: -1,
-		onModifyMove(move, pokemon, target) {
+		onFoeHit(target, source, move) {
 			if (move.type === 'Electric') {
-				this.add('-ability', pokemon, 'Spark Acceleration');
-				this.boost({spe: 1}, pokemon, pokemon);
+				this.add('-ability', source, 'Spark Acceleration');
+				this.boost({spe: 1}, source, source);
 			}
 		},
+		// onModifyMovePriority: -1,
+		// onModifyMove(move, pokemon, target) {
+		// 	if (move.type === 'Electric') {
+		// 		this.add('-ability', pokemon, 'Spark Acceleration');
+		// 		this.boost({spe: 1}, pokemon, pokemon);
+		// 	}
+		// },
 		flags: {},
 		name: "Spark Acceleration",
 		rating: 0.5,
