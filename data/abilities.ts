@@ -6685,6 +6685,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
+		onModifyPriorityPriority: 5,
+		onModifyPriority(priority, pokemon, target, move) {
+			console.log('onModifyPriority');
+			if (pokemon.volatiles['rhinorush']) {
+				this.add('-end', pokemon, 'ability: Rhino Rush');
+				pokemon.removeVolatile('rhinorush');
+				return priority + 1;
+			}
+		},
 		// onModifyMovePriority: 1,
 		// onModifyMove(move, pokemon, target) {
 		// 	console.log('onModifyMove');
@@ -6701,19 +6710,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		// 	console.log('onEnd');
 		// 	pokemon.removeVolatile('rhinorush');
 		// },
-		condition: {
-			noCopy: true,
-			duration: 1,
-			onModifyPriorityPriority: 5,
-			onModifyPriority(priority, pokemon, target, move) {
-				console.log('onModifyPriority');
-				if (pokemon.volatiles['rhinorush']) {
-					this.add('-end', pokemon, 'ability: Rhino Rush');
-					pokemon.removeVolatile('rhinorush');
-					return priority + 1;
-				}
-			},
-		},
+		// condition: {
+		// 	noCopy: true,
+		// 	duration: 1,
+		// 	onModifyPriorityPriority: 5,
+		// 	onModifyPriority(priority, pokemon, target, move) {
+		// 		console.log('onModifyPriority');
+		// 		if (pokemon.volatiles['rhinorush']) {
+		// 			this.add('-end', pokemon, 'ability: Rhino Rush');
+		// 			pokemon.removeVolatile('rhinorush');
+		// 			return priority + 1;
+		// 		}
+		// 	},
+		// },
 		flags: {breakable: 1},
 		name: "Rhino Rush",
 		rating: 3,
