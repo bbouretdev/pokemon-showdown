@@ -6367,14 +6367,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         rating: 3,
         num: 10042,
     },
-	competitiverunner: {
+	bitterness: {
 		onDamagingHit(damage, target, source, move) {
 			if (move.priority > 0.1) {
 				this.boost({spe: 12}, target, target);
 			}
 		},
 		flags: {},
-		name: "Competitive Runner",
+		name: "Bitterness",
 		rating: 2,
 		num: 10043,
 	},

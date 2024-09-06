@@ -2480,8 +2480,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "The user recovers 1/3 the HP lost by the target when target is poisoned.",
 		shortDesc: "The user recovers 1/3 the HP lost by the target when target is poisoned.",
 	},
-	competitiverunner: {
-		name: "Competitive Runner",
+	bitterness: {
+		name: "Bitterness",
 		shortDesc: "Raises the user's Speed by 12 stages when hit by a priority move.",
 	},
 	venomabsorb: {

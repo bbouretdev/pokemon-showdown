@@ -9126,6 +9126,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M"],
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			wavepunch: ["9M", "8M", "7V", "4M"],
+			thunderpunch: ["9M", "8M", "7V", "4M"],
 		},
 		encounters: [
 			{generation: 1, level: 15},
@@ -9254,6 +9255,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			workup: ["9M", "8M", "7M", "5M"],
 			wavepunch: ["9M", "8M", "7V", "4M"],
+			thunderpunch: ["9M", "8M", "7V", "4M"],
 		},
 		eventData: [
 			{generation: 3, level: 42, moves: ["helpinghand", "hydropump", "raindance", "brickbreak"]},
