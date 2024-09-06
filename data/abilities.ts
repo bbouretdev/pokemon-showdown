@@ -6399,13 +6399,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({spe: 1}, source, source);
 			}
 		},
-		// onModifyMovePriority: -1,
-		// onModifyMove(move, pokemon, target) {
-		// 	if (move.type === 'Electric') {
-		// 		this.add('-ability', pokemon, 'Spark Acceleration');
-		// 		this.boost({spe: 1}, pokemon, pokemon);
-		// 	}
-		// },
 		flags: {},
 		name: "Spark Acceleration",
 		rating: 0.5,
@@ -6527,12 +6520,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10052,
 	},
 	dragongrace: {
-		onModifyMove(move, pokemon, target) {
+		onFoeHit(target, source, move) {
 			if (move.type === 'Dragon') {
 				if (this.randomChance(5, 10)) {
-					this.add('-ability', pokemon, 'Dragon Grace');
-					this.boost({spe: 1}, pokemon, pokemon);
-					this.heal(pokemon.baseMaxhp / 4, pokemon);
+					this.add('-ability', source, 'Dragon Grace');
+					this.boost({spe: 1}, source, source);
+					this.heal(source.baseMaxhp / 4, source);
 				}
 			}
 		},
