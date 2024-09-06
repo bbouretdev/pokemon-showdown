@@ -6676,8 +6676,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10062,
 	},
 	rhinorush: {
-		onFoeHit(target, source, move) {
-			console.log('onFoeHit');
+		onAfterMove(source, target, move) {
+			console.log('onAfterMove');
 			if (move.recoil || move.flags['rush']) {
 				if (!source.volatiles['rhinorush']) {
 					this.add('-start', source, 'ability: Rhino Rush');
@@ -6689,6 +6689,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.removeVolatile('rhinorush');			
 			}
 		},
+		// onFoeHit(target, source, move) {
+		// 	console.log('onFoeHit');
+		// 	if (move.recoil || move.flags['rush']) {
+		// 		if (!source.volatiles['rhinorush']) {
+		// 			this.add('-start', source, 'ability: Rhino Rush');
+		// 			source.addVolatile('rhinorush');
+		// 		}
+		// 	}
+		// 	else {
+		// 		this.add('-end', source, 'ability: Rhino Rush');
+		// 		source.removeVolatile('rhinorush');			
+		// 	}
+		// },
 		onModifyPriority(priority, pokemon, target, move) {
 			console.log('onModifyPriority');
 			if (pokemon.volatiles['rhinorush']) {
