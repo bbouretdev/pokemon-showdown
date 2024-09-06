@@ -6683,16 +6683,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.addVolatile('rhinorush');
 			}
 		},
-		onModifyPriorityPriority: 5,
-		onModifyPriority(priority, pokemon, target, move) {
-			if (pokemon.volatiles['rhinorush']) return priority + 1;
-		},
 		onEnd(pokemon) {
 			pokemon.removeVolatile('rhinorush');
 		},
 		condition: {
 			noCopy: true,
 			duration: 1,
+			onModifyPriorityPriority: 5,
+			onModifyPriority(priority, pokemon, target, move) {
+				if (pokemon.volatiles['rhinorush']) return priority + 1;
+			},
 		},
 		flags: {breakable: 1},
 		name: "Rhino Rush",
