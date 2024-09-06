@@ -6416,15 +6416,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			else {
 				if (move.type === 'Fighting' && !source.volatiles['fightingmove']) {
-					this.add('-ability', target, 'Fighting');
+					this.add('-ability', source, 'Fighting');
 					source.addVolatile('fightingmove');
 				}
 				if (move.type === 'Flying' && !source.volatiles['flyingmove']) {
-					this.add('-ability', target, 'Flying');
+					this.add('-ability', source, 'Flying');
 					source.addVolatile('flyingmove');
 				}
 				if (move.type === 'Normal' && !source.volatiles['normalmove']) {
-					this.add('-ability', target, 'Normal');
+					this.add('-ability', source, 'Normal');
 					source.addVolatile('normalmove');
 				}
 			}
