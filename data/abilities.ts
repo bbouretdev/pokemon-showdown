@@ -6406,6 +6406,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	battlemaster: {
 		onAfterMove(source, target, move) {
+			console.log('onAfterMove');
 			if (source.volatiles['fightingmove'] && source.volatiles['flyingmove'] && source.volatiles['normalmove']) {
 				this.add('-ability', source, 'Battle Master');
 				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, source, source);
@@ -6425,7 +6426,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10045,
 	},
 	voracity: {
-		onAfterMoveSecondarySelf(source, target, move) {
+		onFoeHit(target, source, move) {
+			console.log('onFoeHit');
 			if (!move || !target || source.switchFlag === true) return;
 			if (target !== source && move.category !== 'Status') {
 				const sourceItem = source.getItem();
@@ -6442,7 +6444,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					source.setItem(this.toID(randomBerry));
 					source.eatItem(true);
 				}
-				if (sourceItem.isBerry) {
+				else if (sourceItem.isBerry) {
 					source.eatItem(true);
 				}
 			}
@@ -6466,7 +6468,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (target.getMoveHitData(move).typeMod > 0) {
 				this.debug('Astral Mirror reflect');
 				this.add('-ability', target, 'Astral Mirror');
-				this.damage(damage / 4, source);
+				this.damage(damage / 2, source);
 				return this.chainModify(0.75);
 			}
 		},
@@ -6689,19 +6691,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.removeVolatile('rhinorush');			
 			}
 		},
-		// onFoeHit(target, source, move) {
-		// 	console.log('onFoeHit');
-		// 	if (move.recoil || move.flags['rush']) {
-		// 		if (!source.volatiles['rhinorush']) {
-		// 			this.add('-start', source, 'ability: Rhino Rush');
-		// 			source.addVolatile('rhinorush');
-		// 		}
-		// 	}
-		// 	else {
-		// 		this.add('-end', source, 'ability: Rhino Rush');
-		// 		source.removeVolatile('rhinorush');			
-		// 	}
-		// },
 		onModifyPriority(priority, pokemon, target, move) {
 			console.log('onModifyPriority');
 			if (pokemon.volatiles['rhinorush']) {

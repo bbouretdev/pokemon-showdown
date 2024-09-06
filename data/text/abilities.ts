@@ -2510,7 +2510,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	astralmirror: {
 		name: "Astral Mirror",
-		shortDesc: "This Pokemon reflects 1/4 damage from supereffective attacks.",
+		shortDesc: "This Pokemon reflects 1/2 damage from supereffective attacks.",
 	},
 	unleashedfury: {
 		name: "Unleashed Fury",
