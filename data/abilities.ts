@@ -6432,6 +6432,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!move || !target || source.switchFlag === true) return;
 			if (target !== source && move.category !== 'Status') {
 				const sourceItem = source.getItem();
+				console.log(sourceItem);
 				if (!sourceItem) {
 					const berries = this.dex.items.all().filter(item => (
 						item.isBerry
