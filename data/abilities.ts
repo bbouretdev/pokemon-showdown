@@ -6406,10 +6406,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	battlemaster: {
 		onAfterMove(source, target, move) {
-			if (move.type === 'Fighting' && !source.volatiles['fightingmove']) {
-				this.add('-ability', source, 'Fighting');
-				source.addVolatile('fightingmove');
-			}
 			if (move.type === 'Flying' && !source.volatiles['flyingmove']) {
 				this.add('-ability', source, 'Flying');
 				source.addVolatile('flyingmove');
@@ -6418,12 +6414,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-ability', source, 'Normal');
 				source.addVolatile('normalmove');
 			}
-		},
-		onResidual(target, source, effect) {
-			if (source.volatiles['fightingmove'] && source.volatiles['flyingmove'] && source.volatiles['normalmove']) {
+			if (source.volatiles['flyingmove'] && source.volatiles['normalmove']) {
 				this.add('-ability', source, 'Battle Master');
 				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, source, source);
-				source.removeVolatile('fightingmove');
 				source.removeVolatile('flyingmove');
 				source.removeVolatile('normalmove');
 			}
