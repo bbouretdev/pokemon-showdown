@@ -6685,7 +6685,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onModifyPriorityPriority: 5,
 		onModifyPriority(priority, pokemon, target, move) {
 			console.log('onModifyPriority');
 			if (pokemon.volatiles['rhinorush']) {
