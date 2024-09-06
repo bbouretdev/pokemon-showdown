@@ -6428,12 +6428,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	voracity: {
 		onFoeHit(target, source, move) {
-			console.log('onFoeHit');
 			if (!move || !target || source.switchFlag === true) return;
 			if (target !== source && move.category !== 'Status') {
 				const sourceItem = source.getItem();
-				console.log(sourceItem);
-				if (!sourceItem) {
+				if (sourceItem.id === '') {
 					const berries = this.dex.items.all().filter(item => (
 						item.isBerry
 					));
