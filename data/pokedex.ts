@@ -1945,7 +1945,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Farfetch\u2019d",
 		types: ["Normal", "Flying"],
 		baseStats: {hp: 52, atk: 90, def: 55, spa: 58, spd: 62, spe: 60},
-		abilities: {0: "Battle Master", 1: "Inner Focus", H: "Defiant"},
+		abilities: {0: "Wonder Bird", 1: "Inner Focus", H: "Defiant"},
 		heightm: 0.8,
 		weightkg: 15,
 		color: "Brown",

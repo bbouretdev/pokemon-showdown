@@ -2494,10 +2494,10 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's Speed is raised by 1 stage when using Electric-type moves.",
 		shortDesc: "This Pokemon's Speed is raised by 1 stage when using Electric-type moves.",
 	},
-	battlemaster: {
-		name: "Battle Master",
-		desc: "When this Pokemon has used a Fighting, Flying and Normal move while staying on terrain, raises all stats by 1 stage.",
-		shortDesc: "When this Pokemon has used a Fighting, Flying and Normal move, raises all stats by 1 stage.",
+	wonderbird: {
+		name: "Wonder Bird",
+		desc: "When this Pokemon has used a Flying and Normal move while staying on terrain, raises all stats by 1 stage.",
+		shortDesc: "When this Pokemon has used a Flying and Normal move, raises all stats by 1 stage.",
 	},
 	voracity: {
 		name: "Voracity",

@@ -6404,7 +6404,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0.5,
 		num: 10045,
 	},
-	battlemaster: {
+	wonderbird: {
 		onAfterMove(source, target, move) {
 			if (move.type === 'Flying' && !source.volatiles['flyingmove']) {
 				this.add('-ability', source, 'Flying');
@@ -6415,14 +6415,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.addVolatile('normalmove');
 			}
 			if (source.volatiles['flyingmove'] && source.volatiles['normalmove']) {
-				this.add('-ability', source, 'Battle Master');
+				this.add('-ability', source, 'Wonder Bird');
 				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, source, source);
 				source.removeVolatile('flyingmove');
 				source.removeVolatile('normalmove');
 			}
 		},
 		flags: {},
-		name: "Battle Master",
+		name: "Wonder Bird",
 		rating: 0.5,
 		num: 10045,
 	},
@@ -6436,6 +6436,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					const berries = this.dex.items.all().filter(item => (
 						item.isBerry
 					));
+					console.log(berries);
 					let randomBerry = '';
 					if (berries.length) {
 						berries.sort((a, b) => a.num - b.num);
