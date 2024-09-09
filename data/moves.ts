@@ -22422,7 +22422,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {protect: 1, mirror: 1, distance: 1, metronome: 1, wind: 1},
 		weather: 'Sandstorm',
 		secondary: null,
-		target: "all",
+		target: "normal",
 		type: "Flying",
 		contestType: "Clever",
 	},
