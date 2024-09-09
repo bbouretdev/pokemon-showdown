@@ -6795,15 +6795,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	mindpendulum: {
 		onBasePower(basePower, source, target, move) {
-			console.log('source.lastMove: ' + source.lastMove);
-			console.log('source.lastMoveUsed: ' + source.lastMoveUsed);
-			console.log('move: ' + move);
-			if (source.lastMove?.category === 'Physical' && move.category === 'Special') {
+			if (move.category === 'Physical' && source.volatiles['special']) {
+				console.log('physical move boosted because special volatile is active');
+				source.removeVolatile('special');
 				return this.chainModify(1.5);
 			}
-			else if (source.lastMove?.category === 'Special' && move.category === 'Physical') {
+			if (move.category === 'Special' && source.volatiles['physical']) {
+				console.log('special move boosted because physical volatile is active');
+				source.removeVolatile('physical');
 				return this.chainModify(1.5);
 			}
+			if (move.category === 'Physical') source.addVolatile('physical');
+			if (move.category === 'Special') source.addVolatile('special');
 		},
 		name: "Mind Pendulum",
 		rating: 2.5,
@@ -6822,7 +6825,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
 			for (const foe of pokemon.foes()) {
-				console.log(foe.lastMove);
 				if (foe.volatiles['hurryup'] && foe.lastMove?.category === 'Status') {
 					this.add('-ability', pokemon, 'Hurry Up');
 					this.add('-stop', foe, 'ability: Hurry Up');
