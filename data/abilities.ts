@@ -6796,12 +6796,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	mindpendulum: {
 		onBasePower(basePower, source, target, move) {
 			if (move.category === 'Physical' && source.volatiles['special']) {
-				console.log('physical move boosted because special volatile is active');
+				this.debug('Mind Pendulum Physical move boost.');
 				source.removeVolatile('special');
 				return this.chainModify(1.5);
 			}
 			if (move.category === 'Special' && source.volatiles['physical']) {
-				console.log('special move boosted because physical volatile is active');
+				this.debug('Mind Pendulum Special move boost.');
 				source.removeVolatile('physical');
 				return this.chainModify(1.5);
 			}
@@ -6843,5 +6843,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Hurry Up",
 		rating: 4.5,
 		num: 10073,
+	},
+	spiritbalance: {
+		onResidual(target) {
+			this.actions.useMove('painsplit', target);
+		},
+		name: "Spirit Balance",
+		rating: 2.5,
+		num: 10074,
 	},
 };

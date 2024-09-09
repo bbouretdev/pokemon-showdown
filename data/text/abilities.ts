@@ -2631,4 +2631,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "FILL ME IN.",
 		shortDesc: "FILL ME IN.",
 	},
+	spiritbalance: {
+		name: "Spirit Balance",
+		desc: "FILL ME IN.",
+		shortDesc: "FILL ME IN.",
+	},
 };

@@ -2460,7 +2460,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Koffing",
 		types: ["Poison"],
 		baseStats: {hp: 40, atk: 65, def: 95, spa: 60, spd: 45, spe: 35},
-		abilities: {0: "Levitate", 1: "Neutralizing Gas", H: "Stench"},
+		abilities: {0: "Levitate", 1: "Neutralizing Gas", H: "Spirit Balance"},
 		heightm: 0.6,
 		weightkg: 1,
 		color: "Purple",
