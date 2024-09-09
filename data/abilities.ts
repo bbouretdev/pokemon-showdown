@@ -6796,6 +6796,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	mindpendulum: {
 		onBasePower(basePower, source, target, move) {
 			console.log('source.lastMove: ' + source.lastMove);
+			console.log('source.lastMoveUsed: ' + source.lastMoveUsed);
 			console.log('move: ' + move);
 			if (source.lastMove?.category === 'Physical' && move.category === 'Special') {
 				return this.chainModify(1.5);
@@ -6824,6 +6825,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				console.log(foe.lastMove);
 				if (foe.volatiles['hurryup'] && foe.lastMove?.category === 'Status') {
 					this.add('-ability', pokemon, 'Hurry Up');
+					this.add('-stop', foe, 'ability: Hurry Up');
 					foe.removeVolatile('hurryup');
 					this.actions.useMove('taunt', pokemon);
 				}
