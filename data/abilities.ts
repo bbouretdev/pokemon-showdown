@@ -4546,6 +4546,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
 			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
 				this.add('-activate', pokemon, 'ability: Sticky Hold');
+				this.boost({atk: 2}, pokemon, pokemon);
 				return false;
 			}
 		},
@@ -6791,5 +6792,48 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Mocking Face",
 		rating: 2.5,
 		num: 10070,
+	},
+	mindpendulum: {
+		onBasePower(basePower, source, target, move) {
+			if (source.lastMove?.category === 'Physical' && move.category === 'Special') {
+				return this.chainModify(1.5);
+			}
+			else if (source.lastMove?.category === 'Special' && move.category === 'Physical') {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Mind Pendulum",
+		rating: 2.5,
+		num: 10071,
+	},
+	selfmagnetism: {
+		onStart(target){
+			this.actions.useMove('magnetrise', target);
+		},
+		name: "Self Magnetism",
+		rating: 2.5,
+		num: 10072,
+	},
+	hurryup: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			for (const foe of pokemon.foes()) {
+				console.log(foe.lastMove);
+				if (foe.volatiles['hurryup']) {
+					this.add('-ability', pokemon, 'Hurry Up');
+					foe.removeVolatile('hurryup');
+					this.actions.useMove('taunt', foe);
+				}
+				if (pokemon.activeTurns) {
+					this.add('-start', foe, 'ability: Hurry Up');
+					foe.addVolatile('hurryup');
+				}
+			}
+		},
+		flags: {},
+		name: "Hurry Up",
+		rating: 4.5,
+		num: 10073,
 	},
 };

@@ -2613,7 +2613,22 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	mockingface: {
 		name: "Mocking Face",
-		desc: "On switch-in, this Pokemon taunts the opposite Pokemn.",
-		shortDesc: "On switch-in, this Pokemon taunts the opposite Pokemn.",
+		desc: "On switch-in, this Pokemon taunts the opposite Pokemon.",
+		shortDesc: "On switch-in, this Pokemon taunts the opposite Pokemon.",
+	},
+	mindpendulum: {
+		name: "Mind Pendulum",
+		desc: "If this Pokemon last move was offensive and had a different category than current one, this Pokemon's moves Base Power is multiplied by 1.5.",
+		shortDesc: "Moves BP is x1.5 if category is different from previous one. Only Special and Physical involved.",
+	},
+	selfmagnetism: {
+		name: "Self Magnetism",
+		desc: "On switch-in, this Pokemon runs Magnet Rise.",
+		shortDesc: "On switch-in, this Pokemon runs Magnet Rise.",
+	},
+	hurryup: {
+		name: "Hurry Up",
+		desc: "FILL ME IN.",
+		shortDesc: "FILL ME IN.",
 	},
 };
