@@ -6784,4 +6784,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2.5,
 		num: 10069,
 	},
+	mockingface: {
+		onStart(target) {
+			this.actions.useMove('taunt', target);
+		},
+		name: "Mocking Face",
+		rating: 2.5,
+		num: 10070,
+	},
 };

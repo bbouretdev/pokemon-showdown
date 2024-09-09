@@ -1110,7 +1110,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Golbat",
 		types: ["Poison", "Flying"],
 		baseStats: {hp: 75, atk: 80, def: 70, spa: 65, spd: 75, spe: 90},
-		abilities: {0: "Inner Focus", H: "Infiltrator"},
+		abilities: {0: "Inner Focus", 1: "Mocking Face", H: "Infiltrator"},
 		heightm: 1.6,
 		weightkg: 55,
 		color: "Purple",

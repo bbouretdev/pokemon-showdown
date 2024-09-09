@@ -2611,4 +2611,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon summons a substitute.",
 		shortDesc: "On switch-in, this Pokemon summons a substitute.",
 	},
+	mockingface: {
+		name: "Mocking Face",
+		desc: "On switch-in, this Pokemon taunts the opposite Pokemn.",
+		shortDesc: "On switch-in, this Pokemon taunts the opposite Pokemn.",
+	},
 };
