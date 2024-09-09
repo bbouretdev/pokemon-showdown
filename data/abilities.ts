@@ -6829,7 +6829,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			for (const foe of pokemon.foes()) {
 				if (foe.volatiles['hurryup'] && foe.lastMove?.category === 'Status') {
 					this.add('-ability', pokemon, 'Hurry Up');
-					this.add('-stop', foe, 'ability: Hurry Up');
+					this.add('-end', foe, 'ability: Hurry Up');
 					foe.removeVolatile('hurryup');
 					this.actions.useMove('taunt', pokemon);
 				}
@@ -6851,5 +6851,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Spirit Balance",
 		rating: 2.5,
 		num: 10074,
+	},
+	sneerwelcome: {
+		onModifyMovePriority: 5,
+		onModifyMove(move, pokemon, target) {
+			if (!target?.activeTurns && move.category !== 'Status') {
+				target?.addVolatile('taunt');
+			}
+		},
+		flags: {},
+		name: "Sneer Welcome",
+		rating: 4.5,
+		num: 10075,
 	},
 };

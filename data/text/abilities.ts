@@ -2636,4 +2636,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "FILL ME IN.",
 		shortDesc: "FILL ME IN.",
 	},
+	sneerwelcome: {
+		name: "Sneer Welcome",
+		desc: "FILL ME IN.",
+		shortDesc: "FILL ME IN.",
+	},
 };
