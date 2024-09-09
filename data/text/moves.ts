@@ -7575,8 +7575,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	muteblow: {
 		name: "Mute Blow",
-		desc: "The opponent's secondary effects are removed.",
-		shortDesc: "The opponent's secondary effects are removed.",
+		desc: "The opponent's secondary effects are removed. Usually goes first.",
+		shortDesc: "The opponent's secondary effects are removed. Usually goes first.",
 	},
 	swiftfin: {
 		name: "Swift Fin",

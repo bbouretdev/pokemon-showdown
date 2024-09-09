@@ -2601,4 +2601,14 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Turns offensive moves into 2-hit ones, distributing move's base power into each individual hit.",
 		shortDesc: "Offensive hits become 2-hit for same global BP.",
 	},
+	wraithtenacity: {
+		name: "Wraith Tenacity",
+		desc: "The user will survive attacks made by other Pokemon that would make it KO, with at least 1 HP. Its Attack is raised at maximum but it will faint on next turn.",
+		shortDesc: "Survives 1 turn, raises Atk at maximum but faints on next turn.",
+	},
+	cloneindustry: {
+		name: "Clone Industry",
+		desc: "On switch-in, this Pokemon summons a substitute.",
+		shortDesc: "On switch-in, this Pokemon summons a substitute.",
+	},
 };

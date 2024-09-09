@@ -5691,7 +5691,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tresamigos: {
 		onModifyMove(move) {
-			if (move.category !== 'Status' && !move.multihit) {
+			if (move.category !== 'Status' && !move.multihit && move.basePower > 0) {
 				move.multihit = 3;
 				if (move.secondaries) {
 					delete move.secondaries;
@@ -6761,7 +6761,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	inseparable: {
 		onModifyMove(move) {
-			if (move.category !== 'Status' && !move.multihit) {
+			if (move.category !== 'Status' && !move.multihit && move.basePower > 0) {
 				move.multihit = 2;
 			}
 		},
@@ -6775,5 +6775,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Inseparable",
 		rating: 2.5,
 		num: 10068,
+	},
+	cloneindustry: {
+		onStart(target) {
+			this.actions.useMove('substitute', target);
+		},
+		name: "Clone Industry",
+		rating: 2.5,
+		num: 10069,
 	},
 };
