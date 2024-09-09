@@ -6435,7 +6435,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					const berries = this.dex.items.all().filter(item => (
 						item.isBerry
 					));
-					console.log(berries);
 					let randomBerry = '';
 					if (berries.length) {
 						berries.sort((a, b) => a.num - b.num);
