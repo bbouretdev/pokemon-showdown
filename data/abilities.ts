@@ -6805,8 +6805,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				source.removeVolatile('physical');
 				return this.chainModify(1.5);
 			}
-			if (move.category === 'Physical') source.addVolatile('physical');
-			if (move.category === 'Special') source.addVolatile('special');
+		},
+		onModifyMove(move, pokemon, target) {
+			if (move.category === 'Physical') pokemon.addVolatile('physical');
+			if (move.category === 'Special') pokemon.addVolatile('special');
 		},
 		name: "Mind Pendulum",
 		rating: 2.5,
