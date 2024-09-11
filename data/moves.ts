@@ -22790,38 +22790,38 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		onModifyMove(move, pokemon) {
-			const spikesCondition = pokemon.side.sideConditions['spikes'];
+		onModifyMove(move, pokemon, target) {
+			const spikesCondition = target?.side.sideConditions['spikes'];
 			if (spikesCondition) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
+				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
 					const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
-					this.damage(damageAmounts[spikesCondition.layers] * pokemon.maxhp / 24);
+					this.damage(damageAmounts[spikesCondition.layers] * target.maxhp / 24);
 			}
-			const toxicSpikesCondition = pokemon.side.sideConditions['toxicspikes'];
+			const toxicSpikesCondition = target?.side.sideConditions['toxicspikes'];
 			if (toxicSpikesCondition) {
-				if (!pokemon.isGrounded()) return;
-				if (pokemon.hasType('Poison')) {
-					this.add('-sideend', pokemon.side, 'move: Toxic Spikes', '[of] ' + pokemon);
-					pokemon.side.removeSideCondition('toxicspikes');
-				} else if (pokemon.hasType('Steel') || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) {
+				if (!target.isGrounded()) return;
+				if (target.hasType('Poison')) {
+					this.add('-sideend', target.side, 'move: Toxic Spikes', '[of] ' + target);
+					target.side.removeSideCondition('toxicspikes');
+				} else if (target.hasType('Steel') || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) {
 					return;
 				} else if (this.effectState.layers >= 2) {
-					pokemon.trySetStatus('tox', pokemon.side.foe.active[0]);
+					target.trySetStatus('tox', target.side.foe.active[0]);
 				} else {
-					pokemon.trySetStatus('psn', pokemon.side.foe.active[0]);
+					target.trySetStatus('psn', target.side.foe.active[0]);
 				}
 			}
-			const stickywebCondition = pokemon.side.sideConditions['stickyweb'];
+			const stickywebCondition = target?.side.sideConditions['stickyweb'];
 			if (stickywebCondition) {
-				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
-				this.add('-activate', pokemon, 'move: Sticky Web');
-				this.boost({spe: -1}, pokemon, pokemon.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
+				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				this.add('-activate', target, 'move: Sticky Web');
+				this.boost({spe: -1}, target, target.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
 			}
-			const stealthrockCondition = pokemon.side.sideConditions['stealthrock'];
+			const stealthrockCondition = target?.side.sideConditions['stealthrock'];
 			if (stealthrockCondition) {
-				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
-				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				this.damage(target.maxhp * Math.pow(2, typeMod) / 8);
 			}
 		},
 		secondary: null,
