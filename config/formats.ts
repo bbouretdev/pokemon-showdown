@@ -79,12 +79,12 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		// 	return this.checkCanLearn(move, template, lsetData, set);
 		// },
 	},
-	{
-		name: "[Gen 9] Ubers",
-		mod: 'gen9',
-		ruleset: ['Standard', 'Terastal Clause'],
-		banlist: ['AG', 'Moody', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects'],
-	},
+	// {
+	// 	name: "[Gen 9] Ubers",
+	// 	mod: 'gen9',
+	// 	ruleset: ['Standard', 'Terastal Clause'],
+	// 	banlist: ['AG', 'Moody', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects'],
+	// },
 	// {
 	// 	name: "[Gen 9] UU",
 	// 	mod: 'gen9',

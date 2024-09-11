@@ -6910,18 +6910,4 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1.5,
 		num: 10077,
 	},
-	lastchance: {
-		onModifyMove(move, pokemon, target) {
-			console.log('move.pp' + move.pp);
-			for (const moveSlot of pokemon.moveSlots) {
-				if (moveSlot.id === pokemon.lastMove?.id) {
-					console.log('moveSlot.pp' + moveSlot.pp);
-				}
-			}
-		},
-		flags: {},
-		name: "Last Chance",
-		rating: 1.5,
-		num: 10078,
-	},
 };
