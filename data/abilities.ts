@@ -6873,8 +6873,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
+			newMove.damage = move.damage;
 			this.actions.useMove(newMove, target, source);
-			return null;
+			return;
 		},
 		onAllyTryHitSide(target, source, move) {
 			if (target.isAlly(source) || move.hasBounced || !move.flags['missile']) {
@@ -6883,8 +6884,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
+			newMove.damage = move.damage;
 			this.actions.useMove(newMove, this.effectState.target, source);
-			return null;
+			return;
 		},
 		condition: {
 			duration: 1,

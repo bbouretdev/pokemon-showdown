@@ -2633,8 +2633,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	spiritbalance: {
 		name: "Spirit Balance",
-		desc: "This Pokemon runs äin Split, at the end of each turn.",
-		shortDesc: "This Pokemon runs äin Split, at the end of each turn.",
+		desc: "This Pokemon runs Pain Split, at the end of each turn.",
+		shortDesc: "This Pokemon runs Pain Split, at the end of each turn.",
 	},
 	sneerwelcome: {
 		name: "Sneer Welcome",
@@ -2643,11 +2643,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	boomerang: {
 		name: "Boomerang",
-		desc: "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, Sticky Web, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
-		shortDesc: "This Pokemon blocks certain Status moves and bounces them back to the user.",
-		gen5: {
-			desc: "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
-		},
+		desc: "This Pokemon is unaffected by projectile moves directed at it and will instead use such moves against the original user.",
+		shortDesc: "This Pokemon blocks certain projectile moves and bounces them back to the user.",
 
 		move: "[POKEMON] threw the [MOVE] back!",
 	},
