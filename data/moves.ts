@@ -22791,6 +22791,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
+			console.log(pokemon.name);
+			console.log(target?.name);
+			// console.log(pokemon.adjacentFoes())
+			// console.log(target?.adjacentFoes())
 			// console.log(target?.side.sideConditions);
 			for (const foe of pokemon.adjacentFoes()) {
 				const spikesCondition = target?.side.sideConditions['spikes'];
@@ -22823,7 +22827,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (stealthrockCondition) {
 					if (foe.hasItem('heavydutyboots') || foe.hasAbility('surepaws')) return;
 					const typeMod = this.clampIntRange(foe.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
-					console.log(typeMod);
 					// this.damage(target.maxhp * Math.pow(2, typeMod) / 8);
 					this.damage(foe.baseMaxhp / 4);
 				}
