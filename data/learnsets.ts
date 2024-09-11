@@ -10579,6 +10579,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderpunch: ["9M", "8V", "7T", "6T", "5T", "4T"],
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
 			wideguard: ["9M", "9E", "7E", "6E"],
+			dangerzone: ["9M", "9E", "7E", "6E"],
 		},
 		encounters: [
 			{generation: 1, level: 7},
@@ -10757,6 +10758,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			terablast: ["9M"],
 			thunderpunch: ["9M", "8V", "7T", "6T", "5T", "4T"],
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
+			dangerzone: ["9M", "9E", "7E", "6E"],
 		},
 		encounters: [
 			{generation: 2, level: 23},
@@ -10943,6 +10945,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			terablast: ["9M"],
 			thunderpunch: ["9M", "8V", "7T", "6T", "5T", "4T"],
 			toxic: ["9M", "8V", "7M", "7V", "6M", "5M", "4M", "3M"],
+			dangerzone: ["9M", "9E", "7E", "6E"],
 		},
 	},
 	golemalola: {

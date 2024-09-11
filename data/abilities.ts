@@ -6949,7 +6949,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	fieldknowledge: {
 		onStart(pokemon) {
-			console.log(pokemon.side.sideConditions);
 			if (pokemon.side.sideConditions['stealthrock']) this.boost({def: 1}, pokemon, pokemon);
 			if (pokemon.side.sideConditions['stickyweb']) this.boost({spe: 1}, pokemon, pokemon);
 			if (pokemon.side.sideConditions['spikes']) {
