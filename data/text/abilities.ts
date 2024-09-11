@@ -2658,4 +2658,14 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "At the end of every turn, this Pokemon restores 1/16 of its max HP.",
 		shortDesc: "At the end of every turn, this Pokemon restores 1/16 of its max HP.",
 	},
+	upload: {
+		name: "Upload",
+		desc: "On switch-in, this Pokemon's Defense or Special Defense is raised by 1 stage based on the weaker combined offensive stat of all opposing Pokemon. Defense is raised if their Special Attack is lower, and Special Defense is raised if their Attack is the same or lower.",
+		shortDesc: "On switch-in, Defense or Sp. Def is raised 1 stage based on the foes' weaker Attack.",
+	},
+	seedspread: {
+		name: "Seed Spread",
+		desc: "On switch-in, this Pokemon leech seeds the opposite Pokemon.",
+		shortDesc: "On switch-in, this Pokemon leech seeds the opposite Pokemon.",
+	},
 };

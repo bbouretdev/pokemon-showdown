@@ -6919,4 +6919,41 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1.5,
 		num: 10077,
 	},
+	upload: {
+		onStart(pokemon) {
+			let totalatk = 0;
+			let totalspa = 0;
+			for (const target of pokemon.foes()) {
+				totalatk += target.getStat('atk', false, true);
+				totalspa += target.getStat('spa', false, true);
+			}
+			if (totalatk && totalatk >= totalspa) {
+				this.boost({def: 1});
+			} else if (totalspa) {
+				this.boost({spd: 1});
+			}
+		},
+		flags: {},
+		name: "Upload",
+		rating: 3.5,
+		num: 10078,
+	},
+	seedspread: {
+		onStart(target) {
+			this.actions.useMove('leechseed', target);
+		},
+		flags: {},
+		name: "Seed Spread",
+		rating: 1.5,
+		num: 10078,
+	},
+	fieldknowledge: {
+		onStart(target) {
+			console.log(target.side.sideConditions);
+		},
+		flags: {},
+		name: "Field Knowledge",
+		rating: 1.5,
+		num: 10079,
+	},
 };

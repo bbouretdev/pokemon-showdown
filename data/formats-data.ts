@@ -256,7 +256,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 	},
 	oddish: {
-		tier: "LC",
+		tier: "OU",
 	},
 	gloom: {
 		tier: "OU",
