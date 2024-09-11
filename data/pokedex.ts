@@ -2225,7 +2225,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Kingler",
 		types: ["Water"],
 		baseStats: {hp: 55, atk: 130, def: 115, spa: 50, spd: 50, spe: 75},
-		abilities: {0: "Hyper Cutter", 1: "Shell Armor", H: "Sheer Force"},
+		abilities: {0: "Hyper Cutter", 1: "Last Chance", H: "Sheer Force"},
 		heightm: 1.3,
 		weightkg: 60,
 		color: "Red",

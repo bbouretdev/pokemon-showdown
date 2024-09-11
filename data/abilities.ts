@@ -6873,7 +6873,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
-			newMove.damage = move.damage;
 			this.actions.useMove(newMove, target, source);
 			return;
 		},
@@ -6884,7 +6883,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const newMove = this.dex.getActiveMove(move.id);
 			newMove.hasBounced = true;
 			newMove.pranksterBoosted = false;
-			newMove.damage = move.damage;
 			this.actions.useMove(newMove, this.effectState.target, source);
 			return;
 		},
@@ -6911,5 +6909,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Self Sufficient",
 		rating: 1.5,
 		num: 10077,
+	},
+	lastchance: {
+		onModifyMove(move, pokemon, target) {
+			console.log('move.pp' + move.pp);
+			for (const moveSlot of pokemon.moveSlots) {
+				if (moveSlot.id === pokemon.lastMove?.id) {
+					console.log('moveSlot.pp' + moveSlot.pp);
+				}
+			}
+		},
+		flags: {},
+		name: "Last Chance",
+		rating: 1.5,
+		num: 10078,
 	},
 };

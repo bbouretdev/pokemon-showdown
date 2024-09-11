@@ -7610,8 +7610,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	venomguard: {
 		name: "Venom Guard",
-		desc: "The user is protected from most attacks made by other Pokemon during this turn, any contact with the user will set 1 Spikes range. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
-		shortDesc: "Protects from damaging attacks. Contact: 1 Spikes range.",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, any contact with the user will set 1 Toxic Spikes range. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: 1 Toxic Spikes range.",
 	},
 	triplestinger: {
 		name: "Triple Stinger",
