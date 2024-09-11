@@ -22791,7 +22791,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
-			console.log(target?.side.sideConditions);
+			// console.log(target?.side.sideConditions);
 			const spikesCondition = target?.side.sideConditions['spikes'];
 			if (spikesCondition) {
 				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
@@ -22821,6 +22821,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const stealthrockCondition = target?.side.sideConditions['stealthrock'];
 			if (stealthrockCondition) {
 				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				console.log(target?.side.sideConditions);
 				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(target.maxhp * Math.pow(2, typeMod) / 8);
 			}
