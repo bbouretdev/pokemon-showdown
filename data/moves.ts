@@ -22824,7 +22824,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				console.log(typeMod);
 				// this.damage(target.maxhp * Math.pow(2, typeMod) / 8);
-				this.damage(pokemon.baseMaxhp / 4);
+				this.damage(target.baseMaxhp / 4);
 			}
 		},
 		secondary: null,
