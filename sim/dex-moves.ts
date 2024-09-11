@@ -69,6 +69,7 @@ interface MoveFlags {
 	kick?: 1; //
 	pivot?: 1 //
 	rush?: 1
+	missile?: 1 // Throwable object related moves
 }
 
 export interface HitEffect {

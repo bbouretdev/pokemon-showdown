@@ -9791,6 +9791,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			vitalthrow: ["9M", "8L24", "7L25", "7V", "6L25", "5L31", "4L25", "3L31"],
 			wakeupslap: ["9M", "7L27", "6L27", "5L37", "4L34"],
 			workup: ["9M", "8M", "7M", "5M"],
+			muteblow: ["9M", "8M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 1, level: 15},
@@ -9888,6 +9889,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			vitalthrow: ["9M", "8L24", "7L25", "7V", "6L25", "5L32", "4L25", "3L33"],
 			wakeupslap: ["9M", "7L27", "6L27", "5L40", "4L36"],
 			workup: ["9M", "8M", "7M", "5M"],
+			muteblow: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 5, level: 30, moves: ["lowsweep", "foresight", "seismictoss", "revenge"], pokeball: "cherishball"},
@@ -10000,6 +10002,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wakeupslap: ["9M", "7L27", "6L27", "5L40", "4L36"],
 			wideguard: ["9M", "8L1", "7L1", "6L1", "6S1", "5L1"],
 			workup: ["9M", "8M", "7M", "5M"],
+			muteblow: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 38, gender: "M", nature: "Quiet", ivs: {hp: 9, atk: 23, def: 25, spa: 20, spd: 15, spe: 10}, abilities: ["guts"], moves: ["seismictoss", "foresight", "revenge", "vitalthrow"], pokeball: "pokeball"},

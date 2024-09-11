@@ -2628,17 +2628,37 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	hurryup: {
 		name: "Hurry Up",
-		desc: "FILL ME IN.",
-		shortDesc: "FILL ME IN.",
+		desc: "This Pokemon runs Taunt if the opponent has not used any offensive move during last 2 turns.",
+		shortDesc: "Taunts if opponent does not use offensive moves during last 2 turns.",
 	},
 	spiritbalance: {
 		name: "Spirit Balance",
-		desc: "FILL ME IN.",
-		shortDesc: "FILL ME IN.",
+		desc: "This Pokemon runs äin Split, at the end of each turn.",
+		shortDesc: "This Pokemon runs äin Split, at the end of each turn.",
 	},
 	sneerwelcome: {
 		name: "Sneer Welcome",
-		desc: "FILL ME IN.",
-		shortDesc: "FILL ME IN.",
+		desc: "This Pokemon's offensive moves applies Taunt against a target that switched in this turn.",
+		shortDesc: "This Pokemon's offensive moves applies Taunt against a target that switched in this turn.",
+	},
+	boomerang: {
+		name: "Boomerang",
+		desc: "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, Sticky Web, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
+		shortDesc: "This Pokemon blocks certain Status moves and bounces them back to the user.",
+		gen5: {
+			desc: "This Pokemon is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. Moves reflected in this way are unable to be reflected again by this or Magic Coat's effect. Spikes, Stealth Rock, and Toxic Spikes can only be reflected once per side, by the leftmost Pokemon under this or Magic Coat's effect. The Lightning Rod and Storm Drain Abilities redirect their respective moves before this Ability takes effect.",
+		},
+
+		move: "[POKEMON] threw the [MOVE] back!",
+	},
+	surepaws: {
+		name: "Sure Paws",
+		desc: "When switching in, the holder is unaffected by hazards on its side of the field.",
+		shortDesc: "When switching in, the holder is unaffected by hazards on its side of the field.",
+	},
+	selfsufficient: {
+		name: "Self Sufficient",
+		desc: "At the end of every turn, this Pokemon restores 1/16 of its max HP.",
+		shortDesc: "At the end of every turn, this Pokemon restores 1/16 of its max HP.",
 	},
 };

@@ -6864,4 +6864,50 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: 10075,
 	},
+	boomerang: {
+		onTryHitPriority: 1,
+		onTryHit(target, source, move) {
+			if (target === source || move.hasBounced || !move.flags['missile']) {
+				return;
+			}
+			const newMove = this.dex.getActiveMove(move.id);
+			newMove.hasBounced = true;
+			newMove.pranksterBoosted = false;
+			this.actions.useMove(newMove, target, source);
+			return null;
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (target.isAlly(source) || move.hasBounced || !move.flags['missile']) {
+				return;
+			}
+			const newMove = this.dex.getActiveMove(move.id);
+			newMove.hasBounced = true;
+			newMove.pranksterBoosted = false;
+			this.actions.useMove(newMove, this.effectState.target, source);
+			return null;
+		},
+		condition: {
+			duration: 1,
+		},
+		flags: {breakable: 1},
+		name: "Boomerang",
+		rating: 4,
+		num: 10076,
+	},
+	surepaws: {
+		// effect implemented directly into entry hazards code (moves.ts)
+		flags: {},
+		name: "Sure Paws",
+		rating: 4.5,
+		num: 10077,
+	},
+	selfsufficient: {
+		onResidual(target, source, effect) {
+			this.heal(target.baseMaxhp / 16);
+		},
+		flags: {},
+		name: "Self Sufficient",
+		rating: 1.5,
+		num: 10077,
+	},
 };
