@@ -476,6 +476,27 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 
 	// weather is implemented here since it's so important to the game
+	greysky: {
+		name: 'GreySky',
+		effectType: 'Weather',
+		duration: 1,
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'GreySky', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'GreySky');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'GreySky', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 
 	raindance: {
 		name: 'RainDance',
