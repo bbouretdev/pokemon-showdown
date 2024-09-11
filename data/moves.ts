@@ -22821,8 +22821,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const stealthrockCondition = target?.side.sideConditions['stealthrock'];
 			if (stealthrockCondition) {
 				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
-				console.log(target?.side.sideConditions);
 				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				console.log(typeMod);
 				this.damage(target.maxhp * Math.pow(2, typeMod) / 8);
 			}
 		},
