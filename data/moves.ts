@@ -22790,7 +22790,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		onModifyMove(move, pokemon, target) {
+		onAfterMove(pokemon, target, move) {
 			const spikesCondition = target?.side.sideConditions['spikes'];
 			if (spikesCondition) {
 				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
