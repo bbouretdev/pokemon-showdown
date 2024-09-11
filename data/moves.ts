@@ -22791,6 +22791,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
 		onModifyMove(move, pokemon, target) {
+			console.log(target?.side.sideConditions);
 			const spikesCondition = target?.side.sideConditions['spikes'];
 			if (spikesCondition) {
 				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
@@ -22805,7 +22806,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					target.side.removeSideCondition('toxicspikes');
 				} else if (target.hasType('Steel') || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) {
 					return;
-				} else if (this.effectState.layers >= 2) {
+				} else if (toxicSpikesCondition.layers >= 2) {
 					target.trySetStatus('tox', target.side.foe.active[0]);
 				} else {
 					target.trySetStatus('psn', target.side.foe.active[0]);
