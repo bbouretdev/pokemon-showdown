@@ -7716,4 +7716,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Damage is calculated using the user's Speed stat as its Attack, including stat stage changes. Other effects that modify the Attack stat are used as normal.",
 		shortDesc: "Uses user's Spe stat as Atk in damage calculation.",
 	},
+	dangerzone: {
+		name: "Danger Zone",
+		desc: "Applies all set entry hazards on the opposite Pokemon's side.",
+		shortDesc: "Applies all set entry hazards on the opposite Pokemon's side.",
+	},
 };

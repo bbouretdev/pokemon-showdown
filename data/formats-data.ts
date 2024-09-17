@@ -984,7 +984,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	sudowoodo: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	hoppip: {
 	tier: "Illegal",

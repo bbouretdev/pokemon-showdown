@@ -2668,4 +2668,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon leech seeds the opposite Pokemon.",
 		shortDesc: "On switch-in, this Pokemon leech seeds the opposite Pokemon.",
 	},
+	fieldknowledge: {
+		name: "Field Knowledge",
+		desc: "FILL ME IN",
+		shortDesc: "FILL ME IN",
+	},
 };

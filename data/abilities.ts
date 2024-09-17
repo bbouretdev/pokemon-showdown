@@ -6965,4 +6965,29 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1.5,
 		num: 10079,
 	},
+	woodydisguise: {
+		onStart(target) {
+			this.add('-start', target, 'ability: Woody Disguise');
+			target.addVolatile('woodydisguise');
+		},
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			const supereffectiveAgainstGrassTypes = ['Ice','Fire','Flying','Bug','Poison'];
+			if (supereffectiveAgainstGrassTypes.includes(move.type)) {
+				this.add('-end', target, 'ability: Woody Disguise');
+				target.removeVolatile('woodydisguise');
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			const grassTypesResistedTypes = ['Grass','Water','Electric','Ground'];
+			if (target?.volatiles['woodydisguise'] && grassTypesResistedTypes.includes(move.type)) {
+				this.debug('Woody Disguise neutralize');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {},
+		name: "Woody Disguise",
+		rating: 1.5,
+		num: 10080,
+	},
 };
