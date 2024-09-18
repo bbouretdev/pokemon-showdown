@@ -6990,4 +6990,66 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1.5,
 		num: 10080,
 	},
+	rollingboulder: {
+		onFoeHit(target, source, move) {
+			if (move.flags['contact']) {
+				this.add('-ability', source, 'Rolling Boulder');
+				this.boost({spe: 1}, source, source);
+			}
+		},
+		flags: {},
+		name: "Rolling Boulder",
+		rating: 0.5,
+		num: 10081,
+	},
+	disgust: {
+		onFoeEatItem(item, pokemon) {
+			pokemon.addVolatile('truant');
+		},
+		flags: {},
+		name: "Disgust",
+		rating: 4,
+		num: 10082,
+	},
+	arachnophobia: {
+		onStart(pokemon) {
+			for (const target of pokemon.foes()) {
+				target.addVolatile('truant');
+			}
+		},
+		flags: {},
+		name: "Arachnophobia",
+		rating: 4,
+		num: 10083,
+	},
+	foolhardy: {
+		onModifyDamage(damage, source, target, move) {
+			return this.chainModify([5324, 4096]);
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag) {
+				this.damage(source.baseMaxhp / 10, source, source);
+			}
+		},
+		flags: {},
+		name: "Foolhardy",
+		rating: 4,
+		num: 10084,
+	},
+	exhaustion: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				for (const moveSlot of source.moveSlots) {
+					if (moveSlot.id === move.id) {
+						source.deductPP(move, moveSlot.pp, source);
+					}
+				}
+			}
+		},
+		flags: {},
+		name: "Exhaustion",
+		rating: 2,
+		num: 10085,
+	},
 };

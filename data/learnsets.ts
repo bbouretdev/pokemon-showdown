@@ -26765,6 +26765,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trailblaze: ["9M"],
 			uproar: ["9M", "8M"],
 			woodhammer: ["9M", "9L1", "8L1", "7L1", "6L1", "5L1", "4L1"],
+			leechseed: ["9M", "9L1", "8L1", "7L1", "6L1", "5L1", "4L1"],
 		},
 	},
 	hoppip: {

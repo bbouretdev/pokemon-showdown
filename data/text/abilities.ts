@@ -2670,7 +2670,17 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	fieldknowledge: {
 		name: "Field Knowledge",
-		desc: "FILL ME IN",
-		shortDesc: "FILL ME IN",
+		desc: "This Pokemon raises its stats by 1 stage according to entry hazards set on switch-in. Stealth Rock boosts Defense, Sticky Web boosts Speed, Spikes boosts Attack per layer, Toxic Spikes boosts Special Defense per layer.",
+		shortDesc: "On switch-in, raises stats by 1 stage per entry hazard. Stealth Rock Def, Sticky Web Spe, Spikes Atk, Toxic Spikes Spd.",
+	},
+	woodydisguise: {
+		name: "Woody Disguise",
+		desc: "On switch-in, this Pokemon gets Grass-type resistances, until revealed by a move super effective against Grass.",
+		shortDesc: "On switch-in, this Pokemon gets Grass-type resistances, until revealed by a move super effective against Grass.",
+	},
+	rollingboulder: {
+		name: "Rolling Boulder",
+		desc: "This Pokemon's Speed is raised by 1 stage when using contact moves.",
+		shortDesc: "This Pokemon's Speed is raised by 1 stage when using contact moves.",
 	},
 };

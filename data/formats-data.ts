@@ -888,10 +888,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "LC",
 	},
 	bayleef: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	meganium: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	cyndaquil: {
 	tier: "Illegal",
