@@ -2128,6 +2128,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Inner Focus', '[of] ' + target);
 			}
+			if (effect.name === 'Spooky' && boost.spa) {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Inner Focus', '[of] ' + target);
+			}
 		},
 		flags: {breakable: 1},
 		name: "Inner Focus",
@@ -2988,6 +2992,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Oblivious', '[of] ' + target);
 			}
+			if (effect.name === 'Spooky' && boost.spa) {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Oblivious', '[of] ' + target);
+			}
 		},
 		flags: {breakable: 1},
 		name: "Oblivious",
@@ -3088,6 +3096,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect.name === 'Intimidate' && boost.atk) {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Own Tempo', '[of] ' + target);
+			}
+			if (effect.name === 'Spooky' && boost.spa) {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Own Tempo', '[of] ' + target);
 			}
 		},
 		flags: {breakable: 1},
@@ -3718,6 +3730,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect?.name === 'Intimidate' && boost.atk) {
 				this.boost({spe: 1});
 			}
+			if (effect?.name === 'Spooky' && boost.spa) {
+				this.boost({spe: 1});
+			}
 		},
 		flags: {},
 		name: "Rattled",
@@ -4030,6 +4045,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (effect.name === 'Intimidate' && boost.atk) {
 				delete boost.atk;
 				this.add('-fail', target, 'unboost', 'Attack', '[from] ability: Scrappy', '[of] ' + target);
+			}
+			if (effect.name === 'Spooky' && boost.spa) {
+				delete boost.spa;
+				this.add('-fail', target, 'unboost', 'Special Attack', '[from] ability: Scrappy', '[of] ' + target);
 			}
 		},
 		flags: {},
@@ -7002,24 +7021,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0.5,
 		num: 10081,
 	},
-	disgust: {
+	taint: {
 		onFoeEatItem(item, pokemon) {
-			pokemon.addVolatile('truant');
+			pokemon.setStatus('tox');
 		},
 		flags: {},
-		name: "Disgust",
+		name: "Taint",
 		rating: 4,
 		num: 10082,
 	},
 	arachnophobia: {
 		onStart(pokemon) {
-			for (const target of pokemon.foes()) {
-				target.addVolatile('truant');
+			this.add('-start', pokemon, 'ability: Arachnophobia');
+		},
+		onFoeModifySpe(spe, pokemon) {
+			spe = this.finalModify(spe);
+			if (!pokemon.hasAbility('quickfeet') && pokemon.status !== 'par') {
+				spe = Math.floor(spe * 50 / 100);
+			}
+			return spe;
+		},
+		onFoeBeforeMovePriority: 1,
+		onFoeBeforeMove(pokemon) {
+			if (pokemon.status !== 'par') {
+				if (this.randomChance(1, 4)) {
+					this.add('cant', pokemon, 'par');
+					return false;
+				}
 			}
 		},
-		flags: {},
+		flags: {breakable: 1},
 		name: "Arachnophobia",
-		rating: 4,
+		rating: 3,
 		num: 10083,
 	},
 	foolhardy: {
@@ -7051,5 +7084,52 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Exhaustion",
 		rating: 2,
 		num: 10085,
+	},
+	sinister: {
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Ghost'] = true;
+			}
+		},
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Ghost' || move.type === 'Dark') {
+				this.debug('Sinister boost');
+				return this.chainModify(1.2);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Ghost' || move.type === 'Dark') {
+				this.debug('Sinister boost');
+				return this.chainModify(1.2);
+			}
+		},
+		flags: {},
+		name: "Sinister",
+		rating: 3,
+		num: 10086,
+	},
+	spooky: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Spooky', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({spa: -1}, target, pokemon, null, true);
+				}
+			}
+		},
+		flags: {},
+		name: "Spooky",
+		rating: 3.5,
+		num: 10087,
 	},
 };

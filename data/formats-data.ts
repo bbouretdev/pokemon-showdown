@@ -936,7 +936,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	ariados: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	chinchou: {
 	tier: "Illegal",

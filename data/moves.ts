@@ -674,7 +674,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	astonish: {
 		num: 310,
 		accuracy: 100,
-		basePower: 30,
+		basePower: 60,
 		category: "Physical",
 		name: "Astonish",
 		pp: 15,

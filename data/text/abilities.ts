@@ -2425,8 +2425,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	suspicioustaste: {
 		name: "Suspicious Taste",
-		desc: "When this Pokemon eats certain Berries, the effects are reversed. Berries that restore HP or PP have the amount set to opposite, Berries that raise stat stages have the amount set to opposite, Berries that halve damage taken double it instead.",
-		shortDesc: "When this Pokemon eats certain Berries, the effects are reversed.",
+		desc: "When the opposite Pokemon eats certain Berries, the effects are reversed. Berries that restore HP or PP have the amount set to opposite, Berries that raise stat stages have the amount set to opposite, Berries that halve damage taken double it instead.",
+		shortDesc: "When the opposite Pokemon eats certain Berries, the effects are reversed.",
 	},
 	symbioticlink: {
 		name: "Symbiotic Link",
@@ -2538,10 +2538,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	flamemajesty: {
 		name: "Flame Majesty",
+		desc: "This Pokemon Fire-type moves have their priority increased by 1.",
 		shortDesc: "This Pokemon Fire-type moves have their priority increased by 1.",
-		gen6: {
-			shortDesc: "This Pokemon Fire-type moves have their priority increased by 1.",
-		},
 	},
 	pestilentreaper: {
 		name: "Pestilent Reaper",
@@ -2682,5 +2680,35 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Rolling Boulder",
 		desc: "This Pokemon's Speed is raised by 1 stage when using contact moves.",
 		shortDesc: "This Pokemon's Speed is raised by 1 stage when using contact moves.",
+	},
+	taint: {
+		name: "Taint",
+		desc: "When the opposite Pokemon eats a Berry, it is badly poisoned.",
+		shortDesc: "When the opposite Pokemon eats a Berry, it is badly poisoned.",
+	},
+	arachnophobia: {
+		name: "Arachnophobia",
+		desc: "While this Pokemon is active, the opponent Pokemons are paralyzed.",
+		shortDesc: "While this Pokemon is active, the opponent Pokemons are paralyzed.",
+	},
+	foolhardy: {
+		name: "Foolhardy",
+		desc: "This Pokemon's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+		shortDesc: "This Pokemon's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+	},
+	exhaustion: {
+		name: "Exhaustion",
+		desc: "If this Pokemon is knocked out by a move, that move's PP are set to zero.",
+		shortDesc: "If this Pokemon is knocked out by a move, that move's PP are set to zero.",
+	},
+	spooky: {
+		name: "Spooky",
+		desc: "On switch-in, this Pokemon lowers the Special Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon lowers the Special Attack of opponents by 1 stage.",
+	},
+	sinister: {
+		name: "Sinister",
+		desc: "This Pokemon can hit Normal types with Ghost-type moves. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
+		shortDesc: "Fighting, Normal moves hit Ghost. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
 	},
 };
