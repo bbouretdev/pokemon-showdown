@@ -22891,7 +22891,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: Nether Ward');
 			},
 			onEntryHazard(pokemon) {
-				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;		
+				this.add('-start', pokemon, 'Nether Ward');
 				pokemon.addVolatile('netherward');
 			},
 			onDamagingHit(damage, target, source, move) {
