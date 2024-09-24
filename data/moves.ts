@@ -22894,9 +22894,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
 				pokemon.addVolatile('netherward');
 			},
-			onFoeModifyMove(move, pokemon, target) {
-				if (move.category === 'Special' && pokemon.volatiles['netherward']) {
-					this.damage(pokemon.baseMaxhp / 16, pokemon);
+			onDamagingHit(damage, target, source, move) {
+				if (move.category === 'Special' && source.volatiles['netherward']) {
+					this.add('-activate', source, 'move: Nether Ward');
+					this.debug('Nether Ward damage');
+					this.damage(source.baseMaxhp / 16, source);
 				}
 			},
 		},
