@@ -22894,7 +22894,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
 				pokemon.addVolatile('netherward');
 			},
-			onModifyMove(move, pokemon, target) {
+			onFoeModifyMove(move, pokemon, target) {
 				if (move.category === 'Special' && pokemon.volatiles['netherward']) {
 					this.damage(pokemon.baseMaxhp / 16, pokemon);
 				}

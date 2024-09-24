@@ -7178,10 +7178,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	naturalmaterials: {
 		onModifyMove(move, pokemon, target) {
-			if (move.type === 'Ground') {
+			if (move.type === 'Ground' && move.category !== 'Status') {
 				target?.side.addSideCondition('spikes', target);
 			}
-			if (move.type === 'Rock') {
+			if (move.type === 'Rock' && move.category !== 'Status') {
 				target?.side.addSideCondition('stealthrock', target);
 			}
 		},
