@@ -1375,7 +1375,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["9M", "8V", "7L33", "7V", "6L33", "5L33", "4L33", "3L25"],
 			workup: ["9M", "7M", "5M"],
 			aerodash: ["9M", "7M", "5M"],
-			dunecyclone: ["9M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 1, level: 2},
@@ -1454,7 +1453,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tailslap: ["9M", "7M", "5M"],
 			galeassault: ["9M", "7M", "5M"],
 			aerodash: ["9M", "7M", "5M"],
-			dunecyclone: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, abilities: ["keeneye"], moves: ["refresh", "wingattack", "steelwing", "featherdance"]},
@@ -1535,7 +1533,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			focusblast: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			flyingpress: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			aerodash: ["9M", "7M", "5M"],
-			dunecyclone: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 5, level: 61, gender: "M", nature: "Naughty", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, abilities: ["keeneye"], moves: ["whirlwind", "wingattack", "skyattack", "mirrormove"], pokeball: "cherishball"},
@@ -9458,6 +9455,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			mentaldrop: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			netherward: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 6},
@@ -9568,6 +9567,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			mentaldrop: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			netherward: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 2, level: 15},
@@ -9688,6 +9689,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			disrupt: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			mentaldrop: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			netherward: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		eventData: [
 			{generation: 3, level: 70, moves: ["futuresight", "calmmind", "psychic", "trick"], pokeball: "pokeball"},

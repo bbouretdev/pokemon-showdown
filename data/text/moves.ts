@@ -7721,4 +7721,18 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Applies all set entry hazards on the opposite Pokemon's side.",
 		shortDesc: "Applies all set entry hazards on the opposite Pokemon's side.",
 	},
+	mentaldrop: {
+		name: "Mental Drop",
+		desc: "Applies all set entry hazards on the opposite Pokemon's side.",
+		shortDesc: "Applies all set entry hazards on the opposite Pokemon's side.",
+	},
+	netherward: {
+		name: "Nether Ward",
+		desc: "Sets up a hazard on the opposing side of the field, causing opponent to damage itself 1/16 when using Special moves. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.",
+
+		start: "  A weird ward lays around [TEAM]!",
+		end: "  The weird ward disappeared from around [TEAM]!",
+		damage: "  Weird ward attacked [POKEMON]!",
+	},
 };

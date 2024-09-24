@@ -22827,5 +22827,83 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Rock",
-	},	
+	},
+	mentaldrop: {
+		num: 10037,
+		accuracy: 100,
+		basePower: 50,
+		category: "Special",
+		name: "Mental Drop",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		onHit(target) {
+			const spikesCondition = target?.side.sideConditions['spikes'];
+			if (spikesCondition) {
+				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+					const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
+					this.damage(damageAmounts[spikesCondition.layers] * target.maxhp / 24, target);
+			}
+			const toxicSpikesCondition = target?.side.sideConditions['toxicspikes'];
+			if (toxicSpikesCondition) {
+				if (!target.isGrounded()) return;
+				if (target.hasType('Poison')) {
+					this.add('-sideend', target.side, 'move: Toxic Spikes', '[of] ' + target);
+					target.side.removeSideCondition('toxicspikes');
+				} else if (target.hasType('Steel') || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) {
+					return;
+				} else if (toxicSpikesCondition.layers >= 2) {
+					target.trySetStatus('tox', target.side.foe.active[0]);
+				} else {
+					target.trySetStatus('psn', target.side.foe.active[0]);
+				}
+			}
+			const stickywebCondition = target?.side.sideConditions['stickyweb'];
+			if (stickywebCondition) {
+				if (!target.isGrounded() || target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				this.add('-activate', target, 'move: Sticky Web');
+				this.boost({spe: -1}, target, target.side.foe.active[0], this.dex.getActiveMove('stickyweb'));
+			}
+			const stealthrockCondition = target?.side.sideConditions['stealthrock'];
+			if (stealthrockCondition) {
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				this.damage(target.maxhp * Math.pow(2, typeMod) / 8, target);
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+	},
+	netherward: {
+		num: 10038,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Nether Ward",
+		pp: 20,
+		priority: 0,
+		flags: {reflectable: 1, metronome: 1, mustpressure: 1, missile: 1},
+		sideCondition: 'netherward',
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Nether Ward');
+			},
+			onEntryHazard(pokemon) {
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
+				pokemon.addVolatile('netherward');
+			},
+			onModifyMove(move, pokemon, target) {
+				if (move.category === 'Special' && pokemon.volatiles['netherward']) {
+					this.damage(pokemon.baseMaxhp / 16, pokemon);
+				}
+			},
+		},
+		secondary: null,
+		target: "foeSide",
+		type: "Psychic",
+		zMove: {boost: {def: 1}},
+		contestType: "Cool",
+	},
 };

@@ -6986,8 +6986,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	woodydisguise: {
 		onStart(target) {
-			this.add('-start', target, 'ability: Woody Disguise');
-			target.addVolatile('woodydisguise');
+			if (target.woodydisguised) {
+				this.add('-start', target, 'ability: Woody Disguise');
+				target.addVolatile('woodydisguise');
+			}
 		},
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
@@ -6995,6 +6997,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (supereffectiveAgainstGrassTypes.includes(move.type)) {
 				this.add('-end', target, 'ability: Woody Disguise');
 				target.removeVolatile('woodydisguise');
+				target.woodydisguised = false;
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
@@ -7131,5 +7134,60 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Spooky",
 		rating: 3.5,
 		num: 10087,
+	},
+	sensitive: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.id === 'Taunt') {
+				move.accuracy = true;
+				this.boost({atk: 2}, target, target, null, false, true);
+			}
+		},
+		flags: {},
+		name: "Sensitive",
+		rating: 3.5,
+		num: 10088,
+	},
+	preventive: {
+		onStart(pokemon) {
+			let warnMoves: (Move | Pokemon)[][] = [];
+			let warnBp = 1;
+			for (const target of pokemon.foes()) {
+				for (const moveSlot of target.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.move);
+					let bp = move.basePower;
+					if (move.ohko) bp = 150;
+					if (move.id === 'counter' || move.id === 'metalburst' || move.id === 'mirrorcoat') bp = 120;
+					if (bp === 1) bp = 80;
+					if (!bp && move.category !== 'Status') bp = 80;
+					if (bp > warnBp) {
+						warnMoves = [[move, target]];
+						warnBp = bp;
+					} else if (bp === warnBp) {
+						warnMoves.push([move, target]);
+					}
+				}
+			}
+			if (!warnMoves.length) return;
+			const [warnMoveName, warnTarget] = this.sample(warnMoves);
+			this.add('-activate', pokemon, 'ability: Forewarn', warnMoveName, '[of] ' + warnTarget);
+		},
+		flags: {},
+		name: "Preventive",
+		rating: 0.5,
+		num: 10089,
+	},
+	naturalmaterials: {
+		onModifyMove(move, pokemon, target) {
+			if (move.type === 'Ground') {
+				target?.side.addSideCondition('spikes', target);
+			}
+			if (move.type === 'Rock') {
+				target?.side.addSideCondition('stealthrock', target);
+			}
+		},
+		flags: {},
+		name: "Natural Materials",
+		rating: 3.5,
+		num: 10090,
 	},
 };

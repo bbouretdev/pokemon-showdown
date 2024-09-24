@@ -2711,4 +2711,14 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon can hit Normal types with Ghost-type moves. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
 		shortDesc: "Fighting, Normal moves hit Ghost. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
 	},
+	sensitive: {
+		name: "Sensitive",
+		desc: "This Pokemon's Attack is raised by 2 stages if taunted.",
+		shortDesc: "This Pokemon's Attack is raised by 2 stages if taunted.",
+	},
+	naturalmaterials: {
+		name: "Natural Materials",
+		desc: "This Pokemon's Ground-type moves also set Spikes, Rock-type moves also set Stealth Rock.",
+		shortDesc: "This Pokemon's Ground-type moves set spikes, Rock-type moves set Stealth Rock.",
+	},
 };
