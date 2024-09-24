@@ -22895,7 +22895,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-start', pokemon, 'Nether Ward');
 				pokemon.addVolatile('netherward');
 			},
-			onDamagingHit(damage, target, source, move) {
+			onFoeDamagingHit(damage, target, source, move) {
 				if (move.category === 'Special' && source.volatiles['netherward']) {
 					this.add('-activate', source, 'move: Nether Ward');
 					this.debug('Nether Ward damage');
