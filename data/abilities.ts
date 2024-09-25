@@ -7198,4 +7198,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 10090,
 	},
+	parentaldevotion: {
+		onStart(pokemon) {
+			if (pokemon.side.faintedThisTurn) {
+				this.add('-ability', pokemon, 'Parental devotion');
+				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
+				pokemon.tryTrap();
+			}
+		},
+		flags: {},
+		name: "Parental Devotion",
+		rating: 3.5,
+		num: 10091,
+		custom: true,
+	},
 };

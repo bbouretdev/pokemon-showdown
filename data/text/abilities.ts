@@ -2721,4 +2721,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "This Pokemon's Ground-type moves also set Spikes, Rock-type moves also set Stealth Rock.",
 		shortDesc: "This Pokemon's Ground-type moves set spikes, Rock-type moves set Stealth Rock.",
 	},
+	parentaldevotion: {
+		name: "Parental Devotion",
+		desc: "On switch-in, if an ally fainted last turn, raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped. Fails if the user has already been prevented from switching by this effect.",
+		shortDesc: "On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.",
+	},
 };
