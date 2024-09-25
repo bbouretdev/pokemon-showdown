@@ -7206,6 +7206,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				pokemon.tryTrap(true);
 			}
 		},
+		onTrapPokemon(pokemon) {
+			pokemon.tryTrap();
+		},
 		flags: {},
 		name: "Parental Devotion",
 		rating: 3.5,
