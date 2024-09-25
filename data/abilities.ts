@@ -7137,10 +7137,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	sensitive: {
 		onTryAddVolatile(status, target, source, sourceEffect) {
-			console.log('onTryAddVolatile: ' + sourceEffect);
-		},
-		onFoeTryAddVolatile(status, target, source, sourceEffect) {
-			console.log('onFoeTryAddVolatile: ' + sourceEffect);
+			if (target !== source && (sourceEffect as Move)?.name === 'Taunt') {
+				this.add('-activate', target, 'ability: Sensitive');
+				this.boost({atk: 2}, target, target, null, false, true);
+			}
 		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.id === 'Taunt') {
@@ -7185,9 +7185,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	naturalmaterials: {
 		onSourceDamagingHit(damage, target, source, move) {
 			if (move.type === 'Ground' && move.category !== 'Status') {
+				this.add('-activate', source, 'ability: Natural Materials');
 				target?.side.addSideCondition('spikes', target);
 			}
 			if (move.type === 'Rock' && move.category !== 'Status') {
+				this.add('-activate', source, 'ability: Natural Materials');
 				target?.side.addSideCondition('stealthrock', target);
 			}
 		},
