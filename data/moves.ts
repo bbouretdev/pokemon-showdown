@@ -22903,7 +22903,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onFoeDamagingHit(damage, target, source, move) {
 				console.log('onFoeDamagingHit: ' + move.name);
-				if (move.category === 'Special' && source.volatiles['netherward'] && source !== target) {
+				if (move.category === 'Special' && source.volatiles['netherward'] && !source.isAlly(target)) {
 					this.add('-activate', source, 'move: Nether Ward');
 					this.debug('Nether Ward damage');
 					this.damage(source.baseMaxhp / 16, source);
