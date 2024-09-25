@@ -22895,23 +22895,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-start', pokemon, 'Nether Ward');
 				pokemon.addVolatile('netherward');
 			},
-			onAfterMove(source, target, move) {
-				console.log('onAfterMove: ' + move.name);
-			},
-			onFoeAfterMove(source, target, move) {
-				console.log('onFoeAfterMove: ' + move.name);
-			},
 			onSourceDamagingHit(damage, target, source, move) {
-				console.log('onSourceDamagingHit: ' + move.name);
-			},
-			onFoeDamagingHit(damage, target, source, move) {
-				let activated = false;
-				console.log('onFoeDamagingHit: ' + move.name);
-				if (move.category === 'Special' && source.volatiles['netherward'] && !source.isAlly(target) && !activated) {
+				if (move.category === 'Special' && source.volatiles['netherward'] && !source.isAlly(target)) {
 					this.add('-activate', source, 'move: Nether Ward');
 					this.debug('Nether Ward damage');
 					this.damage(source.baseMaxhp / 16, source);
-					activated = true;
 				}
 			},
 		},
