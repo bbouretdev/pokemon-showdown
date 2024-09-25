@@ -7203,7 +7203,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.side.faintedThisTurn) {
 				this.add('-ability', pokemon, 'Parental devotion');
 				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
-				pokemon.tryTrap();
+				pokemon.tryTrap(true);
 			}
 		},
 		flags: {},
