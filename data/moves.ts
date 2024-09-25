@@ -22901,6 +22901,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onFoeAfterMove(source, target, move) {
 				console.log('onFoeAfterMove: ' + move.name);
 			},
+			onSourceDamagingHit(damage, target, source, move) {
+				console.log('onSourceDamagingHit: ' + move.name);
+			},
 			onFoeDamagingHit(damage, target, source, move) {
 				let activated = false;
 				console.log('onFoeDamagingHit: ' + move.name);
