@@ -7199,25 +7199,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10090,
 	},
 	parentaldevotion: {
-		condition: {
-			onStart(pokemon) {
-				if (pokemon.side.faintedThisTurn) {
-					this.add('-start', pokemon, 'ability: Parental Devotion');
-					pokemon.addVolatile('parentaldevotion');
-					this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
-				}
-			},
-			onTrapPokemon(pokemon) {
-				pokemon.tryTrap();
-			},
+		onStart(pokemon) {
+			if (pokemon.side.faintedThisTurn) {
+				this.add('-ability', pokemon, 'Parental devotion');
+				this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
+				pokemon.tryTrap(true);
+			}
 		},
-		// onStart(pokemon) {
-		// 	if (pokemon.side.faintedThisTurn) {
-		// 		this.add('-ability', pokemon, 'Parental devotion');
-		// 		this.boost({atk: 1, def: 1, spa: 1, spd: 1, spe: 1}, pokemon);
-		// 		pokemon.tryTrap();
-		// 	}
-		// },
 		flags: {},
 		name: "Parental Devotion",
 		rating: 3.5,
