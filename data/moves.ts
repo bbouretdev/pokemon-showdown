@@ -3536,10 +3536,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			let success = false;
 			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
 			const removeTarget = [
-				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward',
 			];
 			const removeAll = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward',
 			];
 			for (const targetCondition of removeTarget) {
 				if (target.side.removeSideCondition(targetCondition)) {
@@ -12623,7 +12623,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Mortal Spin', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Mortal Spin', '[of] ' + pokemon);
@@ -12639,7 +12639,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Mortal Spin', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Mortal Spin', '[of] ' + pokemon);
@@ -15087,7 +15087,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
@@ -15103,7 +15103,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
 				}
-				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
@@ -20209,7 +20209,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			for (const active of this.getAllActive()) {
 				if (active.removeVolatile('substitute')) success = true;
 			}
-			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+			const removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 			const sides = [pokemon.side, ...pokemon.side.foeSidesWithConditions()];
 			for (const side of sides) {
 				for (const sideCondition of removeAll) {
@@ -22721,7 +22721,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				return 5;
 			},
 			onFoeModifyMove(move, pokemon, target) {
-				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				const hazards = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'netherward'];
 				if (hazards.includes(move.id)) {
 					delete move.sideCondition;
 					this.add('cant', pokemon, 'move: Ice Rink', move);
@@ -22823,6 +22823,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(target.maxhp * Math.pow(2, typeMod) / 8, target);
 			}
+			const netherwardCondition = target?.side.sideConditions['netherward'];
+			if (netherwardCondition) {
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				if (!target.volatiles['netherward']) {
+					this.add('-start', target, 'Nether Ward');
+					target.addVolatile('netherward');
+				}
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -22870,6 +22878,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const typeMod = this.clampIntRange(target.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(target.maxhp * Math.pow(2, typeMod) / 8, target);
 			}
+			const netherwardCondition = target?.side.sideConditions['netherward'];
+			if (netherwardCondition) {
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				if (!target.volatiles['netherward']) {
+					this.add('-start', target, 'Nether Ward');
+					target.addVolatile('netherward');
+				}
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -22891,9 +22907,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'move: Nether Ward');
 			},
 			onEntryHazard(pokemon) {
-				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;		
-				this.add('-start', pokemon, 'Nether Ward');
-				pokemon.addVolatile('netherward');
+				if (pokemon.hasItem('heavydutyboots') || pokemon.hasAbility('surepaws')) return;
+				if (!pokemon.volatiles['netherward']) {
+					this.add('-start', pokemon, 'Nether Ward');
+					pokemon.addVolatile('netherward');
+				}
 			},
 			onSourceDamagingHit(damage, target, source, move) {
 				if (move.category === 'Special' && source.volatiles['netherward'] && !source.isAlly(target)) {

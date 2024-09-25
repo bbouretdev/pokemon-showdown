@@ -7136,6 +7136,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10087,
 	},
 	sensitive: {
+		onTryAddVolatile(status, target, source, sourceEffect) {
+			console.log('onTryAddVolatile: ' + sourceEffect);
+		},
+		onFoeTryAddVolatile(status, target, source, sourceEffect) {
+			console.log('onFoeTryAddVolatile: ' + sourceEffect);
+		},
 		onTryHit(target, source, move) {
 			if (target !== source && move.id === 'Taunt') {
 				move.accuracy = true;
@@ -7177,7 +7183,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10089,
 	},
 	naturalmaterials: {
-		onModifyMove(move, pokemon, target) {
+		onSourceDamagingHit(damage, target, source, move) {
 			if (move.type === 'Ground' && move.category !== 'Status') {
 				target?.side.addSideCondition('spikes', target);
 			}
