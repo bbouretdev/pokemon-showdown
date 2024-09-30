@@ -22608,6 +22608,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					return null;
 				}
 			},
+			// onTryAddVolatile(status, target, source, sourceEffect) {
+			// 	if (target !== source && (sourceEffect as Move)?.name === 'Taunt') {
+			// 		this.add('-activate', target, 'ability: Sensitive');
+			// 		this.boost({atk: 2}, target, target, null, false, true);
+			// 	}
+			// },
 			onSideStart(side) {
 				this.add('-sidestart', side, 'Soothing Song');
 			},
@@ -22964,6 +22970,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Psychic",
 		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
+	},
+	noxiouschomp: {
+		num: 10040,
+		accuracy: 100,
+		basePower: 95,
+		category: "Physical",
+		name: "Noxious Chomp",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1},
+		secondary: {
+			chance: 50,
+			status: 'tox',
+		},
+		target: "normal",
+		type: "Poison",
 		contestType: "Clever",
 	},
 };

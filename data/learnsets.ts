@@ -6147,6 +6147,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderfang: ["9M", "8M", "7E", "6E"],
 			psychicfangs: ["9M", "8M", "7E", "6E"],
 			spookysnatch: ["9M", "8M", "7E", "6E"],
+			noxiouschomp: ["9M", "7V"],
 		},
 		encounters: [
 			{generation: 1, level: 6},
@@ -6241,6 +6242,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderfang: ["9M", "8M", "7E", "6E"],
 			psychicfangs: ["9M", "8M", "7E", "6E"],
 			spookysnatch: ["9M", "8M", "7E", "6E"],
+			noxiouschomp: ["9M", "7V"],
 		},
 		encounters: [
 			{generation: 2, level: 13},
@@ -6336,6 +6338,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderfang: ["9M", "8M", "7E", "6E"],
 			psychicfangs: ["9M", "8M", "7E", "6E"],
 			spookysnatch: ["9M", "8M", "7E", "6E"],
+			noxiouschomp: ["9M", "7V"],
 		},
 		eventData: [
 			{generation: 4, level: 30, gender: "M", nature: "Timid", moves: ["heatwave", "airslash", "sludgebomb", "superfang"], pokeball: "cherishball"},
@@ -16478,6 +16481,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			zapcannon: ["9M", "7V"],
 			headsmash: ["9M", "8V", "7V", "4T"],
+			ironhead: ["9M", "9L33", "8M", "8L33", "7T", "7L30"],
 		},
 		encounters: [
 			{generation: 1, level: 20},
@@ -16620,6 +16624,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "4M"],
 			zapcannon: ["9M", "7V"],
 			headsmash: ["9M", "8V", "7V", "4T"],
+			ironhead: ["9M", "9L33", "8M", "8L33", "7T", "7L30"],
 		},
 		eventData: [
 			{generation: 3, level: 46, moves: ["helpinghand", "megahorn", "scaryface", "earthquake"]},
@@ -16758,6 +16763,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			whirlpool: ["9M", "8M", "4M"],
 			headsmash: ["9M", "8V", "7V", "4T"],
+			ironhead: ["9M", "9L33", "8M", "8L33", "7T", "7L30"],
 		},
 	},
 	happiny: {

@@ -2352,8 +2352,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	sunderarmor: {
 		name: "Sunder Armor",
-		desc: "This Pokemon's kick-based attacks also lower Defense of Opponents by & stage.",
-		shortDesc: "This Pokemon's kick-based attacks also lower Defense of Opponents by & stage.",
+		desc: "This Pokemon's contact attacks also lower Defense of Opponents by & stage.",
+		shortDesc: "This Pokemon's contact attacks also lower Defense of Opponents by & stage.",
 	},
 	shellprotection: {
 		name: "Shell Protection",

@@ -7743,4 +7743,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		name: "Trance",
 		shortDesc: "Causes the target to fall asleep.",
 	},
+	noxiouschomp: {
+		name: "Noxious Chomp",
+		desc: "Has a 50% chance to badly poison the target.",
+		shortDesc: "50% chance to badly poison the target.",
+	},
 };
