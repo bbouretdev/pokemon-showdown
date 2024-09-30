@@ -22094,9 +22094,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {protect: 1, mirror: 1, metronome: 1, cantusetwice: 1},
 		volatileStatus: 'muteblow',
 		condition: {
-			// onFoeModifyMove(move, pokemon, target) {
-			// 	if (move.secondaries) delete move.secondaries;
-			// },
 			duration: 1,
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {

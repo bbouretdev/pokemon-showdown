@@ -2468,13 +2468,6 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "If Sandstorm is active, this Pokemon's Special Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
 		shortDesc: "If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.",
 	},
-	// sporeburst: {
-	// 	name: "Spore Burst",
-	// 	desc: "If this Pokemon is knocked out with a fire move, that move's user faints.",
-	// 	shortDesc: "If this Pokemon is KOed with a fire move, that move's user faints.",
-
-	// 	damage: "  [POKEMON] was hurt!",
-	// },
 	sporeburst: {
 		name: "Spore Burst",
 		desc: "If this Pokemon is hit with a fire move, source and target faint.",

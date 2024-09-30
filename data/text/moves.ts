@@ -7573,11 +7573,6 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  Coral Reef made [TEAM] hurt itself with contact moves!",
 		end: "  [TEAM]'s Coral Reef wore off!",
 	},
-	// muteblow: {
-	// 	name: "Mute Blow",
-	// 	desc: "The opponent's secondary effects are removed. Usually goes first.",
-	// 	shortDesc: "The opponent's secondary effects are removed. Usually goes first.",
-	// },
 	muteblow: {
 		name: "Mute Blow",
 		desc: "Prevents the target from using Special moves for its next turn. Can't use twice in a row. Pokemon with the Oblivious Ability or protected by the Aroma Veil Ability are immune.",

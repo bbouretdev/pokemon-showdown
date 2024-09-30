@@ -6374,14 +6374,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10040,
 	},
 	sporeburst: {
-		// onDamagingHitOrder: 1,
-		// onDamagingHit(damage, target, source, move) {
-		// 	if (!target.hp && move.type === 'Fire') {
-		// 		this.damage(source.baseMaxhp, source, target);
-		// 	}
-		// },
 		onHit(target, source, move) {
 			if (move.type === 'Fire') {
+				this.add('-ability', target, 'Spore Burst');
 				target.faint();
 				source.faint();
 			}
