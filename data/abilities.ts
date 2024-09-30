@@ -6356,8 +6356,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10039,
 	},
 	desertarmor: {
-		onModifyDefPriority: 5,
-		onModifyDef(def, pokemon) {
+		onModifySpDPriority: 5,
+		onModifySpD(spd, pokemon) {
 			if (['sandstorm'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
@@ -6374,10 +6374,16 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 10040,
 	},
 	sporeburst: {
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			if (!target.hp && move.type === 'Fire') {
-				this.damage(source.baseMaxhp, source, target);
+		// onDamagingHitOrder: 1,
+		// onDamagingHit(damage, target, source, move) {
+		// 	if (!target.hp && move.type === 'Fire') {
+		// 		this.damage(source.baseMaxhp, source, target);
+		// 	}
+		// },
+		onHit(target, source, move) {
+			if (move.type === 'Fire') {
+				target.faint();
+				source.faint();
 			}
 		},
 		flags: {},
@@ -7213,5 +7219,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 10091,
 		custom: true,
+	},
+	slumbersmite: {
+		onBasePower(relayVar, source, target, move) {
+			if (target.status === 'slp') return this.chainModify(1.5);
+		},
+		flags: {breakable: 1},
+		name: "Slumber Smite",
+		rating: 3,
+		num: 10092,
 	},
 };

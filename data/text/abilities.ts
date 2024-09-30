@@ -2465,13 +2465,20 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	desertarmor: {
 		name: "Desert Armor",
-		desc: "If Sandstorm is active, this Pokemon's Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
-		shortDesc: "If Sandstorm is active, this Pokemon's Def is 1.5x; heals 1/16 max HP per turn.",
+		desc: "If Sandstorm is active, this Pokemon's Special Defense is multiplied by 1.5 and it heals 1/16 of its maximum HP, rounded down, at the end of each turn. These effects are prevented if the Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.",
 	},
+	// sporeburst: {
+	// 	name: "Spore Burst",
+	// 	desc: "If this Pokemon is knocked out with a fire move, that move's user faints.",
+	// 	shortDesc: "If this Pokemon is KOed with a fire move, that move's user faints.",
+
+	// 	damage: "  [POKEMON] was hurt!",
+	// },
 	sporeburst: {
 		name: "Spore Burst",
-		desc: "If this Pokemon is knocked out with a fire move, that move's user faints.",
-		shortDesc: "If this Pokemon is KOed with a fire move, that move's user faints.",
+		desc: "If this Pokemon is hit with a fire move, source and target faint.",
+		shortDesc: "If this Pokemon is hit with a fire move, source and target faint.",
 
 		damage: "  [POKEMON] was hurt!",
 	},
@@ -2725,5 +2732,10 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Parental Devotion",
 		desc: "On switch-in, if an ally fainted last turn, raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage, but it becomes prevented from switching out. The user can still switch out if it uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. If the user leaves the field using Baton Pass, the replacement will remain trapped. Fails if the user has already been prevented from switching by this effect.",
 		shortDesc: "On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.",
+	},
+	slumbersmite: {
+		name: "Slumber Smite",
+		desc: "If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.",
+		shortDesc: "If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.",
 	},
 };

@@ -22091,11 +22091,37 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Mute Blow",
 		pp: 30,
 		priority: 1,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, cantusetwice: 1},
 		volatileStatus: 'muteblow',
 		condition: {
-			onFoeModifyMove(move, pokemon, target) {
-				if (move.secondaries) delete move.secondaries;
+			// onFoeModifyMove(move, pokemon, target) {
+			// 	if (move.secondaries) delete move.secondaries;
+			// },
+			duration: 1,
+			onStart(target) {
+				if (target.activeTurns && !this.queue.willMove(target)) {
+					this.effectState.duration++;
+				}
+				this.add('-start', target, 'move: Mute Blow');
+			},
+			onResidualOrder: 15,
+			onEnd(target) {
+				this.add('-end', target, 'move: Mute Blow');
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.id);
+					if (move.category === 'Special' && move.id !== 'mefirst') {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+			onBeforeMovePriority: 5,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && !move.isMax && move.category === 'Special' && move.id !== 'mefirst') {
+					this.add('cant', attacker, 'move: Mute Blow', move);
+					return false;
+				}
 			},
 		},
 		secondary: null,
@@ -22926,5 +22952,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		zMove: {boost: {def: 1}},
 		contestType: "Cool",
+	},
+	trance: {
+		num: 10039,
+		accuracy: 90,
+		basePower: 20,
+		category: "Special",
+		name: "Trance",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, metronome: 1},
+		status: 'slp',
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		zMove: {boost: {spe: 1}},
+		contestType: "Clever",
 	},
 };

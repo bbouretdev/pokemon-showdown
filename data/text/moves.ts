@@ -7553,17 +7553,17 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	scorchrush: {
 		name: "Scorch Rush",
 		desc: "Usually goes first. Power doubles if the target is burnt.",
-		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
+		shortDesc: "Usually goes first. Power doubles if the target is frozen.",
 	},
 	shatter: {
 		name: "Shatter",
 		desc: "Usually goes first. Power doubles if the target is burnt.",
-		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
+		shortDesc: "Usually goes first. Power doubles if the target is frozen.",
 	},
 	paralash: {
 		name: "Paralash",
-		desc: "Usually goes first. Power doubles if the target is burnt.",
-		shortDesc: "Usually goes first. Power doubles if the target is burnt.",
+		desc: "Usually goes first. Power doubles if the target is paralyzed.",
+		shortDesc: "Usually goes first. Power doubles if the target is paralyzed.",
 	},
 	coralreef: {
 		name: "Coral Reef",
@@ -7573,10 +7573,19 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  Coral Reef made [TEAM] hurt itself with contact moves!",
 		end: "  [TEAM]'s Coral Reef wore off!",
 	},
+	// muteblow: {
+	// 	name: "Mute Blow",
+	// 	desc: "The opponent's secondary effects are removed. Usually goes first.",
+	// 	shortDesc: "The opponent's secondary effects are removed. Usually goes first.",
+	// },
 	muteblow: {
 		name: "Mute Blow",
-		desc: "The opponent's secondary effects are removed. Usually goes first.",
-		shortDesc: "The opponent's secondary effects are removed. Usually goes first.",
+		desc: "Prevents the target from using Special moves for its next turn. Can't use twice in a row. Pokemon with the Oblivious Ability or protected by the Aroma Veil Ability are immune.",
+		shortDesc: "Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.",
+
+		start: "  [POKEMON] fell for the mute!",
+		end: "  [POKEMON] shook off the mute!",
+		cant: "[POKEMON] can't use [MOVE] after the mute!",
 	},
 	swiftfin: {
 		name: "Swift Fin",
@@ -7734,5 +7743,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  A weird ward lays around [TEAM]!",
 		end: "  The weird ward disappeared from around [TEAM]!",
 		damage: "  Weird ward attacked [POKEMON]!",
+	},
+	trance: {
+		name: "Trance",
+		shortDesc: "Causes the target to fall asleep.",
 	},
 };
