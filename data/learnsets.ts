@@ -19481,6 +19481,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M"],
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 			scorchrush: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
+			foggyember: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["leer", "smog", "firepunch", "ember"], pokeball: "pokeball"},
