@@ -900,7 +900,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	typhlosion: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	typhlosionhisui: {
 	tier: "Illegal",
@@ -954,10 +954,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	natu: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	xatu: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	mareep: {
 	tier: "Illegal",

@@ -2471,21 +2471,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1,
 		num: 170,
 	},
-	magmaarmor: {
-		onUpdate(pokemon) {
-			if (pokemon.status === 'frz') {
-				this.add('-activate', pokemon, 'ability: Magma Armor');
-				pokemon.cureStatus();
-			}
-		},
-		onImmunity(type, pokemon) {
-			if (type === 'frz') return false;
-		},
-		flags: {breakable: 1},
-		name: "Magma Armor",
-		rating: 0.5,
-		num: 40,
-	},
 	magnetpull: {
 		onFoeTrapPokemon(pokemon) {
 			if (pokemon.hasType('Steel') && pokemon.isAdjacent(this.effectState.target)) {
@@ -7143,12 +7128,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.boost({atk: 2}, target, target, null, false, true);
 			}
 		},
-		onTryHit(target, source, move) {
-			if (target !== source && move.id === 'Taunt') {
-				move.accuracy = true;
-				this.boost({atk: 2}, target, target, null, false, true);
-			}
-		},
+		// onTryHit(target, source, move) {
+		// 	if (target !== source && move.id === 'Taunt') {
+		// 		move.accuracy = true;
+		// 		this.boost({atk: 2}, target, target, null, false, true);
+		// 	}
+		// },
 		flags: {},
 		name: "Sensitive",
 		rating: 3.5,
@@ -7176,7 +7161,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			if (!warnMoves.length) return;
 			const [warnMoveName, warnTarget] = this.sample(warnMoves);
-			this.add('-activate', pokemon, 'ability: Forewarn', warnMoveName, '[of] ' + warnTarget);
+			this.add('-activate', pokemon, 'ability: Preventive', warnMoveName, '[of] ' + warnTarget);
+			(warnTarget as Pokemon)?.disableMove(warnMoveName.name);
 		},
 		flags: {},
 		name: "Preventive",
@@ -7223,5 +7209,198 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Slumber Smite",
 		rating: 3,
 		num: 10092,
+	},
+	swifttactics: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.basePower <= 60) return priority + 1;
+		},
+		name: "Swift Tactics",
+		rating: 3,
+		num: 10093,
+	},
+	predation: {
+		onBasePower(relayVar, source, target, move) {
+			if (target.weighthg < source.weighthg) return this.chainModify(1.3);
+		},
+		name: "Predation",
+		rating: 3,
+		num: 10094,
+	},
+	coldblood: {
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy, target, source, move) {
+			if (typeof accuracy !== 'number') return;
+			if (source.hp <= source.maxhp / 2) {
+				this.debug('coldblood - enhancing accuracy');
+				return 100;
+			}
+		},
+		flags: {},
+		name: "Cold Blood",
+		rating: -1,
+		num: 10095,
+	},
+	quickimpact: {
+		onModifyMove(move, pokemon, target) {
+			if (move.priority > 0.1) {
+				move.willCrit = true;
+			}
+		},
+		name: "Quick Impact",
+		rating: 3,
+		num: 10096,
+	},
+ 	pristineward: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && !target.activeTurns) {
+				this.add('-immune', target, '[from] ability: Pristine Ward');
+				return null;
+			}
+		},
+		flags: {breakable: 1},
+		name: "Pristine Ward",
+		rating: 3.5,
+		num: 10097,
+	},
+	// Native ability improvement
+	magmaarmor: {
+		onUpdate(pokemon) {
+			if (pokemon.status === 'frz') {
+				this.add('-activate', pokemon, 'ability: Magma Armor');
+				pokemon.cureStatus();
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'frz') return false;
+		},
+		onDamage(damage, target, source, effect) {
+			if (
+				effect.effectType === "Move" &&
+				!effect.multihit &&
+				(!effect.negateSecondary && !(effect.hasSheerForce && source.hasAbility('sheerforce')))
+			) {
+				this.effectState.checkedMagma = false;
+			} else {
+				this.effectState.checkedMagma = true;
+			}
+		},
+		onTryEatItem(item) {
+			const healingItems = [
+				'aguavberry', 'enigmaberry', 'figyberry', 'iapapaberry', 'magoberry', 'sitrusberry', 'wikiberry', 'oranberry', 'berryjuice',
+			];
+			if (healingItems.includes(item.id)) {
+				return this.effectState.checkedMagma;
+			}
+			return true;
+		},
+		onAfterMoveSecondary(target, source, move) {
+			this.effectState.checkedMagma = true;
+			if (!source || source === target || !target.hp || !move.totalDamage) return;
+			const lastAttackedBy = target.getLastAttackedBy();
+			if (!lastAttackedBy) return;
+			const damage = move.multihit && !move.smartTarget ? move.totalDamage : lastAttackedBy.damage;
+			if (target.hp <= target.maxhp / 2 && target.hp + damage > target.maxhp / 2) {
+				this.add('-activate', target, 'ability: Magma Armor');
+				target.addVolatile('magmapool');
+			}
+		},
+		flags: {breakable: 1},
+		name: "Magma Armor",
+		rating: 0.5,
+		num: 40,
+	},
+	blacksmoke: {
+		onFoeTryBoost(boost, target, source, effect) {
+			let b: BoostID;
+			for (b in boost) {
+				if (boost[b]! < 0) {
+					delete boost[b];
+				}
+			}
+		},
+		flags: {breakable: 1},
+		name: "Black Smoke",
+		rating: 0.5,
+		num: 10098,
+	},
+	seer: {
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Psychic'] = true;
+			}
+		},
+		flags: {},
+		name: "Seer",
+		rating: 3,
+		num: 10099,
+	},
+	bounceguard: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (move.category === 'Special') {
+				this.damage(source.baseMaxhp / 8, source, target);
+			}
+		},
+		flags: {},
+		name: "Bounce Guard",
+		rating: 2.5,
+		num: 10100,
+	},
+	polaris: {
+		onStart(pokemon) {
+			const side = pokemon.side;
+			const auroraveil = side.sideConditions['auroraveil'];
+			if (!auroraveil) {
+				if (['hail','snow'].includes(pokemon.effectiveWeather())) {
+					this.add('-activate', pokemon, 'ability: Polaris');
+					side.addSideCondition('auroraveil', pokemon);
+				}
+			}
+		},
+		flags: {},
+		name: "Polaris",
+		rating: 2,
+		num: 10101,
+	},
+	glacialfeedback: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				move.accuracy = true;
+				this.add('-activate', target, 'ability: Glacial Feedback');
+				source.setStatus('frz');
+			}
+		},
+		flags: {},
+		name: "Glacial Feedback",
+		rating: 2,
+		num: 10102,
+	},
+	firewood: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Grass') {
+				move.accuracy = true;
+				this.add('-activate', target, 'ability: Firewood');
+				source.setStatus('brn');
+			}
+		},
+		flags: {},
+		name: "Firewood",
+		rating: 2,
+		num: 10102,
+	},
+	conductor: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				move.accuracy = true;
+				this.add('-activate', target, 'ability: Conductor');
+				source.setStatus('par');
+			}
+		},
+		flags: {},
+		name: "Conductor",
+		rating: 2,
+		num: 10103,
 	},
 };

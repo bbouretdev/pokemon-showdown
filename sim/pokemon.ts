@@ -154,6 +154,7 @@ export class Pokemon {
 	// Gen 2 only
 	lastMoveEncore?: ActiveMove | null;
 	lastMoveUsed: ActiveMove | null;
+	lastMoveUsedOn: ActiveMove | null;
 	lastMoveTargetLoc?: number;
 	moveThisTurn: string | boolean;
 	statsRaisedThisTurn: boolean;
@@ -442,6 +443,7 @@ export class Pokemon {
 		// Only declared if gen 2 to avoid declaring an object we aren't going to need.
 		if (this.battle.gen === 2) this.lastMoveEncore = null;
 		this.lastMoveUsed = null;
+		this.lastMoveUsedOn = null;
 		this.moveThisTurn = '';
 		this.statsRaisedThisTurn = false;
 		this.statsLoweredThisTurn = false;
@@ -1482,6 +1484,7 @@ export class Pokemon {
 		this.lastMove = null;
 		if (this.battle.gen === 2) this.lastMoveEncore = null;
 		this.lastMoveUsed = null;
+		this.lastMoveUsedOn = null;
 		this.moveThisTurn = '';
 		this.moveLastTurnResult = undefined;
 		this.moveThisTurnResult = undefined;

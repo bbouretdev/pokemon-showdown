@@ -7748,4 +7748,35 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Has a 50% chance to badly poison the target.",
 		shortDesc: "50% chance to badly poison the target.",
 	},
+	magmapool: {
+		name: "Magma Pool",
+		desc: "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
+		shortDesc: "User recovers 1/16 max HP per turn. Halves Water-type moves damage.",
+
+		start: "  [POKEMON] surrounded itself with a pool of magma!",
+		heal: "  A magma pool restored [POKEMON]'s HP!",
+	},
+	fieryaegis: {
+		name: "Fiery Aegis",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user lose 1/8 of their maximum HP, rounded down, and is burnt. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from moves. Contact: loses 1/8 max HP. Burns attacker.",
+
+		damage: "#roughskin",
+	},
+	subzeroguard: {
+		name: "Subzero Guard",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon landing Special move on the user is frozen. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from moves. Special move: Freezes attacker.",
+
+		damage: "#roughskin",
+	},
+	foggyember: {
+		name: "Foggy Ember",
+		desc: "Sets up a hazard on the opposing side of the field, opponents cannot boost themselves. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Creates a fog on switch-in. Opponents cannot boost themselves.",
+
+		start: "  A foggy ember lays around [TEAM]!",
+		end: "  The foggy ember disappeared from around [TEAM]!",
+		damage: "  Foggy ember disabled boost on [POKEMON]!",
+	},
 };

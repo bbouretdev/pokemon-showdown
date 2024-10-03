@@ -949,10 +949,6 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight.",
 		shortDesc: "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack.",
 	},
-	magmaarmor: {
-		name: "Magma Armor",
-		shortDesc: "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
-	},
 	magnetpull: {
 		name: "Magnet Pull",
 		desc: "Prevents opposing Steel-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
@@ -2709,7 +2705,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	sinister: {
 		name: "Sinister",
 		desc: "This Pokemon can hit Normal types with Ghost-type moves. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
-		shortDesc: "Fighting, Normal moves hit Ghost. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
+		shortDesc: "Ghost moves hit Normal. This Pokemon's offensive stat is multiplied by 1.2 while using a Ghost or Dark-type attack.",
 	},
 	sensitive: {
 		name: "Sensitive",
@@ -2730,5 +2726,68 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Slumber Smite",
 		desc: "If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.",
 		shortDesc: "If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.",
+	},
+	preventive: {
+		name: "Preventive",
+		desc: "On switch-in, this Pokemon disables the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
+		shortDesc: "On switch-in, this Pokemon disables the foes' move with the highest power.",
+
+		activate: "  [TARGET]'s [MOVE] was disabled!",
+		activateNoTarget: "  [POKEMON]'s Preventive disabled [MOVE]!",
+	},
+	swifttactics: {
+		name: "Swift Tactics",
+		desc: "This Pokemon's moves of 60 power or less have their priority increased by 1, including Struggle. This effect comes after a move's effect changes its own power.",
+		shortDesc: "This Pokemon's moves of 60 power or less have their priority increased by 1, including Struggle.",
+	},
+	predation: {
+		name: "Predation",
+		desc: "If the opponent is lighter than this Pokemon, this Pokemon's attacks have their power multiplied by 1.3.",
+		shortDesc: "If heavier then opponent, this Pokemon's attacks have their power multiplied by 1.3.",
+	},
+	coldblood: {
+		name: "Cold Blood",
+		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Accuracy is 100.",
+		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Accuracy is 100.",
+	},
+	quickimpact: {
+		name: "Quick Impact",
+		desc: "This Pokemon priority offensive moves will crit.",
+		shortDesc: "This Pokemon priority offensive moves will crit.",
+	},
+	pristineward: {
+		name: "Pristine Ward",
+		desc: "This Pokemon is immune to Status moves on it's first turn.",
+		shortDesc: "This Pokemon is immune to Status moves on it's first turn.",
+	},
+	magmaarmor: {
+		name: "Magma Armor",
+		shortDesc: "This Pokemon cannot be frozen. Applies Magma Pool when under 1/2 max HP.",
+	},
+	blacksmoke: {
+		name: "Black Smoke",
+		shortDesc: "Prevents other Pokemon from raising their stats.",
+	},
+	seer: {
+		name: "Seer",
+		desc: "This Pokemon can hit Dark types with Ghost-type moves.",
+		shortDesc: "Psychic moves hit Dark.",
+	},
+	bounceguard: {
+		name: "Bounce Guard",
+		desc: "If user is hit by a special move, attacker loses 1/8th their max HP.",
+		shortDesc: "If user is hit by a special move, attacker loses 1/8th their max HP.",
+	},
+	glacialfeedback: {
+		name: "Glacial Feedback",
+		shortDesc: "Freezes the opponent when damaged by a Water-type move.",
+	},
+	firewood: {
+		name: "Firewood",
+		shortDesc: "Burns the opponent when damaged by a Grass-type move.",
+	},
+	conductor: {
+		name: "Conductor",
+		shortDesc: "Paralyzes the opponent when damaged by a Water-type move.",
 	},
 };

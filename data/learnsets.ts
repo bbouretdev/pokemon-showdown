@@ -16763,7 +16763,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			whirlpool: ["9M", "8M", "4M"],
 			headsmash: ["9M", "8V", "7V", "4T"],
-			ironhead: ["9M", "9L33", "8M", "8L33", "7T", "7L30"],
 		},
 	},
 	happiny: {
