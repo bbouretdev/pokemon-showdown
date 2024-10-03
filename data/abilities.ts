@@ -7313,7 +7313,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onFoeTryBoost(boost, target, source, effect) {
 			let b: BoostID;
 			for (b in boost) {
-				if (boost[b]! < 0) {
+				if (boost[b]! > 0) {
 					delete boost[b];
 				}
 			}

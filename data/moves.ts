@@ -22860,6 +22860,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					target.addVolatile('netherward');
 				}
 			}
+			const foggyemberCondition = target?.side.sideConditions['foggyember'];
+			if (foggyemberCondition) {
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				if (!target.volatiles['foggyember']) {
+					this.add('-start', target, 'Foggy Ember');
+					target.addVolatile('foggyember');
+				}
+			}
 		},
 		secondary: null,
 		target: "normal",
@@ -22913,6 +22921,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (!target.volatiles['netherward']) {
 					this.add('-start', target, 'Nether Ward');
 					target.addVolatile('netherward');
+				}
+			}
+			const foggyemberCondition = target?.side.sideConditions['foggyember'];
+			if (foggyemberCondition) {
+				if (target.hasItem('heavydutyboots') || target.hasAbility('surepaws')) return;
+				if (!target.volatiles['foggyember']) {
+					this.add('-start', target, 'Foggy Ember');
+					target.addVolatile('foggyember');
 				}
 			}
 		},
