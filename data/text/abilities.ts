@@ -2790,4 +2790,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Conductor",
 		shortDesc: "Paralyzes the opponent when damaged by a Water-type move.",
 	},
+	seafog: {
+		name: "Sea Fog",
+		desc: "On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0. Pokemon behind a substitute are immune.",
+		shortDesc: "On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0.",
+	},
 };

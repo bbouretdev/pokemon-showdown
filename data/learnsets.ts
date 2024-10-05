@@ -5890,6 +5890,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M"],
 			soothingsong: ["9M"],
+			puppettheft: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 3},
@@ -6053,6 +6054,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			zenheadbutt: ["9M"],
 			soothingsong: ["9M"],
+			puppettheft: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 22},
@@ -14189,6 +14191,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trance: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			mentaldrop: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 			netherward: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			braindrain: ["9M", "9E", "8E", "7E", "6E", "5E", "4E"],
 		},
 		eventData: [
 			{generation: 3, level: 5, shiny: 1, abilities: ["insomnia"], moves: ["bellydrum", "wish"], pokeball: "pokeball"},
@@ -14321,6 +14324,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trance: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			mentaldrop: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 			netherward: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			braindrain: ["9M", "9E", "8E", "7E", "6E", "5E", "4E"],
 		},
 		eventData: [
 			{generation: 3, level: 34, abilities: ["insomnia"], moves: ["batonpass", "psychic", "meditate", "shadowball"]},

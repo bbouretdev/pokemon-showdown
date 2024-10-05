@@ -23197,4 +23197,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {boost: {def: 1}},
 		contestType: "Cool",
 	},
+	puppettheft: {
+		num: 10044,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Puppet Theft",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		onHit(target, source) {
+			if (target.volatiles['substitute']) {
+				const foeSubHP = target.volatiles['substitute'].hp;
+				target.removeVolatile('substitute');
+				source.addVolatile('substitute');
+				source.volatiles['substitute'].hp = foeSubHP;
+			}
+		},
+		target: "normal",
+		type: "Normal",
+		contestType: "Clever",
+	},
 };

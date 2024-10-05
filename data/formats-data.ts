@@ -1167,10 +1167,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	phanpy: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	donphan: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	stantler: {
 	tier: "Illegal",

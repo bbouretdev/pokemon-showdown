@@ -7403,4 +7403,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10103,
 	},
+	seafog: {
+		onStart(pokemon) {
+			let activated = false;
+			this.add('-clearallboost');
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Sea Fog', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					target.clearBoosts();
+				}
+			}
+		},
+		flags: {},
+		name: "Sea Fog",
+		rating: 2,
+		num: 10104,
+	},
 };
