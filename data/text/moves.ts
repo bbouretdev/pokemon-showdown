@@ -7779,4 +7779,11 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		end: "  The foggy ember disappeared from around [TEAM]!",
 		damage: "  Foggy ember disabled boost on [POKEMON]!",
 	},
+	puppettheft: {
+		name: "Puppet Theft",
+		desc: "If this move is successful and the user has not fainted, it steals the target's Substitute if it is under one.",
+		shortDesc: "User steals the target's Substitute.",
+
+		removeItem: "  [SOURCE] stole its target's substitute!",
+	},
 };

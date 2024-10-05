@@ -23207,12 +23207,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1, bypasssub: 1},
 		onHit(target, source) {
-			if (target.volatiles['substitute']) {
-				const foeSubHP = target.volatiles['substitute'].hp;
-				target.removeVolatile('substitute');
-				source.addVolatile('substitute');
-				source.volatiles['substitute'].hp = foeSubHP;
-			}
+			if (!target.volatiles['substitute']) return null;
+			this.add('-activate', target, 'move: Puppet Theft');
+			const foeSubHP = target.volatiles['substitute'].hp;
+			target.removeVolatile('substitute');
+			source.addVolatile('substitute');
+			source.volatiles['substitute'].hp = foeSubHP;
 		},
 		target: "normal",
 		type: "Normal",
