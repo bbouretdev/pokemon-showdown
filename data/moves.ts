@@ -23205,7 +23205,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Puppet Theft",
 		pp: 15,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, metronome: 1, bypasssub: 1},
 		onHit(target, source) {
 			if (target.volatiles['substitute']) {
 				const foeSubHP = target.volatiles['substitute'].hp;
