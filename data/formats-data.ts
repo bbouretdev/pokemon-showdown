@@ -553,7 +553,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	voltorbhisui: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	electrode: {
 		tier: "OU",
@@ -894,10 +894,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	cyndaquil: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	quilava: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	typhlosion: {
 	tier: "OU",
@@ -906,13 +906,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	totodile: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	croconaw: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	feraligatr: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	sentret: {
 	tier: "Illegal",

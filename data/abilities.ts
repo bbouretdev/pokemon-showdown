@@ -5705,7 +5705,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	tresamigos: {
 		onModifyMove(move) {
-			if (move.category !== 'Status' && !move.multihit && move.basePower > 0) {
+			if (move.category !== 'Status' && !move.multihit && move.basePower > 0 && !move.selfdestruct) {
 				move.multihit = 3;
 				if (move.secondaries) {
 					delete move.secondaries;

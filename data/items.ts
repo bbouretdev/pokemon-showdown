@@ -7681,4 +7681,21 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 10000,
 		gen: 5,
 	},
+	parcelbomb: {
+		name: "Parcel Bomb",
+		spritenum: 130,
+		fling: {
+			basePower: 160,
+		},
+		onTakeItem(item, pokemon, source) {
+			console.log('takeItem');
+			if (!this.activeMove) throw new Error("Battle.activeMove is null");
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+				this.add('-enditem', pokemon, this.effect, '[weaken]');
+				this.damage(source.baseMaxhp / 2, source);
+			}
+		},
+		num: 10001,
+		gen: 5,
+	},
 };
