@@ -7691,7 +7691,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
 				//this.add('-enditem', pokemon, this.effect, '[weaken]');
-				this.damage(pokemon.baseMaxhp / 2, pokemon, source);
+				this.damage(source.baseMaxhp / 2, source);
 			}
 		},
 		num: 10001,
