@@ -7688,7 +7688,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			basePower: 160,
 		},
 		onTakeItem(item, pokemon, source) {
-			console.log(this.activeTarget);
+			console.log(this.activeTarget?.name);
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if ((pokemon.foes()[0] && pokemon.foes()[0] !== pokemon) || this.activeMove.id === 'knockoff') {
 				console.log(pokemon.lastMove?.name);
