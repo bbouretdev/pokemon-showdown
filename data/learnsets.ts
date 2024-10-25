@@ -4491,6 +4491,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "4M"],
 			triplestinger: ["9M", "7T", "6T", "4M", "3M"],
 			gunkshot: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			noretreat: ["9M", "8M", "4M"],
+			storedpower: ["9M", "8M", "4M"],
 		},
 		eventData: [
 			{generation: 6, level: 41, perfectIVs: 2, abilities: ["poisonpoint"], moves: ["tailwhip", "doublekick", "poisonsting", "bodyslam"], pokeball: "cherishball"},
@@ -4808,6 +4810,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "4M"],
 			triplestinger: ["9M", "7T", "6T", "4M", "3M"],
 			gunkshot: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			noretreat: ["9M", "8M", "4M"],
+			storedpower: ["9M", "8M", "4M"],
 		},
 		eventData: [
 			{generation: 7, level: 68, abilities: ["poisonpoint"], moves: ["earthquake", "poisonjab", "throatchop", "aquatail"], pokeball: "cherishball"},
