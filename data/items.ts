@@ -7690,8 +7690,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTakeItem(item, pokemon, source) {
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
-				console.log(pokemon.lastMove);
-				console.log(source.lastMove);
+				console.log(pokemon.lastMove?.name);
+				console.log(source.lastMove?.name);
 				this.add('-enditem', pokemon, 'Parcel Bomb');
 				this.damage(pokemon.foes()[0].baseMaxhp / 2, pokemon.foes()[0]);
 			}
