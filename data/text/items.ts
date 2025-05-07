@@ -2429,4 +2429,12 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 		name: "Protoite",
 		shortDesc: "If holder's species can evolve, its Attack and Sp. Atk are 1.5x.",
 	},
+	frozenorb: {
+		name: "Frozen Orb",
+		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",
+	},
+	paralyzingorb: {
+		name: "Paralyzing Orb",
+		shortDesc: "At the end of every turn, this item attempts to paralyze the holder.",
+	},
 };

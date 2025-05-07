@@ -7691,8 +7691,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (!this.activeMove) throw new Error("Battle.activeMove is null");
 			if (!pokemon.knockoffed) {
 				if ((pokemon.foes()[0] && pokemon.foes()[0] !== pokemon) || this.activeMove.id === 'knockoff') {
-					console.log(pokemon.lastMove?.name);
-					console.log(pokemon.foes()[0].lastMove?.name);
 					pokemon.knockoffed = true;
 					this.add('-enditem', pokemon, 'Parcel Bomb');
 					this.damage(pokemon.foes()[0].baseMaxhp / 2, pokemon.foes()[0]);
@@ -7701,5 +7699,35 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 10001,
 		gen: 5,
+	},
+	frozenorb: {
+		name: "Frozen Orb",
+		spritenum: 221,
+		fling: {
+			basePower: 30,
+			status: 'frz',
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('frz', pokemon);
+		},
+		num: 10002,
+		gen: 4,
+	},
+	paralyzingorb: {
+		name: "Paralyzing Orb",
+		spritenum: 251,
+		fling: {
+			basePower: 30,
+			status: 'par',
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			pokemon.trySetStatus('par', pokemon);
+		},
+		num: 10003,
+		gen: 4,
 	},
 };

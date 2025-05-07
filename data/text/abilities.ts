@@ -2795,4 +2795,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0. Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0.",
 	},
+	scurry: {
+		name: "Scurry",
+		shortDesc: "This Pokemon's offensive moves are turned into pivot moves.",
+	},
 };

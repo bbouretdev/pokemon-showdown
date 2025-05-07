@@ -7424,4 +7424,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10104,
 	},
+	scurry: {
+		onModifyMove(move) {
+			if (move.category !== 'Status') move.flags['pivot'] = 1;
+		},
+		flags: {},
+		name: "Scurry",
+		rating: 2,
+		num: 10105,
+	},
 };
