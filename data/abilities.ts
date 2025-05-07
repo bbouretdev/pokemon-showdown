@@ -6065,7 +6065,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	slippyskin: {
 		onTryHit(pokemon, target, move) {
-			if (move.flags['pivot']) {
+			if (move.selfSwitch) {
 				this.add('-immune', pokemon, '[from] ability: Slippy Skin');
 				return null;
 			}
@@ -7426,7 +7426,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	scurry: {
 		onModifyMove(move) {
-			if (move.category !== 'Status') move.flags['pivot'] = 1;
+			if (move.category !== 'Status') move.selfSwitch = true;
 		},
 		flags: {},
 		name: "Scurry",

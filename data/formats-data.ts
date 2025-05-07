@@ -915,10 +915,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	sentret: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	furret: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	hoothoot: {
 	tier: "Illegal",
