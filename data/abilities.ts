@@ -7162,7 +7162,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!warnMoves.length) return;
 			const [warnMoveName, warnTarget] = this.sample(warnMoves);
 			this.add('-activate', pokemon, 'ability: Preventive', warnMoveName, '[of] ' + warnTarget);
-			(warnTarget as Pokemon)?.disableMove(warnMoveName.name);
+			// (warnTarget as Pokemon)?.disableMove(warnMoveName.name);
 		},
 		flags: {},
 		name: "Preventive",
@@ -7317,6 +7317,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					delete boost[b];
 				}
 			}
+			this.add('-activate', source, 'ability: Black Smoke');
 		},
 		flags: {breakable: 1},
 		name: "Black Smoke",
