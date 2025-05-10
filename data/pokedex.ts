@@ -1199,7 +1199,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	venomoth: {
 		num: 49,
 		name: "Venomoth",
-		types: ["Bug", "Psychic"],Spirit Balance
+		types: ["Bug", "Psychic"],
 		baseStats: {hp: 70, atk: 65, def: 60, spa: 90, spd: 75, spe: 90},
 		abilities: {0: "Pestilent Reaper", 1: "Tinted Lens", H: "Wonder Skin"},
 		heightm: 1.5,
