@@ -3047,7 +3047,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Field"],
 	},
-	eeveemegas: {
+	eevees: {
 		num: 133,
 		name: "Eevee-S",
 		baseSpecies: "Eevee",
