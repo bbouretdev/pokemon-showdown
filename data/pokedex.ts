@@ -3713,7 +3713,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	mareep: {
 		num: 179,
 		name: "Mareep",
-		types: ["Electric"],
+		types: ["Electric", "Fairy"],
 		baseStats: {hp: 55, atk: 40, def: 40, spa: 65, spd: 45, spe: 35},
 		abilities: {0: "Static", H: "Plus"},
 		heightm: 0.6,
@@ -3725,7 +3725,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	flaaffy: {
 		num: 180,
 		name: "Flaaffy",
-		types: ["Electric"],
+		types: ["Electric", "Fairy"],
 		baseStats: {hp: 70, atk: 55, def: 55, spa: 80, spd: 60, spe: 45},
 		abilities: {0: "Static", H: "Plus"},
 		heightm: 0.8,
@@ -3739,9 +3739,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	ampharos: {
 		num: 181,
 		name: "Ampharos",
-		types: ["Electric"],
+		types: ["Electric", "Fairy"],
 		baseStats: {hp: 90, atk: 75, def: 85, spa: 115, spd: 90, spe: 55},
-		abilities: {0: "Static", H: "Plus"},
+		abilities: {0: "Static", 1: "Light House", H: "Plus"},
 		heightm: 1.4,
 		weightkg: 61.5,
 		color: "Yellow",

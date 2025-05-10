@@ -7434,4 +7434,42 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10105,
 	},
+	lighthouse: {
+		onSourceAccuracy(accuracy, target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) {
+				return true;
+			}
+			return accuracy;
+		},
+		onSourceModifyAtkPriority: 6,
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Dark') {
+				this.debug('Light House weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Dark') {
+				this.debug('Light House weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!target.isActive || !this.canSwitch(target.side) || target.forceSwitchFlag || target.forceSwitchFlag) {
+					return;
+				}
+				if (target.hasType('Ghost') && this.runEvent('DragOut', target, pokemon)) {
+					this.add('-ability', pokemon, 'Light House');
+					target.forceSwitchFlag = true;
+				}
+			}
+		},
+		flags: {},
+		name: "Light House",
+		rating: 4,
+		num: 10106,
+	},
 };

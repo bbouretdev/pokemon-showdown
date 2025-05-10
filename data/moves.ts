@@ -16239,7 +16239,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Scorching Sands",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, defrost: 1, metronome: 1},
+		flags: {protect: 1, mirror: 1, defrost: 1, metronome: 1, wind: 1},
 		thawsTarget: true,
 		secondary: {
 			chance: 30,
@@ -23217,5 +23217,82 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Clever",
+	},
+	gift: {
+		num: 10045,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Gift",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, allyanim: 1, noassist: 1, failcopycat: 1},
+		onTryImmunity(target) {
+			return !target.hasAbility('stickyhold');
+		},
+		onHit(target, source, move) {
+			const giftItems = [
+				'Toxic Orb', 'Flame Orb', 'Frozen Orb', 'Choice Scarf', 'Choice Band', 'Choice Specs', 'Black Sludge'
+			];
+			const randomItem = giftItems[Math.floor(Math.random() * giftItems.length)];
+			if (source.hp) {
+				const item = target.takeItem();
+				if (item) {
+					this.add('-enditem', target, item.name, '[from] move: Gift', '[of] ' + source);
+				}
+			}
+			this.add('-activate', source, 'move: Trick', '[of] ' + target);
+			target.setItem(randomItem);
+			this.add('-item', target, randomItem, '[from] move: Gift');
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		zMove: {boost: {spe: 2}},
+		contestType: "Clever",
+	},
+	slothcurse: {
+		num: 10046,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Sloth Curse",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, allyanim: 1, noassist: 1, failcopycat: 1},
+		volatileStatus: 'slothcurse',
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Sloth Curse', '[of] ' + source);
+			},
+			onModifyMovePriority: 1,
+			onModifyMove(move, source, target) {
+				move.priority = -3;
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		zMove: {boost: {spe: 2}},
+		contestType: "Clever",
+	},
+	provocativelaugh: {
+		num: 10047,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Provocative Laugh",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
+		secondary: {
+			chance: 30,
+			onHit(target, source) {
+				target.addVolatile('taunt');
+			},
+		},
+		target: "normal",
+		type: "Dark",
+		contestType: "Beautiful",
 	},
 };

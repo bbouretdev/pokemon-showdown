@@ -960,13 +960,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	mareep: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	flaaffy: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	ampharos: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	ampharosmega: {
 	tier: "Illegal",
@@ -1146,7 +1146,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	delibird: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	mantyke: {
 	tier: "Illegal",

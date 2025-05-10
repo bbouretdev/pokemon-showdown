@@ -7786,4 +7786,24 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 
 		removeItem: "  [SOURCE] stole its target's substitute!",
 	},
+	gift: {
+		name: "Gift",
+		desc: "If this move is successful and the user has not fainted, it steals the target's Substitute if it is under one.",
+		shortDesc: "User steals the target's Substitute.",
+
+		removeItem: "  [SOURCE] kindly gifts [ITEM] to [TARGET]!",
+	},
+	slothcurse: {
+		name: "Sloth Curse",
+		desc: "Curses the target, lowers the target's moves priority to the lowest.",
+		shortDesc: "Curses target. Sets moves priority to the lowest.",
+
+		start: "  [SOURCE] cut its own HP and put a sloth curse on [POKEMON]!",
+		damage: "  [POKEMON] is afflicted by the sloth curse!",
+	},
+	provocativelaugh: {
+		name: "Provocative Laugh",
+		desc: "Has a 30% chance to Taunt the target.",
+		shortDesc: "30% chance to Taunt the target.",
+	},
 };
