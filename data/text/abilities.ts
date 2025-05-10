@@ -2797,6 +2797,33 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	scurry: {
 		name: "Scurry",
-		shortDesc: "This Pokemon's offensive moves are turned into pivot moves.",
+		shortDesc: "This Pokemon's offensive moves do cause a self switch.",
+	},
+	lighthouse: {
+		name: "Light House",
+		desc: "Every move used by this Pokemon will always hit. Ghost-type Pokemon will be forced to switch out.",
+		shortDesc: "Every move used by this Pokemon will always hit. Forces Ghost to switch out.",
+	},
+	magnetpush: {
+		name: "Magnet Push",
+		desc: "Steel-type Pokemon will be forced to switch out. If succeeds, gains Magnetized effect, causing this Pokemon's moves to have an increased priority.",
+		shortDesc: "Forces Steel to switch out. Priority +1 if succeeds.",
+	},
+	strongwinds: {
+		name: "Strong Winds",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.",
+		gen8: {
+			shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.",
+		},
+	},
+	turbulence: {
+		name: "Turbulence",
+		desc: "This Pokemon's Wind attacks without a chance to make the target flinch gain a 30% chance to make the target flinch.",
+		shortDesc: "This Pokemon's Wind attacks without a chance to flinch gain a 30% chance to flinch.",
+	},
+	umami: {
+		name: "Umami",
+		desc: "When eats berry: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
+		shortDesc: "When eats berry: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
 	},
 };

@@ -7806,4 +7806,14 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Has a 30% chance to Taunt the target.",
 		shortDesc: "30% chance to Taunt the target.",
 	},
+	solarwind: {
+		name: "Solar Wind",
+		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+		shortDesc: "30% chance to burn the target. Thaws target.",
+	},
+	seaspray: {
+		name: "Sea Spray",
+		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "30% chance to lower the target's Sp. Def by 1.",
+	},
 };

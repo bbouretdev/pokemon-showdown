@@ -7441,22 +7441,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			return accuracy;
 		},
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Dark') {
-				this.debug('Light House weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Dark') {
-				this.debug('Light House weaken');
-				return this.chainModify(0.5);
-			}
-		},
 		onStart(pokemon) {
-			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
 				if (!target.isActive || !this.canSwitch(target.side) || target.forceSwitchFlag || target.forceSwitchFlag) {
 					return;
@@ -7471,5 +7456,259 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Light House",
 		rating: 4,
 		num: 10106,
+	},
+	magnetpush: {
+		onStart(pokemon) {
+			for (const target of pokemon.adjacentFoes()) {
+				if (!target.isActive || !this.canSwitch(target.side) || target.forceSwitchFlag || target.forceSwitchFlag) {
+					return;
+				}
+				if (target.hasType('Steel') && this.runEvent('DragOut', target, pokemon)) {
+					this.add('-ability', pokemon, 'Magnet Push');
+					pokemon.addVolatile('magnetized');
+					target.forceSwitchFlag = true;
+				}
+			}
+		},
+		onModifyMovePriority: 1,
+		onModifyMove(move, source, target) {
+			if(source.volatiles['magnetized']) move.priority = 1;
+		},
+		flags: {},
+		name: "Magnet Push",
+		rating: 4,
+		num: 10107,
+	},
+	strongwinds: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.flags['wind']) {
+				this.debug('Strong Winds boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.flags['wind']) {
+				this.debug('Strong Winds boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		flags: {},
+		name: "Strong Winds",
+		rating: 1,
+		num: 10108,
+	},	
+	turbulence: {
+		onModifyMovePriority: -1,
+		onModifyMove(move) {
+			if (move.flags['wind']) {
+				this.debug('Adding Turbulence flinch');
+				if (!move.secondaries) move.secondaries = [];
+				for (const secondary of move.secondaries) {
+					if (secondary.volatileStatus === 'flinch') return;
+				}
+				move.secondaries.push({
+					chance: 30,
+					volatileStatus: 'flinch',
+				});
+			}
+		},
+		flags: {},
+		name: "Turbulence",
+		rating: 1,
+		num: 10109,
+	},
+	umami: {
+		onSourceEatItem(item, pokemon) {
+			this.add('-activate', pokemon, 'ability: Umami');
+			this.boost({atk: 1, spa: 1, spe: 1, def: -1, spd: -1}, pokemon, pokemon);
+		},
+		flags: {},
+		name: "Umami",
+		rating: 2,
+		num: 10110,
+	},
+	proteanmaxima: {
+		onAfterMega(pokemon) {
+			if (!pokemon.baseSpecies.id.includes('eevee') || !pokemon.species.id.includes('eevee')) {
+				return;
+			}
+			const action = this.queue.willMove(pokemon);
+			if (!action) return;
+			const move = this.dex.getActiveMove(action.move.id);
+			let type = move.type;
+			const dict = {
+				'Normal': 'Eevee',
+				'Water': 'Eevee-V',
+				'Electric': 'Eevee-J',
+				'Fire': 'Eevee-F',
+				'Psychic': 'Eevee-E',
+				'Dark': 'Eevee-U',
+				'Grass': 'Eevee-L',
+				'Ice': 'Eevee-G',
+				'Fairy': 'Eevee-S',
+			};
+			const types = ['Normal', 'Water', 'Electric', 'Fire', 'Psychic', 'Dark', 'Grass', 'Ice', 'Fairy'];
+
+			if (move.id === 'hiddenpower') type = 'Normal';
+			if (!types.includes(type)) return;
+
+			const forme = dict[type as keyof typeof dict];
+			if (pokemon.species.name === forme) return;
+			pokemon.formeChange(forme);
+			pokemon.baseMaxhp = Math.floor(Math.floor(
+				2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+			) * pokemon.level / 100 + 10);
+			const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+			pokemon.hp = Math.floor(newMaxHP * (pokemon.hp / pokemon.maxhp));
+			pokemon.maxhp = newMaxHP;
+		},
+
+		onBeforeTurn(pokemon) {
+			if (!pokemon.baseSpecies.id.includes('eevee') || !pokemon.species.id.includes('eevee')) {
+				return;
+			}
+			const action = this.queue.willMove(pokemon);
+			if (!action) return;
+			const move = this.dex.getActiveMove(action.move.id);
+			let type = move.type;
+			const dict = {
+				'Normal': 'Eevee',
+				'Water': 'Eevee-V',
+				'Electric': 'Eevee-J',
+				'Fire': 'Eevee-F',
+				'Psychic': 'Eevee-E',
+				'Dark': 'Eevee-U',
+				'Grass': 'Eevee-L',
+				'Ice': 'Eevee-G',
+				'Fairy': 'Eevee-S',
+			};
+			const types = ['Normal', 'Water', 'Electric', 'Fire', 'Psychic', 'Dark', 'Grass', 'Ice', 'Fairy'];
+
+			if (move.id === 'hiddenpower') type = 'Normal';
+			if (!types.includes(type)) return;
+
+			const forme = dict[type as keyof typeof dict];
+			if (pokemon.species.name === forme) return;
+			pokemon.formeChange(forme);
+			pokemon.baseMaxhp = Math.floor(Math.floor(
+				2 * pokemon.species.baseStats['hp'] + pokemon.set.ivs['hp'] + Math.floor(pokemon.set.evs['hp'] / 4) + 100
+			) * pokemon.level / 100 + 10);
+			const newMaxHP = pokemon.volatiles['dynamax'] ? (2 * pokemon.baseMaxhp) : pokemon.baseMaxhp;
+			pokemon.hp = Math.floor(newMaxHP * (pokemon.hp / pokemon.maxhp));
+			pokemon.maxhp = newMaxHP;
+		},
+
+		onTryHit(target, source, move) {
+			if (!target.baseSpecies.id.includes('eevee') || !target.species.id.includes('eevee')) {
+				return;
+			}
+			if (target.types[0] === 'Water') {
+				if (target !== source && move.type === 'Water') {
+					if (!this.heal(target.baseMaxhp / 4)) {
+						this.add('-immune', target, '[from] ability: Water Absorb');
+					}
+					return null;
+				}
+			}
+			if (target.types[0] === 'Fire') {
+				if (target !== source && move.type === 'Fire') {
+					move.accuracy = true;
+					if (!target.addVolatile('flashfire')) {
+						this.add('-immune', target, '[from] ability: Flash Fire');
+					}
+					return null;
+				}
+			}
+			if (target.types[0] === 'Electric') {
+				if (target !== source && move.type === 'Electric') {
+					if (!this.heal(target.baseMaxhp / 4)) {
+						this.add('-immune', target, '[from] ability: Volt Absorb');
+					}
+					return null;
+				}
+			}
+			if (target.types[0] === 'Psychic') {
+				if (target === source || move.hasBounced || !move.flags['reflectable']) {
+					return;
+				}
+				const newMove = this.dex.getActiveMove(move.id);
+				newMove.hasBounced = true;
+				newMove.pranksterBoosted = false;
+				this.actions.useMove(newMove, target, source);
+				return null;
+			}
+		},
+		onAllyTryHitSide(target, source, move) {
+			if (!target.baseSpecies.id.includes('eevee') || !target.species.id.includes('eevee')) {
+				return;
+			}
+			if (target.types[0] !== 'Psychic') return;
+			if (target.side === source.side || move.hasBounced || !move.flags['reflectable']) {
+				return;
+			}
+			const newMove = this.dex.getActiveMove(move.id);
+			newMove.hasBounced = true;
+			newMove.pranksterBoosted = false;
+			this.actions.useMove(newMove, this.effectState.target, source);
+			return null;
+		},
+		onAfterSetStatus(status, target, source, effect) {
+			if (!target.baseSpecies.id.includes('eevee') || !target.species.id.includes('eevee')) {
+				return;
+			}
+			if (target.types[0] !== 'Dark') return;
+			if (!source || source === target) return;
+			if (effect && effect.id === 'toxicspikes') return;
+			if (status.id === 'slp' || status.id === 'frz') return;
+			this.add('-activate', target, 'ability: Synchronize');
+			// Hack to make status-prevention abilities think Synchronize is a status move
+			// and show messages when activating against it.
+			source.trySetStatus(status, target, {status: status.id, id: 'synchronize'} as Effect);
+		},
+		onModifySpe(spe, pokemon) {
+			if (!pokemon.baseSpecies.id.includes('eevee') || !pokemon.species.id.includes('eevee')) {
+				return;
+			}
+			if (pokemon.types[0] !== 'Grass') return;
+			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				return this.chainModify(2);
+			}
+		},
+		onImmunity(type, pokemon) {
+			if (!pokemon.baseSpecies.id.includes('eevee') || !pokemon.species.id.includes('eevee')) {
+				return;
+			}
+			if (pokemon.types[0] !== 'Ice') return;
+			if (type === 'hail') return false;
+		},
+		onModifyAccuracyPriority: 8,
+		onModifyAccuracy(accuracy, pokemon) {
+			if (!pokemon.baseSpecies.id.includes('eevee') || !pokemon.species.id.includes('eevee')) {
+				return;
+			}
+			if (pokemon.types[0] !== 'Ice') return;
+			if (typeof accuracy !== 'number') return;
+			if (this.field.isWeather(['hail', 'snow'])) {
+				this.debug('Snow Cloak - decreasing accuracy');
+				return accuracy * 0.8;
+			}
+		},
+		onDamagingHit(damage, target, source, move) {
+			if (!target.baseSpecies.id.includes('eevee') || !target.species.id.includes('eevee')) {
+				return;
+			}
+			if (target.types[0] !== 'Fairy') return;
+			if (this.checkMoveMakesContact(move, source, target)) {
+				if (this.randomChance(3, 10)) {
+					source.addVolatile('attract', this.effectState.target);
+				}
+			}
+		},
+		name: "Protean Maxima",
+		gen: 6,
+		rating: 4.5,
+		num: 25,
 	},
 };

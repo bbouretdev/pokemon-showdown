@@ -20357,6 +20357,14 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wish: ["9M", "9E", "8E", "7E", "6E", "5E", "4E", "3E"],
 			workup: ["9M", "8M", "7M", "5M"],
 			yawn: ["9M", "9E", "8E", "7E", "6E", "5E", "4E"],
+			thunderbolt: ["9M"],
+			scald: ["9M"],
+			flamethrower: ["9M"],
+			psychic: ["9M"],
+			darkpulse: ["9M"],
+			icebeam: ["9M"],
+			energyball: ["9M"],
+			moonblast: ["9M"],
 		},
 		eventData: [
 			{generation: 4, level: 10, gender: "F", nature: "Lonely", abilities: ["adaptability"], moves: ["covet", "bite", "helpinghand", "attract"], pokeball: "cherishball"},
@@ -26150,6 +26158,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			moonblast: ["9M"],
 			moonlight: ["9M"],
 			playrough: ["9M"],
+			paraboliccharge: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 37, gender: "F", moves: ["thunder", "thundershock", "thunderwave", "cottonspore"], pokeball: "pokeball"},
@@ -26251,6 +26260,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			moonblast: ["9M"],
 			moonlight: ["9M"],
 			playrough: ["9M"],
+			paraboliccharge: ["9M"],
 		},
 		encounters: [
 			{generation: 7, level: 11, pokeball: "pokeball"},
@@ -26367,6 +26377,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			moonblast: ["9M"],
 			moonlight: ["9M"],
 			playrough: ["9M"],
+			paraboliccharge: ["9M"],
 		},
 	},
 	azurill: {
