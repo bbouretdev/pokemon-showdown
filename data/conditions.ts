@@ -751,6 +751,48 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-weather', 'none');
 		},
 	},
+	newmoon: {
+		name: 'NewMoon',
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source?.hasItem('duskstone')) {
+				return 8;
+			}
+			return 5;
+		},
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (move.type === 'Ghost' || move.type === 'Dark') {
+				if (defender.getMoveHitData(move).typeMod < 0) {
+					this.debug('NewMoon boost');
+					return this.chainModify(2);
+				}
+			}
+		},
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Ghost'] = true;
+			}
+		},
+		onFieldStart(field, source, effect) {
+			if (effect?.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectState.duration = 0;
+				this.add('-weather', 'NewMoon', '[from] ability: ' + effect.name, '[of] ' + source);
+			} else {
+				this.add('-weather', 'NewMoon');
+			}
+		},
+		onFieldResidualOrder: 1,
+		onFieldResidual() {
+			this.add('-weather', 'NewMoon', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onFieldEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	deltastream: {
 		name: 'DeltaStream',
 		effectType: 'Weather',

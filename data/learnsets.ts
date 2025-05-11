@@ -24895,6 +24895,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wingattack: ["9M", "9E", "8E", "7E", "7V", "6E", "5E", "4E", "3E"],
 			workup: ["9M", "8M", "7M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "7L16", "6T", "6L37", "5T", "5L37", "4T", "4L33"],
+			newmoon: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "foresight"], pokeball: "pokeball"},
@@ -24998,6 +24999,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "9L33", "8M", "8L33", "7T", "7L39", "6T", "6L13", "5T", "5L13", "4T", "4L13"],
 			workup: ["9M", "8M", "7M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "7L16", "6T", "6L42", "5T", "5L42", "4T", "4L37"],
+			newmoon: ["9M", "8M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 2, level: 7},

@@ -921,10 +921,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	hoothoot: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	noctowl: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	ledyba: {
 	tier: "Illegal",
@@ -1158,10 +1158,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	houndour: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	houndoom: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	houndoommega: {
 	tier: "Illegal",

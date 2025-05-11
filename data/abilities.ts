@@ -7709,6 +7709,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Protean Maxima",
 		gen: 6,
 		rating: 4.5,
-		num: 25,
+		num: 10111,
+	},
+	noctem: {
+		onStart(source) {
+			this.field.setWeather('newmoon');
+		},
+		flags: {},
+		name: "Noctem",
+		rating: 4,
+		num: 10112,
 	},
 };
