@@ -23336,7 +23336,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "New Moon",
+		name: "Dusk",
 		pp: 5,
 		priority: 0,
 		flags: {metronome: 1},
