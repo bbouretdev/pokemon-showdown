@@ -7713,7 +7713,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	noctem: {
 		onStart(source) {
-			this.field.setWeather('newmoon');
+			this.field.setWeather('dusk');
 		},
 		flags: {},
 		name: "Noctem",

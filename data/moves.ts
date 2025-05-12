@@ -23331,7 +23331,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 	},
-	newmoon: {
+	dusk: {
 		num: 10050,
 		accuracy: true,
 		basePower: 0,
@@ -23340,7 +23340,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: {metronome: 1},
-		weather: 'newmoon',
+		weather: 'dusk',
 		secondary: null,
 		target: "all",
 		type: "Dark",

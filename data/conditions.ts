@@ -751,8 +751,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-weather', 'none');
 		},
 	},
-	newmoon: {
-		name: 'NewMoon',
+	dusk: {
+		name: 'Dusk',
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
@@ -764,29 +764,38 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.type === 'Ghost' || move.type === 'Dark') {
 				if (defender.getMoveHitData(move).typeMod < 0) {
-					this.debug('NewMoon boost');
+					this.debug('Dusk boost');
 					return this.chainModify(2);
 				}
 			}
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
-			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
-				move.ignoreImmunity['Ghost'] = true;
+			if(move.type === 'Ghost' || move.type === 'Dark') {
+				if (!move.ignoreImmunity) move.ignoreImmunity = {};
+				if (move.ignoreImmunity !== true) {
+					move.ignoreImmunity['Ghost'] = true;
+				}
+				if (move.secondaries) {
+					this.debug('doubling secondary chance');
+					for (const secondary of move.secondaries) {
+						if (secondary.chance) secondary.chance *= 2;
+					}
+				}
+				if (move.self?.chance) move.self.chance *= 2;
 			}
 		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
 				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'NewMoon', '[from] ability: ' + effect.name, '[of] ' + source);
+				this.add('-weather', 'Dusk', '[from] ability: ' + effect.name, '[of] ' + source);
 			} else {
-				this.add('-weather', 'NewMoon');
+				this.add('-weather', 'Dusk');
 			}
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
-			this.add('-weather', 'NewMoon', '[upkeep]');
+			this.add('-weather', 'Dusk', '[upkeep]');
 			this.eachEvent('Weather');
 		},
 		onFieldEnd() {
