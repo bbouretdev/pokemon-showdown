@@ -24896,6 +24896,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["9M", "8M", "7M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "7L16", "6T", "6L37", "5T", "5L37", "4T", "4L33"],
 			dusk: ["9M", "8M", "7M", "5M"],
+			mournfulhooting: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "foresight"], pokeball: "pokeball"},
@@ -25000,6 +25001,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			workup: ["9M", "8M", "7M", "5M"],
 			zenheadbutt: ["9M", "8M", "7T", "7L16", "6T", "6L42", "5T", "5L42", "4T", "4L37"],
 			dusk: ["9M", "8M", "7M", "5M"],
+			mournfulhooting: ["9M", "8M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 2, level: 7},
@@ -28073,6 +28075,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9M"],
 			whirlwind: ["9M", "9E", "7E", "7V", "6E", "5E", "4E", "3E"],
 			wingattack: ["9M", "9L15", "7L15", "7E", "7V", "6L15", "6E", "5L15", "5E", "4L15", "4E", "3E"],
+			mournfulhooting: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", abilities: ["insomnia"], moves: ["peck", "astonish"], pokeball: "pokeball"},
@@ -28166,6 +28169,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "7T", "6T", "5T", "4T"],
 			uturn: ["9M"],
 			wingattack: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1"],
+			mournfulhooting: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 7, level: 65, gender: "M", abilities: ["superluck"], moves: ["nightslash", "skyattack", "heatwave", "icywind"], pokeball: "cherishball"},
@@ -31945,6 +31949,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trailblaze: ["9M"],
 			uproar: ["9M", "7T", "6T", "5T", "4T"],
 			willowisp: ["9M", "7M", "6M", "5M", "4M", "4E", "3E"],
+			infernalparade: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["leer", "ember", "howl"], pokeball: "pokeball"},
@@ -32048,6 +32053,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			trailblaze: ["9M"],
 			uproar: ["9M", "7T", "6T", "5T", "4T"],
 			willowisp: ["9M", "7M", "6M", "5M", "4M"],
+			infernalparade: ["9M"],
 		},
 		eventData: [
 			{generation: 6, level: 50, nature: "Timid", abilities: ["flashfire"], moves: ["flamethrower", "darkpulse", "solarbeam", "sludgebomb"], pokeball: "cherishball"},

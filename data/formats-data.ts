@@ -933,7 +933,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	spinarak: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	ariados: {
 	tier: "OU",
@@ -987,13 +987,13 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	hoppip: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	skiploom: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	jumpluff: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	aipom: {
 	tier: "Illegal",

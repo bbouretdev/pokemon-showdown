@@ -7479,23 +7479,23 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4,
 		num: 10107,
 	},
-	strongwinds: {
+	windforce: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.flags['wind']) {
-				this.debug('Strong Winds boost');
+				this.debug('Wind Force boost');
 				return this.chainModify([5325, 4096]);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.flags['wind']) {
-				this.debug('Strong Winds boost');
+				this.debug('Wind Force boost');
 				return this.chainModify([5325, 4096]);
 			}
 		},
 		flags: {},
-		name: "Strong Winds",
+		name: "Wind Force",
 		rating: 1,
 		num: 10108,
 	},	
@@ -7522,7 +7522,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	umami: {
 		onSourceEatItem(item, pokemon) {
 			this.add('-activate', pokemon, 'ability: Umami');
-			this.boost({atk: 1, spa: 1, spe: 1, def: -1, spd: -1}, pokemon, pokemon);
+			this.boost({atk: 1, spa: 1, spe: 1, def: 1, spd: 1}, pokemon, pokemon);
 		},
 		flags: {},
 		name: "Umami",
@@ -7719,5 +7719,50 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Noctem",
 		rating: 4,
 		num: 10112,
+	},
+	nightvision: {
+		onSourceAccuracy(accuracy, target, source, move) {
+			if (move && (source === this.effectState.target || target === this.effectState.target)) {
+				if (['dusk'].includes(source.effectiveWeather())) return true;
+			}
+			return accuracy;
+		},
+		flags: {},
+		name: "Night Vision",
+		rating: 4,
+		num: 10113,
+	},
+	seedscatter: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Hypnotic Spiral');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					if (!target.volatiles['leechseed']) {
+						target.addVolatile('leechseed');
+					}
+				}
+			}
+		},
+		flags: {},
+		name: "Seed Scatter",
+		rating: 4,
+		num: 10114,
+	},
+	regeneratingshadows: {
+		onWeather(target, source, effect) {
+			if (effect.id === 'dusk') {
+				this.heal(target.baseMaxhp / 16, target, target);
+			}
+		},
+		flags: {},
+		name: "Regenerating Shadows",
+		rating: 2,
+		num: 10115,
 	},
 };

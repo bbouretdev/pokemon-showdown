@@ -2809,8 +2809,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Steel-type Pokemon will be forced to switch out. If succeeds, gains Magnetized effect, causing this Pokemon's moves to have an increased priority.",
 		shortDesc: "Forces Steel to switch out. Priority +1 if succeeds.",
 	},
-	strongwinds: {
-		name: "Strong Winds",
+	windforce: {
+		name: "Wind Force",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.",
 		gen8: {
 			shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.",
@@ -2823,7 +2823,31 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	umami: {
 		name: "Umami",
-		desc: "When eats berry: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
-		shortDesc: "When eats berry: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
+		desc: "When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.",
+		shortDesc: "When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.",
+	},
+	noctem: {
+		name: "Noctem",
+		shortDesc: "On switch-in, this Pokemon summons Dusk.",
+	},
+	proteanmaxima: {
+		name: "Protean Maxima",
+		desc: "This Pokemon's type, stats and ability change to match one of the Eeveelutions at the start of the turn. This transformation depends on the type of the move used.",
+		shortDesc: "Based on the type of move used, this Pokemon transforms into one of the Eeveelutions.",
+	},
+	nightvision: {
+		name: "Night Vision",
+		desc: "Every move used by this Pokemon will always hit if weather is Dusk.",
+		shortDesc: "Every move used by this Pokemon will always hit if weather is Dusk.",
+	},
+	seedscatter: {
+		name: "Seed Scatter",
+		desc: "On switch-in, this Pokemon sets Leech Seed on the opponents.",
+		shortDesc: "On switch-in, this Pokemon sets Leech Seed on the opponents.",
+	},
+	regeneratingshadows: {
+		name: "Regenerating Shadows",
+		desc: "If Dusk is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "If Dusk is active, this Pokemon heals 1/16 of its max HP each turn.",
 	},
 };

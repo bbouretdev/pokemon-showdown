@@ -5599,7 +5599,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	shadowpunch: {
 		name: "Shadow Punch",
-		shortDesc: "This move does not check accuracy.",
+		shortDesc: "This move does not check accuracy. Results in a critical hit if weather is Dusk.",
 	},
 	shadowsneak: {
 		name: "Shadow Sneak",
@@ -7815,5 +7815,15 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		name: "Sea Spray",
 		desc: "Has a 30% chance to lower the target's Special Defense by 1 stage.",
 		shortDesc: "30% chance to lower the target's Sp. Def by 1.",
+	},
+	dusk: {
+		name: "Dusk",
+		desc: "For 5 turns, the weather becomes Dusk. Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally. Lasts for 8 turns if the user is holding Dusk Stone. Fails if the current weather is Dusk.",
+		shortDesc: "For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.",
+	},
+	mournfulhooting: {
+		name: "Mournful Hooting",
+		desc: "Has a 30% chance to confuse the target, 20% chance to flinch.",
+		shortDesc: "30% chance to confuse the target, 20% chance to flinch.",
 	},
 };

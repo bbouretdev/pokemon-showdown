@@ -2421,7 +2421,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: {
 			chance: 100,
-			volatileStatus: 'confusion',
+			status: 'confusion',
 		},
 		target: "any",
 		type: "Flying",
@@ -16530,6 +16530,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 20,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1},
+		onModifyMove(move, pokemon, target) {
+			if (target?.effectiveWeather() === 'dusk') move.willCrit = true;
+		},
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
@@ -23346,5 +23349,30 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dark",
 		zMove: {boost: {spe: 1}},
 		contestType: "Beautiful",
+	},
+	mournfulhooting: {
+		num: 10051,
+		accuracy: 100,
+		basePower: 65,
+		category: "Special",
+		name: "Mournful Hooting",
+		pp: 20,
+		priority: 0,
+		flags: {
+			protect: 1, mirror: 1, sound: 1, distance: 1, bypasssub: 1,
+			nosleeptalk: 1, noassist: 1, failcopycat: 1, failmimic: 1, failinstruct: 1,
+		},
+		secondaries: [
+			{
+				chance: 30,
+				status: 'confusion',
+			}, {
+				chance: 20,
+				volatileStatus: 'flinch',
+			},
+		],
+		target: "any",
+		type: "Dark",
+		contestType: "Cute",
 	},
 };
