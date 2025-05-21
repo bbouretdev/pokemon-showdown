@@ -8,7 +8,7 @@
 - **type_2** added : `Fighting`
 - **ability_1** added : `Overcome`
 - **added_moves** :
-  -> closecombat
+  -> `closecombat`
 
 ### charizard
 - **type_2** changed : `Flying` → `Dragon`
@@ -18,25 +18,25 @@
 - **type_2** added : `Fighting`
 - **ability_1** added : `Overcome`
 - **added_moves** :
-  -> closecombat
+  -> `closecombat`
 
 ### blastoise
 - **type_2** added : `Steel`
 - **ability_1** added : `Gunner`
 - **added_moves** :
-  -> zapcannon
-  -> mysticshrapnel
-  -> frostbite
-  -> fleurcannon
+  -> `zapcannon`
+  -> `mysticshrapnel`
+  -> `frostbite`
+  -> `fleurcannon`
 
 ### metapod
 - **type_2** added : `Steel`
 - **hidden_ability** added : `Chrysalis Shield`
 - **added_moves** :
-  -> spikes
-  -> thornyguard
-  -> stickyweb
-  -> leechlife
+  -> `spikes`
+  -> `thornyguard`
+  -> `stickyweb`
+  -> `leechlife`
 
 ### butterfree
 - **hp** changed : `60.0` → `85.0`
@@ -51,8 +51,8 @@
 - **spe** changed : `75.0` → `90.0`
 - **ability_1** added : `Swarm Frenzy`
 - **added_moves** :
-  -> triplestinger
-  -> stickyweb
+  -> `triplestinger`
+  -> `stickyweb`
 
 ### pidgeotto
 - **atk** changed : `60.0` → `85.0`
@@ -60,14 +60,14 @@
 - **ability_0** changed : `Keen Eye` → `Fury Talons`
 - **ability_1** changed : `Tangled Feet` → `Wind Force`
 - **added_moves** :
-  -> pinmissile
-  -> rockblast
-  -> tailslap
-  -> bulletseed
-  -> galeassault
-  -> dualwingbeat
-  -> doublehit
-  -> aerodash
+  -> `pinmissile`
+  -> `rockblast`
+  -> `tailslap`
+  -> `bulletseed`
+  -> `galeassault`
+  -> `dualwingbeat`
+  -> `doublehit`
+  -> `aerodash`
 
 ### pidgeot
 - **type_1** changed : `Normal` → `Flying`
@@ -78,26 +78,26 @@
 - **ability_0** changed : `Keen Eye` → `No Guard`
 - **ability_1** changed : `Tangled Feet` → `Turbulence`
 - **added_moves** :
-  -> flyingpress
-  -> closecombat
-  -> focusblast
-  -> aerodash
+  -> `flyingpress`
+  -> `closecombat`
+  -> `focusblast`
+  -> `aerodash`
 
 ### rattata
 - **ability_0** changed : `Run Away` → `Scavenger`
 - **hidden_ability** changed : `Hustle` → `Strong Jaw`
 - **added_moves** :
-  -> biteandseek
-  -> tidyup
-  -> populationbomb
+  -> `biteandseek`
+  -> `tidyup`
+  -> `populationbomb`
 
 ### raticate
 - **ability_0** changed : `Run Away` → `Scavenger`
 - **hidden_ability** changed : `Hustle` → `Strong Jaw`
 - **added_moves** :
-  -> populationbomb
-  -> tidyup
-  -> biteandseek
+  -> `populationbomb`
+  -> `tidyup`
+  -> `biteandseek`
 
 ### fearow
 - **type_1** changed : `Normal` → `Dark`
@@ -105,16 +105,16 @@
 - **spe** changed : `100.0` → `110.0`
 - **ability_1** added : `Predators Gaze`
 - **added_moves** :
-  -> crueltalon
-  -> honeclaws
+  -> `crueltalon`
+  -> `honeclaws`
 
 ### arbok
 - **type_2** added : `Dark`
 - **atk** changed : `95.0` → `105.0`
 - **hidden_ability** changed : `Unnerve` → `Petrify`
 - **added_moves** :
-  -> stonegaze
-  -> slitherstrike
+  -> `stonegaze`
+  -> `slitherstrike`
 
 ### pikachu
 - **ability_1** added : `Swiftness`
@@ -125,58 +125,58 @@
 ### sandshrew
 - **ability_1** added : `Desert Armor`
 - **added_moves** :
-  -> sanddyke
-  -> erode
-  -> burrowstrike
+  -> `sanddyke`
+  -> `erode`
+  -> `burrowstrike`
 
 ### sandslash
 - **ability_1** added : `Desert Armor`
 - **added_moves** :
-  -> erode
-  -> burrowstrike
-  -> sanddyke
+  -> `erode`
+  -> `burrowstrike`
+  -> `sanddyke`
 
 ### nidoranf
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> triplestinger
-  -> gunkshot
+  -> `triplestinger`
+  -> `gunkshot`
 
 ### nidorina
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> triplestinger
-  -> gunkshot
+  -> `triplestinger`
+  -> `gunkshot`
 
 ### nidoqueen
 - **ability_0** changed : `Poison Point` → `Parental Devotion`
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> noretreat
-  -> triplestinger
-  -> storedpower
-  -> gunkshot
+  -> `noretreat`
+  -> `triplestinger`
+  -> `storedpower`
+  -> `gunkshot`
 
 ### nidoranm
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> triplestinger
-  -> gunkshot
+  -> `triplestinger`
+  -> `gunkshot`
 
 ### nidorino
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> gunkshot
-  -> triplestinger
+  -> `gunkshot`
+  -> `triplestinger`
 
 ### nidoking
 - **ability_0** changed : `Poison Point` → `Parental Devotion`
 - **ability_1** changed : `Rivalry` → `Noxious Barb`
 - **added_moves** :
-  -> gunkshot
-  -> storedpower
-  -> triplestinger
-  -> noretreat
+  -> `gunkshot`
+  -> `storedpower`
+  -> `triplestinger`
+  -> `noretreat`
 
 ### vulpix
 - **ability_0** changed : `Flash Fire` → `Sure Paws`
@@ -189,25 +189,25 @@
 ### jigglypuff
 - **ability_0** changed : `Cute Charm` → `Preventive`
 - **added_moves** :
-  -> soothingsong
-  -> puppettheft
+  -> `soothingsong`
+  -> `puppettheft`
 
 ### wigglytuff
 - **ability_0** changed : `Cute Charm` → `Preventive`
 - **hidden_ability** changed : `Frisk` → `Tearful Goodbye`
 - **added_moves** :
-  -> soothingsong
-  -> puppettheft
+  -> `soothingsong`
+  -> `puppettheft`
 
 ### golbat
 - **ability_1** added : `Mocking Face`
 - **added_moves** :
-  -> icefang
-  -> thunderfang
-  -> noxiouschomp
-  -> firefang
-  -> psychicfangs
-  -> spookysnatch
+  -> `icefang`
+  -> `thunderfang`
+  -> `noxiouschomp`
+  -> `firefang`
+  -> `psychicfangs`
+  -> `spookysnatch`
 
 ### oddish
 - **ability_1** added : `Seed Spread`
@@ -218,7 +218,7 @@
 ### parasect
 - **hidden_ability** changed : `Damp` → `Spore Burst`
 - **added_moves** :
-  -> myceliumdrain
+  -> `myceliumdrain`
 
 ### venonat
 - **type_2** changed : `Poison` → `Psychic`
@@ -238,24 +238,24 @@
 ### psyduck
 - **ability_0** changed : `Damp` → `Neutralizer`
 - **added_moves** :
-  -> braindrain
+  -> `braindrain`
 
 ### golduck
 - **ability_0** changed : `Damp` → `Neutralizer`
 - **added_moves** :
-  -> braindrain
+  -> `braindrain`
 
 ### mankey
 - **ability_0** changed : `Vital Spirit` → `Sensitive`
 - **added_moves** :
-  -> muteblow
-  -> tribaldance
+  -> `muteblow`
+  -> `tribaldance`
 
 ### primeape
 - **ability_0** changed : `Vital Spirit` → `Sensitive`
 - **added_moves** :
-  -> muteblow
-  -> tribaldance
+  -> `muteblow`
+  -> `tribaldance`
 
 ### growlithe
 - **hidden_ability** changed : `Justified` → `Guard Dog`
@@ -267,37 +267,37 @@
 - **ability_0** changed : `Water Absorb` → `Hypnotic Spiral`
 - **ability_1** changed : `Damp` → `Slippy Skin`
 - **added_moves** :
-  -> wavepunch
-  -> thunderpunch
+  -> `wavepunch`
+  -> `thunderpunch`
 
 ### kadabra
 - **ability_1** changed : `Inner Focus` → `Telekinetic Field`
 - **added_moves** :
-  -> netherward
-  -> disrupt
-  -> mentaldrop
+  -> `netherward`
+  -> `disrupt`
+  -> `mentaldrop`
 
 ### alakazam
 - **ability_1** changed : `Inner Focus` → `Mental Projection`
 - **added_moves** :
-  -> disrupt
-  -> mentaldrop
-  -> netherward
+  -> `disrupt`
+  -> `mentaldrop`
+  -> `netherward`
 
 ### machop
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> muteblow
+  -> `muteblow`
 
 ### machoke
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> muteblow
+  -> `muteblow`
 
 ### machamp
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> muteblow
+  -> `muteblow`
 
 ### victreebel
 - **ability_1** added : `Devour Toxins`
@@ -311,18 +311,18 @@
 ### geodude
 - **hidden_ability** changed : `Sand Veil` → `Stone Shard`
 - **added_moves** :
-  -> dangerzone
+  -> `dangerzone`
 
 ### graveler
 - **hidden_ability** changed : `Sand Veil` → `Field Knowledge`
 - **added_moves** :
-  -> dangerzone
+  -> `dangerzone`
 
 ### golem
 - **ability_0** changed : `Rock Head` → `Rolling Boulder`
 - **hidden_ability** changed : `Sand Veil` → `Natural Materials`
 - **added_moves** :
-  -> dangerzone
+  -> `dangerzone`
 
 ### ponyta
 - **type_2** added : `Fairy`
@@ -342,13 +342,13 @@
 - **ability_0** changed : `Magnet Pull` → `Magnet Push`
 - **hidden_ability** changed : `Analytic` → `Self Magnetism`
 - **added_moves** :
-  -> mysticshrapnel
+  -> `mysticshrapnel`
 
 ### magneton
 - **ability_1** changed : `Sturdy` → `Self Magnetism`
 - **hidden_ability** changed : `Analytic` → `Tres Amigos`
 - **added_moves** :
-  -> mysticshrapnel
+  -> `mysticshrapnel`
 
 ### farfetchd
 - **hp** changed : `52.0` → `62.0`
@@ -363,19 +363,19 @@
 ### dodrio
 - **ability_0** changed : `Run Away` → `Tres Amigos`
 - **added_moves** :
-  -> flamecharge
+  -> `flamecharge`
 
 ### seel
 - **hidden_ability** changed : `Ice Body` → `Cryo Mend`
 - **added_moves** :
-  -> icerink
-  -> frostbite
+  -> `icerink`
+  -> `frostbite`
 
 ### dewgong
 - **hidden_ability** changed : `Ice Body` → `Cryo Mend`
 - **added_moves** :
-  -> frostbite
-  -> icerink
+  -> `frostbite`
+  -> `icerink`
 
 ### muk
 - **ability_0** changed : `Stench` → `Corrosion`
@@ -383,24 +383,24 @@
 ### gastly
 - **ability_1** added : `Ethereal`
 - **added_moves** :
-  -> disrupt
-  -> slothcurse
-  -> provocativelaugh
+  -> `disrupt`
+  -> `slothcurse`
+  -> `provocativelaugh`
 
 ### haunter
 - **ability_1** added : `Ethereal`
 - **hidden_ability** added : `Exhaustion`
 - **added_moves** :
-  -> disrupt
-  -> slothcurse
-  -> provocativelaugh
+  -> `disrupt`
+  -> `slothcurse`
+  -> `provocativelaugh`
 
 ### gengar
 - **ability_1** added : `Haunting Pact`
 - **added_moves** :
-  -> provocativelaugh
-  -> disrupt
-  -> slothcurse
+  -> `provocativelaugh`
+  -> `disrupt`
+  -> `slothcurse`
 
 ### onix
 - **hp** changed : `35.0` → `60.0`
@@ -408,62 +408,62 @@
 - **ability_0** changed : `Rock Head` → `Sand Stream`
 - **weight_kg** changed : `210.0` → `350.0`
 - **added_moves** :
-  -> erode
+  -> `erode`
 
 ### drowzee
 - **ability_0** changed : `Insomnia` → `Mind Pendulum`
 - **ability_1** changed : `Forewarn` → `Slumber Smite`
 - **hidden_ability** changed : `Inner Focus` → `Bad Dreams`
 - **added_moves** :
-  -> dreambreaker
-  -> netherward
-  -> braindrain
-  -> trance
-  -> disrupt
-  -> mentaldrop
+  -> `dreambreaker`
+  -> `netherward`
+  -> `braindrain`
+  -> `trance`
+  -> `disrupt`
+  -> `mentaldrop`
 
 ### hypno
 - **ability_0** changed : `Insomnia` → `Mind Pendulum`
 - **ability_1** changed : `Forewarn` → `Slumber Smite`
 - **hidden_ability** changed : `Inner Focus` → `Bad Dreams`
 - **added_moves** :
-  -> dreambreaker
-  -> netherward
-  -> braindrain
-  -> trance
-  -> disrupt
-  -> mentaldrop
+  -> `dreambreaker`
+  -> `netherward`
+  -> `braindrain`
+  -> `trance`
+  -> `disrupt`
+  -> `mentaldrop`
 
 ### voltorb
 - **ability_0** changed : `Soundproof` → `Polarity Shift`
 - **ability_1** changed : `Static` → `Spark Acceleration`
 - **added_moves** :
-  -> lightball
+  -> `lightball`
 
 ### electrode
 - **ability_0** changed : `Soundproof` → `Polarity Shift`
 - **ability_1** changed : `Static` → `Spark Acceleration`
 - **added_moves** :
-  -> lightball
+  -> `lightball`
 
 ### exeggutor
 - **ability_1** added : `Tres Amigos`
 - **added_moves** :
-  -> eggbarrage
+  -> `eggbarrage`
 - **removed_moves** :
-  -> barrage
+  -> `barrage`
 
 ### cubone
 - **ability_1** changed : `Lightning Rod` → `Sorrow Fueled`
 - **hidden_ability** changed : `Battle Armor` → `Wraith Tenacity`
 - **added_moves** :
-  -> erode
+  -> `erode`
 
 ### marowak
 - **ability_1** changed : `Lightning Rod` → `Sorrow Fueled`
 - **hidden_ability** changed : `Battle Armor` → `Wraith Tenacity`
 - **added_moves** :
-  -> erode
+  -> `erode`
 
 ### hitmonlee
 - **ability_0** changed : `Limber` → `Hamstring`
@@ -471,7 +471,7 @@
 ### hitmonchan
 - **ability_0** changed : `Keen Eye` → `Lightning Fists`
 - **added_moves** :
-  -> featherpunch
+  -> `featherpunch`
 
 ### lickitung
 - **ability_0** changed : `Own Tempo` → `Umami`
@@ -495,16 +495,16 @@
 - **ability_1** changed : `Rock Head` → `Mold Breaker`
 - **hidden_ability** changed : `Reckless` → `Rhino Rush`
 - **added_moves** :
-  -> headsmash
-  -> ironhead
+  -> `headsmash`
+  -> `ironhead`
 
 ### rhydon
 - **ability_0** changed : `Lightning Rod` → `Bitterness`
 - **ability_1** changed : `Rock Head` → `Mold Breaker`
 - **hidden_ability** changed : `Reckless` → `Rhino Rush`
 - **added_moves** :
-  -> headsmash
-  -> ironhead
+  -> `headsmash`
+  -> `ironhead`
 
 ### kangaskhan
 - **ability_0** changed : `Early Bird` → `Sorrow Fueled`
@@ -514,24 +514,24 @@
 - **type_2** added : `Dragon`
 - **hidden_ability** changed : `Damp` → `Dampening Fog`
 - **added_moves** :
-  -> tideblaster
+  -> `tideblaster`
 
 ### seadra
 - **type_2** added : `Dragon`
 - **ability_0** changed : `Poison Point` → `Dampening Fog`
 - **hidden_ability** changed : `Damp` → `Abyssal Perception`
 - **added_moves** :
-  -> tideblaster
+  -> `tideblaster`
 
 ### goldeen
 - **hidden_ability** changed : `Lightning Rod` → `Volt Return`
 - **added_moves** :
-  -> swiftfin
+  -> `swiftfin`
 
 ### seaking
 - **hidden_ability** changed : `Lightning Rod` → `Volt Return`
 - **added_moves** :
-  -> swiftfin
+  -> `swiftfin`
 
 ### staryu
 - **ability_0** changed : `Illuminate` → `Magic Eye`
@@ -545,7 +545,7 @@
 - **ability_0** changed : `Soundproof` → `Copycat Prodigy`
 - **ability_1** changed : `Filter` → `Wall Maker`
 - **added_moves** :
-  -> drainingkiss
+  -> `drainingkiss`
 
 ### scyther
 - **ability_0** changed : `Swarm` → `Hurry Up`
@@ -557,8 +557,8 @@
 - **ability_0** changed : `Oblivious` → `Chilling Touch`
 - **ability_1** changed : `Forewarn` → `Snow Warning`
 - **added_moves** :
-  -> frostbite
-  -> shatter
+  -> `frostbite`
+  -> `shatter`
 
 ### electabuzz
 - **hp** changed : `65.0` → `85.0`
@@ -567,10 +567,10 @@
 - **ability_1** added : `Thunderstruck`
 - **hidden_ability** changed : `Vital Spirit` → `Drizzle`
 - **added_moves** :
-  -> paralash
-  -> plasmafists
+  -> `paralash`
+  -> `plasmafists`
 - **removed_moves** :
-  -> thunder
+  -> `thunder`
 
 ### magmar
 - **hp** changed : `65.0` → `85.0`
@@ -580,44 +580,44 @@
 - **ability_1** added : `Vaporization`
 - **hidden_ability** changed : `Vital Spirit` → `Conflagrant`
 - **added_moves** :
-  -> scorchrush
-  -> foggyember
+  -> `scorchrush`
+  -> `foggyember`
 
 ### pinsir
 - **ability_0** changed : `Hyper Cutter` → `Sunder Armor`
 - **added_moves** :
-  -> uturn
+  -> `uturn`
 
 ### tauros
 - **ability_1** changed : `Anger Point` → `Unleashed Fury`
 - **added_moves** :
-  -> bullseyerush
+  -> `bullseyerush`
 
 ### gyarados
 - **ability_1** added : `Strong Jaw`
 - **added_moves** :
-  -> fishiousrend
-  -> thunderfang
-  -> psychicfangs
-  -> poisonfang
+  -> `fishiousrend`
+  -> `thunderfang`
+  -> `psychicfangs`
+  -> `poisonfang`
 
 ### lapras
 - **ability_0** changed : `Water Absorb` → `Glacial Feedback`
 - **ability_1** changed : `Shell Armor` → `Sea Fog`
 - **added_moves** :
-  -> frostbite
+  -> `frostbite`
 
 ### eevee
 - **ability_0** changed : `Run Away` → `Protean Maxima`
 - **added_moves** :
-  -> thunderbolt
-  -> darkpulse
-  -> icebeam
-  -> scald
-  -> psychic
-  -> energyball
-  -> moonblast
-  -> flamethrower
+  -> `thunderbolt`
+  -> `darkpulse`
+  -> `icebeam`
+  -> `scald`
+  -> `psychic`
+  -> `energyball`
+  -> `moonblast`
+  -> `flamethrower`
 
 ### porygon
 - **ability_0** changed : `Trace` → `Clone Industry`
@@ -629,8 +629,8 @@
 - **type_2** changed : `Water` → `Dark`
 - **ability_1** changed : `Battle Armor` → `Sharpness`
 - **added_moves** :
-  -> ceaselessedge
-  -> stoneaxe
+  -> `ceaselessedge`
+  -> `stoneaxe`
 
 ### aerodactyl
 - **hidden_ability** changed : `Unnerve` → `Predation`
@@ -653,8 +653,8 @@
 ### chikorita
 - **ability_1** added : `Vaporization`
 - **added_moves** :
-  -> disrupt
-  -> erode
+  -> `disrupt`
+  -> `erode`
 
 ### meganium
 - **ability_1** added : `Grassy Surge`
@@ -666,30 +666,30 @@
 ### sentret
 - **ability_0** changed : `Run Away` → `Scurry`
 - **added_moves** :
-  -> extremespeed
-  -> nuzzle
-  -> rapidspin
+  -> `extremespeed`
+  -> `nuzzle`
+  -> `rapidspin`
 
 ### furret
 - **ability_0** changed : `Run Away` → `Scurry`
 - **added_moves** :
-  -> nuzzle
-  -> rapidspin
-  -> extremespeed
+  -> `nuzzle`
+  -> `rapidspin`
+  -> `extremespeed`
 
 ### hoothoot
 - **type_1** changed : `Normal` → `Dark`
 - **ability_1** changed : `Keen Eye` → `Night Vision`
 - **added_moves** :
-  -> mournfulhooting
-  -> dusk
+  -> `mournfulhooting`
+  -> `dusk`
 
 ### noctowl
 - **type_1** changed : `Normal` → `Dark`
 - **ability_1** changed : `Keen Eye` → `Night Vision`
 - **added_moves** :
-  -> mournfulhooting
-  -> dusk
+  -> `mournfulhooting`
+  -> `dusk`
 
 ### spinarak
 - **ability_0** changed : `Swarm` → `Arachnophobia`
@@ -700,12 +700,12 @@
 ### crobat
 - **ability_1** added : `Vampirism`
 - **added_moves** :
-  -> firefang
-  -> psychicfangs
-  -> spookysnatch
-  -> icefang
-  -> thunderfang
-  -> noxiouschomp
+  -> `firefang`
+  -> `psychicfangs`
+  -> `spookysnatch`
+  -> `icefang`
+  -> `thunderfang`
+  -> `noxiouschomp`
 
 ### natu
 - **ability_1** changed : `Early Bird` → `Seer`
@@ -716,48 +716,48 @@
 ### mareep
 - **type_2** added : `Fairy`
 - **added_moves** :
-  -> drainingkiss
-  -> mistyterrain
-  -> alluringvoice
-  -> fairywind
-  -> moonblast
-  -> disarmingvoice
-  -> moonlight
-  -> playrough
-  -> paraboliccharge
+  -> `drainingkiss`
+  -> `mistyterrain`
+  -> `alluringvoice`
+  -> `fairywind`
+  -> `moonblast`
+  -> `disarmingvoice`
+  -> `moonlight`
+  -> `playrough`
+  -> `paraboliccharge`
 
 ### flaaffy
 - **type_2** added : `Fairy`
 - **added_moves** :
-  -> moonlight
-  -> playrough
-  -> paraboliccharge
-  -> disarmingvoice
-  -> alluringvoice
-  -> fairywind
-  -> moonblast
-  -> drainingkiss
-  -> mistyterrain
+  -> `moonlight`
+  -> `playrough`
+  -> `paraboliccharge`
+  -> `disarmingvoice`
+  -> `alluringvoice`
+  -> `fairywind`
+  -> `moonblast`
+  -> `drainingkiss`
+  -> `mistyterrain`
 
 ### ampharos
 - **type_2** added : `Fairy`
 - **ability_1** added : `Light House`
 - **added_moves** :
-  -> disarmingvoice
-  -> moonlight
-  -> playrough
-  -> paraboliccharge
-  -> drainingkiss
-  -> lightofruin
-  -> mistyterrain
-  -> alluringvoice
-  -> fairywind
-  -> moonblast
+  -> `disarmingvoice`
+  -> `moonlight`
+  -> `playrough`
+  -> `paraboliccharge`
+  -> `drainingkiss`
+  -> `lightofruin`
+  -> `mistyterrain`
+  -> `alluringvoice`
+  -> `fairywind`
+  -> `moonblast`
 
 ### sudowoodo
 - **hidden_ability** changed : `Rattled` → `Woody Disguise`
 - **added_moves** :
-  -> leechseed
+  -> `leechseed`
 
 ### hoppip
 - **ability_1** changed : `Leaf Guard` → `Seed Scatter`
@@ -774,22 +774,22 @@
 ### steelix
 - **ability_0** changed : `Rock Head` → `Molten Core`
 - **added_moves** :
-  -> erode
+  -> `erode`
 
 ### houndour
 - **ability_0** changed : `Early Bird` → `Noctem`
 - **added_moves** :
-  -> infernalparade
+  -> `infernalparade`
 
 ### houndoom
 - **ability_0** changed : `Early Bird` → `Noctem`
 - **added_moves** :
-  -> infernalparade
+  -> `infernalparade`
 
 ### kingdra
 - **hidden_ability** changed : `Damp` → `Maelstrom Grip`
 - **added_moves** :
-  -> tideblaster
+  -> `tideblaster`
 
 ### donphan
 - **ability_1** added : `Swift Tactics`
