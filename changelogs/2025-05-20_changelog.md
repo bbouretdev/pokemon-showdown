@@ -1,806 +1,806 @@
 # [POKEMON]: Changelog full
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/ivysaur'>Ivysaur</a>
-- **ability_0** changed : <a title='At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks.' href='https://dex.showdowndav.dynv6.net/abilities/overgrow'>Overgrow</a> → <a title='If Sunny Day is active, this Pokemon's Sp. Def is 1.5x; heals 1/16 max HP per turn.' href='https://dex.showdowndav.dynv6.net/abilities/budding'>Budding</a>
-- **ability_1** added : <a title='When the opposite Pokemon heals itself, this Pokemon is healed of the same amount.' href='https://dex.showdowndav.dynv6.net/abilities/symbioticlink'>Symbiotic Link</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/ivysaur">ivysaur</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/overgrow" title="At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks.">Overgrow</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/budding" title="If Sunny Day is active, this Pokemon's Sp. Def is 1.5x; heals 1/16 max HP per turn.">Budding</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/symbioticlink" title="When the opposite Pokemon heals itself, this Pokemon is healed of the same amount.">Symbiotic Link</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/charmeleon'>Charmeleon</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fighting'>Fighting</a>
-- **ability_1** added : <a title='If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/overcome'>Overcome</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/charmeleon">charmeleon</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fighting">Fighting</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/overcome" title="If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.">Overcome</a>
 - **added_moves** :
-  -> <a title='Lowers the user's Defense and Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/closecombat'>Close Combat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/closecombat" title="Lowers the user's Defense and Sp. Def by 1.">Close Combat</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/charizard'>Charizard</a>
-- **type_2** changed : <a href='https://dex.showdowndav.dynv6.net/types/flying'>Flying</a> → <a href='https://dex.showdowndav.dynv6.net/types/dragon'>Dragon</a>
-- **ability_1** added : <a title='If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.' href='https://dex.showdowndav.dynv6.net/abilities/angerpoint'>Anger Point</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/charizard">charizard</a>
+- **type_2** changed : <a href="https://dex.showdowndav.dynv6.net/types/flying">Flying</a> → <a href="https://dex.showdowndav.dynv6.net/types/dragon">Dragon</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/angerpoint" title="If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.">Anger Point</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/wartortle'>Wartortle</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fighting'>Fighting</a>
-- **ability_1** added : <a title='If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/overcome'>Overcome</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/wartortle">wartortle</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fighting">Fighting</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/overcome" title="If this Pokemon has a lower BST than the opponent, it's attacks have their power multiplied by 1.5.">Overcome</a>
 - **added_moves** :
-  -> <a title='Lowers the user's Defense and Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/closecombat'>Close Combat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/closecombat" title="Lowers the user's Defense and Sp. Def by 1.">Close Combat</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/blastoise'>Blastoise</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/steel'>Steel</a>
-- **ability_1** added : <a title='Cannon moves do not check accuracy.' href='https://dex.showdowndav.dynv6.net/abilities/gunner'>Gunner</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/blastoise">blastoise</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/steel">Steel</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/gunner" title="Cannon moves do not check accuracy.">Gunner</a>
 - **added_moves** :
-  -> <a title='100% chance to paralyze the target.' href='https://dex.showdowndav.dynv6.net/moves/zapcannon'>Zap Cannon</a>
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/mysticshrapnel'>Mystic Shrapnel</a>
-  -> <a title='Freezes the target.' href='https://dex.showdowndav.dynv6.net/moves/frostbite'>Frostbite</a>
-  -> <a title='Lowers the user's Sp. Atk by 2.' href='https://dex.showdowndav.dynv6.net/moves/fleurcannon'>Fleur Cannon</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/zapcannon" title="100% chance to paralyze the target.">Zap Cannon</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mysticshrapnel" title="10% chance to lower the target's Sp. Def by 1.">Mystic Shrapnel</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/frostbite" title="Freezes the target.">Frostbite</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/fleurcannon" title="Lowers the user's Sp. Atk by 2.">Fleur Cannon</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/metapod'>Metapod</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/steel'>Steel</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/metapod">metapod</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/steel">Steel</a>
 - **hidden_ability** added : `Chrysalis Shield`
 - **added_moves** :
-  -> <a title='Hurts grounded foes on switch-in. Max 3 layers.' href='https://dex.showdowndav.dynv6.net/moves/spikes'>Spikes</a>
-  -> <a title='Protects from damaging attacks. Contact: 1 Spikes range.' href='https://dex.showdowndav.dynv6.net/moves/thornyguard'>Thorny Guard</a>
-  -> <a title='Lowers Speed of grounded foes by 1 on switch-in.' href='https://dex.showdowndav.dynv6.net/moves/stickyweb'>Sticky Web</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/leechlife'>Leech Life</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/spikes" title="Hurts grounded foes on switch-in. Max 3 layers.">Spikes</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thornyguard" title="Protects from damaging attacks. Contact: 1 Spikes range.">Thorny Guard</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/stickyweb" title="Lowers Speed of grounded foes by 1 on switch-in.">Sticky Web</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/leechlife" title="User recovers 50% of the damage dealt.">Leech Life</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/butterfree'>Butterfree</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/butterfree">butterfree</a>
 - **hp** changed : `60.0` → `85.0`
 - **def** changed : `50.0` → `65.0`
 - **spa** changed : `90.0` → `95.0`
 - **spe** changed : `70.0` → `90.0`
-- **ability_1** added : <a title='This Pokemon's wind moves have a 30% chance of sleeping.' href='https://dex.showdowndav.dynv6.net/abilities/drowsybreeze'>Drowsy Breeze</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/drowsybreeze" title="This Pokemon's wind moves have a 30% chance of sleeping.">Drowsy Breeze</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/beedrill'>Beedrill</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/beedrill">beedrill</a>
 - **atk** changed : `90.0` → `95.0`
 - **def** changed : `40.0` → `65.0`
 - **spe** changed : `75.0` → `90.0`
-- **ability_1** added : <a title='This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/swarmfrenzy'>Swarm Frenzy</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/swarmfrenzy" title="This Pokemon's Attack and Speed are raised by 1 stage if it attacks and knocks out another Pokemon.">Swarm Frenzy</a>
 - **added_moves** :
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title='Lowers Speed of grounded foes by 1 on switch-in.' href='https://dex.showdowndav.dynv6.net/moves/stickyweb'>Sticky Web</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/stickyweb" title="Lowers Speed of grounded foes by 1 on switch-in.">Sticky Web</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/pidgeotto'>Pidgeotto</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/pidgeotto">pidgeotto</a>
 - **atk** changed : `60.0` → `85.0`
 - **spe** changed : `71.0` → `81.0`
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='Multihit moves do get an increased critical chance. They have their power multiplied by 1.3.' href='https://dex.showdowndav.dynv6.net/abilities/furytalons'>Fury Talons</a>
-- **ability_1** changed : <a title='This Pokemon's evasiveness is doubled as long as it is confused.' href='https://dex.showdowndav.dynv6.net/abilities/tangledfeet'>Tangled Feet</a> → <a title='This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.' href='https://dex.showdowndav.dynv6.net/abilities/windforce'>Wind Force</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/furytalons" title="Multihit moves do get an increased critical chance. They have their power multiplied by 1.3.">Fury Talons</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/tangledfeet" title="This Pokemon's evasiveness is doubled as long as it is confused.">Tangled Feet</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/windforce" title="This Pokemon's offensive stat is multiplied by 1.5 while using a Wind attack.">Wind Force</a>
 - **added_moves** :
-  -> <a title='Hits 2-5 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/pinmissile'>Pin Missile</a>
-  -> <a title='Hits 2-5 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/rockblast'>Rock Blast</a>
-  -> <a title='Hits 2-5 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/tailslap'>Tail Slap</a>
-  -> <a title='Hits 2-5 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/bulletseed'>Bullet Seed</a>
-  -> <a title='Hits 3 times. Each hit can miss, but power rises.' href='https://dex.showdowndav.dynv6.net/moves/galeassault'>Gale Assault</a>
-  -> <a title='Hits 2 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/dualwingbeat'>Dual Wingbeat</a>
-  -> <a title='Hits 2 times in one turn.' href='https://dex.showdowndav.dynv6.net/moves/doublehit'>Double Hit</a>
-  -> <a title='100% chance to raise the user's Speed by 1.' href='https://dex.showdowndav.dynv6.net/moves/aerodash'>Aero Dash</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/pinmissile" title="Hits 2-5 times in one turn.">Pin Missile</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/rockblast" title="Hits 2-5 times in one turn.">Rock Blast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tailslap" title="Hits 2-5 times in one turn.">Tail Slap</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/bulletseed" title="Hits 2-5 times in one turn.">Bullet Seed</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/galeassault" title="Hits 3 times. Each hit can miss, but power rises.">Gale Assault</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dualwingbeat" title="Hits 2 times in one turn.">Dual Wingbeat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/doublehit" title="Hits 2 times in one turn.">Double Hit</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/aerodash" title="100% chance to raise the user's Speed by 1.">Aero Dash</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/pidgeot'>Pidgeot</a>
-- **type_1** changed : <a href='https://dex.showdowndav.dynv6.net/types/normal'>Normal</a> → <a href='https://dex.showdowndav.dynv6.net/types/flying'>Flying</a>
-- **type_2** changed : <a href='https://dex.showdowndav.dynv6.net/types/flying'>Flying</a> → <a href='https://dex.showdowndav.dynv6.net/types/fighting'>Fighting</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/pidgeot">pidgeot</a>
+- **type_1** changed : <a href="https://dex.showdowndav.dynv6.net/types/normal">Normal</a> → <a href="https://dex.showdowndav.dynv6.net/types/flying">Flying</a>
+- **type_2** changed : <a href="https://dex.showdowndav.dynv6.net/types/flying">Flying</a> → <a href="https://dex.showdowndav.dynv6.net/types/fighting">Fighting</a>
 - **atk** changed : `80.0` → `100.0`
 - **spa** changed : `70.0` → `100.0`
 - **spe** changed : `101.0` → `111.0`
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='Every move used by or against this Pokemon will always hit.' href='https://dex.showdowndav.dynv6.net/abilities/noguard'>No Guard</a>
-- **ability_1** changed : <a title='This Pokemon's evasiveness is doubled as long as it is confused.' href='https://dex.showdowndav.dynv6.net/abilities/tangledfeet'>Tangled Feet</a> → <a title='This Pokemon's Wind attacks without a chance to flinch gain a 30% chance to flinch.' href='https://dex.showdowndav.dynv6.net/abilities/turbulence'>Turbulence</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noguard" title="Every move used by or against this Pokemon will always hit.">No Guard</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/tangledfeet" title="This Pokemon's evasiveness is doubled as long as it is confused.">Tangled Feet</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/turbulence" title="This Pokemon's Wind attacks without a chance to flinch gain a 30% chance to flinch.">Turbulence</a>
 - **added_moves** :
-  -> <a title='Combines Flying in its type effectiveness.' href='https://dex.showdowndav.dynv6.net/moves/flyingpress'>Flying Press</a>
-  -> <a title='Lowers the user's Defense and Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/closecombat'>Close Combat</a>
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/focusblast'>Focus Blast</a>
-  -> <a title='100% chance to raise the user's Speed by 1.' href='https://dex.showdowndav.dynv6.net/moves/aerodash'>Aero Dash</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/flyingpress" title="Combines Flying in its type effectiveness.">Flying Press</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/closecombat" title="Lowers the user's Defense and Sp. Def by 1.">Close Combat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/focusblast" title="10% chance to lower the target's Sp. Def by 1.">Focus Blast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/aerodash" title="100% chance to raise the user's Speed by 1.">Aero Dash</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/rattata'>Rattata</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon heals 1/2 if it attacks and KOes another Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/scavenger'>Scavenger</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/rattata">rattata</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/scavenger" title="This Pokemon heals 1/2 if it attacks and KOes another Pokemon.">Scavenger</a>
 - **hidden_ability** changed : `Hustle` → `Strong Jaw`
 - **added_moves** :
-  -> <a title='User switches out after damaging the target.' href='https://dex.showdowndav.dynv6.net/moves/biteandseek'>Bite And Seek</a>
-  -> <a title='User +1 Atk, Spe. Clears all substitutes/hazards.' href='https://dex.showdowndav.dynv6.net/moves/tidyup'>Tidy Up</a>
-  -> <a title='Hits 10 times. Each hit can miss.' href='https://dex.showdowndav.dynv6.net/moves/populationbomb'>Population Bomb</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/biteandseek" title="User switches out after damaging the target.">Bite And Seek</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tidyup" title="User +1 Atk, Spe. Clears all substitutes/hazards.">Tidy Up</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/populationbomb" title="Hits 10 times. Each hit can miss.">Population Bomb</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/raticate'>Raticate</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon heals 1/2 if it attacks and KOes another Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/scavenger'>Scavenger</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/raticate">raticate</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/scavenger" title="This Pokemon heals 1/2 if it attacks and KOes another Pokemon.">Scavenger</a>
 - **hidden_ability** changed : `Hustle` → `Strong Jaw`
 - **added_moves** :
-  -> <a title='Hits 10 times. Each hit can miss.' href='https://dex.showdowndav.dynv6.net/moves/populationbomb'>Population Bomb</a>
-  -> <a title='User +1 Atk, Spe. Clears all substitutes/hazards.' href='https://dex.showdowndav.dynv6.net/moves/tidyup'>Tidy Up</a>
-  -> <a title='User switches out after damaging the target.' href='https://dex.showdowndav.dynv6.net/moves/biteandseek'>Bite And Seek</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/populationbomb" title="Hits 10 times. Each hit can miss.">Population Bomb</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tidyup" title="User +1 Atk, Spe. Clears all substitutes/hazards.">Tidy Up</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/biteandseek" title="User switches out after damaging the target.">Bite And Seek</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/fearow'>Fearow</a>
-- **type_1** changed : <a href='https://dex.showdowndav.dynv6.net/types/normal'>Normal</a> → <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/fearow">fearow</a>
+- **type_1** changed : <a href="https://dex.showdowndav.dynv6.net/types/normal">Normal</a> → <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
 - **atk** changed : `90.0` → `100.0`
 - **spe** changed : `100.0` → `110.0`
-- **ability_1** added : <a title='On switch-in, this Pokemon lowers the Defense of opponents by 1 stage.' href='https://dex.showdowndav.dynv6.net/abilities/predatorsgaze'>Predators Gaze</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/predatorsgaze" title="On switch-in, this Pokemon lowers the Defense of opponents by 1 stage.">Predators Gaze</a>
 - **added_moves** :
-  -> <a title='Always results in a critical hit if the opponent is statused.' href='https://dex.showdowndav.dynv6.net/moves/crueltalon'>Cruel Talon</a>
-  -> <a title='Raises the user's Attack and accuracy by 1.' href='https://dex.showdowndav.dynv6.net/moves/honeclaws'>Hone Claws</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/crueltalon" title="Always results in a critical hit if the opponent is statused.">Cruel Talon</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/honeclaws" title="Raises the user's Attack and accuracy by 1.">Hone Claws</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/arbok'>Arbok</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/arbok">arbok</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
 - **atk** changed : `95.0` → `105.0`
 - **hidden_ability** changed : `Unnerve` → `Petrify`
 - **added_moves** :
-  -> <a title='Changes the target's type to Rock.' href='https://dex.showdowndav.dynv6.net/moves/stonegaze'>Stone Gaze</a>
-  -> <a title='Ignores the target's stat stage changes, bypasses clones, may cause flinch.' href='https://dex.showdowndav.dynv6.net/moves/slitherstrike'>Slither Strike</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/stonegaze" title="Changes the target's type to Rock.">Stone Gaze</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/slitherstrike" title="Ignores the target's stat stage changes, bypasses clones, may cause flinch.">Slither Strike</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/pikachu'>Pikachu</a>
-- **ability_1** added : <a title='This Pokemon Physical moves BP is raised of 10 by Speed boost active. Negative boosts are ignored.' href='https://dex.showdowndav.dynv6.net/abilities/swiftness'>Swiftness</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/pikachu">pikachu</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/swiftness" title="This Pokemon Physical moves BP is raised of 10 by Speed boost active. Negative boosts are ignored.">Swiftness</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/raichu'>Raichu</a>
-- **ability_1** added : <a title='If Rain Dance is active, this Pokemon's Electric moves hit Ground.' href='https://dex.showdowndav.dynv6.net/abilities/conduction'>Conduction</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/raichu">raichu</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/conduction" title="If Rain Dance is active, this Pokemon's Electric moves hit Ground.">Conduction</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/sandshrew'>Sandshrew</a>
-- **ability_1** added : <a title='If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.' href='https://dex.showdowndav.dynv6.net/abilities/desertarmor'>Desert Armor</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/sandshrew">sandshrew</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/desertarmor" title="If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.">Desert Armor</a>
 - **added_moves** :
-  -> <a title='For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit.' href='https://dex.showdowndav.dynv6.net/moves/sanddyke'>Sand Dyke</a>
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
-  -> <a title='Hits first. First turn out only. 100% flinch chance.' href='https://dex.showdowndav.dynv6.net/moves/burrowstrike'>Burrow Strike</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/sanddyke" title="For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit.">Sand Dyke</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/burrowstrike" title="Hits first. First turn out only. 100% flinch chance.">Burrow Strike</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/sandslash'>Sandslash</a>
-- **ability_1** added : <a title='If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.' href='https://dex.showdowndav.dynv6.net/abilities/desertarmor'>Desert Armor</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/sandslash">sandslash</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/desertarmor" title="If Sandstorm is active, this Pokemon's SpD is 1.5x; heals 1/16 max HP per turn.">Desert Armor</a>
 - **added_moves** :
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
-  -> <a title='Hits first. First turn out only. 100% flinch chance.' href='https://dex.showdowndav.dynv6.net/moves/burrowstrike'>Burrow Strike</a>
-  -> <a title='For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit.' href='https://dex.showdowndav.dynv6.net/moves/sanddyke'>Sand Dyke</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/burrowstrike" title="Hits first. First turn out only. 100% flinch chance.">Burrow Strike</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/sanddyke" title="For 5 turns, reduces Water-type damage by 0.75. Boosts Def on Water move hit.">Sand Dyke</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidoranf'>Nidoran-F</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidoranf">nidoranf</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidorina'>Nidorina</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidorina">nidorina</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidoqueen'>Nidoqueen</a>
-- **ability_0** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.' href='https://dex.showdowndav.dynv6.net/abilities/poisonpoint'>Poison Point</a> → <a title='On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.' href='https://dex.showdowndav.dynv6.net/abilities/parentaldevotion'>Parental Devotion</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidoqueen">nidoqueen</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/poisonpoint" title="30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.">Poison Point</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/parentaldevotion" title="On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.">Parental Devotion</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='Raises all stats by 1 (not acc/eva). Traps user.' href='https://dex.showdowndav.dynv6.net/moves/noretreat'>No Retreat</a>
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title=' + 20 power for each of the user's stat boosts.' href='https://dex.showdowndav.dynv6.net/moves/storedpower'>Stored Power</a>
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/noretreat" title="Raises all stats by 1 (not acc/eva). Traps user.">No Retreat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/storedpower" title=" + 20 power for each of the user's stat boosts.">Stored Power</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidoranm'>Nidoran-M</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidoranm">nidoranm</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidorino'>Nidorino</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidorino">nidorino</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/nidoking'>Nidoking</a>
-- **ability_0** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.' href='https://dex.showdowndav.dynv6.net/abilities/poisonpoint'>Poison Point</a> → <a title='On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.' href='https://dex.showdowndav.dynv6.net/abilities/parentaldevotion'>Parental Devotion</a>
-- **ability_1** changed : <a title='This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.' href='https://dex.showdowndav.dynv6.net/abilities/rivalry'>Rivalry</a> → <a title='This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/abilities/noxiousbarb'>Noxious Barb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/nidoking">nidoking</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/poisonpoint" title="30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.">Poison Point</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/parentaldevotion" title="On switch-in, if an ally fainted last turn, raises all stats by 1 (not acc/eva). Traps user.">Parental Devotion</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rivalry" title="This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.">Rivalry</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noxiousbarb" title="This Pokemon's contact moves have a 30% chance of setting Toxic Spikes on the opposing side.">Noxious Barb</a>
 - **added_moves** :
-  -> <a title='30% chance to poison the target.' href='https://dex.showdowndav.dynv6.net/moves/gunkshot'>Gunk Shot</a>
-  -> <a title=' + 20 power for each of the user's stat boosts.' href='https://dex.showdowndav.dynv6.net/moves/storedpower'>Stored Power</a>
-  -> <a title='Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target' href='https://dex.showdowndav.dynv6.net/moves/triplestinger'>Triple Stinger</a>
-  -> <a title='Raises all stats by 1 (not acc/eva). Traps user.' href='https://dex.showdowndav.dynv6.net/moves/noretreat'>No Retreat</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/gunkshot" title="30% chance to poison the target.">Gunk Shot</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/storedpower" title=" + 20 power for each of the user's stat boosts.">Stored Power</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/triplestinger" title="Hits 3 times. Each hit can miss, but power rises. 10% chance to badly poison the target">Triple Stinger</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/noretreat" title="Raises all stats by 1 (not acc/eva). Traps user.">No Retreat</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/vulpix'>Vulpix</a>
-- **ability_0** changed : <a title='This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.' href='https://dex.showdowndav.dynv6.net/abilities/flashfire'>Flash Fire</a> → <a title='When switching in, the holder is unaffected by hazards on its side of the field.' href='https://dex.showdowndav.dynv6.net/abilities/surepaws'>Sure Paws</a>
-- **ability_1** added : <a title='This Pokemon Fire-type moves have their priority increased by 1.' href='https://dex.showdowndav.dynv6.net/abilities/flamemajesty'>Flame Majesty</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/vulpix">vulpix</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/flashfire" title="This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.">Flash Fire</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/surepaws" title="When switching in, the holder is unaffected by hazards on its side of the field.">Sure Paws</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/flamemajesty" title="This Pokemon Fire-type moves have their priority increased by 1.">Flame Majesty</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/ninetales'>Ninetales</a>
-- **ability_0** changed : <a title='This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.' href='https://dex.showdowndav.dynv6.net/abilities/flashfire'>Flash Fire</a> → <a title='When switching in, the holder is unaffected by hazards on its side of the field.' href='https://dex.showdowndav.dynv6.net/abilities/surepaws'>Sure Paws</a>
-- **ability_1** added : <a title='This Pokemon Fire-type moves have their priority increased by 1.' href='https://dex.showdowndav.dynv6.net/abilities/flamemajesty'>Flame Majesty</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/ninetales">ninetales</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/flashfire" title="This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.">Flash Fire</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/surepaws" title="When switching in, the holder is unaffected by hazards on its side of the field.">Sure Paws</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/flamemajesty" title="This Pokemon Fire-type moves have their priority increased by 1.">Flame Majesty</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/jigglypuff'>Jigglypuff</a>
-- **ability_0** changed : <a title='30% chance of infatuating Pokemon of the opposite gender if they make contact.' href='https://dex.showdowndav.dynv6.net/abilities/cutecharm'>Cute Charm</a> → <a title='On switch-in, this Pokemon disables the foes' move with the highest power.' href='https://dex.showdowndav.dynv6.net/abilities/preventive'>Preventive</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/jigglypuff">jigglypuff</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/cutecharm" title="30% chance of infatuating Pokemon of the opposite gender if they make contact.">Cute Charm</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/preventive" title="On switch-in, this Pokemon disables the foes' move with the highest power.">Preventive</a>
 - **added_moves** :
-  -> <a title='For 5 turns, the user and its party members are immune to Taunt.' href='https://dex.showdowndav.dynv6.net/moves/soothingsong'>Soothing Song</a>
-  -> <a title='User steals the target's Substitute.' href='https://dex.showdowndav.dynv6.net/moves/puppettheft'>Puppet Theft</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/soothingsong" title="For 5 turns, the user and its party members are immune to Taunt.">Soothing Song</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/puppettheft" title="User steals the target's Substitute.">Puppet Theft</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/wigglytuff'>Wigglytuff</a>
-- **ability_0** changed : <a title='30% chance of infatuating Pokemon of the opposite gender if they make contact.' href='https://dex.showdowndav.dynv6.net/abilities/cutecharm'>Cute Charm</a> → <a title='On switch-in, this Pokemon disables the foes' move with the highest power.' href='https://dex.showdowndav.dynv6.net/abilities/preventive'>Preventive</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/wigglytuff">wigglytuff</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/cutecharm" title="30% chance of infatuating Pokemon of the opposite gender if they make contact.">Cute Charm</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/preventive" title="On switch-in, this Pokemon disables the foes' move with the highest power.">Preventive</a>
 - **hidden_ability** changed : `Frisk` → `Tearful Goodbye`
 - **added_moves** :
-  -> <a title='For 5 turns, the user and its party members are immune to Taunt.' href='https://dex.showdowndav.dynv6.net/moves/soothingsong'>Soothing Song</a>
-  -> <a title='User steals the target's Substitute.' href='https://dex.showdowndav.dynv6.net/moves/puppettheft'>Puppet Theft</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/soothingsong" title="For 5 turns, the user and its party members are immune to Taunt.">Soothing Song</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/puppettheft" title="User steals the target's Substitute.">Puppet Theft</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/golbat'>Golbat</a>
-- **ability_1** added : <a title='On switch-in, this Pokemon taunts the opposite Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/mockingface'>Mocking Face</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/golbat">golbat</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/mockingface" title="On switch-in, this Pokemon taunts the opposite Pokemon.">Mocking Face</a>
 - **added_moves** :
-  -> <a title='10% chance to freeze. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/icefang'>Ice Fang</a>
-  -> <a title='10% chance to paralyze. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/thunderfang'>Thunder Fang</a>
-  -> <a title='50% chance to badly poison the target.' href='https://dex.showdowndav.dynv6.net/moves/noxiouschomp'>Noxious Chomp</a>
-  -> <a title='10% chance to burn. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/firefang'>Fire Fang</a>
-  -> <a title='Destroys screens, unless the target is immune.' href='https://dex.showdowndav.dynv6.net/moves/psychicfangs'>Psychic Fangs</a>
-  -> <a title='User switches out after damaging the target. Lowers opponent SpAtk.' href='https://dex.showdowndav.dynv6.net/moves/spookysnatch'>Spooky Snatch</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/icefang" title="10% chance to freeze. 10% chance to flinch.">Ice Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunderfang" title="10% chance to paralyze. 10% chance to flinch.">Thunder Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/noxiouschomp" title="50% chance to badly poison the target.">Noxious Chomp</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/firefang" title="10% chance to burn. 10% chance to flinch.">Fire Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/psychicfangs" title="Destroys screens, unless the target is immune.">Psychic Fangs</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/spookysnatch" title="User switches out after damaging the target. Lowers opponent SpAtk.">Spooky Snatch</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/oddish'>Oddish</a>
-- **ability_1** added : <a title='On switch-in, this Pokemon leech seeds the opposite Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/seedspread'>Seed Spread</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/oddish">oddish</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/seedspread" title="On switch-in, this Pokemon leech seeds the opposite Pokemon.">Seed Spread</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/gloom'>Gloom</a>
-- **ability_1** added : <a title='When the opposite Pokemon eats certain Berries, the effects are reversed.' href='https://dex.showdowndav.dynv6.net/abilities/suspicioustaste'>Suspicious Taste</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/gloom">gloom</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/suspicioustaste" title="When the opposite Pokemon eats certain Berries, the effects are reversed.">Suspicious Taste</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/parasect'>Parasect</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/parasect">parasect</a>
 - **hidden_ability** changed : `Damp` → `Spore Burst`
 - **added_moves** :
-  -> <a title='Raises the user's Defense and lowers the opponent Defense by 1 stage.' href='https://dex.showdowndav.dynv6.net/moves/myceliumdrain'>Mycelium Drain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/myceliumdrain" title="Raises the user's Defense and lowers the opponent Defense by 1 stage.">Mycelium Drain</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/venonat'>Venonat</a>
-- **type_2** changed : <a href='https://dex.showdowndav.dynv6.net/types/poison'>Poison</a> → <a href='https://dex.showdowndav.dynv6.net/types/psychic'>Psychic</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/venonat">venonat</a>
+- **type_2** changed : <a href="https://dex.showdowndav.dynv6.net/types/poison">Poison</a> → <a href="https://dex.showdowndav.dynv6.net/types/psychic">Psychic</a>
 - **hidden_ability** changed : `Run Away` → `Pestilent Reaper`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/venomoth'>Venomoth</a>
-- **type_2** changed : <a href='https://dex.showdowndav.dynv6.net/types/poison'>Poison</a> → <a href='https://dex.showdowndav.dynv6.net/types/psychic'>Psychic</a>
-- **ability_0** changed : <a title='This Pokemon is not affected by the secondary effect of another Pokemon's attack.' href='https://dex.showdowndav.dynv6.net/abilities/shielddust'>Shield Dust</a> → <a title='If the opponent is poisoned, this Pokemon's attacks have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/pestilentreaper'>Pestilent Reaper</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/venomoth">venomoth</a>
+- **type_2** changed : <a href="https://dex.showdowndav.dynv6.net/types/poison">Poison</a> → <a href="https://dex.showdowndav.dynv6.net/types/psychic">Psychic</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/shielddust" title="This Pokemon is not affected by the secondary effect of another Pokemon's attack.">Shield Dust</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/pestilentreaper" title="If the opponent is poisoned, this Pokemon's attacks have their power multiplied by 1.5.">Pestilent Reaper</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/dugtrio'>Dugtrio</a>
-- **ability_0** changed : <a title='If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.' href='https://dex.showdowndav.dynv6.net/abilities/sandveil'>Sand Veil</a> → <a title='Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.' href='https://dex.showdowndav.dynv6.net/abilities/tresamigos'>Tres Amigos</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/dugtrio">dugtrio</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/sandveil" title="If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.">Sand Veil</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/tresamigos" title="Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.">Tres Amigos</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/persian'>Persian</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/persian">persian</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
 - **hidden_ability** changed : `Unnerve` → `Ambusher`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/psyduck'>Psyduck</a>
-- **ability_0** changed : <a title='Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.' href='https://dex.showdowndav.dynv6.net/abilities/damp'>Damp</a> → <a title='The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/neutralizer'>Neutralizer</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/psyduck">psyduck</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/damp" title="Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.">Damp</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/neutralizer" title="The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.">Neutralizer</a>
 - **added_moves** :
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/braindrain'>Brain Drain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/braindrain" title="User recovers 50% of the damage dealt.">Brain Drain</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/golduck'>Golduck</a>
-- **ability_0** changed : <a title='Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.' href='https://dex.showdowndav.dynv6.net/abilities/damp'>Damp</a> → <a title='The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/neutralizer'>Neutralizer</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/golduck">golduck</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/damp" title="Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.">Damp</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/neutralizer" title="The Opponent's same-type attack bonus (STAB) is 1 instead of 1.5.">Neutralizer</a>
 - **added_moves** :
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/braindrain'>Brain Drain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/braindrain" title="User recovers 50% of the damage dealt.">Brain Drain</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/mankey'>Mankey</a>
-- **ability_0** changed : <a title='This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.' href='https://dex.showdowndav.dynv6.net/abilities/vitalspirit'>Vital Spirit</a> → <a title='This Pokemon's Attack is raised by 2 stages if taunted.' href='https://dex.showdowndav.dynv6.net/abilities/sensitive'>Sensitive</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/mankey">mankey</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/vitalspirit" title="This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.">Vital Spirit</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sensitive" title="This Pokemon's Attack is raised by 2 stages if taunted.">Sensitive</a>
 - **added_moves** :
-  -> <a title='Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.' href='https://dex.showdowndav.dynv6.net/moves/muteblow'>Mute Blow</a>
-  -> <a title='Raises the user's Attack by 1. Applies Taunt on opponents.' href='https://dex.showdowndav.dynv6.net/moves/tribaldance'>Tribal Dance</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/muteblow" title="Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.">Mute Blow</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tribaldance" title="Raises the user's Attack by 1. Applies Taunt on opponents.">Tribal Dance</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/primeape'>Primeape</a>
-- **ability_0** changed : <a title='This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.' href='https://dex.showdowndav.dynv6.net/abilities/vitalspirit'>Vital Spirit</a> → <a title='This Pokemon's Attack is raised by 2 stages if taunted.' href='https://dex.showdowndav.dynv6.net/abilities/sensitive'>Sensitive</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/primeape">primeape</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/vitalspirit" title="This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.">Vital Spirit</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sensitive" title="This Pokemon's Attack is raised by 2 stages if taunted.">Sensitive</a>
 - **added_moves** :
-  -> <a title='Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.' href='https://dex.showdowndav.dynv6.net/moves/muteblow'>Mute Blow</a>
-  -> <a title='Raises the user's Attack by 1. Applies Taunt on opponents.' href='https://dex.showdowndav.dynv6.net/moves/tribaldance'>Tribal Dance</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/muteblow" title="Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.">Mute Blow</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tribaldance" title="Raises the user's Attack by 1. Applies Taunt on opponents.">Tribal Dance</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/growlithe'>Growlithe</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/growlithe">growlithe</a>
 - **hidden_ability** changed : `Justified` → `Guard Dog`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/arcanine'>Arcanine</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/arcanine">arcanine</a>
 - **hidden_ability** changed : `Justified` → `Guard Dog`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/poliwrath'>Poliwrath</a>
-- **ability_0** changed : <a title='This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.' href='https://dex.showdowndav.dynv6.net/abilities/waterabsorb'>Water Absorb</a> → <a title='On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn.' href='https://dex.showdowndav.dynv6.net/abilities/hypnoticspiral'>Hypnotic Spiral</a>
-- **ability_1** changed : <a title='Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.' href='https://dex.showdowndav.dynv6.net/abilities/damp'>Damp</a> → <a title='This Pokemon is immune to pivot moves.' href='https://dex.showdowndav.dynv6.net/abilities/slippyskin'>Slippy Skin</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/poliwrath">poliwrath</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/waterabsorb" title="This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.">Water Absorb</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/hypnoticspiral" title="On switch-in, this Pokemon sets the opponents drowsy with 1 delayed turn.">Hypnotic Spiral</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/damp" title="Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.">Damp</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/slippyskin" title="This Pokemon is immune to pivot moves.">Slippy Skin</a>
 - **added_moves** :
-  -> <a title='Changes the target's type to Water.' href='https://dex.showdowndav.dynv6.net/moves/wavepunch'>Wave Punch</a>
-  -> <a title='10% chance to paralyze the target.' href='https://dex.showdowndav.dynv6.net/moves/thunderpunch'>Thunder Punch</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/wavepunch" title="Changes the target's type to Water.">Wave Punch</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunderpunch" title="10% chance to paralyze the target.">Thunder Punch</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/kadabra'>Kadabra</a>
-- **ability_1** changed : <a title='This Pokemon cannot be made to flinch. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/innerfocus'>Inner Focus</a> → <a title='On switch-in, this Pokemon summons Magic Bounce.' href='https://dex.showdowndav.dynv6.net/abilities/telekineticfield'>Telekinetic Field</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/kadabra">kadabra</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/innerfocus" title="This Pokemon cannot be made to flinch. Immune to Intimidate.">Inner Focus</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/telekineticfield" title="On switch-in, this Pokemon summons Magic Bounce.">Telekinetic Field</a>
 - **added_moves** :
-  -> <a title='Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.' href='https://dex.showdowndav.dynv6.net/moves/netherward'>Nether Ward</a>
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/mentaldrop'>Mental Drop</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/netherward" title="Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.">Nether Ward</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mentaldrop" title="Applies all set entry hazards on the opposite Pokemon's side.">Mental Drop</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/alakazam'>Alakazam</a>
-- **ability_1** changed : <a title='This Pokemon cannot be made to flinch. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/innerfocus'>Inner Focus</a> → <a title='Turns this Pokemon's physical moves into special ones.' href='https://dex.showdowndav.dynv6.net/abilities/mentalprojection'>Mental Projection</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/alakazam">alakazam</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/innerfocus" title="This Pokemon cannot be made to flinch. Immune to Intimidate.">Inner Focus</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/mentalprojection" title="Turns this Pokemon's physical moves into special ones.">Mental Projection</a>
 - **added_moves** :
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/mentaldrop'>Mental Drop</a>
-  -> <a title='Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.' href='https://dex.showdowndav.dynv6.net/moves/netherward'>Nether Ward</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mentaldrop" title="Applies all set entry hazards on the opposite Pokemon's side.">Mental Drop</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/netherward" title="Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.">Nether Ward</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/machop'>Machop</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/machop">machop</a>
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> <a title='Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.' href='https://dex.showdowndav.dynv6.net/moves/muteblow'>Mute Blow</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/muteblow" title="Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.">Mute Blow</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/machoke'>Machoke</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/machoke">machoke</a>
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> <a title='Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.' href='https://dex.showdowndav.dynv6.net/moves/muteblow'>Mute Blow</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/muteblow" title="Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.">Mute Blow</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/machamp'>Machamp</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/machamp">machamp</a>
 - **hidden_ability** changed : `Steadfast` → `Sneer Welcome`
 - **added_moves** :
-  -> <a title='Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.' href='https://dex.showdowndav.dynv6.net/moves/muteblow'>Mute Blow</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/muteblow" title="Target can't use Special moves its next turn. Usually goes first. Can't use twice in a row.">Mute Blow</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/victreebel'>Victreebel</a>
-- **ability_1** added : <a title='The user recovers 1/3 the HP lost by the target when target is poisoned.' href='https://dex.showdowndav.dynv6.net/abilities/devourtoxins'>Devour Toxins</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/victreebel">victreebel</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/devourtoxins" title="The user recovers 1/3 the HP lost by the target when target is poisoned.">Devour Toxins</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/tentacool'>Tentacool</a>
-- **ability_0** changed : <a title='Prevents other Pokemon from lowering this Pokemon's stat stages.' href='https://dex.showdowndav.dynv6.net/abilities/clearbody'>Clear Body</a> → <a title='This Pokemon is healed by 1/8 of its max HP each turn when opponent is poisoned.' href='https://dex.showdowndav.dynv6.net/abilities/venomabsorb'>Venom Absorb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/tentacool">tentacool</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/clearbody" title="Prevents other Pokemon from lowering this Pokemon's stat stages.">Clear Body</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/venomabsorb" title="This Pokemon is healed by 1/8 of its max HP each turn when opponent is poisoned.">Venom Absorb</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/tentacruel'>Tentacruel</a>
-- **ability_0** changed : <a title='Prevents other Pokemon from lowering this Pokemon's stat stages.' href='https://dex.showdowndav.dynv6.net/abilities/clearbody'>Clear Body</a> → <a title='This Pokemon is healed by 1/8 of its max HP each turn when opponent is poisoned.' href='https://dex.showdowndav.dynv6.net/abilities/venomabsorb'>Venom Absorb</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/tentacruel">tentacruel</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/clearbody" title="Prevents other Pokemon from lowering this Pokemon's stat stages.">Clear Body</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/venomabsorb" title="This Pokemon is healed by 1/8 of its max HP each turn when opponent is poisoned.">Venom Absorb</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/geodude'>Geodude</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/geodude">geodude</a>
 - **hidden_ability** changed : `Sand Veil` → `Stone Shard`
 - **added_moves** :
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/dangerzone'>Danger Zone</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dangerzone" title="Applies all set entry hazards on the opposite Pokemon's side.">Danger Zone</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/graveler'>Graveler</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/graveler">graveler</a>
 - **hidden_ability** changed : `Sand Veil` → `Field Knowledge`
 - **added_moves** :
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/dangerzone'>Danger Zone</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dangerzone" title="Applies all set entry hazards on the opposite Pokemon's side.">Danger Zone</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/golem'>Golem</a>
-- **ability_0** changed : <a title='This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.' href='https://dex.showdowndav.dynv6.net/abilities/rockhead'>Rock Head</a> → <a title='This Pokemon's Speed is raised by 1 stage when using contact moves.' href='https://dex.showdowndav.dynv6.net/abilities/rollingboulder'>Rolling Boulder</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/golem">golem</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rockhead" title="This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.">Rock Head</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/rollingboulder" title="This Pokemon's Speed is raised by 1 stage when using contact moves.">Rolling Boulder</a>
 - **hidden_ability** changed : `Sand Veil` → `Natural Materials`
 - **added_moves** :
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/dangerzone'>Danger Zone</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dangerzone" title="Applies all set entry hazards on the opposite Pokemon's side.">Danger Zone</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/ponyta'>Ponyta</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fairy'>Fairy</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon's Normal-type moves become Fairy type and have 1.2x power.' href='https://dex.showdowndav.dynv6.net/abilities/pixilate'>Pixilate</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/ponyta">ponyta</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fairy">Fairy</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/pixilate" title="This Pokemon's Normal-type moves become Fairy type and have 1.2x power.">Pixilate</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/rapidash'>Rapidash</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fairy'>Fairy</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon's Normal-type moves become Fairy type and have 1.2x power.' href='https://dex.showdowndav.dynv6.net/abilities/pixilate'>Pixilate</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/rapidash">rapidash</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fairy">Fairy</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/pixilate" title="This Pokemon's Normal-type moves become Fairy type and have 1.2x power.">Pixilate</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/slowpoke'>Slowpoke</a>
-- **ability_1** changed : <a title='This Pokemon cannot be confused. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/owntempo'>Own Tempo</a> → <a title='This Pokemon receives 1/2 damage while being asleep.' href='https://dex.showdowndav.dynv6.net/abilities/deepsleep'>Deep Sleep</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/slowpoke">slowpoke</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/owntempo" title="This Pokemon cannot be confused. Immune to Intimidate.">Own Tempo</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/deepsleep" title="This Pokemon receives 1/2 damage while being asleep.">Deep Sleep</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/slowbro'>Slowbro</a>
-- **ability_1** changed : <a title='This Pokemon cannot be confused. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/owntempo'>Own Tempo</a> → <a title='This Pokemon receives 1/2 damage while being asleep.' href='https://dex.showdowndav.dynv6.net/abilities/deepsleep'>Deep Sleep</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/slowbro">slowbro</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/owntempo" title="This Pokemon cannot be confused. Immune to Intimidate.">Own Tempo</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/deepsleep" title="This Pokemon receives 1/2 damage while being asleep.">Deep Sleep</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/magnemite'>Magnemite</a>
-- **ability_0** changed : <a title='Prevents opposing Steel-type Pokemon from choosing to switch out.' href='https://dex.showdowndav.dynv6.net/abilities/magnetpull'>Magnet Pull</a> → <a title='Forces Steel to switch out. Priority +1 if succeeds.' href='https://dex.showdowndav.dynv6.net/abilities/magnetpush'>Magnet Push</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/magnemite">magnemite</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/magnetpull" title="Prevents opposing Steel-type Pokemon from choosing to switch out.">Magnet Pull</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/magnetpush" title="Forces Steel to switch out. Priority +1 if succeeds.">Magnet Push</a>
 - **hidden_ability** changed : `Analytic` → `Self Magnetism`
 - **added_moves** :
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/mysticshrapnel'>Mystic Shrapnel</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mysticshrapnel" title="10% chance to lower the target's Sp. Def by 1.">Mystic Shrapnel</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/magneton'>Magneton</a>
-- **ability_1** changed : <a title='If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.' href='https://dex.showdowndav.dynv6.net/abilities/sturdy'>Sturdy</a> → <a title='On switch-in, this Pokemon runs Magnet Rise.' href='https://dex.showdowndav.dynv6.net/abilities/selfmagnetism'>Self Magnetism</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/magneton">magneton</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/sturdy" title="If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.">Sturdy</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/selfmagnetism" title="On switch-in, this Pokemon runs Magnet Rise.">Self Magnetism</a>
 - **hidden_ability** changed : `Analytic` → `Tres Amigos`
 - **added_moves** :
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/mysticshrapnel'>Mystic Shrapnel</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mysticshrapnel" title="10% chance to lower the target's Sp. Def by 1.">Mystic Shrapnel</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/farfetchd'>Farfetch’d</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/farfetchd">farfetchd</a>
 - **hp** changed : `52.0` → `62.0`
 - **def** changed : `55.0` → `65.0`
 - **spd** changed : `62.0` → `72.0`
 - **spe** changed : `60.0` → `70.0`
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='When this Pokemon has used a Flying and Normal move, raises all stats by 1 stage.' href='https://dex.showdowndav.dynv6.net/abilities/wonderbird'>Wonder Bird</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/wonderbird" title="When this Pokemon has used a Flying and Normal move, raises all stats by 1 stage.">Wonder Bird</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/doduo'>Doduo</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='Offensive hits become 2-hit for same global BP.' href='https://dex.showdowndav.dynv6.net/abilities/inseparable'>Inseparable</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/doduo">doduo</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/inseparable" title="Offensive hits become 2-hit for same global BP.">Inseparable</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/dodrio'>Dodrio</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.' href='https://dex.showdowndav.dynv6.net/abilities/tresamigos'>Tres Amigos</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/dodrio">dodrio</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/tresamigos" title="Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.">Tres Amigos</a>
 - **added_moves** :
-  -> <a title='100% chance to raise the user's Speed by 1.' href='https://dex.showdowndav.dynv6.net/moves/flamecharge'>Flame Charge</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/flamecharge" title="100% chance to raise the user's Speed by 1.">Flame Charge</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/seel'>Seel</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/seel">seel</a>
 - **hidden_ability** changed : `Ice Body` → `Cryo Mend`
 - **added_moves** :
-  -> <a title='For 5 turns, no entry hazard can be set on ally side.' href='https://dex.showdowndav.dynv6.net/moves/icerink'>Ice Rink</a>
-  -> <a title='Freezes the target.' href='https://dex.showdowndav.dynv6.net/moves/frostbite'>Frostbite</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/icerink" title="For 5 turns, no entry hazard can be set on ally side.">Ice Rink</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/frostbite" title="Freezes the target.">Frostbite</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/dewgong'>Dewgong</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/dewgong">dewgong</a>
 - **hidden_ability** changed : `Ice Body` → `Cryo Mend`
 - **added_moves** :
-  -> <a title='Freezes the target.' href='https://dex.showdowndav.dynv6.net/moves/frostbite'>Frostbite</a>
-  -> <a title='For 5 turns, no entry hazard can be set on ally side.' href='https://dex.showdowndav.dynv6.net/moves/icerink'>Ice Rink</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/frostbite" title="Freezes the target.">Frostbite</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/icerink" title="For 5 turns, no entry hazard can be set on ally side.">Ice Rink</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/muk'>Muk</a>
-- **ability_0** changed : <a title='This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/abilities/stench'>Stench</a> → <a title='This Pokemon can poison or badly poison a Pokemon regardless of its typing.' href='https://dex.showdowndav.dynv6.net/abilities/corrosion'>Corrosion</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/muk">muk</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/stench" title="This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.">Stench</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/corrosion" title="This Pokemon can poison or badly poison a Pokemon regardless of its typing.">Corrosion</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/gastly'>Gastly</a>
-- **ability_1** added : <a title='This Pokemon is immune to Physical moves on it's first turn.' href='https://dex.showdowndav.dynv6.net/abilities/ethereal'>Ethereal</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/gastly">gastly</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/ethereal" title="This Pokemon is immune to Physical moves on it's first turn.">Ethereal</a>
 - **added_moves** :
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Curses target. Sets moves priority to the lowest.' href='https://dex.showdowndav.dynv6.net/moves/slothcurse'>Sloth Curse</a>
-  -> <a title='30% chance to Taunt the target.' href='https://dex.showdowndav.dynv6.net/moves/provocativelaugh'>Provocative Laugh</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/slothcurse" title="Curses target. Sets moves priority to the lowest.">Sloth Curse</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/provocativelaugh" title="30% chance to Taunt the target.">Provocative Laugh</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/haunter'>Haunter</a>
-- **ability_1** added : <a title='This Pokemon is immune to Physical moves on it's first turn.' href='https://dex.showdowndav.dynv6.net/abilities/ethereal'>Ethereal</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/haunter">haunter</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/ethereal" title="This Pokemon is immune to Physical moves on it's first turn.">Ethereal</a>
 - **hidden_ability** added : `Exhaustion`
 - **added_moves** :
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Curses target. Sets moves priority to the lowest.' href='https://dex.showdowndav.dynv6.net/moves/slothcurse'>Sloth Curse</a>
-  -> <a title='30% chance to Taunt the target.' href='https://dex.showdowndav.dynv6.net/moves/provocativelaugh'>Provocative Laugh</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/slothcurse" title="Curses target. Sets moves priority to the lowest.">Sloth Curse</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/provocativelaugh" title="30% chance to Taunt the target.">Provocative Laugh</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/gengar'>Gengar</a>
-- **ability_1** added : <a title='Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.' href='https://dex.showdowndav.dynv6.net/abilities/hauntingpact'>Haunting Pact</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/gengar">gengar</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/hauntingpact" title="Causes opposing Pokemon to lose 1/8, and ally Pokemon to lose 1/16 of their maximum HP, rounded down, at the end of each turn.">Haunting Pact</a>
 - **added_moves** :
-  -> <a title='30% chance to Taunt the target.' href='https://dex.showdowndav.dynv6.net/moves/provocativelaugh'>Provocative Laugh</a>
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Curses target. Sets moves priority to the lowest.' href='https://dex.showdowndav.dynv6.net/moves/slothcurse'>Sloth Curse</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/provocativelaugh" title="30% chance to Taunt the target.">Provocative Laugh</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/slothcurse" title="Curses target. Sets moves priority to the lowest.">Sloth Curse</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/onix'>Onix</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/onix">onix</a>
 - **hp** changed : `35.0` → `60.0`
 - **atk** changed : `45.0` → `65.0`
-- **ability_0** changed : <a title='This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.' href='https://dex.showdowndav.dynv6.net/abilities/rockhead'>Rock Head</a> → <a title='On switch-in, this Pokemon summons Sandstorm.' href='https://dex.showdowndav.dynv6.net/abilities/sandstream'>Sand Stream</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rockhead" title="This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.">Rock Head</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sandstream" title="On switch-in, this Pokemon summons Sandstorm.">Sand Stream</a>
 - **weight_kg** changed : `210.0` → `350.0`
 - **added_moves** :
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/drowzee'>Drowzee</a>
-- **ability_0** changed : <a title='This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.' href='https://dex.showdowndav.dynv6.net/abilities/insomnia'>Insomnia</a> → <a title='Moves BP is x1.5 if category is different from previous one. Only Special and Physical involved.' href='https://dex.showdowndav.dynv6.net/abilities/mindpendulum'>Mind Pendulum</a>
-- **ability_1** changed : <a title='On switch-in, this Pokemon is alerted to the foes' move with the highest power.' href='https://dex.showdowndav.dynv6.net/abilities/forewarn'>Forewarn</a> → <a title='If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/slumbersmite'>Slumber Smite</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/drowzee">drowzee</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/insomnia" title="This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.">Insomnia</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/mindpendulum" title="Moves BP is x1.5 if category is different from previous one. Only Special and Physical involved.">Mind Pendulum</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/forewarn" title="On switch-in, this Pokemon is alerted to the foes' move with the highest power.">Forewarn</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/slumbersmite" title="If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.">Slumber Smite</a>
 - **hidden_ability** changed : `Inner Focus` → `Bad Dreams`
 - **added_moves** :
-  -> <a title='Power doubles if target is asleep, and wakes it.' href='https://dex.showdowndav.dynv6.net/moves/dreambreaker'>Dream Breaker</a>
-  -> <a title='Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.' href='https://dex.showdowndav.dynv6.net/moves/netherward'>Nether Ward</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/braindrain'>Brain Drain</a>
-  -> <a title='Causes the target to fall asleep.' href='https://dex.showdowndav.dynv6.net/moves/trance'>Trance</a>
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/mentaldrop'>Mental Drop</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dreambreaker" title="Power doubles if target is asleep, and wakes it.">Dream Breaker</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/netherward" title="Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.">Nether Ward</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/braindrain" title="User recovers 50% of the damage dealt.">Brain Drain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/trance" title="Causes the target to fall asleep.">Trance</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mentaldrop" title="Applies all set entry hazards on the opposite Pokemon's side.">Mental Drop</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/hypno'>Hypno</a>
-- **ability_0** changed : <a title='This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.' href='https://dex.showdowndav.dynv6.net/abilities/insomnia'>Insomnia</a> → <a title='Moves BP is x1.5 if category is different from previous one. Only Special and Physical involved.' href='https://dex.showdowndav.dynv6.net/abilities/mindpendulum'>Mind Pendulum</a>
-- **ability_1** changed : <a title='On switch-in, this Pokemon is alerted to the foes' move with the highest power.' href='https://dex.showdowndav.dynv6.net/abilities/forewarn'>Forewarn</a> → <a title='If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/slumbersmite'>Slumber Smite</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/hypno">hypno</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/insomnia" title="This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.">Insomnia</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/mindpendulum" title="Moves BP is x1.5 if category is different from previous one. Only Special and Physical involved.">Mind Pendulum</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/forewarn" title="On switch-in, this Pokemon is alerted to the foes' move with the highest power.">Forewarn</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/slumbersmite" title="If the opponent is asleep, this Pokemon's attacks have their power multiplied by 1.5.">Slumber Smite</a>
 - **hidden_ability** changed : `Inner Focus` → `Bad Dreams`
 - **added_moves** :
-  -> <a title='Power doubles if target is asleep, and wakes it.' href='https://dex.showdowndav.dynv6.net/moves/dreambreaker'>Dream Breaker</a>
-  -> <a title='Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.' href='https://dex.showdowndav.dynv6.net/moves/netherward'>Nether Ward</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/braindrain'>Brain Drain</a>
-  -> <a title='Causes the target to fall asleep.' href='https://dex.showdowndav.dynv6.net/moves/trance'>Trance</a>
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Applies all set entry hazards on the opposite Pokemon's side.' href='https://dex.showdowndav.dynv6.net/moves/mentaldrop'>Mental Drop</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dreambreaker" title="Power doubles if target is asleep, and wakes it.">Dream Breaker</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/netherward" title="Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.">Nether Ward</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/braindrain" title="User recovers 50% of the damage dealt.">Brain Drain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/trance" title="Causes the target to fall asleep.">Trance</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mentaldrop" title="Applies all set entry hazards on the opposite Pokemon's side.">Mental Drop</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/voltorb'>Voltorb</a>
-- **ability_0** changed : <a title='This Pokemon is immune to sound-based moves, unless it used the move.' href='https://dex.showdowndav.dynv6.net/abilities/soundproof'>Soundproof</a> → <a title='On switch-in, this Pokemon disables the target's item for 5 turns.' href='https://dex.showdowndav.dynv6.net/abilities/polarityshift'>Polarity Shift</a>
-- **ability_1** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be paralyzed.' href='https://dex.showdowndav.dynv6.net/abilities/static'>Static</a> → <a title='This Pokemon's Speed is raised by 1 stage when using Electric-type moves.' href='https://dex.showdowndav.dynv6.net/abilities/sparkacceleration'>Spark Acceleration</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/voltorb">voltorb</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/soundproof" title="This Pokemon is immune to sound-based moves, unless it used the move.">Soundproof</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/polarityshift" title="On switch-in, this Pokemon disables the target's item for 5 turns.">Polarity Shift</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/static" title="30% chance a Pokemon making contact with this Pokemon will be paralyzed.">Static</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sparkacceleration" title="This Pokemon's Speed is raised by 1 stage when using Electric-type moves.">Spark Acceleration</a>
 - **added_moves** :
-  -> <a title='Uses user's Spe stat as Atk in damage calculation.' href='https://dex.showdowndav.dynv6.net/moves/lightball'>Light Ball</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/lightball" title="Uses user's Spe stat as Atk in damage calculation.">Light Ball</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/electrode'>Electrode</a>
-- **ability_0** changed : <a title='This Pokemon is immune to sound-based moves, unless it used the move.' href='https://dex.showdowndav.dynv6.net/abilities/soundproof'>Soundproof</a> → <a title='On switch-in, this Pokemon disables the target's item for 5 turns.' href='https://dex.showdowndav.dynv6.net/abilities/polarityshift'>Polarity Shift</a>
-- **ability_1** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be paralyzed.' href='https://dex.showdowndav.dynv6.net/abilities/static'>Static</a> → <a title='This Pokemon's Speed is raised by 1 stage when using Electric-type moves.' href='https://dex.showdowndav.dynv6.net/abilities/sparkacceleration'>Spark Acceleration</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/electrode">electrode</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/soundproof" title="This Pokemon is immune to sound-based moves, unless it used the move.">Soundproof</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/polarityshift" title="On switch-in, this Pokemon disables the target's item for 5 turns.">Polarity Shift</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/static" title="30% chance a Pokemon making contact with this Pokemon will be paralyzed.">Static</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sparkacceleration" title="This Pokemon's Speed is raised by 1 stage when using Electric-type moves.">Spark Acceleration</a>
 - **added_moves** :
-  -> <a title='Uses user's Spe stat as Atk in damage calculation.' href='https://dex.showdowndav.dynv6.net/moves/lightball'>Light Ball</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/lightball" title="Uses user's Spe stat as Atk in damage calculation.">Light Ball</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/exeggutor'>Exeggutor</a>
-- **ability_1** added : <a title='Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.' href='https://dex.showdowndav.dynv6.net/abilities/tresamigos'>Tres Amigos</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/exeggutor">exeggutor</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/tresamigos" title="Offensive hits become 3-hit for 1.2x global BP. Removes secondary effects.">Tres Amigos</a>
 - **added_moves** :
-  -> <a title='Hits 10 times. Each hit can miss.' href='https://dex.showdowndav.dynv6.net/moves/eggbarrage'>Egg Barrage</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/eggbarrage" title="Hits 10 times. Each hit can miss.">Egg Barrage</a>
 - **removed_moves** :
-  -> <a title='' href='https://dex.showdowndav.dynv6.net/moves/barrage'>barrage</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/barrage">barrage</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/cubone'>Cubone</a>
-- **ability_1** changed : <a title='This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.' href='https://dex.showdowndav.dynv6.net/abilities/lightningrod'>Lightning Rod</a> → <a title='On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.' href='https://dex.showdowndav.dynv6.net/abilities/sorrowfueled'>Sorrow Fueled</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/cubone">cubone</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/lightningrod" title="This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.">Lightning Rod</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sorrowfueled" title="On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.">Sorrow Fueled</a>
 - **hidden_ability** changed : `Battle Armor` → `Wraith Tenacity`
 - **added_moves** :
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/marowak'>Marowak</a>
-- **ability_1** changed : <a title='This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.' href='https://dex.showdowndav.dynv6.net/abilities/lightningrod'>Lightning Rod</a> → <a title='On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.' href='https://dex.showdowndav.dynv6.net/abilities/sorrowfueled'>Sorrow Fueled</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/marowak">marowak</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/lightningrod" title="This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.">Lightning Rod</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sorrowfueled" title="On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.">Sorrow Fueled</a>
 - **hidden_ability** changed : `Battle Armor` → `Wraith Tenacity`
 - **added_moves** :
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/hitmonlee'>Hitmonlee</a>
-- **ability_0** changed : <a title='This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.' href='https://dex.showdowndav.dynv6.net/abilities/limber'>Limber</a> → <a title='This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.' href='https://dex.showdowndav.dynv6.net/abilities/hamstring'>Hamstring</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/hitmonlee">hitmonlee</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/limber" title="This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.">Limber</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/hamstring" title="This Pokemon's kick-based attacks also lower Speed of Opponents by & stage.">Hamstring</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/hitmonchan'>Hitmonchan</a>
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='This Pokemon punch moves have their priority increased by 1.' href='https://dex.showdowndav.dynv6.net/abilities/lightningfists'>Lightning Fists</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/hitmonchan">hitmonchan</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/lightningfists" title="This Pokemon punch moves have their priority increased by 1.">Lightning Fists</a>
 - **added_moves** :
-  -> <a title='30% chance to make the target flinch.' href='https://dex.showdowndav.dynv6.net/moves/featherpunch'>Feather Punch</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/featherpunch" title="30% chance to make the target flinch.">Feather Punch</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/lickitung'>Lickitung</a>
-- **ability_0** changed : <a title='This Pokemon cannot be confused. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/owntempo'>Own Tempo</a> → <a title='When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.' href='https://dex.showdowndav.dynv6.net/abilities/umami'>Umami</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/lickitung">lickitung</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/owntempo" title="This Pokemon cannot be confused. Immune to Intimidate.">Own Tempo</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/umami" title="When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.">Umami</a>
 - **hidden_ability** changed : `Cloud Nine` → `Voracity`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/koffing'>Koffing</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/koffing">koffing</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
 - **hp** changed : `40.0` → `55.0`
 - **def** changed : `95.0` → `110.0`
 - **spd** changed : `45.0` → `75.0`
 - **hidden_ability** changed : `Stench` → `Spirit Balance`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/weezing'>Weezing</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/weezing">weezing</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
 - **hp** changed : `65.0` → `75.0`
 - **spd** changed : `70.0` → `85.0`
 - **hidden_ability** changed : `Stench` → `Acid Rain`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/rhyhorn'>Rhyhorn</a>
-- **ability_0** changed : <a title='This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.' href='https://dex.showdowndav.dynv6.net/abilities/lightningrod'>Lightning Rod</a> → <a title='Raises the user's Speed by 12 stages when hit by a priority move.' href='https://dex.showdowndav.dynv6.net/abilities/bitterness'>Bitterness</a>
-- **ability_1** changed : <a title='This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.' href='https://dex.showdowndav.dynv6.net/abilities/rockhead'>Rock Head</a> → <a title='This Pokemon's moves and their effects ignore the Abilities of other Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/moldbreaker'>Mold Breaker</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/rhyhorn">rhyhorn</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/lightningrod" title="This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.">Lightning Rod</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/bitterness" title="Raises the user's Speed by 12 stages when hit by a priority move.">Bitterness</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rockhead" title="This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.">Rock Head</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/moldbreaker" title="This Pokemon's moves and their effects ignore the Abilities of other Pokemon.">Mold Breaker</a>
 - **hidden_ability** changed : `Reckless` → `Rhino Rush`
 - **added_moves** :
-  -> <a title='Has 1/2 recoil.' href='https://dex.showdowndav.dynv6.net/moves/headsmash'>Head Smash</a>
-  -> <a title='30% chance to make the target flinch.' href='https://dex.showdowndav.dynv6.net/moves/ironhead'>Iron Head</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/headsmash" title="Has 1/2 recoil.">Head Smash</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/ironhead" title="30% chance to make the target flinch.">Iron Head</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/rhydon'>Rhydon</a>
-- **ability_0** changed : <a title='This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.' href='https://dex.showdowndav.dynv6.net/abilities/lightningrod'>Lightning Rod</a> → <a title='Raises the user's Speed by 12 stages when hit by a priority move.' href='https://dex.showdowndav.dynv6.net/abilities/bitterness'>Bitterness</a>
-- **ability_1** changed : <a title='This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.' href='https://dex.showdowndav.dynv6.net/abilities/rockhead'>Rock Head</a> → <a title='This Pokemon's moves and their effects ignore the Abilities of other Pokemon.' href='https://dex.showdowndav.dynv6.net/abilities/moldbreaker'>Mold Breaker</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/rhydon">rhydon</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/lightningrod" title="This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.">Lightning Rod</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/bitterness" title="Raises the user's Speed by 12 stages when hit by a priority move.">Bitterness</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rockhead" title="This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.">Rock Head</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/moldbreaker" title="This Pokemon's moves and their effects ignore the Abilities of other Pokemon.">Mold Breaker</a>
 - **hidden_ability** changed : `Reckless` → `Rhino Rush`
 - **added_moves** :
-  -> <a title='Has 1/2 recoil.' href='https://dex.showdowndav.dynv6.net/moves/headsmash'>Head Smash</a>
-  -> <a title='30% chance to make the target flinch.' href='https://dex.showdowndav.dynv6.net/moves/ironhead'>Iron Head</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/headsmash" title="Has 1/2 recoil.">Head Smash</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/ironhead" title="30% chance to make the target flinch.">Iron Head</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/kangaskhan'>Kangaskhan</a>
-- **ability_0** changed : <a title='This Pokemon's sleep counter drops by 2 instead of 1.' href='https://dex.showdowndav.dynv6.net/abilities/earlybird'>Early Bird</a> → <a title='On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.' href='https://dex.showdowndav.dynv6.net/abilities/sorrowfueled'>Sorrow Fueled</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/kangaskhan">kangaskhan</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/earlybird" title="This Pokemon's sleep counter drops by 2 instead of 1.">Early Bird</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sorrowfueled" title="On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.">Sorrow Fueled</a>
 - **hidden_ability** changed : `Inner Focus` → `Parental Bond`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/horsea'>Horsea</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dragon'>Dragon</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/horsea">horsea</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dragon">Dragon</a>
 - **hidden_ability** changed : `Damp` → `Dampening Fog`
 - **added_moves** :
-  -> <a title='100% chance to raise the user's Special Attack and to lower Accuracy by 1.' href='https://dex.showdowndav.dynv6.net/moves/tideblaster'>Tide Blaster</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tideblaster" title="100% chance to raise the user's Special Attack and to lower Accuracy by 1.">Tide Blaster</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/seadra'>Seadra</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/dragon'>Dragon</a>
-- **ability_0** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.' href='https://dex.showdowndav.dynv6.net/abilities/poisonpoint'>Poison Point</a> → <a title='This Pokemon's offensive moves reset opponents stats to 0.' href='https://dex.showdowndav.dynv6.net/abilities/dampeningfog'>Dampening Fog</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/seadra">seadra</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/dragon">Dragon</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/poisonpoint" title="30% chance a Pokemon making contact with this Pokemon will be poisoned, badly if holding Black Sludge.">Poison Point</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/dampeningfog" title="This Pokemon's offensive moves reset opponents stats to 0.">Dampening Fog</a>
 - **hidden_ability** changed : `Damp` → `Abyssal Perception`
 - **added_moves** :
-  -> <a title='100% chance to raise the user's Special Attack and to lower Accuracy by 1.' href='https://dex.showdowndav.dynv6.net/moves/tideblaster'>Tide Blaster</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tideblaster" title="100% chance to raise the user's Special Attack and to lower Accuracy by 1.">Tide Blaster</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/goldeen'>Goldeen</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/goldeen">goldeen</a>
 - **hidden_ability** changed : `Lightning Rod` → `Volt Return`
 - **added_moves** :
-  -> <a title='Nearly always goes first.' href='https://dex.showdowndav.dynv6.net/moves/swiftfin'>Swift Fin</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/swiftfin" title="Nearly always goes first.">Swift Fin</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/seaking'>Seaking</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/seaking">seaking</a>
 - **hidden_ability** changed : `Lightning Rod` → `Volt Return`
 - **added_moves** :
-  -> <a title='Nearly always goes first.' href='https://dex.showdowndav.dynv6.net/moves/swiftfin'>Swift Fin</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/swiftfin" title="Nearly always goes first.">Swift Fin</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/staryu'>Staryu</a>
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/illuminate'>Illuminate</a> → <a title='This Pokemon's moves ignore the target's protection, except Max Guard.' href='https://dex.showdowndav.dynv6.net/abilities/magiceye'>Magic Eye</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/staryu">staryu</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/illuminate" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Illuminate</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/magiceye" title="This Pokemon's moves ignore the target's protection, except Max Guard.">Magic Eye</a>
 - **hidden_ability** changed : `Analytic` → `Astral Mirror`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/starmie'>Starmie</a>
-- **ability_0** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/illuminate'>Illuminate</a> → <a title='This Pokemon's moves ignore the target's protection, except Max Guard.' href='https://dex.showdowndav.dynv6.net/abilities/magiceye'>Magic Eye</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/starmie">starmie</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/illuminate" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Illuminate</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/magiceye" title="This Pokemon's moves ignore the target's protection, except Max Guard.">Magic Eye</a>
 - **hidden_ability** changed : `Analytic` → `Astral Mirror`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/mrmime'>Mr. Mime</a>
-- **ability_0** changed : <a title='This Pokemon is immune to sound-based moves, unless it used the move.' href='https://dex.showdowndav.dynv6.net/abilities/soundproof'>Soundproof</a> → <a title='This Pokemon's Reflect, Light Screen and Copycat moves have priority raised by 1.' href='https://dex.showdowndav.dynv6.net/abilities/copycatprodigy'>Copycat Prodigy</a>
-- **ability_1** changed : <a title='This Pokemon receives 3/4 damage from supereffective attacks.' href='https://dex.showdowndav.dynv6.net/abilities/filter'>Filter</a> → <a title='On switch-in, this Pokemon summons Reflect.' href='https://dex.showdowndav.dynv6.net/abilities/wallmaker'>Wall Maker</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/mrmime">mrmime</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/soundproof" title="This Pokemon is immune to sound-based moves, unless it used the move.">Soundproof</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/copycatprodigy" title="This Pokemon's Reflect, Light Screen and Copycat moves have priority raised by 1.">Copycat Prodigy</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/filter" title="This Pokemon receives 3/4 damage from supereffective attacks.">Filter</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/wallmaker" title="On switch-in, this Pokemon summons Reflect.">Wall Maker</a>
 - **added_moves** :
-  -> <a title='User recovers 75% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/drainingkiss'>Draining Kiss</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/drainingkiss" title="User recovers 75% of the damage dealt.">Draining Kiss</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/scyther'>Scyther</a>
-- **ability_0** changed : <a title='At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.' href='https://dex.showdowndav.dynv6.net/abilities/swarm'>Swarm</a> → <a title='Taunts if opponent does not use offensive moves during last 2 turns.' href='https://dex.showdowndav.dynv6.net/abilities/hurryup'>Hurry Up</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/scyther">scyther</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/swarm" title="At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.">Swarm</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/hurryup" title="Taunts if opponent does not use offensive moves during last 2 turns.">Hurry Up</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/jynx'>Jynx</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/jynx">jynx</a>
 - **hp** changed : `65.0` → `85.0`
 - **spd** changed : `95.0` → `105.0`
 - **spe** changed : `95.0` → `105.0`
-- **ability_0** changed : <a title='This Pokemon cannot be infatuated or taunted. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/oblivious'>Oblivious</a> → <a title='This Pokemon's offensive moves have a 30% chance of freezing.' href='https://dex.showdowndav.dynv6.net/abilities/chillingtouch'>Chilling Touch</a>
-- **ability_1** changed : <a title='On switch-in, this Pokemon is alerted to the foes' move with the highest power.' href='https://dex.showdowndav.dynv6.net/abilities/forewarn'>Forewarn</a> → <a title='On switch-in, this Pokemon summons Snow.' href='https://dex.showdowndav.dynv6.net/abilities/snowwarning'>Snow Warning</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/oblivious" title="This Pokemon cannot be infatuated or taunted. Immune to Intimidate.">Oblivious</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/chillingtouch" title="This Pokemon's offensive moves have a 30% chance of freezing.">Chilling Touch</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/forewarn" title="On switch-in, this Pokemon is alerted to the foes' move with the highest power.">Forewarn</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/snowwarning" title="On switch-in, this Pokemon summons Snow.">Snow Warning</a>
 - **added_moves** :
-  -> <a title='Freezes the target.' href='https://dex.showdowndav.dynv6.net/moves/frostbite'>Frostbite</a>
-  -> <a title='Usually goes first. Power doubles if the target is frozen.' href='https://dex.showdowndav.dynv6.net/moves/shatter'>Shatter</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/frostbite" title="Freezes the target.">Frostbite</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/shatter" title="Usually goes first. Power doubles if the target is frozen.">Shatter</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/electabuzz'>Electabuzz</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/electabuzz">electabuzz</a>
 - **hp** changed : `65.0` → `85.0`
 - **def** changed : `57.0` → `67.0`
 - **spa** changed : `95.0` → `105.0`
-- **ability_1** added : <a title='This Pokemon's offensive moves have a 30% chance of paralyzing.' href='https://dex.showdowndav.dynv6.net/abilities/thunderstruck'>Thunderstruck</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/thunderstruck" title="This Pokemon's offensive moves have a 30% chance of paralyzing.">Thunderstruck</a>
 - **hidden_ability** changed : `Vital Spirit` → `Drizzle`
 - **added_moves** :
-  -> <a title='Usually goes first. Power doubles if the target is paralyzed.' href='https://dex.showdowndav.dynv6.net/moves/paralash'>Paralash</a>
-  -> <a title='Normal moves become Electric type this turn.' href='https://dex.showdowndav.dynv6.net/moves/plasmafists'>Plasma Fists</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/paralash" title="Usually goes first. Power doubles if the target is paralyzed.">Paralash</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/plasmafists" title="Normal moves become Electric type this turn.">Plasma Fists</a>
 - **removed_moves** :
-  -> <a title='30% chance to paralyze. Can't miss in rain.' href='https://dex.showdowndav.dynv6.net/moves/thunder'>Thunder</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunder" title="30% chance to paralyze. Can't miss in rain.">Thunder</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/magmar'>Magmar</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/magmar">magmar</a>
 - **hp** changed : `65.0` → `85.0`
 - **atk** changed : `95.0` → `105.0`
 - **def** changed : `57.0` → `67.0`
-- **ability_0** changed : <a title='30% chance a Pokemon making contact with this Pokemon will be burned.' href='https://dex.showdowndav.dynv6.net/abilities/flamebody'>Flame Body</a> → <a title='On switch-in, this Pokemon summons Sunny Day.' href='https://dex.showdowndav.dynv6.net/abilities/drought'>Drought</a>
-- **ability_1** added : <a title='This Pokemon is immune to Water-type moves and hurts all water types every turn.' href='https://dex.showdowndav.dynv6.net/abilities/vaporization'>Vaporization</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/flamebody" title="30% chance a Pokemon making contact with this Pokemon will be burned.">Flame Body</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/drought" title="On switch-in, this Pokemon summons Sunny Day.">Drought</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/vaporization" title="This Pokemon is immune to Water-type moves and hurts all water types every turn.">Vaporization</a>
 - **hidden_ability** changed : `Vital Spirit` → `Conflagrant`
 - **added_moves** :
-  -> <a title='Usually goes first. Power doubles if the target is frozen.' href='https://dex.showdowndav.dynv6.net/moves/scorchrush'>Scorch Rush</a>
-  -> <a title='Creates a fog on switch-in. Opponents cannot boost themselves.' href='https://dex.showdowndav.dynv6.net/moves/foggyember'>Foggy Ember</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/scorchrush" title="Usually goes first. Power doubles if the target is frozen.">Scorch Rush</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/foggyember" title="Creates a fog on switch-in. Opponents cannot boost themselves.">Foggy Ember</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/pinsir'>Pinsir</a>
-- **ability_0** changed : <a title='Prevents other Pokemon from lowering this Pokemon's Attack stat stage. Ignores opponent's defensive boosts.' href='https://dex.showdowndav.dynv6.net/abilities/hypercutter'>Hyper Cutter</a> → <a title='This Pokemon's contact attacks also lower Defense of Opponents by & stage.' href='https://dex.showdowndav.dynv6.net/abilities/sunderarmor'>Sunder Armor</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/pinsir">pinsir</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/hypercutter" title="Prevents other Pokemon from lowering this Pokemon's Attack stat stage. Ignores opponent's defensive boosts.">Hyper Cutter</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sunderarmor" title="This Pokemon's contact attacks also lower Defense of Opponents by & stage.">Sunder Armor</a>
 - **added_moves** :
-  -> <a title='User switches out after damaging the target.' href='https://dex.showdowndav.dynv6.net/moves/uturn'>U-turn</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/uturn" title="User switches out after damaging the target.">U-turn</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/tauros'>Tauros</a>
-- **ability_1** changed : <a title='If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.' href='https://dex.showdowndav.dynv6.net/abilities/angerpoint'>Anger Point</a> → <a title='If a physical attack hits this Pokemon, Accuracy is lowered by 1, Attack is raised by 1.' href='https://dex.showdowndav.dynv6.net/abilities/unleashedfury'>Unleashed Fury</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/tauros">tauros</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/angerpoint" title="If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.">Anger Point</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/unleashedfury" title="If a physical attack hits this Pokemon, Accuracy is lowered by 1, Attack is raised by 1.">Unleashed Fury</a>
 - **added_moves** :
-  -> <a title='Raises the user's Speed and accuracy by 1.' href='https://dex.showdowndav.dynv6.net/moves/bullseyerush'>Bullseye Rush</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/bullseyerush" title="Raises the user's Speed and accuracy by 1.">Bullseye Rush</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/gyarados'>Gyarados</a>
-- **ability_1** added : <a title='This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted.' href='https://dex.showdowndav.dynv6.net/abilities/strongjaw'>Strong Jaw</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/gyarados">gyarados</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/strongjaw" title="This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted.">Strong Jaw</a>
 - **added_moves** :
-  -> <a title='Power doubles if user moves before the target.' href='https://dex.showdowndav.dynv6.net/moves/fishiousrend'>Fishious Rend</a>
-  -> <a title='10% chance to paralyze. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/thunderfang'>Thunder Fang</a>
-  -> <a title='Destroys screens, unless the target is immune.' href='https://dex.showdowndav.dynv6.net/moves/psychicfangs'>Psychic Fangs</a>
-  -> <a title='50% chance to badly poison the target.' href='https://dex.showdowndav.dynv6.net/moves/poisonfang'>Poison Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/fishiousrend" title="Power doubles if user moves before the target.">Fishious Rend</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunderfang" title="10% chance to paralyze. 10% chance to flinch.">Thunder Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/psychicfangs" title="Destroys screens, unless the target is immune.">Psychic Fangs</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/poisonfang" title="50% chance to badly poison the target.">Poison Fang</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/lapras'>Lapras</a>
-- **ability_0** changed : <a title='This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.' href='https://dex.showdowndav.dynv6.net/abilities/waterabsorb'>Water Absorb</a> → <a title='Freezes the opponent when damaged by a Water-type move.' href='https://dex.showdowndav.dynv6.net/abilities/glacialfeedback'>Glacial Feedback</a>
-- **ability_1** changed : <a title='This Pokemon cannot be struck by a critical hit.' href='https://dex.showdowndav.dynv6.net/abilities/shellarmor'>Shell Armor</a> → <a title='On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0.' href='https://dex.showdowndav.dynv6.net/abilities/seafog'>Sea Fog</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/lapras">lapras</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/waterabsorb" title="This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.">Water Absorb</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/glacialfeedback" title="Freezes the opponent when damaged by a Water-type move.">Glacial Feedback</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/shellarmor" title="This Pokemon cannot be struck by a critical hit.">Shell Armor</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seafog" title="On switch-in, this Pokemon resets the stat stages of opposing Pokemon to 0.">Sea Fog</a>
 - **added_moves** :
-  -> <a title='Freezes the target.' href='https://dex.showdowndav.dynv6.net/moves/frostbite'>Frostbite</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/frostbite" title="Freezes the target.">Frostbite</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/eevee'>Eevee</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='Based on the type of move used, this Pokemon transforms into one of the Eeveelutions.' href='https://dex.showdowndav.dynv6.net/abilities/proteanmaxima'>Protean Maxima</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/eevee">eevee</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/proteanmaxima" title="Based on the type of move used, this Pokemon transforms into one of the Eeveelutions.">Protean Maxima</a>
 - **added_moves** :
-  -> <a title='10% chance to paralyze the target.' href='https://dex.showdowndav.dynv6.net/moves/thunderbolt'>Thunderbolt</a>
-  -> <a title='20% chance to make the target flinch.' href='https://dex.showdowndav.dynv6.net/moves/darkpulse'>Dark Pulse</a>
-  -> <a title='10% chance to freeze the target.' href='https://dex.showdowndav.dynv6.net/moves/icebeam'>Ice Beam</a>
-  -> <a title='30% chance to burn the target. Thaws target.' href='https://dex.showdowndav.dynv6.net/moves/scald'>Scald</a>
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/psychic'>Psychic</a>
-  -> <a title='10% chance to lower the target's Sp. Def by 1.' href='https://dex.showdowndav.dynv6.net/moves/energyball'>Energy Ball</a>
-  -> <a title='30% chance to lower the target's Sp. Atk by 1.' href='https://dex.showdowndav.dynv6.net/moves/moonblast'>Moonblast</a>
-  -> <a title='10% chance to burn the target.' href='https://dex.showdowndav.dynv6.net/moves/flamethrower'>Flamethrower</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunderbolt" title="10% chance to paralyze the target.">Thunderbolt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/darkpulse" title="20% chance to make the target flinch.">Dark Pulse</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/icebeam" title="10% chance to freeze the target.">Ice Beam</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/scald" title="30% chance to burn the target. Thaws target.">Scald</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/psychic" title="10% chance to lower the target's Sp. Def by 1.">Psychic</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/energyball" title="10% chance to lower the target's Sp. Def by 1.">Energy Ball</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonblast" title="30% chance to lower the target's Sp. Atk by 1.">Moonblast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/flamethrower" title="10% chance to burn the target.">Flamethrower</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/porygon'>Porygon</a>
-- **ability_0** changed : <a title='On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.' href='https://dex.showdowndav.dynv6.net/abilities/trace'>Trace</a> → <a title='On switch-in, this Pokemon summons a substitute.' href='https://dex.showdowndav.dynv6.net/abilities/cloneindustry'>Clone Industry</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/porygon">porygon</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/trace" title="On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.">Trace</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/cloneindustry" title="On switch-in, this Pokemon summons a substitute.">Clone Industry</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/omastar'>Omastar</a>
-- **ability_1** changed : <a title='This Pokemon cannot be struck by a critical hit.' href='https://dex.showdowndav.dynv6.net/abilities/shellarmor'>Shell Armor</a> → <a title='If this Pokemon is at full HP, damage taken from physical attacks is halved.' href='https://dex.showdowndav.dynv6.net/abilities/shellprotection'>Shell Protection</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/omastar">omastar</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/shellarmor" title="This Pokemon cannot be struck by a critical hit.">Shell Armor</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/shellprotection" title="If this Pokemon is at full HP, damage taken from physical attacks is halved.">Shell Protection</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/kabutops'>Kabutops</a>
-- **type_2** changed : <a href='https://dex.showdowndav.dynv6.net/types/water'>Water</a> → <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
-- **ability_1** changed : <a title='This Pokemon cannot be struck by a critical hit.' href='https://dex.showdowndav.dynv6.net/abilities/battlearmor'>Battle Armor</a> → <a title='This Pokemon's slicing moves have their power multiplied by 1.5.' href='https://dex.showdowndav.dynv6.net/abilities/sharpness'>Sharpness</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/kabutops">kabutops</a>
+- **type_2** changed : <a href="https://dex.showdowndav.dynv6.net/types/water">Water</a> → <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/battlearmor" title="This Pokemon cannot be struck by a critical hit.">Battle Armor</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/sharpness" title="This Pokemon's slicing moves have their power multiplied by 1.5.">Sharpness</a>
 - **added_moves** :
-  -> <a title='Sets a layer of Spikes on the opposing side.' href='https://dex.showdowndav.dynv6.net/moves/ceaselessedge'>Ceaseless Edge</a>
-  -> <a title='Sets Stealth Rock on the target's side.' href='https://dex.showdowndav.dynv6.net/moves/stoneaxe'>Stone Axe</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/ceaselessedge" title="Sets a layer of Spikes on the opposing side.">Ceaseless Edge</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/stoneaxe" title="Sets Stealth Rock on the target's side.">Stone Axe</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/aerodactyl'>Aerodactyl</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/aerodactyl">aerodactyl</a>
 - **hidden_ability** changed : `Unnerve` → `Predation`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/snorlax'>Snorlax</a>
-- **ability_1** changed : <a title='Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat.' href='https://dex.showdowndav.dynv6.net/abilities/thickfat'>Thick Fat</a> → <a title='At the end of every turn, this Pokemon restores 1/16 of its max HP.' href='https://dex.showdowndav.dynv6.net/abilities/selfsufficient'>Self Sufficient</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/snorlax">snorlax</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/thickfat" title="Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat.">Thick Fat</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/selfsufficient" title="At the end of every turn, this Pokemon restores 1/16 of its max HP.">Self Sufficient</a>
 - **hidden_ability** changed : `Gluttony` → `Restful Slumber`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/dratini'>Dratini</a>
-- **ability_1** added : <a title='On switch-in, this Pokemon summons Rain Dance.' href='https://dex.showdowndav.dynv6.net/abilities/drizzle'>Drizzle</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/dratini">dratini</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/drizzle" title="On switch-in, this Pokemon summons Rain Dance.">Drizzle</a>
 - **hidden_ability** changed : `Marvel Scale` → `Water Veil`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/dragonair'>Dragonair</a>
-- **ability_1** added : <a title='On switch-in, this Pokemon summons Rain Dance.' href='https://dex.showdowndav.dynv6.net/abilities/drizzle'>Drizzle</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/dragonair">dragonair</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/drizzle" title="On switch-in, this Pokemon summons Rain Dance.">Drizzle</a>
 - **hidden_ability** changed : `Marvel Scale` → `Water Veil`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/mew'>Mew</a>
-- **ability_1** added : <a title='This Pokemon's type changes to the type of the move it is using. Once per switch-in.' href='https://dex.showdowndav.dynv6.net/abilities/protean'>Protean</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/mew">mew</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/protean" title="This Pokemon's type changes to the type of the move it is using. Once per switch-in.">Protean</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/chikorita'>Chikorita</a>
-- **ability_1** added : <a title='This Pokemon is immune to Water-type moves and hurts all water types every turn.' href='https://dex.showdowndav.dynv6.net/abilities/vaporization'>Vaporization</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/chikorita">chikorita</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/vaporization" title="This Pokemon is immune to Water-type moves and hurts all water types every turn.">Vaporization</a>
 - **added_moves** :
-  -> <a title='Disrupts the target.' href='https://dex.showdowndav.dynv6.net/moves/disrupt'>Disrupt</a>
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disrupt" title="Disrupts the target.">Disrupt</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/meganium'>Meganium</a>
-- **ability_1** added : <a title='On switch-in, this Pokemon summons Grassy Terrain.' href='https://dex.showdowndav.dynv6.net/abilities/grassysurge'>Grassy Surge</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/meganium">meganium</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/grassysurge" title="On switch-in, this Pokemon summons Grassy Terrain.">Grassy Surge</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/typhlosion'>Typhlosion</a>
-- **ability_0** changed : <a title='At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.' href='https://dex.showdowndav.dynv6.net/abilities/blaze'>Blaze</a> → <a title='Prevents other Pokemon from raising their stats.' href='https://dex.showdowndav.dynv6.net/abilities/blacksmoke'>Black Smoke</a>
-- **ability_1** added : <a title='This Pokemon cannot be frozen. Applies Magma Pool when under 1/2 max HP.' href='https://dex.showdowndav.dynv6.net/abilities/magmaarmor'>Magma Armor</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/typhlosion">typhlosion</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/blaze" title="At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.">Blaze</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/blacksmoke" title="Prevents other Pokemon from raising their stats.">Black Smoke</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/magmaarmor" title="This Pokemon cannot be frozen. Applies Magma Pool when under 1/2 max HP.">Magma Armor</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/sentret'>Sentret</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon's offensive moves do cause a self switch.' href='https://dex.showdowndav.dynv6.net/abilities/scurry'>Scurry</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/sentret">sentret</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/scurry" title="This Pokemon's offensive moves do cause a self switch.">Scurry</a>
 - **added_moves** :
-  -> <a title='Nearly always goes first.' href='https://dex.showdowndav.dynv6.net/moves/extremespeed'>Extreme Speed</a>
-  -> <a title='100% chance to paralyze the target.' href='https://dex.showdowndav.dynv6.net/moves/nuzzle'>Nuzzle</a>
-  -> <a title='Free user from hazards/bind/Leech Seed; +1 Spe.' href='https://dex.showdowndav.dynv6.net/moves/rapidspin'>Rapid Spin</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/extremespeed" title="Nearly always goes first.">Extreme Speed</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/nuzzle" title="100% chance to paralyze the target.">Nuzzle</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/rapidspin" title="Free user from hazards/bind/Leech Seed; +1 Spe.">Rapid Spin</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/furret'>Furret</a>
-- **ability_0** changed : <a title='No competitive use.' href='https://dex.showdowndav.dynv6.net/abilities/runaway'>Run Away</a> → <a title='This Pokemon's offensive moves do cause a self switch.' href='https://dex.showdowndav.dynv6.net/abilities/scurry'>Scurry</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/furret">furret</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/runaway" title="No competitive use.">Run Away</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/scurry" title="This Pokemon's offensive moves do cause a self switch.">Scurry</a>
 - **added_moves** :
-  -> <a title='100% chance to paralyze the target.' href='https://dex.showdowndav.dynv6.net/moves/nuzzle'>Nuzzle</a>
-  -> <a title='Free user from hazards/bind/Leech Seed; +1 Spe.' href='https://dex.showdowndav.dynv6.net/moves/rapidspin'>Rapid Spin</a>
-  -> <a title='Nearly always goes first.' href='https://dex.showdowndav.dynv6.net/moves/extremespeed'>Extreme Speed</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/nuzzle" title="100% chance to paralyze the target.">Nuzzle</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/rapidspin" title="Free user from hazards/bind/Leech Seed; +1 Spe.">Rapid Spin</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/extremespeed" title="Nearly always goes first.">Extreme Speed</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/hoothoot'>Hoothoot</a>
-- **type_1** changed : <a href='https://dex.showdowndav.dynv6.net/types/normal'>Normal</a> → <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
-- **ability_1** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='Every move used by this Pokemon will always hit if weather is Dusk.' href='https://dex.showdowndav.dynv6.net/abilities/nightvision'>Night Vision</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/hoothoot">hoothoot</a>
+- **type_1** changed : <a href="https://dex.showdowndav.dynv6.net/types/normal">Normal</a> → <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/nightvision" title="Every move used by this Pokemon will always hit if weather is Dusk.">Night Vision</a>
 - **added_moves** :
-  -> <a title='30% chance to confuse the target, 20% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/mournfulhooting'>Mournful Hooting</a>
-  -> <a title='For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.' href='https://dex.showdowndav.dynv6.net/moves/dusk'>Dusk</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mournfulhooting" title="30% chance to confuse the target, 20% chance to flinch.">Mournful Hooting</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dusk" title="For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.">Dusk</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/noctowl'>Noctowl</a>
-- **type_1** changed : <a href='https://dex.showdowndav.dynv6.net/types/normal'>Normal</a> → <a href='https://dex.showdowndav.dynv6.net/types/dark'>Dark</a>
-- **ability_1** changed : <a title='This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.' href='https://dex.showdowndav.dynv6.net/abilities/keeneye'>Keen Eye</a> → <a title='Every move used by this Pokemon will always hit if weather is Dusk.' href='https://dex.showdowndav.dynv6.net/abilities/nightvision'>Night Vision</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/noctowl">noctowl</a>
+- **type_1** changed : <a href="https://dex.showdowndav.dynv6.net/types/normal">Normal</a> → <a href="https://dex.showdowndav.dynv6.net/types/dark">Dark</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/keeneye" title="This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.">Keen Eye</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/nightvision" title="Every move used by this Pokemon will always hit if weather is Dusk.">Night Vision</a>
 - **added_moves** :
-  -> <a title='30% chance to confuse the target, 20% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/mournfulhooting'>Mournful Hooting</a>
-  -> <a title='For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.' href='https://dex.showdowndav.dynv6.net/moves/dusk'>Dusk</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mournfulhooting" title="30% chance to confuse the target, 20% chance to flinch.">Mournful Hooting</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/dusk" title="For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.">Dusk</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/spinarak'>Spinarak</a>
-- **ability_0** changed : <a title='At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.' href='https://dex.showdowndav.dynv6.net/abilities/swarm'>Swarm</a> → <a title='While this Pokemon is active, the opponent Pokemons are paralyzed.' href='https://dex.showdowndav.dynv6.net/abilities/arachnophobia'>Arachnophobia</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/spinarak">spinarak</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/swarm" title="At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.">Swarm</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/arachnophobia" title="While this Pokemon is active, the opponent Pokemons are paralyzed.">Arachnophobia</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/ariados'>Ariados</a>
-- **ability_0** changed : <a title='At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.' href='https://dex.showdowndav.dynv6.net/abilities/swarm'>Swarm</a> → <a title='While this Pokemon is active, the opponent Pokemons are paralyzed.' href='https://dex.showdowndav.dynv6.net/abilities/arachnophobia'>Arachnophobia</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/ariados">ariados</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/swarm" title="At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.">Swarm</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/arachnophobia" title="While this Pokemon is active, the opponent Pokemons are paralyzed.">Arachnophobia</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/crobat'>Crobat</a>
-- **ability_1** added : <a title='The user recovers 1/3 the HP lost by the target when using bite moves. Bite moves are x1.2.' href='https://dex.showdowndav.dynv6.net/abilities/vampirism'>Vampirism</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/crobat">crobat</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/vampirism" title="The user recovers 1/3 the HP lost by the target when using bite moves. Bite moves are x1.2.">Vampirism</a>
 - **added_moves** :
-  -> <a title='10% chance to burn. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/firefang'>Fire Fang</a>
-  -> <a title='Destroys screens, unless the target is immune.' href='https://dex.showdowndav.dynv6.net/moves/psychicfangs'>Psychic Fangs</a>
-  -> <a title='User switches out after damaging the target. Lowers opponent SpAtk.' href='https://dex.showdowndav.dynv6.net/moves/spookysnatch'>Spooky Snatch</a>
-  -> <a title='10% chance to freeze. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/icefang'>Ice Fang</a>
-  -> <a title='10% chance to paralyze. 10% chance to flinch.' href='https://dex.showdowndav.dynv6.net/moves/thunderfang'>Thunder Fang</a>
-  -> <a title='50% chance to badly poison the target.' href='https://dex.showdowndav.dynv6.net/moves/noxiouschomp'>Noxious Chomp</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/firefang" title="10% chance to burn. 10% chance to flinch.">Fire Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/psychicfangs" title="Destroys screens, unless the target is immune.">Psychic Fangs</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/spookysnatch" title="User switches out after damaging the target. Lowers opponent SpAtk.">Spooky Snatch</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/icefang" title="10% chance to freeze. 10% chance to flinch.">Ice Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/thunderfang" title="10% chance to paralyze. 10% chance to flinch.">Thunder Fang</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/noxiouschomp" title="50% chance to badly poison the target.">Noxious Chomp</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/natu'>Natu</a>
-- **ability_1** changed : <a title='This Pokemon's sleep counter drops by 2 instead of 1.' href='https://dex.showdowndav.dynv6.net/abilities/earlybird'>Early Bird</a> → <a title='Psychic moves hit Dark.' href='https://dex.showdowndav.dynv6.net/abilities/seer'>Seer</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/natu">natu</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/earlybird" title="This Pokemon's sleep counter drops by 2 instead of 1.">Early Bird</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seer" title="Psychic moves hit Dark.">Seer</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/xatu'>Xatu</a>
-- **ability_1** changed : <a title='This Pokemon's sleep counter drops by 2 instead of 1.' href='https://dex.showdowndav.dynv6.net/abilities/earlybird'>Early Bird</a> → <a title='Psychic moves hit Dark.' href='https://dex.showdowndav.dynv6.net/abilities/seer'>Seer</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/xatu">xatu</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/earlybird" title="This Pokemon's sleep counter drops by 2 instead of 1.">Early Bird</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seer" title="Psychic moves hit Dark.">Seer</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/mareep'>Mareep</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fairy'>Fairy</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/mareep">mareep</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fairy">Fairy</a>
 - **added_moves** :
-  -> <a title='User recovers 75% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/drainingkiss'>Draining Kiss</a>
-  -> <a title='5 turns. Can't status,-Dragon power vs grounded.' href='https://dex.showdowndav.dynv6.net/moves/mistyterrain'>Misty Terrain</a>
-  -> <a title='100% confuse target that had a stat rise this turn.' href='https://dex.showdowndav.dynv6.net/moves/alluringvoice'>Alluring Voice</a>
-  -> <a title='No additional effect.' href='https://dex.showdowndav.dynv6.net/moves/fairywind'>Fairy Wind</a>
-  -> <a title='30% chance to lower the target's Sp. Atk by 1.' href='https://dex.showdowndav.dynv6.net/moves/moonblast'>Moonblast</a>
-  -> <a title='This move does not check accuracy. Hits foes.' href='https://dex.showdowndav.dynv6.net/moves/disarmingvoice'>Disarming Voice</a>
-  -> <a title='Heals the user by a weather-dependent amount.' href='https://dex.showdowndav.dynv6.net/moves/moonlight'>Moonlight</a>
-  -> <a title='10% chance to lower the target's Attack by 1.' href='https://dex.showdowndav.dynv6.net/moves/playrough'>Play Rough</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/paraboliccharge'>Parabolic Charge</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/drainingkiss" title="User recovers 75% of the damage dealt.">Draining Kiss</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mistyterrain" title="5 turns. Can't status,-Dragon power vs grounded.">Misty Terrain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/alluringvoice" title="100% confuse target that had a stat rise this turn.">Alluring Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/fairywind" title="No additional effect.">Fairy Wind</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonblast" title="30% chance to lower the target's Sp. Atk by 1.">Moonblast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disarmingvoice" title="This move does not check accuracy. Hits foes.">Disarming Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonlight" title="Heals the user by a weather-dependent amount.">Moonlight</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/playrough" title="10% chance to lower the target's Attack by 1.">Play Rough</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/paraboliccharge" title="User recovers 50% of the damage dealt.">Parabolic Charge</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/flaaffy'>Flaaffy</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fairy'>Fairy</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/flaaffy">flaaffy</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fairy">Fairy</a>
 - **added_moves** :
-  -> <a title='Heals the user by a weather-dependent amount.' href='https://dex.showdowndav.dynv6.net/moves/moonlight'>Moonlight</a>
-  -> <a title='10% chance to lower the target's Attack by 1.' href='https://dex.showdowndav.dynv6.net/moves/playrough'>Play Rough</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/paraboliccharge'>Parabolic Charge</a>
-  -> <a title='This move does not check accuracy. Hits foes.' href='https://dex.showdowndav.dynv6.net/moves/disarmingvoice'>Disarming Voice</a>
-  -> <a title='100% confuse target that had a stat rise this turn.' href='https://dex.showdowndav.dynv6.net/moves/alluringvoice'>Alluring Voice</a>
-  -> <a title='No additional effect.' href='https://dex.showdowndav.dynv6.net/moves/fairywind'>Fairy Wind</a>
-  -> <a title='30% chance to lower the target's Sp. Atk by 1.' href='https://dex.showdowndav.dynv6.net/moves/moonblast'>Moonblast</a>
-  -> <a title='User recovers 75% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/drainingkiss'>Draining Kiss</a>
-  -> <a title='5 turns. Can't status,-Dragon power vs grounded.' href='https://dex.showdowndav.dynv6.net/moves/mistyterrain'>Misty Terrain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonlight" title="Heals the user by a weather-dependent amount.">Moonlight</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/playrough" title="10% chance to lower the target's Attack by 1.">Play Rough</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/paraboliccharge" title="User recovers 50% of the damage dealt.">Parabolic Charge</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disarmingvoice" title="This move does not check accuracy. Hits foes.">Disarming Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/alluringvoice" title="100% confuse target that had a stat rise this turn.">Alluring Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/fairywind" title="No additional effect.">Fairy Wind</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonblast" title="30% chance to lower the target's Sp. Atk by 1.">Moonblast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/drainingkiss" title="User recovers 75% of the damage dealt.">Draining Kiss</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mistyterrain" title="5 turns. Can't status,-Dragon power vs grounded.">Misty Terrain</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/ampharos'>Ampharos</a>
-- **type_2** added : <a href='https://dex.showdowndav.dynv6.net/types/fairy'>Fairy</a>
-- **ability_1** added : <a title='Every move used by this Pokemon will always hit. Forces Ghost to switch out.' href='https://dex.showdowndav.dynv6.net/abilities/lighthouse'>Light House</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/ampharos">ampharos</a>
+- **type_2** added : <a href="https://dex.showdowndav.dynv6.net/types/fairy">Fairy</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/lighthouse" title="Every move used by this Pokemon will always hit. Forces Ghost to switch out.">Light House</a>
 - **added_moves** :
-  -> <a title='This move does not check accuracy. Hits foes.' href='https://dex.showdowndav.dynv6.net/moves/disarmingvoice'>Disarming Voice</a>
-  -> <a title='Heals the user by a weather-dependent amount.' href='https://dex.showdowndav.dynv6.net/moves/moonlight'>Moonlight</a>
-  -> <a title='10% chance to lower the target's Attack by 1.' href='https://dex.showdowndav.dynv6.net/moves/playrough'>Play Rough</a>
-  -> <a title='User recovers 50% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/paraboliccharge'>Parabolic Charge</a>
-  -> <a title='User recovers 75% of the damage dealt.' href='https://dex.showdowndav.dynv6.net/moves/drainingkiss'>Draining Kiss</a>
-  -> <a title='Has 1/2 recoil.' href='https://dex.showdowndav.dynv6.net/moves/lightofruin'>Light of Ruin</a>
-  -> <a title='5 turns. Can't status,-Dragon power vs grounded.' href='https://dex.showdowndav.dynv6.net/moves/mistyterrain'>Misty Terrain</a>
-  -> <a title='100% confuse target that had a stat rise this turn.' href='https://dex.showdowndav.dynv6.net/moves/alluringvoice'>Alluring Voice</a>
-  -> <a title='No additional effect.' href='https://dex.showdowndav.dynv6.net/moves/fairywind'>Fairy Wind</a>
-  -> <a title='30% chance to lower the target's Sp. Atk by 1.' href='https://dex.showdowndav.dynv6.net/moves/moonblast'>Moonblast</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/disarmingvoice" title="This move does not check accuracy. Hits foes.">Disarming Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonlight" title="Heals the user by a weather-dependent amount.">Moonlight</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/playrough" title="10% chance to lower the target's Attack by 1.">Play Rough</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/paraboliccharge" title="User recovers 50% of the damage dealt.">Parabolic Charge</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/drainingkiss" title="User recovers 75% of the damage dealt.">Draining Kiss</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/lightofruin" title="Has 1/2 recoil.">Light of Ruin</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/mistyterrain" title="5 turns. Can't status,-Dragon power vs grounded.">Misty Terrain</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/alluringvoice" title="100% confuse target that had a stat rise this turn.">Alluring Voice</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/fairywind" title="No additional effect.">Fairy Wind</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/moonblast" title="30% chance to lower the target's Sp. Atk by 1.">Moonblast</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/sudowoodo'>Sudowoodo</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/sudowoodo">sudowoodo</a>
 - **hidden_ability** changed : `Rattled` → `Woody Disguise`
 - **added_moves** :
-  -> <a title='1/8 of target's HP is restored to user every turn.' href='https://dex.showdowndav.dynv6.net/moves/leechseed'>Leech Seed</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/leechseed" title="1/8 of target's HP is restored to user every turn.">Leech Seed</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/hoppip'>Hoppip</a>
-- **ability_1** changed : <a title='If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.' href='https://dex.showdowndav.dynv6.net/abilities/leafguard'>Leaf Guard</a> → <a title='On switch-in, this Pokemon sets Leech Seed on the opponents.' href='https://dex.showdowndav.dynv6.net/abilities/seedscatter'>Seed Scatter</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/hoppip">hoppip</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/leafguard" title="If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.">Leaf Guard</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seedscatter" title="On switch-in, this Pokemon sets Leech Seed on the opponents.">Seed Scatter</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/skiploom'>Skiploom</a>
-- **ability_1** changed : <a title='If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.' href='https://dex.showdowndav.dynv6.net/abilities/leafguard'>Leaf Guard</a> → <a title='On switch-in, this Pokemon sets Leech Seed on the opponents.' href='https://dex.showdowndav.dynv6.net/abilities/seedscatter'>Seed Scatter</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/skiploom">skiploom</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/leafguard" title="If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.">Leaf Guard</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seedscatter" title="On switch-in, this Pokemon sets Leech Seed on the opponents.">Seed Scatter</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/jumpluff'>Jumpluff</a>
-- **ability_1** changed : <a title='If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.' href='https://dex.showdowndav.dynv6.net/abilities/leafguard'>Leaf Guard</a> → <a title='On switch-in, this Pokemon sets Leech Seed on the opponents.' href='https://dex.showdowndav.dynv6.net/abilities/seedscatter'>Seed Scatter</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/jumpluff">jumpluff</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/leafguard" title="If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.">Leaf Guard</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/seedscatter" title="On switch-in, this Pokemon sets Leech Seed on the opponents.">Seed Scatter</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/umbreon'>Umbreon</a>
-- **ability_1** added : <a title='If Dusk is active, this Pokemon heals 1/16 of its max HP each turn.' href='https://dex.showdowndav.dynv6.net/abilities/regeneratingshadows'>Regenerating Shadows</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/umbreon">umbreon</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/regeneratingshadows" title="If Dusk is active, this Pokemon heals 1/16 of its max HP each turn.">Regenerating Shadows</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/steelix'>Steelix</a>
-- **ability_0** changed : <a title='This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.' href='https://dex.showdowndav.dynv6.net/abilities/rockhead'>Rock Head</a> → <a title='This Pokemon's Normal-type moves become Fire type and have 1.2x power.' href='https://dex.showdowndav.dynv6.net/abilities/moltencore'>Molten Core</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/steelix">steelix</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/rockhead" title="This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.">Rock Head</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/moltencore" title="This Pokemon's Normal-type moves become Fire type and have 1.2x power.">Molten Core</a>
 - **added_moves** :
-  -> <a title='Erodes the target.' href='https://dex.showdowndav.dynv6.net/moves/erode'>Erode</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/erode" title="Erodes the target.">Erode</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/houndour'>Houndour</a>
-- **ability_0** changed : <a title='This Pokemon's sleep counter drops by 2 instead of 1.' href='https://dex.showdowndav.dynv6.net/abilities/earlybird'>Early Bird</a> → <a title='On switch-in, this Pokemon summons Dusk.' href='https://dex.showdowndav.dynv6.net/abilities/noctem'>Noctem</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/houndour">houndour</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/earlybird" title="This Pokemon's sleep counter drops by 2 instead of 1.">Early Bird</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noctem" title="On switch-in, this Pokemon summons Dusk.">Noctem</a>
 - **added_moves** :
-  -> <a title='30% burn. 2x power if target is already statused.' href='https://dex.showdowndav.dynv6.net/moves/infernalparade'>Infernal Parade</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/infernalparade" title="30% burn. 2x power if target is already statused.">Infernal Parade</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/houndoom'>Houndoom</a>
-- **ability_0** changed : <a title='This Pokemon's sleep counter drops by 2 instead of 1.' href='https://dex.showdowndav.dynv6.net/abilities/earlybird'>Early Bird</a> → <a title='On switch-in, this Pokemon summons Dusk.' href='https://dex.showdowndav.dynv6.net/abilities/noctem'>Noctem</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/houndoom">houndoom</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/earlybird" title="This Pokemon's sleep counter drops by 2 instead of 1.">Early Bird</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/noctem" title="On switch-in, this Pokemon summons Dusk.">Noctem</a>
 - **added_moves** :
-  -> <a title='30% burn. 2x power if target is already statused.' href='https://dex.showdowndav.dynv6.net/moves/infernalparade'>Infernal Parade</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/infernalparade" title="30% burn. 2x power if target is already statused.">Infernal Parade</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/kingdra'>Kingdra</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/kingdra">kingdra</a>
 - **hidden_ability** changed : `Damp` → `Maelstrom Grip`
 - **added_moves** :
-  -> <a title='100% chance to raise the user's Special Attack and to lower Accuracy by 1.' href='https://dex.showdowndav.dynv6.net/moves/tideblaster'>Tide Blaster</a>
+  -> <a href="https://dex.showdowndav.dynv6.net/moves/tideblaster" title="100% chance to raise the user's Special Attack and to lower Accuracy by 1.">Tide Blaster</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/donphan'>Donphan</a>
-- **ability_1** added : <a title='This Pokemon's moves of 60 power or less have their priority increased by 1, including Struggle.' href='https://dex.showdowndav.dynv6.net/abilities/swifttactics'>Swift Tactics</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/donphan">donphan</a>
+- **ability_1** added : <a href="https://dex.showdowndav.dynv6.net/abilities/swifttactics" title="This Pokemon's moves of 60 power or less have their priority increased by 1, including Struggle.">Swift Tactics</a>
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/porygon2'>Porygon2</a>
-- **ability_0** changed : <a title='On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.' href='https://dex.showdowndav.dynv6.net/abilities/trace'>Trace</a> → <a title='This Pokemon's stat is raised by 1 stage accordingly to the foe's best if it attacks and KOes.' href='https://dex.showdowndav.dynv6.net/abilities/datasteal'>Data Steal</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/porygon2">porygon2</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/trace" title="On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.">Trace</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/datasteal" title="This Pokemon's stat is raised by 1 stage accordingly to the foe's best if it attacks and KOes.">Data Steal</a>
 - **hidden_ability** changed : `Analytic` → `Upload`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/lickilicky'>Lickilicky</a>
-- **ability_0** changed : <a title='This Pokemon cannot be confused. Immune to Intimidate.' href='https://dex.showdowndav.dynv6.net/abilities/owntempo'>Own Tempo</a> → <a title='When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.' href='https://dex.showdowndav.dynv6.net/abilities/umami'>Umami</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/lickilicky">lickilicky</a>
+- **ability_0** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/owntempo" title="This Pokemon cannot be confused. Immune to Intimidate.">Own Tempo</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/umami" title="When eats berry: +1 Atk, Sp. Atk, Spe, Def, Sp. Def.">Umami</a>
 - **hidden_ability** changed : `Cloud Nine` → `Voracity`
 
-### <a href='https://dex.showdowndav.dynv6.net/pokemon/tangrowth'>Tangrowth</a>
-- **ability_1** changed : <a title='If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.' href='https://dex.showdowndav.dynv6.net/abilities/leafguard'>Leaf Guard</a> → <a title='A Pokemon making contact with this Pokemon will be trapped for 2 turns.' href='https://dex.showdowndav.dynv6.net/abilities/vinetrap'>Vine Trap</a>
+### <a href="https://dex.showdowndav.dynv6.net/pokemon/tangrowth">tangrowth</a>
+- **ability_1** changed : <a href="https://dex.showdowndav.dynv6.net/abilities/leafguard" title="If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.">Leaf Guard</a> → <a href="https://dex.showdowndav.dynv6.net/abilities/vinetrap" title="A Pokemon making contact with this Pokemon will be trapped for 2 turns.">Vine Trap</a>
