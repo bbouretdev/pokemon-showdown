@@ -1453,6 +1453,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			tailslap: ["9M", "7M", "5M"],
 			galeassault: ["9M", "7M", "5M"],
 			aerodash: ["9M", "7M", "5M"],
+			scorchingsands: ["9M", "7M", "5M"],
+			solarwind: ["9M", "7M", "5M"],
+			icywind: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 3, level: 30, abilities: ["keeneye"], moves: ["refresh", "wingattack", "steelwing", "featherdance"]},
@@ -1533,6 +1536,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			focusblast: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			flyingpress: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			aerodash: ["9M", "7M", "5M"],
+			scorchingsands: ["9M", "7M", "5M"],
+			solarwind: ["9M", "7M", "5M"],
+			icywind: ["9M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 5, level: 61, gender: "M", nature: "Naughty", ivs: {hp: 30, atk: 30, def: 30, spa: 30, spd: 30, spe: 30}, abilities: ["keeneye"], moves: ["whirlwind", "wingattack", "skyattack", "mirrormove"], pokeball: "cherishball"},

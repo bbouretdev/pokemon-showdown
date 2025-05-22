@@ -22517,7 +22517,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			this.add('-start', target, 'typechange', 'Rock');
 		},
-		secondary: null,
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
 		target: "normal",
 		type: "Rock",
 		zMove: {boost: {spa: 1}},

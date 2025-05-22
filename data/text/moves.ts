@@ -7651,8 +7651,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	stonegaze: {
 		name: "Stone Gaze",
-		desc: "Causes the target to become a Rock type. Fails if the target is an Arceus or a Silvally, if the target is already purely Rock type, or if the target is Terastallized.",
-		shortDesc: "Changes the target's type to Rock.",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage. Causes the target to become a Rock type. Fails if the target is an Arceus or a Silvally, if the target is already purely Rock type, or if the target is Terastallized.",
+		shortDesc: "100% chance lower adjacent Pkmn Speed by 1. Changes the target's type to Rock.",
 	},
 	burrowstrike: {
 		name: "Burrow Strike",
