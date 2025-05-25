@@ -16226,6 +16226,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			venoshock: ["9M", "8M", "7M", "6M", "5M"],
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M", "4E", "3E"],
 			zapcannon: ["9M", "7V"],
+			barrier: ["9M"],
 		},
 		encounters: [
 			{generation: 1, level: 30},
@@ -16311,6 +16312,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			venoshock: ["9M", "8M", "7M", "6M", "5M"],
 			willowisp: ["9M", "8M", "8V", "7M", "6M", "5M", "4M"],
 			zapcannon: ["9M", "7V"],
+			barrier: ["9M"],
 		},
 		encounters: [
 			{generation: 2, level: 16},

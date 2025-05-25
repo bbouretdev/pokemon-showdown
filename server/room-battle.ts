@@ -20,6 +20,9 @@ import type {RoomSettings} from './rooms';
 import type {BestOfGame} from './room-battle-bestof';
 import type {GameTimerSettings} from '../sim/dex-formats';
 
+import fs from 'fs/promises';
+import path from 'path';
+
 type ChannelIndex = 0 | 1 | 2 | 3 | 4;
 export type PlayerIndex = 1 | 2 | 3 | 4;
 export type ChallengeType = 'rated' | 'unrated' | 'challenge' | 'tour';
@@ -836,6 +839,7 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 		if (this.room.rated && !this.options.isBestOfSubBattle) {
 			void this.updateLadder(p1score, winnerid);
 		} else if (Config.logchallenges) {
+			console.log("Config.logchallenges: " + Config.logchallenges)
 			void this.logBattle(p1score);
 		} else if (!this.options.isBestOfSubBattle) {
 			this.logData = null;
@@ -908,13 +912,33 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 		logData.format = this.room.format;
 
 		const logsubfolder = Chat.toTimestamp(date).split(' ')[0];
-		const logfolder = logsubfolder.split('-', 2).join('-');
+		// const logfolder = logsubfolder.split('-', 2).join('-');
+		// const path = require('path');
+		// const logfolder = path.join(process.cwd(), 'logs');
+		const logfolder = 'logs/battlelogs';
 		const tier = Dex.formats.get(this.room.format).id;
 		const logpath = `${logfolder}/${tier}/${logsubfolder}/`;
+		// const logpath = Config.logsdir || process.cwd();
 
-		await Monitor.logPath(logpath).mkdirp();
-		await Monitor.logPath(`${logpath}${this.room.getReplayData().id}.log.json`).write(JSON.stringify(logData));
+		// const fsPath = Monitor.logPath(logpath);
+		// console.log('→ Type de Monitor.logPath(logpath):', typeof fsPath);
+		// console.log('→ Contenu Monitor.logPath(logpath):', fsPath);
+		// console.log('→ Path résolu:', fsPath?.path);
+
+		// await Monitor.logPath(logpath).mkdirp();
+		// // console.log(`[logBattle] Path: ${logpath}${this.room.getReplayData().id}.log.json`);
+		// // console.log("Retour de logPath(logpath):" + Monitor.logPath(logpath).path);
+		// await Monitor.logPath(`${logpath}${this.room.getReplayData().id}.log.json`).write(JSON.stringify(logData));
 		// console.log(JSON.stringify(logData));
+
+		// Ton logpath (string) est déjà calculé, par exemple :
+
+		// THIS HAS BEEN EDITED USING A MANUAL WAY TO WRITE BATTLE-LOGS
+		const filename = `${this.room.getReplayData().id}.log.json`;
+		const fullPath = path.join(logpath, filename);
+		await fs.mkdir(logpath, { recursive: true });
+		await fs.writeFile(fullPath, JSON.stringify(logData, null, 2));
+		// console.log(`[logBattle] Path: ${fullPath}`);
 	}
 	override onConnect(user: User, connection: Connection | null = null) {
 		if (this.ended && this.room.parent?.game?.constructor.name === 'BestOfGame') {

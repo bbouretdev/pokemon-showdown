@@ -446,7 +446,7 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 	duskstone: {
 		name: "Dusk Stone",
 		desc: "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
-		shortDesc: "Evolves certain species of Pokemon when used.",
+		shortDesc: "Holder's use of Dusk lasts 8 turns instead of 5.",
 	},
 	earthplate: {
 		name: "Earth Plate",

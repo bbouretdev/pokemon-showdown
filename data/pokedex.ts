@@ -1357,7 +1357,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	psyduck: {
 		num: 54,
 		name: "Psyduck",
-		types: ["Water"],
+		types: ["Water", "Psychic"],
 		baseStats: {hp: 50, atk: 52, def: 48, spa: 65, spd: 50, spe: 55},
 		abilities: {0: "Neutralizer", 1: "Cloud Nine", H: "Swift Swim"},
 		heightm: 0.8,
@@ -1369,7 +1369,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	golduck: {
 		num: 55,
 		name: "Golduck",
-		types: ["Water"],
+		types: ["Water", "Psychic"],
 		baseStats: {hp: 80, atk: 82, def: 78, spa: 95, spd: 80, spe: 85},
 		abilities: {0: "Neutralizer", 1: "Cloud Nine", H: "Swift Swim"},
 		heightm: 1.7,
