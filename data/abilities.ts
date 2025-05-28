@@ -6676,7 +6676,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		condition: {
 			noCopy: true,
-			duration: 1,
+			duration: 2,
 			onStart(target) {
 				this.add('-start', target, 'ability: Wraith Tenacity');
 				target.tryTrap(true);

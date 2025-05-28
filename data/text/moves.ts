@@ -7826,4 +7826,9 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Has a 30% chance to confuse the target, 20% chance to flinch.",
 		shortDesc: "30% chance to confuse the target, 20% chance to flinch.",
 	},
+	unseenbone: {
+		name: "Unseen Bone",
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
+	},
 };

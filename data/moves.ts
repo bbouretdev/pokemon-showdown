@@ -23380,4 +23380,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dark",
 		contestType: "Cute",
 	},
+	unseenbone: {
+		num: 10052,
+		accuracy: 100,
+		basePower: 40,
+		category: "Physical",
+		name: "Unseen Bone",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Cool",
+	},
 };
