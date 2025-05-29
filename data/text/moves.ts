@@ -4223,23 +4223,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	moonlight: {
 		name: "Moonlight",
-		desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.",
+		desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land, Sunny Day or Dusk, and 1/4 of its maximum HP if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow, all rounded half down.",
 		shortDesc: "Heals the user by a weather-dependent amount.",
-		gen8: {
-			desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
-		},
-		gen7: {
-			desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
-		},
-		gen5: {
-			desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded half down.",
-		},
-		gen4: {
-			desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded down.",
-		},
-		gen2: {
-			desc: "The user restores 1/2 of its maximum HP if no weather conditions are in effect, all of its HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Rain Dance or Sandstorm, all rounded down.",
-		},
 	},
 	morningsun: {
 		name: "Morning Sun",
@@ -5576,8 +5561,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	shadowclaw: {
 		name: "Shadow Claw",
-		desc: "Has a higher chance for a critical hit.",
-		shortDesc: "High critical hit ratio.",
+		shortDesc: "High critical hit ratio. Results in a critical hit if weather is Dusk.",
 	},
 	shadowforce: {
 		name: "Shadow Force",
@@ -7723,13 +7707,13 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	mentaldrop: {
 		name: "Mental Drop",
-		desc: "Applies all set entry hazards on the opposite Pokemon's side.",
-		shortDesc: "Applies all set entry hazards on the opposite Pokemon's side.",
+		desc: "Applies all set entry hazards effects on the opposite Pokemon's side.",
+		shortDesc: "Applies all set entry hazards effects on the opposite Pokemon's side.",
 	},
 	netherward: {
 		name: "Nether Ward",
 		desc: "Sets up a hazard on the opposing side of the field, causing opponent to damage itself 1/16 when using Special moves. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
-		shortDesc: "Curses foes on switch-in. Causes 1/16 self-damage when using Special moves.",
+		shortDesc: "Curses foes on switch-in. Causes 1/8 self-damage when using Special moves.",
 
 		start: "  A weird ward lays around [TEAM]!",
 		end: "  The weird ward disappeared from around [TEAM]!",
@@ -7814,8 +7798,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	dusk: {
 		name: "Dusk",
-		desc: "For 5 turns, the weather becomes Dusk. Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally. Lasts for 8 turns if the user is holding Dusk Stone. Fails if the current weather is Dusk.",
-		shortDesc: "For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally.",
+		desc: "For 5 turns, the weather becomes Dusk. Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally. Substitutes and Protect are bypassed. Lasts for 8 turns if the user is holding Dusk Stone. Fails if the current weather is Dusk.",
+		shortDesc: "For 5 turns, Ghost hits Normal. Ghost and Dark moves secondary chances are doubled. Ghost and Dark resisted moves hit normally. Substitutes and Protect are bypassed.",
 	},
 	mournfulhooting: {
 		name: "Mournful Hooting",
@@ -7826,5 +7810,10 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		name: "Unseen Bone",
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
+	},
+	royalgambit: {
+		name: "Royal Gambit",
+		desc: "Lowers the user's Attack by 2 stages, 30% chance to flinch.",
+		shortDesc: "Lowers the user's Atk by 2, 30% chance to flinch.",
 	},
 };

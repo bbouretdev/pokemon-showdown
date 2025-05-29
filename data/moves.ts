@@ -12550,6 +12550,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			switch (pokemon.effectiveWeather()) {
 			case 'sunnyday':
 			case 'desolateland':
+			case 'dusk':
 				factor = 0.667;
 				break;
 			case 'raindance':
@@ -16487,7 +16488,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
 		critRatio: 2,
-		secondary: null,
+		onModifyMove(move, pokemon, target) {
+			if (target?.effectiveWeather() === 'dusk') move.willCrit = true;
+		},
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
 		target: "normal",
 		type: "Ghost",
 		contestType: "Cool",
@@ -16534,7 +16541,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon, target) {
 			if (target?.effectiveWeather() === 'dusk') move.willCrit = true;
 		},
-		secondary: null,
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
 		target: "normal",
 		type: "Ghost",
 		contestType: "Clever",
@@ -22971,7 +22981,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (move.category === 'Special' && source.volatiles['netherward'] && !source.isAlly(target)) {
 					this.add('-activate', source, 'move: Nether Ward');
 					this.debug('Nether Ward damage');
-					this.damage(source.baseMaxhp / 16, source);
+					this.damage(source.baseMaxhp / 8, source);
 				}
 			},
 		},
@@ -23394,5 +23404,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ground",
 		contestType: "Cool",
+	},
+	royalgambit: {
+		num: 10053,
+		accuracy: 95,
+		basePower: 160,
+		category: "Physical",
+		name: "Royal Gambit",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		self: {
+			boosts: {
+				atk: -2,
+			},
+		},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Water",
+		contestType: "Beautiful",
 	},
 };

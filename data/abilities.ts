@@ -7784,4 +7784,91 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10116,
 	},
+	shadowhunter: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (['dusk'].includes(attacker.effectiveWeather())) {
+				this.debug('Shadow Hunter boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (['dusk'].includes(attacker.effectiveWeather())) {
+				this.debug('Shadow Hunter boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Shadow Hunter",
+		rating: 3,
+		num: 10117,
+	},
+	duskrunner: {
+		onModifySpe(spe, pokemon) {
+			if (['dusk'].includes(pokemon.effectiveWeather())) return this.chainModify(2);
+		},
+		flags: {},
+		name: "Dusk Runner",
+		rating: 3,
+		num: 10118,
+	},
+	nightshroud: {
+		onModifyDefPriority: 5,
+		onModifyDef(atk, attacker, defender, move) {
+			if (['dusk'].includes(attacker.effectiveWeather())) {
+				this.debug('Shadow Hunter boost');
+				return this.chainModify(1.3);
+			}
+		},
+		onModifySpDPriority: 5,
+		onModifySpD(atk, attacker, defender, move) {
+			if (['dusk'].includes(attacker.effectiveWeather())) {
+				this.debug('Shadow Hunter boost');
+				return this.chainModify(1.3);
+			}
+		},
+		flags: {},
+		name: "Night Shroud",
+		rating: 3,
+		num: 10119,
+	},
+	lurker: {
+		onModifyMove(move, pokemon, target) {
+			if (target?.effectiveWeather() === 'dusk') move.willCrit = true;
+		},
+		flags: {},
+		name: "Lurker",
+		rating: 3,
+		num: 10120,
+	},
+	nightflower: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon?.effectiveWeather() === 'dusk') {
+				if (pokemon.activeTurns) {
+					this.boost({spa: 1});
+				}
+			}
+		},
+		flags: {},
+		name: "Night Flower",
+		rating: 4.5,
+		num: 10121,
+	},
+	fishmemory: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			pokemon.clearBoosts();
+			this.add('-clearboost', pokemon);
+			pokemon.clearStatus();
+			this.add('-clearboost', pokemon, '[from] ability: Fish Memory');
+		},
+		flags: {},
+		name: "Fish Memory",
+		rating: 4.5,
+		num: 10122,
+	},
 };

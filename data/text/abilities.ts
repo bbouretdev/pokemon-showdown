@@ -2855,4 +2855,33 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "The user will avoid attacks made by other Pokemon that would make it KO, single use. Summons Dusk on activation.",
 		shortDesc: "Avoids a single attack that would KO. Summons Dusk on activation.",
 	},
+	duskrunner: {
+		name: "Dusk Runner",
+		desc: "If Dusk is active, this Pokemon's Speed is doubled.",
+		shortDesc: "If Dusk is active, this Pokemon's Speed is doubled.",
+	},
+	shadowhunter: {
+		name: "Shadow Hunter",
+		desc: "If Dusk is active, this Pokemon's Attack and Special Attack are multiplied by 1.5.",
+		shortDesc: "If Dusk is active, this Pokemon's Atk and Sp. Atk are 1.5x;",
+	},
+	nightshroud: {
+		name: "Night Shroud",
+		desc: "If Dusk is active, this Pokemon's Defense and Special Defense are multiplied by 1.3.",
+		shortDesc: "If Dusk is active, this Pokemon's Def and Sp. Def are 1.3x;",
+	},
+	lurker: {
+		name: "Lurker",
+		desc: "If Dusk is active, this Pokemon's attacks result in a critical hit.",
+		shortDesc: "If Dusk is active, this Pokemon's attacks are critical.",
+	},
+	nightflower: {
+		name: "Night Flower",
+		desc: "If Dusk is active, this Pokemon's Special Attack is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "If Dusk is active, this Pokemon's Special Atk is raised 1 stage at the end of each full turn on the field.",
+	},
+	fishmemory: {
+		name: "Fish Memory",
+		shortDesc: "Resets all of this Pokemon's stat stages to 0 each turn and status cleared.",
+	},
 };

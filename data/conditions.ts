@@ -783,6 +783,8 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 					}
 				}
 				if (move.self?.chance) move.self.chance *= 2;
+				move.flags['bypasssub'] = 1;
+				delete move.flags['protect'];
 			}
 		},
 		onFieldStart(field, source, effect) {
