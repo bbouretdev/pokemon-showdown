@@ -6679,8 +6679,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			duration: 2,
 			onStart(target) {
 				this.add('-start', target, 'ability: Wraith Tenacity');
-				target.tryTrap(true);
 				this.boost({atk: 12}, target, target);
+			},
+			onTrapPokemon(target) {
+				target.tryTrap();
 			},
 			onEnd(target) {
 				this.add('-end', target, 'ability: Wraith Tenacity', '[silent]');
