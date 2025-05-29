@@ -12191,6 +12191,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
 			duration: 5,
+			onStart(target, source, move) {
+				target.addVolatile('mindreader');
+			},
 			onSourceAccuracy(accuracy, target, source, move) {
 				if (move && (source === this.effectState.target || target === this.effectState.target)) {
 					return true;
