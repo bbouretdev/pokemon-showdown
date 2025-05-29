@@ -1881,7 +1881,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	spiritomb: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	gible: {
 	tier: "Illegal",

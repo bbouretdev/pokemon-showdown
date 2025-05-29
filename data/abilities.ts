@@ -6630,7 +6630,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.status === 'slp') {
 				this.debug('Deep Sleep neutralize');
-				return this.chainModify(0.5);
+				return this.chainModify(0.75);
 			}
 		},
 		flags: {breakable: 1},
@@ -7766,5 +7766,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Regenerating Shadows",
 		rating: 2,
 		num: 10115,
+	},
+	lastlight: {
+		onDamagePriority: -30,
+		onDamage(damage, target, source, effect) {
+			if (!target.lastlight) {
+				if (damage >= target.hp && effect && effect.effectType === 'Move') {
+					this.add('-ability', target, 'Last Light');
+					target.lastlight = true;
+					this.field.setWeather('dusk');
+					return null;
+				}
+			}
+		},
+		flags: {breakable: 1},
+		name: "Last Light",
+		rating: 3,
+		num: 10116,
 	},
 };

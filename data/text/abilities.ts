@@ -2554,7 +2554,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	deepsleep: {
 		name: "Deep Sleep",
-		shortDesc: "This Pokemon receives 1/2 damage while being asleep.",
+		shortDesc: "This Pokemon receives 3/4 damage while being asleep.",
 	},
 	ownmedicine: {
 		name: "Own Medicine",
@@ -2849,5 +2849,10 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Regenerating Shadows",
 		desc: "If Dusk is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "If Dusk is active, this Pokemon heals 1/16 of its max HP each turn.",
+	},
+	lastlight: {
+		name: "Last Light",
+		desc: "The user will avoid attacks made by other Pokemon that would make it KO, single use. Summons Dusk on activation.",
+		shortDesc: "Avoids a single attack that would KO. Summons Dusk on activation.",
 	},
 };

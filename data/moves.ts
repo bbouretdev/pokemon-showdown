@@ -10672,26 +10672,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
-		onTryHit(target, source) {
-			if (source.volatiles['lockon']) return false;
-		},
-		onHit(target, source) {
-			source.addVolatile('lockon');
-			this.add('-activate', source, 'move: Lock-On');
-		},
+		volatileStatus: 'lockon',
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
-			duration: 5,
-			onSourceInvulnerabilityPriority: 1,
-			onSourceInvulnerability(target, source, move) {
-				if (move && source === this.effectState.target && target === this.effectState.source) return 0;
+			onStart(target, source, move) {
+				this.add('-start', target, 'move: Lock-On');
 			},
 			onSourceAccuracy(accuracy, target, source, move) {
-				if (move && source === this.effectState.target && target === this.effectState.source) return true;
+				if (move && (source === this.effectState.target || target === this.effectState.target)) {
+					return true;
+				}
+				return accuracy;
 			},
 		},
 		secondary: null,
-		target: "normal",
+		target: "self",
 		type: "Normal",
 		zMove: {boost: {spe: 1}},
 		contestType: "Clever",

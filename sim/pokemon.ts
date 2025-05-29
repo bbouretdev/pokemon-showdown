@@ -123,6 +123,7 @@ export class Pokemon {
 	illusion: Pokemon | null;
 	transformed: boolean;
 	woodydisguised: boolean;
+	lastlight: boolean;
 	knockoffed: boolean;
 
 	maxhp: number;
@@ -419,6 +420,7 @@ export class Pokemon {
 		this.illusion = null;
 		this.transformed = false;
 		this.woodydisguised = true;
+		this.lastlight = false;
 		this.knockoffed = false;
 
 		this.fainted = false;

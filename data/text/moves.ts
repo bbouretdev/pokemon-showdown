@@ -3608,10 +3608,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	lockon: {
 		name: "Lock-On",
-		desc: "For 5 turns, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
-		shortDesc: "User's 5 next turns moves will not miss the target.",
-
-		start: "  [SOURCE] took aim at [POKEMON]!",
+		desc: "Every move used by this Pokemon will always hit.",
+		shortDesc: "Every move used by this Pokemon will always hit.",
 	},
 	lovelykiss: {
 		name: "Lovely Kiss",
@@ -4099,10 +4097,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	mindreader: {
 		name: "Mind Reader",
-		desc: "For 5 turns, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. The effect ends if either the user or the target leaves the field. Fails if this effect is active for the user.",
-		shortDesc: "User's 5 next turns moves will not miss the target.",
-
-		start: "#lockon",
+		desc: "Every move used by this Pokemon will always hit.",
+		shortDesc: "Every move used by this Pokemon will always hit.",
 	},
 	minimize: {
 		name: "Minimize",
