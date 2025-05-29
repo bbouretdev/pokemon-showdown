@@ -10676,8 +10676,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (source.volatiles['lockon']) return false;
 		},
 		onHit(target, source) {
-			source.addVolatile('lockon', target);
-			this.add('-activate', source, 'move: Lock-On', '[of] ' + target);
+			source.addVolatile('lockon');
+			this.add('-activate', source, 'move: Lock-On');
 		},
 		condition: {
 			noCopy: true, // doesn't get copied by Baton Pass
@@ -12191,8 +12191,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			if (source.volatiles['lockon']) return false;
 		},
 		onHit(target, source) {
-			source.addVolatile('lockon', target);
-			this.add('-activate', source, 'move: Mind Reader', '[of] ' + target);
+			source.addVolatile('lockon');
+			this.add('-activate', source, 'move: Mind Reader');
 		},
 		secondary: null,
 		target: "normal",
@@ -23369,7 +23369,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondaries: [
 			{
-				chance: 30,
+				chance: 20,
 				status: 'confusion',
 			}, {
 				chance: 20,
@@ -23388,7 +23388,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Unseen Bone",
 		pp: 30,
 		priority: 1,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, bypasssub: 1},
 		secondary: null,
 		target: "normal",
 		type: "Ground",

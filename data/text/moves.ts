@@ -7823,8 +7823,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	mournfulhooting: {
 		name: "Mournful Hooting",
-		desc: "Has a 30% chance to confuse the target, 20% chance to flinch.",
-		shortDesc: "30% chance to confuse the target, 20% chance to flinch.",
+		desc: "Has a 20% chance to confuse the target, 20% chance to flinch.",
+		shortDesc: "20% chance to confuse the target, 20% chance to flinch.",
 	},
 	unseenbone: {
 		name: "Unseen Bone",
