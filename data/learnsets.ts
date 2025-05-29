@@ -15222,6 +15222,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			watergun: ["9M", "7V"],
 			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			hiddenbone: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		encounters: [
 			{generation: 1, level: 16},
@@ -15329,6 +15330,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uproar: ["9M", "8M", "7T", "6T", "5T", "4T"],
 			watergun: ["9M", "7V"],
 			erode: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
+			hiddenbone: ["9M", "9E", "7E", "7V", "6E", "5E", "4T", "4E", "3E", "3S1"],
 		},
 		eventData: [
 			{generation: 3, level: 44, moves: ["sing", "earthquake", "swordsdance", "rockslide"]},
