@@ -7333,7 +7333,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (move.ignoreImmunity !== true) {
 				move.ignoreImmunity['Psychic'] = true;
 			}
-			if (move.flags['futuremove']) move.duration = 2;
 		},
 		onBasePower(relayVar, source, target, move) {
 			if (move.flags['futuremove']) return this.chainModify(1.5);

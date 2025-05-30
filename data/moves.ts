@@ -6563,14 +6563,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Future Sight",
 		pp: 10,
 		priority: 0,
-		// duration: 3,
 		flags: {allyanim: 1, metronome: 1, futuremove: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
 			let move: Move | ActiveMove | null = this.dex.moves.get('futuresight');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
 			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
-				duration: move.duration,
+				duration: duration,
 				move: 'futuresight',
 				source: source,
 				moveData: {
