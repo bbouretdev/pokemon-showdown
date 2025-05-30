@@ -6585,16 +6585,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					ignoreImmunity: move.ignoreImmunity,
 					effectType: move.effectType,
 					type: move.type,
-					// id: 'futuresight',
-					// name: "Future Sight",
-					// accuracy: 100,
-					// basePower: 120,
-					// category: "Special",
-					// priority: 0,
-					// flags: {allyanim: 1, metronome: 1, futuremove: 1},
-					// ignoreImmunity: false,
-					// effectType: 'Move',
-					// type: 'Psychic',
 				},
 			});
 			this.add('-start', source, 'move: Future Sight');
@@ -23439,5 +23429,47 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Beautiful",
+	},
+	sundance: {
+		num: 10054,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Sun Dance",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		ignoreImmunity: true,
+		// weather: 'sunnyday',
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('sundance');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'sundance',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: move.flags,
+					ignoreImmunity: move.ignoreImmunity,
+					effectType: move.effectType,
+					type: move.type,
+					weather: 'sunnyday',
+				},
+			});
+			this.add('-start', source, 'move: Sun Dance');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fire",
+		contestType: "Clever",
 	},
 };

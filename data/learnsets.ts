@@ -26025,6 +26025,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			wish: ["9M", "8L40", "7L28", "6L28", "5L28", "4L28", "3L30"],
 			zenheadbutt: ["9M", "8M", "7T", "7E", "6T", "6E", "5T", "5E", "4T", "4E"],
+			sundance: ["9M", "4T"],
 		},
 		eventData: [
 			{generation: 3, level: 22, moves: ["batonpass", "futuresight", "nightshade", "aerialace"]},
@@ -26123,6 +26124,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			uturn: ["9M", "8M", "7M", "6M", "5M", "4M"],
 			wish: ["9M", "8L48", "7L29", "6L29", "5L30", "4L30", "3L35"],
 			zenheadbutt: ["9M", "8M", "7T", "6T", "5T", "4T"],
+			sundance: ["9M", "4T"],
 		},
 		encounters: [
 			{generation: 2, level: 15},
