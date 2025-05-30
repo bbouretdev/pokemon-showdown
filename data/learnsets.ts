@@ -21190,6 +21190,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "7T", "6T", "4M"],
 			weatherball: ["9M", "8M"],
 			workup: ["9M", "8M", "7M", "5M"],
+			frostbite: ["9M", "8M", "7M", "5M"],
 		},
 		eventData: [
 			{generation: 5, level: 10, gender: "M", isHidden: true, moves: ["tailwhip", "tackle", "helpinghand", "sandattack"]},

@@ -7334,6 +7334,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				move.ignoreImmunity['Psychic'] = true;
 			}
 		},
+		onBasePower(relayVar, source, target, move) {
+			if (move.flags['futuremove']) return this.chainModify(1.5);
+		},
 		flags: {},
 		name: "Seer",
 		rating: 3,

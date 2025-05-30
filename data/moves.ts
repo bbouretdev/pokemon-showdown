@@ -6567,21 +6567,34 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('futuresight');
+			console.log(move.id);
+			console.log(move.basePower);
 			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
 				duration: 3,
 				move: 'futuresight',
 				source: source,
 				moveData: {
-					id: 'futuresight',
-					name: "Future Sight",
-					accuracy: 100,
-					basePower: 120,
-					category: "Special",
-					priority: 0,
-					flags: {allyanim: 1, metronome: 1, futuremove: 1},
-					ignoreImmunity: false,
-					effectType: 'Move',
-					type: 'Psychic',
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: move.flags,
+					ignoreImmunity: move.ignoreImmunity,
+					effectType: move.effectType,
+					type: move.type,
+					// id: 'futuresight',
+					// name: "Future Sight",
+					// accuracy: 100,
+					// basePower: 120,
+					// category: "Special",
+					// priority: 0,
+					// flags: {allyanim: 1, metronome: 1, futuremove: 1},
+					// ignoreImmunity: false,
+					// effectType: 'Move',
+					// type: 'Psychic',
 				},
 			});
 			this.add('-start', source, 'move: Future Sight');
