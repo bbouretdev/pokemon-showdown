@@ -7818,10 +7818,26 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	sundance: {
 		name: "Sun Dance",
-		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position.",
-		shortDesc: "Hits two turns after being used.",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Sunny Day.",
+		shortDesc: "Hits two turns after being used. Weather becomes Sunny Day.",
 
 		start: "  [POKEMON] foresaw an attack!",
-		activate: "  [TARGET] took the Future Sight attack!",
+		activate: "  [TARGET] took the Sun Dance attack!",
+	},
+	stormdance: {
+		name: "Storm Dance",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Rain Dance.",
+		shortDesc: "Hits two turns after being used. Weather becomes Rain Dance.",
+
+		start: "  [POKEMON] foresaw an attack!",
+		activate: "  [TARGET] took the Storm Dance attack!",
+	},
+	shadowdance: {
+		name: "Shadow Dance",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Dusk.",
+		shortDesc: "Hits two turns after being used. Weather becomes Dusk.",
+
+		start: "  [POKEMON] foresaw an attack!",
+		activate: "  [TARGET] took the Shadow Dance attack!",
 	},
 };

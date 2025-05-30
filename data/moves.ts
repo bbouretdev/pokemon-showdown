@@ -23471,4 +23471,86 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Clever",
 	},
+	stormdance: {
+		num: 10055,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Storm Dance",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('stormdance');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'stormdance',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: move.flags,
+					ignoreImmunity: move.ignoreImmunity,
+					effectType: move.effectType,
+					type: move.type,
+					weather: 'raindance',
+				},
+			});
+			this.add('-start', source, 'move: Storm Dance');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		contestType: "Clever",
+	},
+	shadowdance: {
+		num: 10056,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Shadow Dance",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('shadowdance');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'shadowdance',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: move.flags,
+					ignoreImmunity: move.ignoreImmunity,
+					effectType: move.effectType,
+					type: move.type,
+					weather: 'dusk',
+				},
+			});
+			this.add('-start', source, 'move: Shadow Dance');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Clever",
+	},
 };
