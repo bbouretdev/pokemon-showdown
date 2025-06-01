@@ -7874,4 +7874,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: 10122,
 	},
+	celerity: {
+		onChargeMove(pokemon, target, move) {
+			this.debug('celerity - remove charge turn for ' + move.id);
+			this.attrLastMove('[still]');
+			this.addMove('-anim', pokemon, move.name, target);
+			return false; // skip charge turn
+		},
+		flags: {},
+		name: "Celerity",
+		rating: 4.5,
+		num: 10123,
+	},
+	tireless: {
+		onModifyMove(move, pokemon, target) {
+			if(move.flags['recharge']) {
+				delete move.flags['recharge'];
+			}
+		},
+		flags: {},
+		name: "Tireless",
+		rating: 4.5,
+		num: 10124,
+	},
 };

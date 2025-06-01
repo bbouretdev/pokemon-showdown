@@ -2884,4 +2884,12 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Fish Memory",
 		shortDesc: "Resets all of this Pokemon's stat stages to 0 each turn and status cleared.",
 	},
+	celerity: {
+		name: "Celerity",
+		shortDesc: "This Pokemon's two-turn moves complete in one turn (except Sky Drop).",
+	},
+	tireless: {
+		name: "Tireless",
+		shortDesc: "This Pokemon's recharge moves do not have recharge turn.",
+	},
 };
