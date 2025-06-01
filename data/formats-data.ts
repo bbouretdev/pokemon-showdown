@@ -765,28 +765,28 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "LC",
 	},
 	eeveev: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveej: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveef: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveee: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveeu: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveel: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveeg: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eevees: {
-		tier: "LC",
+		tier: "Illegal",
 	},
 	eeveestarter: {
 		tier: "Illegal",
