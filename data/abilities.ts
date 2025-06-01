@@ -7897,4 +7897,59 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: 10124,
 	},
+	dancetherapy: {
+		onModifyMove(move, pokemon, target) {
+			if(move.flags['dance']) {
+				this.add('-activate', pokemon, 'ability: Dance Therapy');
+				pokemon.cureStatus();
+			}
+		},
+		flags: {},
+		name: "Dance Therapy",
+		rating: 4.5,
+		num: 10125,
+	},
+	sunflower: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon?.effectiveWeather() === 'sunnyday') {
+				if (pokemon.activeTurns) {
+					this.boost({spa: 1});
+				}
+			}
+		},
+		flags: {},
+		name: "Sun Flower",
+		rating: 4.5,
+		num: 10126,
+	},
+	phototherapy: {
+		onResidualOrder: 5,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			if (pokemon.status && ['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
+				this.debug('phototherapy');
+				this.add('-activate', pokemon, 'ability: Photo Therapy');
+				pokemon.cureStatus();
+			}
+		},
+		flags: {},
+		name: "Photo Therapy",
+		rating: 1.5,
+		num: 10127,
+	},
+	artillery: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['bullet']) {
+				this.debug('Artillery boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Artillery",
+		rating: 3,
+		num: 10128,
+	},
 };

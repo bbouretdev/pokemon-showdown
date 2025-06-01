@@ -2892,4 +2892,23 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Tireless",
 		shortDesc: "This Pokemon's recharge moves do not have recharge turn.",
 	},
+	dancetherapy: {
+		name: "Dance Therapy",
+		shortDesc: "This Pokemon has its non-volatile status condition cured when using a dance move.",
+	},
+	phototherapy: {
+		name: "Photo Therapy",
+		desc: "This Pokemon has its non-volatile status condition cured at the end of each turn if Sunny Day is active. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "This Pokemon has its status cured at the end of each turn if Sunny Day is active.",
+	},
+	sunflower: {
+		name: "Sun Flower",
+		desc: "If Sunny Day is active, this Pokemon's Special Attack is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "If Sunny Day is active, this Pokemon's Special Atk is raised 1 stage at the end of each full turn on the field.",
+	},
+	artillery: {
+		name: "Artillery",
+		desc: "This Pokemon's bullet-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's bullet-based attacks have 1.5x power. Sucker Punch is not boosted.",
+	},
 };

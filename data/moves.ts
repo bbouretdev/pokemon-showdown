@@ -15070,7 +15070,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Rain Dance",
 		pp: 5,
 		priority: 0,
-		flags: {metronome: 1},
+		flags: {metronome: 1, dance: 1},
 		weather: 'RainDance',
 		secondary: null,
 		target: "all",
@@ -23438,7 +23438,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Sun Dance",
 		pp: 10,
 		priority: 0,
-		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		flags: {allyanim: 1, metronome: 1, futuremove: 1, dance: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
@@ -23479,7 +23479,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Storm Dance",
 		pp: 10,
 		priority: 0,
-		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		flags: {allyanim: 1, metronome: 1, futuremove: 1, dance: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
@@ -23520,7 +23520,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Shadow Dance",
 		pp: 10,
 		priority: 0,
-		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		flags: {allyanim: 1, metronome: 1, futuremove: 1, dance: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;

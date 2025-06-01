@@ -764,6 +764,30 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	eevee: {
 		tier: "LC",
 	},
+	eeveev: {
+		tier: "LC",
+	},
+	eeveej: {
+		tier: "LC",
+	},
+	eeveef: {
+		tier: "LC",
+	},
+	eeveee: {
+		tier: "LC",
+	},
+	eeveeu: {
+		tier: "LC",
+	},
+	eeveel: {
+		tier: "LC",
+	},
+	eeveeg: {
+		tier: "LC",
+	},
+	eevees: {
+		tier: "LC",
+	},
 	eeveestarter: {
 		tier: "Illegal",
 	},
@@ -1023,16 +1047,16 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	murkrow: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	honchkrow: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	misdreavus: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	mismagius: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	unown: {
 	tier: "Illegal",
@@ -1149,10 +1173,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "OU",
 	},
 	mantyke: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	mantine: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	skarmory: {
 	tier: "Illegal",

@@ -6714,6 +6714,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			venoshock: ["9M", "8M", "7M", "6M", "5M"],
 			weatherball: ["9M"],
 			worryseed: ["9M", "7T", "6T", "5T", "4T"],
+			sundance: ["9M"],
+			stormdance: ["9M"],
+			shadowdance: ["9M"],
+			raindance: ["9M"],
+			victorydance: ["9M"],
 		},
 	},
 	paras: {
