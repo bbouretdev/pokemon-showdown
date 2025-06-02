@@ -2909,6 +2909,6 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	artillery: {
 		name: "Artillery",
 		desc: "This Pokemon's bullet-based attacks have their power multiplied by 1.5.",
-		shortDesc: "This Pokemon's bullet-based attacks have 1.5x power. Sucker Punch is not boosted.",
+		shortDesc: "This Pokemon's bullet-based attacks have 1.5x power.",
 	},
 };
