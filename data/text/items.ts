@@ -2437,4 +2437,8 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 		name: "Paralyzing Orb",
 		shortDesc: "At the end of every turn, this item attempts to paralyze the holder.",
 	},
+	jetite: {
+		name: "Jetite",
+		shortDesc: "If holder's species can evolve, Speed is 1.5x.",
+	},
 };

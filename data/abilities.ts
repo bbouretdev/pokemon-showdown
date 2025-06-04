@@ -3890,6 +3890,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 24,
 	},
 	runaway: {
+		onDamagingHit(damage, target, source, effect) {
+			this.boost({spe: 1});
+		},
 		flags: {},
 		name: "Run Away",
 		rating: 0,
@@ -7951,5 +7954,55 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Artillery",
 		rating: 3,
 		num: 10128,
+	},
+	moltenarmor: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				move.accuracy = true;
+				this.boost({def: -1, spd: 2}, target, target);
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target !== source && move.type === 'Fire') {
+				this.debug('Molten Armor neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		flags: {},
+		name: "Molten Armor",
+		rating: 1,
+		num: 10128,
+	},
+	burningdespair: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				source.trySetStatus('brn');
+			}
+		},
+		flags: {},
+		name: "Burning Despair",
+		rating: 2,
+		num: 10129,
+	},
+	tinnitus: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['sound']) {
+				target?.addVolatile('tinnitus');
+			}
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Tinnitus', '[of] ' + source);
+			},
+			onResidualOrder: 12,
+			onResidual(pokemon) {
+				this.damage(pokemon.baseMaxhp / 8);
+			},
+		},
+		flags: {},
+		name: "Tinnitus",
+		rating: 2,
+		num: 10130,
 	},
 };

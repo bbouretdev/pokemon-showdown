@@ -7840,4 +7840,29 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  [POKEMON] foresaw an attack!",
 		activate: "  [TARGET] took the Shadow Dance attack!",
 	},
+	lavaland: {
+		name: "Lava Land",
+		desc: "A sea of fire appears on the target's side for 4 turns, which causes damage to non-Fire types equal to 1/8 of their maximum HP, rounded down, at the end of each turn during effect, including the last turn.",
+		shortDesc: "For 4 turns, damages non-Fire types equal to 1/8 of their maximum HP each turn.",
+
+		start: "  A sea of fire enveloped [TEAM]!",
+		end: "  The sea of fire around [TEAM] disappeared!",
+		damage: "  [POKEMON] was hurt by the sea of fire!",
+	},
+	mysticrainbow: {
+		name: "Mystic Rainbow",
+		desc: "A rainbow appears on the user's side for 4 turns, which doubles secondary effect chances and stacks with the Serene Grace Ability, except effects that cause flinching can only have their chance doubled once.",
+		shortDesc: "For 4 turns, doubles secondary effect chances.",
+
+		start: "  A swamp enveloped [TEAM]!",
+		end: "  The swamp around [TEAM] disappeared!",
+	},
+	muddyswamp: {
+		name: "Muddy Swamp",
+		desc: "A swamp appears on the target's side for 4 turns, which quarters the Speed of each Pokemon on that side.",
+		shortDesc: "For 4 turns, quarters the Speed of each Pokemon on that side.",
+
+		start: "  A rainbow appeared in the sky on [TEAM]'s side!",
+		end: "  The rainbow on [TEAM]'s side disappeared!",
+	},
 };

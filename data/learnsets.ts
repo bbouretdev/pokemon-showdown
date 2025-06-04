@@ -16265,6 +16265,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			barrier: ["9M"],
 			dusk: ["9M", "7V"],
+			disable: ["9M", "7V"],
 		},
 		encounters: [
 			{generation: 1, level: 30},
@@ -16352,6 +16353,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			zapcannon: ["9M", "7V"],
 			barrier: ["9M"],
 			dusk: ["9M", "7V"],
+			disable: ["9M", "7V"],
 		},
 		encounters: [
 			{generation: 2, level: 16},
@@ -21735,6 +21737,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			whirlpool: ["9M", "8M", "4M"],
 			wringout: ["9M", "7L50", "6L50", "5L51", "4L51"],
 			dusk: ["9M", "7V"],
+			kowtowcleave: ["9M", "7V"],
 		},
 		eventData: [
 			{generation: 5, level: 15, gender: "M", abilities: ["battlearmor"], moves: ["confuseray", "dig", "scratch", "harden"], pokeball: "cherishball"},
@@ -21852,6 +21855,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			ceaselessedge: ["9M", "9L0"],
 			dusk: ["9M", "7V"],
 			shadowclaw: ["9M", "7V"],
+			kowtowcleave: ["9M", "7V"],
 		},
 	},
 	aerodactyl: {
@@ -30772,6 +30776,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			willowisp: ["9M", "7M", "6M", "5M", "4M"],
 			yawn: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
+			lavaland: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 		},
 	},
 	magcargo: {
@@ -30861,6 +30866,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			willowisp: ["9M", "7M", "6M", "5M", "4M"],
 			yawn: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
+			lavaland: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 		},
 		eventData: [
 			{generation: 3, level: 38, moves: ["refresh", "heatwave", "earthquake", "flamethrower"]},

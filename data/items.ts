@@ -7730,4 +7730,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 10003,
 		gen: 4,
 	},
+	jetite: {
+		name: "Jetite",
+		spritenum: 130,
+		fling: {
+			basePower: 40,
+		},
+		onModifySpePriority: 2,
+		onModifySpe(spe, pokemon) {
+			if (pokemon.baseSpecies.nfe) {
+				return this.chainModify(1.5);
+			}
+		},
+		num: 10004,
+		gen: 5,
+	},
 };

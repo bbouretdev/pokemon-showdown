@@ -1499,7 +1499,7 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	runaway: {
 		name: "Run Away",
-		shortDesc: "No competitive use.",
+		shortDesc: "This Pokemon's Speed is raised by 1 stage after it is damaged by a move.",
 	},
 	sandforce: {
 		name: "Sand Force",
@@ -2910,5 +2910,20 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Artillery",
 		desc: "This Pokemon's bullet-based attacks have their power multiplied by 1.5.",
 		shortDesc: "This Pokemon's bullet-based attacks have 1.5x power.",
+	},
+	moltenarmor: {
+		name: "Molten Armor",
+		desc: "If a Fire attack hits this Pokemon, its Defense is lowered by 1 stage and its Special Attack is raised by 2 stages. Receives 3/4 damage from Fire attacks.",
+		shortDesc: "If a Fire attack hits this Pokemon, Defense is lowered by 1, SpDef is raised by 2. Damage is x0.75.",
+	},
+	burningdespair: {
+		name: "Burning Despair",
+		desc: "If this Pokemon is knocked out by a move, that move's user is burnt.",
+		shortDesc: "If this Pokemon is KOed by a move, that move's user is burnt.",
+	},
+	tinnitus: {
+		name: "Tinnitus",
+		desc: "If this Pokemon uses a Sound-move, damages target equal to 1/8 of their maximum HP each turn.",
+		shortDesc: "If this Pokemon uses a Sound-move, damages target equal to 1/8 of their maximum HP each turn.",
 	},
 };
