@@ -70,6 +70,7 @@ interface MoveFlags {
 	pivot?: 1 //
 	rush?: 1
 	missile?: 1 // Throwable object related moves
+	light?: 1 // light-emmiting moves
 }
 
 export interface HitEffect {

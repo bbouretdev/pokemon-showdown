@@ -774,6 +774,10 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 					return this.chainModify(2);
 				}
 			}
+			if (move.flags['light']) {
+				this.debug('Dusk boost');
+				return this.chainModify(1.3);
+			}
 		},
 		onModifyMovePriority: -5,
 		onModifyMove(move) {

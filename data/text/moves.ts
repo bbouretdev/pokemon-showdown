@@ -284,8 +284,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	aurorabeam: {
 		name: "Aurora Beam",
-		desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "10% chance to lower the target's Attack by 1.",
+		desc: "Has a 50% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "50% chance to lower the target's Attack by 1.",
 		gen1: {
 			desc: "Has a 33% chance to lower the target's Attack by 1 stage.",
 			shortDesc: "33% chance to lower the target's Attack by 1.",
@@ -1213,7 +1213,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	cut: {
 		name: "Cut",
-		shortDesc: "No additional effect.",
+		desc: "Has a 30% chance to lower the target's Defense by 1 stage.",
+		shortDesc: "30% chance to lower the target's Def by 1.",
 	},
 	darkestlariat: {
 		name: "Darkest Lariat",
@@ -1334,20 +1335,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	dig: {
 		name: "Dig",
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude but takes double damage from them, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Digs underground turn 1, strikes turn 2.",
-		gen4: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude, which have doubled power when used against it, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
-		},
-		gen3: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude, which have doubled power when used against it, and is also unaffected by weather.",
-		},
-		gen2: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake, Fissure, and Magnitude, the user is unaffected by weather, and Earthquake and Magnitude have doubled power when used against the user.",
-		},
-		gen1: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Fly.",
-		},
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user cures its status and avoids all attacks other than Earthquake and Magnitude but takes double damage from them, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Digs underground and cures status turn 1, strikes turn 2.",
 
 		prepare: "[POKEMON] burrowed its way under the ground!",
 	},
@@ -1399,14 +1388,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	dive: {
 		name: "Dive",
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Surf and Whirlpool but takes double damage from them, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Dives underwater turn 1, strikes turn 2.",
-		gen4: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Surf and Whirlpool, which have doubled power when used against it, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
-		},
-		gen3: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Surf and Whirlpool, which have doubled power when used against it, and is also unaffected by weather.",
-		},
+		desc: "This attack charges on the first turn, the user has 1/4 of its maximum HP restored and executes on the second. On the first turn, the user avoids all attacks other than Surf and Whirlpool but takes double damage from them, and is also unaffected by weather. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Dives underwater turn 1 and recovers 1/4 of its maximum HP, strikes turn 2.",
 
 		prepare: "[POKEMON] hid underwater!",
 	},
@@ -2112,8 +2095,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	flash: {
 		name: "Flash",
-		desc: "Lowers the target's accuracy by 1 stage.",
-		shortDesc: "Lowers the target's accuracy by 1.",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
 	},
 	flashcannon: {
 		name: "Flash Cannon",
@@ -2169,23 +2152,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	fly: {
 		name: "Fly",
-		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Flies up on first turn, then strikes the next turn.",
-		gen5: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
-		},
-		gen4: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Sky Uppercut, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
-		},
-		gen3: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Sky Uppercut, Thunder, and Twister, and Gust and Twister have doubled power when used against it.",
-		},
-		gen2: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Thunder, Twister, and Whirlwind, and Gust and Twister have doubled power when used against it.",
-		},
-		gen1: {
-			desc: "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Dig.",
-		},
+		desc: "This attack charges on the first turn and executes on the second. On the first turn, the user raises it's Speed by 1 and avoids all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister, and Gust and Twister have doubled power when used against it. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Flies up on first turn and raises it's Speed by 1, then strikes the next turn.",
 
 		prepare: "[POKEMON] flew up high!",
 	},
@@ -7864,5 +7832,50 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 
 		start: "  A rainbow appeared in the sky on [TEAM]'s side!",
 		end: "  The rainbow on [TEAM]'s side disappeared!",
+	},
+	meltdown: {
+		name: "Melt Down",
+		desc: "Fails unless the user is a Rock type. If this move is successful and the user is not Terastallized, the user's Rock type becomes typeless as long as it remains active.",
+		shortDesc: "User's Rock type becomes typeless; must be Rock.",
+
+		typeChange: "  [POKEMON] melted itself down!",
+	},
+	mentalreversal: {
+		name: "Mental Reversal",
+		desc: "Damage is calculated using the target's Special Attack stat, including stat stage changes. The user's Ability, item, and burn are used as normal.",
+		shortDesc: "Uses target's Special Attack stat in damage calculation.",
+	},
+	corrosivemud: {
+		name: "Corrosive Mud",
+		desc: "This move's type effectiveness against Steel is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Steel.",
+	},
+	phantomrebuke: {
+		name: "Phantom Rebuke",
+		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
+		shortDesc: "Usually goes first. Fails if target is not attacking.",
+		gen4: {
+			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
+		},
+	},
+	nightroot: {
+		name: "Night Root",
+		desc: "Raises the user's Defense and Special Attack by 1 stage. If the weather is Dusk, this move raises the user's Attack and Special Attack by 2 stages. If the user is holding Utility Umbrella, this move will only raise the user's Attack and Special Attack by 1 stage, even if the weather is Sunny Day or Desolate Land.",
+		shortDesc: "Raises user's Defense and Sp. Atk by 1; 2 in Dusk.",
+	},
+	sharpenmind: {
+		name: "Sharpen Mind",
+		desc: "Raises the user's Special Attack and accuracy by 1 stage.",
+		shortDesc: "Raises the user's Special Attack and accuracy by 1.",
+	},
+	echoquake: {
+		name: "Echoquake",
+		desc: "Has a 30% chance to apply Tinnitus effect on target.",
+		shortDesc: "Has a 30% chance to apply Tinnitus effect on target.",
+	},
+	eerieglow: {
+		name: "Eerie Glow",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
 	},
 };

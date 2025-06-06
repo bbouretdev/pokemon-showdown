@@ -2926,4 +2926,14 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "If this Pokemon uses a Sound-move, damages target equal to 1/8 of their maximum HP each turn.",
 		shortDesc: "If this Pokemon uses a Sound-move, damages target equal to 1/8 of their maximum HP each turn.",
 	},
+	primalroar: {
+		name: "Primal Roar",
+		desc: "Turns this Pokemon's sound moves into physical ones.",
+		shortDesc: "Turns this Pokemon's sound moves into physical ones.",
+	},
+	dazzle: {
+		name: "Dazzle",
+		desc: "This Pokemon's moves without a chance to make the target flinch gain a 30% chance to make the target flinch.",
+		shortDesc: "This Pokemon's moves without a chance to flinch gain a 30% chance to flinch.",
+	},
 };

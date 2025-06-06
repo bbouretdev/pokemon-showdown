@@ -2429,6 +2429,10 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 		name: "Protoite",
 		shortDesc: "If holder's species can evolve, its Attack and Sp. Atk are 1.5x.",
 	},
+	parcelbomb: {
+		name: "Parcel Bomb",
+		shortDesc: "If holder's item is removed by Knock Off, the attacker loses 1/2 of its maximum HP.",
+	},
 	frozenorb: {
 		name: "Frozen Orb",
 		shortDesc: "At the end of every turn, this item attempts to freeze the holder.",

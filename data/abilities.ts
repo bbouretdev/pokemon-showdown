@@ -8005,4 +8005,34 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 10130,
 	},
+	primalroar: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['sound'] && move.category === 'Special') {
+				move.category = 'Physical';
+			}
+		},
+		name: "Primal Roar",
+		rating: 2,
+		num: 10131,
+	},
+	dazzle: {
+		onModifyMovePriority: -1,
+		onModifyMove(move) {
+			if (move.flags['light']) {
+				this.debug('Adding Dazzle flinch');
+				if (!move.secondaries) move.secondaries = [];
+				for (const secondary of move.secondaries) {
+					if (secondary.volatileStatus === 'flinch') return;
+				}
+				move.secondaries.push({
+					chance: 30,
+					volatileStatus: 'flinch',
+				});
+			}
+		},
+		flags: {},
+		name: "Dazzle",
+		rating: 0.5,
+		num: 10132,
+	},
 };

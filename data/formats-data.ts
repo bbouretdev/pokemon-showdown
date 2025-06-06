@@ -1128,10 +1128,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	teddiursa: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	ursaring: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	ursaluna: {
 	tier: "Illegal",
@@ -1140,10 +1140,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	slugma: {
-	tier: "Illegal",
+	tier: "LC",
 	},
 	magcargo: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	swinub: {
 	tier: "Illegal",
@@ -1551,10 +1551,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tier: "Illegal",
 	},
 	lunatone: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	solrock: {
-	tier: "Illegal",
+	tier: "OU",
 	},
 	barboach: {
 	tier: "Illegal",
