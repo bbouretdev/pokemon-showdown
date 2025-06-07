@@ -23650,12 +23650,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Water",
 		contestType: "Beautiful",
 	},
-	meltdown: {
+	liquefy: {
 		num: 10061,
 		accuracy: 100,
 		basePower: 130,
 		category: "Special",
-		name: "Melt Down",
+		name: "Liquefy",
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, defrost: 1, metronome: 1},

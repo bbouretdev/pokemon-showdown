@@ -30976,7 +30976,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			yawn: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			lavaland: ["9M", "9L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			burningbulwark: ["9M"],
-			meltdown: ["9M"],
+			liquefy: ["9M"],
 		},
 		eventData: [
 			{generation: 3, level: 38, moves: ["refresh", "heatwave", "earthquake", "flamethrower"]},

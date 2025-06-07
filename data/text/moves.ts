@@ -7833,8 +7833,8 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		start: "  A rainbow appeared in the sky on [TEAM]'s side!",
 		end: "  The rainbow on [TEAM]'s side disappeared!",
 	},
-	meltdown: {
-		name: "Melt Down",
+	liquefy: {
+		name: "Liquefy",
 		desc: "Fails unless the user is a Rock type. If this move is successful and the user is not Terastallized, the user's Rock type becomes typeless as long as it remains active.",
 		shortDesc: "User's Rock type becomes typeless; must be Rock.",
 
