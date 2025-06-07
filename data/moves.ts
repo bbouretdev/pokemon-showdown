@@ -23566,6 +23566,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+		sideCondition: 'firepledge',
 		condition: {
 			duration: 4,
 			onSideStart(targetSide) {
