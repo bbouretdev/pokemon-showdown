@@ -23780,6 +23780,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Echoquake",
 		pp: 10,
 		priority: 0,
+		volatileStatus: 'tinnitus',
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
 		onAfterHit(target, source, move) {
 			if (this.randomChance(3, 10)) {
