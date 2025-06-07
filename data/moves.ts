@@ -23588,15 +23588,16 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
-	mysticrainbow: {
+	muddyswamp: {
 		num: 10059,
 		accuracy: 100,
 		basePower: 50,
 		category: "Special",
-		name: "Mystic Rainbow",
+		name: "Muddy Swamp",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+		sideCondition: 'grasspledge',
 		condition: {
 			duration: 4,
 			onSideStart(targetSide) {
@@ -23613,18 +23614,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: null,
 		target: "normal",
-		type: "Grass",
+		type: "Ground",
 		contestType: "Beautiful",
 	},
-	muddyswamp: {
+	mysticrainbow: {
 		num: 10060,
 		accuracy: 100,
-		basePower: 50,
-		category: "Special",
-		name: "Muddy Swamp",
+		basePower: 0,
+		category: "Status",
+		name: "Mystic Rainbow",
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+		sideCondition: 'waterpledge',
 		condition: {
 			duration: 4,
 			onSideStart(targetSide) {
@@ -23647,8 +23649,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 		},
 		secondary: null,
-		target: "normal",
-		type: "Water",
+		target: "allySide",
+		type: "Fairy",
 		contestType: "Beautiful",
 	},
 	liquefy: {
@@ -23781,7 +23783,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: {protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1},
 		onAfterHit(target, source, move) {
 			if (this.randomChance(3, 10)) {
-				source.addVolatile('tinnitus');
+				target.addVolatile('tinnitus');
+				this.add('-start', target, 'Tinnitus');
 			}
 		},
 		target: "normal",

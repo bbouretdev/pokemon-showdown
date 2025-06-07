@@ -26621,6 +26621,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["9M", "7L5", "7E", "6L5", "6E", "5L5", "5E"],
 			whirlpool: ["9M", "8M", "4M"],
 			workup: ["9M", "8M", "7M", "5M"],
+			mysticrainbow: ["9M", "8M", "7M", "5M"],
 		},
 	},
 	marill: {
@@ -26733,6 +26734,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["9M", "7L5", "7E", "6L5", "6E", "5L5", "5E"],
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			workup: ["9M", "8M", "7M", "5M"],
+			mysticrainbow: ["9M", "8M", "7M", "5M"],
 		},
 	},
 	azumarill: {
@@ -26836,6 +26838,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watersport: ["9M", "7L1", "6L1", "5L1"],
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			workup: ["9M", "8M", "7M", "5M"],
+			mysticrainbow: ["9M", "8M", "7M", "5M"],
 		},
 		encounters: [
 			{generation: 5, level: 5},
@@ -27900,6 +27903,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "7T", "6T", "4M", "3M"],
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			yawn: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
+			muddyswamp: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
 		},
 		encounters: [
 			{generation: 2, level: 4},
@@ -28072,6 +28076,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "7T", "6T", "4M", "3M"],
 			whirlpool: ["9M", "8M", "7V", "4M"],
 			yawn: ["9M", "9L23", "8L23", "7L31", "6L31", "5L31", "4L31", "3L35"],
+			muddyswamp: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
 		},
 		encounters: [
 			{generation: 2, level: 15},
@@ -34507,6 +34512,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			wideguard: ["9M", "9E", "8E", "7E", "6E", "5E"],
 			workup: ["9M", "8M", "7M"],
 			yawn: ["9M", "9E", "8E", "7E", "6E", "5E", "4E"],
+			muddyswamp: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
 		},
 		eventData: [
 			{generation: 3, level: 10, gender: "M", moves: ["tackle", "growl", "mudslap", "watergun"], pokeball: "pokeball"},
@@ -34605,6 +34611,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			waterpulse: ["9M", "9L20", "8L20", "7T", "6T", "4M", "3M"],
 			whirlpool: ["9M", "8M", "4M"],
 			workup: ["9M", "8M", "7M"],
+			muddyswamp: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
 		},
 	},
 	swampert: {
@@ -34719,6 +34726,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			weatherball: ["9M"],
 			whirlpool: ["9M", "8M", "4M"],
 			workup: ["9M", "8M", "7M"],
+			muddyswamp: ["9M", "9L21", "8L21", "7L29", "6L29", "5L29", "4L29", "3L31"],
 		},
 		eventData: [
 			{generation: 5, level: 50, shiny: 1, moves: ["earthquake", "icebeam", "hydropump", "hammerarm"], pokeball: "cherishball"},
