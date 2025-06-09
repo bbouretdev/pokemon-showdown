@@ -7786,7 +7786,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	sundance: {
 		name: "Sun Dance",
-		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Sunny Day.",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. The weather becomes Sunny Day.",
 		shortDesc: "Hits two turns after being used. Weather becomes Sunny Day.",
 
 		start: "  [POKEMON] foresaw an attack!",
@@ -7794,7 +7794,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	stormdance: {
 		name: "Storm Dance",
-		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Rain Dance.",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. The weather becomes Rain Dance.",
 		shortDesc: "Hits two turns after being used. Weather becomes Rain Dance.",
 
 		start: "  [POKEMON] foresaw an attack!",
@@ -7802,7 +7802,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	shadowdance: {
 		name: "Shadow Dance",
-		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. the weather becomes Dusk.",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. The weather becomes Dusk.",
 		shortDesc: "Hits two turns after being used. Weather becomes Dusk.",
 
 		start: "  [POKEMON] foresaw an attack!",
@@ -7877,5 +7877,29 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		name: "Eerie Glow",
 		desc: "Has a 30% chance to make the target flinch.",
 		shortDesc: "30% chance to make the target flinch.",
+	},
+	haildance: {
+		name: "Hail Dance",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. The weather becomes Hail.",
+		shortDesc: "Hits two turns after being used. Weather becomes Hail.",
+
+		start: "  [POKEMON] foresaw an attack!",
+		activate: "  [TARGET] took the Hail Dance attack!",
+	},
+	latentquake: {
+		name: "Latent Quake",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. Has a 100% chance to lower the target's Speed by 1 stage.",
+		shortDesc: "Hits two turns after being used. 100% chance to lower the target's Speed by 1 stage.",
+
+		start: "  [POKEMON] hit the ground!",
+		activate: "  [TARGET] took the Latent Quake attack!",
+	},
+	vengefulspirit: {
+		name: "Vengeful Spirit",
+		desc: "Deals damage two turns after this move is used. At the end of that turn, the damage is calculated at that time and dealt to the Pokemon at the position the target had when the move was used. If the user is no longer active at the time, damage is calculated based on the user's natural Special Attack stat, types, and level, with no boosts from its held item or Ability. Fails if this move or Doom Desire is already in effect for the target's position. Applies Torment.",
+		shortDesc: "Hits two turns after being used. Applies Torment.",
+
+		start: "  [POKEMON] splits it's spirit!",
+		activate: "  [TARGET] took the Vengeful Spirit attack!",
 	},
 };

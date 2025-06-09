@@ -19051,7 +19051,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	supersonic: {
 		num: 48,
-		accuracy: 55,
+		accuracy: 80,
 		basePower: 0,
 		category: "Status",
 		name: "Supersonic",
@@ -23461,7 +23461,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					category: move.category,
 					priority: move.priority,
 					flags: move.flags,
-					ignoreImmunity: move.ignoreImmunity,
 					effectType: move.effectType,
 					type: move.type,
 					weather: 'sunnyday',
@@ -23502,7 +23501,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					category: move.category,
 					priority: move.priority,
 					flags: move.flags,
-					ignoreImmunity: move.ignoreImmunity,
 					effectType: move.effectType,
 					type: move.type,
 					weather: 'raindance',
@@ -23543,7 +23541,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 					category: move.category,
 					priority: move.priority,
 					flags: move.flags,
-					ignoreImmunity: move.ignoreImmunity,
 					effectType: move.effectType,
 					type: move.type,
 					weather: 'dusk',
@@ -23808,5 +23805,131 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ghost",
 		zMove: {boost: {evasion: 1}},
 		contestType: "Beautiful",
+	},
+	haildance: {
+		num: 10069,
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Hail Dance",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1, dance: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('haildance');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'haildance',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: move.flags,
+					ignoreImmunity: move.ignoreImmunity,
+					effectType: move.effectType,
+					type: move.type,
+					weather: 'hail',
+				},
+			});
+			this.add('-start', source, 'move: Hail Dance');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		contestType: "Clever",
+	},
+	latentquake: {
+		num: 10070,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Latent Quake",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('latentquake');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'latentquake',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+					secondary: {
+						chance: 100,
+						boosts: {
+							spe: -1,
+						},
+					},
+					effectType: move.effectType,
+					type: move.type,
+				},
+			});
+			this.add('-start', source, 'move: Latent Quake');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Clever",
+	},
+	vengefulspirit: {
+		num: 10071,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Vengeful Spirit",
+		pp: 10,
+		priority: 0,
+		flags: {allyanim: 1, metronome: 1, futuremove: 1},
+		ignoreImmunity: true,
+		onTry(source, target) {
+			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
+			let move: Move | ActiveMove | null = this.dex.moves.get('vengefulspirit');
+			let duration = 3;
+			if (source.ability === 'seer') duration = 2;
+			Object.assign(target.side.slotConditions[target.position]['futuremove'], {
+				duration: duration,
+				move: 'vengefulspirit',
+				source: source,
+				moveData: {
+					id: move.id,
+					name: move.name,
+					accuracy: move.accuracy,
+					basePower: move.basePower,
+					category: move.category,
+					priority: move.priority,
+					flags: {protect: 1, mirror: 1, nonsky: 1, metronome: 1},
+					volatileStatus: 'torment',
+					effectType: move.effectType,
+					type: move.type,
+				},
+			});
+			this.add('-start', source, 'move: Vengeful Spirit');
+			return this.NOT_FAIL;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ghost",
+		contestType: "Clever",
 	},
 };

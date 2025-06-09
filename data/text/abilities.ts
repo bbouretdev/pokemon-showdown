@@ -2913,13 +2913,13 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	moltenarmor: {
 		name: "Molten Armor",
-		desc: "If a Fire attack hits this Pokemon, its Defense is lowered by 1 stage and its Special Attack is raised by 2 stages. Receives 3/4 damage from Fire attacks.",
+		desc: "If a Fire attack hits this Pokemon, its Defense is lowered by 1 stage and its Special Defense is raised by 2 stages. Receives 3/4 damage from Fire attacks.",
 		shortDesc: "If a Fire attack hits this Pokemon, Defense is lowered by 1, SpDef is raised by 2. Damage is x0.75.",
 	},
 	burningdespair: {
 		name: "Burning Despair",
-		desc: "If this Pokemon is knocked out by a move, that move's user is burnt.",
-		shortDesc: "If this Pokemon is KOed by a move, that move's user is burnt.",
+		desc: "If this Pokemon is knocked out by a move, the attacker is burnt.",
+		shortDesc: "If this Pokemon is KOed by a move, the attacker is burnt.",
 	},
 	tinnitus: {
 		name: "Tinnitus",
@@ -2928,12 +2928,12 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	primalroar: {
 		name: "Primal Roar",
-		desc: "Turns this Pokemon's sound moves into physical ones.",
-		shortDesc: "Turns this Pokemon's sound moves into physical ones.",
+		desc: "Turns this Pokemon's sound moves into physical ones and have 1.2x power.",
+		shortDesc: "Turns this Pokemon's sound moves into physical ones and have 1.2x power.",
 	},
 	dazzle: {
 		name: "Dazzle",
-		desc: "This Pokemon's moves without a chance to make the target flinch gain a 30% chance to make the target flinch.",
-		shortDesc: "This Pokemon's moves without a chance to flinch gain a 30% chance to flinch.",
+		desc: "This Pokemon's Light moves without a chance to make the target flinch gain a 30% chance to make the target flinch.",
+		shortDesc: "This Pokemon's Light moves without a chance to flinch gain a 30% chance to flinch.",
 	},
 };

@@ -8011,6 +8011,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				move.category = 'Physical';
 			}
 		},
+		onBasePowerPriority: 19,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['sound'] && move.category === 'Special') {
+				return this.chainModify(1.2);
+			}
+		},
 		name: "Primal Roar",
 		rating: 2,
 		num: 10131,
