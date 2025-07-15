@@ -24083,7 +24083,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				if (!warnMoves.length) return;
 				const [warnMoveName, warnTarget] = this.sample(warnMoves);
-				if ((warnTarget as Pokemon)?.volatiles['disable']) return;
+				if ((warnTarget as Pokemon)?.volatiles['preventivedisable']) return;
 				const move = this.dex.moves.get(warnMoveName as Move);
 				if (move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
 					this.add('-start', (warnTarget as Pokemon), 'Preventive Disable', move.name);
