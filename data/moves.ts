@@ -24018,14 +24018,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onBeforeMovePriority: 7,
 			onBeforeMove(attacker, defender, move) {
-				if (!move.isZ && move.id === this.effectState.move) {
+				if (move.type === 'Electric')
 					this.add('cant', attacker, 'Magnetic Pulse', move);
 					return false;
 				}
 			},
 			onDisableMove(pokemon) {
 				for (const moveSlot of pokemon.moveSlots) {
-					if (moveSlot.id === this.effectState.move) {
+					let move = this.dex.moves.get(moveSlot.id);
+					if (move.type === 'Electric')
 						pokemon.disableMove(moveSlot.id);
 					}
 				}
