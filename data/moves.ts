@@ -24048,11 +24048,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
 		volatileStatus: 'preventivedisable',
-		onTryHit(target) {
-			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
-				return false;
-			}
-		},
 		condition: {
 			duration: 5,
 			noCopy: true, // doesn't get copied by Baton Pass
@@ -24065,28 +24060,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				let warnMoves: (Move | Pokemon)[][] = [];
 				let warnBp = 1;
-				for (const target of pokemon.foes()) {
-					for (const moveSlot of target.moveSlots) {
-						const move = this.dex.moves.get(moveSlot.move);
-						let bp = move.basePower;
-						if (move.ohko) bp = 150;
-						if (move.id === 'counter' || move.id === 'metalburst' || move.id === 'mirrorcoat') bp = 120;
-						if (bp === 1) bp = 80;
-						if (!bp && move.category !== 'Status') bp = 80;
-						if (bp > warnBp) {
-							warnMoves = [[move, target]];
-							warnBp = bp;
-						} else if (bp === warnBp) {
-							warnMoves.push([move, target]);
-						}
+				for (const moveSlot of pokemon.moveSlots) {
+					const move = this.dex.moves.get(moveSlot.move);
+					let bp = move.basePower;
+					if (move.ohko) bp = 150;
+					if (move.id === 'counter' || move.id === 'metalburst' || move.id === 'mirrorcoat') bp = 120;
+					if (bp === 1) bp = 80;
+					if (!bp && move.category !== 'Status') bp = 80;
+					if (bp > warnBp) {
+						warnMoves = [[move, pokemon]];
+						warnBp = bp;
+					} else if (bp === warnBp) {
+						warnMoves.push([move, pokemon]);
 					}
 				}
 				if (!warnMoves.length) return;
 				const [warnMoveName, warnTarget] = this.sample(warnMoves);
-				if ((warnTarget as Pokemon)?.volatiles['preventivedisable']) return;
 				const move = this.dex.moves.get(warnMoveName as Move);
-				if (move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
-					this.add('-start', (warnTarget as Pokemon), 'Preventive Disable', move.name);
+				if (!move.flags['futuremove'] && move.id !== 'struggle') {
+					this.add('-start', pokemon, 'Preventive Disable', move.name);
 				}
 			},
 			onResidualOrder: 17,
