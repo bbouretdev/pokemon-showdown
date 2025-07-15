@@ -1794,11 +1794,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	stickyhold: {
 		name: "Sticky Hold",
-		desc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
-		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack.",
-		gen4: {
-			desc: "This Pokemon cannot lose its held item due to another Pokemon's attack, even if the attack knocks out this Pokemon. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
-		},
+		desc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack, unless the attack knocks out this Pokemon. Attack is raised by 2 stages. A Sticky Barb will be transferred to other Pokemon regardless of this Ability.",
+		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack. Attack is raised by 2 stages",
 
 		block: "  [POKEMON]'s item cannot be removed!",
 	},
@@ -2343,8 +2340,8 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 	},
 	sorrowfueled: {
 		name: "Sorrow Fueled",
-		desc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
-		shortDesc: "On switch-in, this Pokemon's Attack is raised by 1 stage if an ally fainted last turn.",
+		desc: "On switch-in, this Pokemon's Attack is raised by 2 stages if an ally fainted last turn.",
+		shortDesc: "On switch-in, this Pokemon's Attack is raised by 2 stages if an ally fainted last turn.",
 	},
 	sunderarmor: {
 		name: "Sunder Armor",
@@ -2935,5 +2932,85 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Dazzle",
 		desc: "This Pokemon's Light moves without a chance to make the target flinch gain a 30% chance to make the target flinch.",
 		shortDesc: "This Pokemon's Light moves without a chance to flinch gain a 30% chance to flinch.",
+	},
+	seasonal: {
+		name: "Seasonal",
+		desc: "This Pokemon's use of weather moves lasts 8 turns instead of 5.",
+		shortDesc: "This Pokemon's use of weather moves lasts 8 turns instead of 5."
+	},
+	recycler: {
+		name: "Recycler",
+		desc: "The last item this Pokemon gets restored at the end of each turn.",
+		shortDesc: "The last item this Pokemon gets restored at the end of each turn.",
+
+		addItem: "  [POKEMON] got back it's [ITEM]!",
+	},
+	relentless: {
+		name: "Life Orb",
+		shortDesc: "This Pokemon's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+
+		damage: "  [POKEMON] lost some of its HP!",
+	},
+	playdead: {
+		name: "Play Dead",
+		desc: "This Pokemon is immune to Normal-type moves.",
+		shortDesc: "This Pokemon is immune to Normal-type moves.",
+	},
+	sappurge: {
+		name: "Sap Purge",
+		shortDesc: "This Pokemon gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+	},
+	myprecious: {
+		name: "My Precious",
+		desc: "If this Pokemon has it's item removed, its Attack is raised by 12 stages.",
+		shortDesc: "If this Pokemon has it's item removed, its Attack is raised by 12 stages.",
+	},
+	luringglow: {
+		name: "Luring Glow",
+		desc: "Prevents opposing Bug-type Pokemon from choosing to switch out, unless they are holding a Shed Shell or are a Ghost type.",
+		shortDesc: "Prevents opposing Bug-type Pokemon from choosing to switch out.",
+	},
+	openscars: {
+		name: "Open Scars",
+		desc: "If this Pokemon uses a Contact-move, open target's scars. Causing this Pokemon's contact moves to have +30 BasePower.",
+		shortDesc: "If Contact-move, open target's scars. This Pokemon's contact moves have +30 BP.",
+	},
+	oceancleaner: {
+		name: "Ocean Cleaner",
+		desc: "This Pokemon's Water-Type moves removes the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness. If there is a terrain active and this move is successful, the terrain will be cleared.",
+		shortDesc: "This Pokemon's Water moves clear terrain and hazards on both sides.",
+	},
+	windsurge: {
+		name: "Wind Surge",
+		shortDesc: "On switch-in, this Pokemon summons Tail Wind.",
+	},
+	sacredveil: {
+		name: "Sacred Veil",
+		shortDesc: "On switch-in, this Pokemon summons Safeguard.",
+	},
+	splashing: {
+		name: "Splashing",
+		shortDesc: "On switch-in, causes the target to become a Water type.",
+	},
+	basiliskglare: {
+		name: "Basilisk Glare",
+		shortDesc: "On switch-in, causes the target to become a Rock type.",
+	},
+	lastdeny: {
+		name: "Last Deny",
+		desc: "If this Pokemon is knocked out with a move, that move's PP are set to 0.",
+		shortDesc: "If this Pokemon is KOed with a move, that move's PP are set to 0.",
+
+		damage: "  [POKEMON] PP have been emptied !",
+	},
+	kicker: {
+		name: "Kicker",
+		desc: "This Pokemon's kick-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's kick-based attacks have 1.5x power.",
+	},
+	crescentedge: {
+		name: "Crescent Edge",
+		desc: "Every move used by this Pokemon will always crit if weather is Dusk.",
+		shortDesc: "Every move used by this Pokemon will always crit if weather is Dusk.",
 	},
 };

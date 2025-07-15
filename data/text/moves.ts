@@ -7721,7 +7721,7 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	foggyember: {
 		name: "Foggy Ember",
 		desc: "Sets up a hazard on the opposing side of the field, opponents cannot boost themselves. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
-		shortDesc: "Creates a fog on switch-in. Opponents cannot boost themselves.",
+		shortDesc: "Creates a fog on Opponents side. Opponents cannot boost themselves.",
 
 		start: "  A foggy ember lays around [TEAM]!",
 		end: "  The foggy ember disappeared from around [TEAM]!",
@@ -7901,5 +7901,20 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 
 		start: "  [POKEMON] splits it's spirit!",
 		activate: "  [TARGET] took the Vengeful Spirit attack!",
+	},
+	flamingboulder: {
+		name: "Flaming Boulder",
+		desc: "Has a 30% chance to burn the target. The target thaws out if it is frozen.",
+		shortDesc: "30% chance to burn the target. Thaws target.",
+	},
+	tectonicdrive: {
+		name: "Tectonic Drive",
+		desc: "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+		shortDesc: "User cannot move next turn.",
+	},
+	skydrumkick: {
+		name: "Skydrum Kick",
+		desc: "Hits two times. Power increases to 80 for the second hit. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
+		shortDesc: "Hits 2 times. Each hit can miss, but power rises.",
 	},
 };

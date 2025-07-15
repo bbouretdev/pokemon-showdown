@@ -2445,4 +2445,10 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 		name: "Jetite",
 		shortDesc: "If holder's species can evolve, Speed is 1.5x.",
 	},
+	blazingember: {
+		name: "Blazing Ember",
+		shortDesc: "Each turn, if holder is a Fire type, restores 1/16 max HP; loses 1/8 if not.",
+
+		heal: "  [POKEMON] restored a little HP using its Blazing Ember!",
+	},
 };

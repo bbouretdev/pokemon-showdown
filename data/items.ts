@@ -7745,4 +7745,22 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 10004,
 		gen: 5,
 	},
+	blazingember: {
+		name: "Blazing Ember",
+		spritenum: 145,
+		fling: {
+			basePower: 30,
+		},
+		onResidualOrder: 5,
+		onResidualSubOrder: 4,
+		onResidual(pokemon) {
+			if (pokemon.hasType('Fire')) {
+				this.heal(pokemon.baseMaxhp / 16);
+			} else {
+				this.damage(pokemon.baseMaxhp / 8);
+			}
+		},
+		num: 10005,
+		gen: 4,
+	},
 };

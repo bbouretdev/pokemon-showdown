@@ -503,7 +503,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('damprock')) {
+			if (source?.hasItem('damprock') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;
@@ -573,7 +573,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('heatrock')) {
+			if (source?.hasItem('heatrock') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;
@@ -655,7 +655,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('smoothrock')) {
+			if (source?.hasItem('smoothrock') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;
@@ -693,7 +693,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
+			if (source?.hasItem('icyrock') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;
@@ -729,7 +729,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('icyrock')) {
+			if (source?.hasItem('icyrock') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;
@@ -762,7 +762,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
-			if (source?.hasItem('duskstone')) {
+			if (source?.hasItem('duskstone') || source.hasAbility('seasonal')) {
 				return 8;
 			}
 			return 5;

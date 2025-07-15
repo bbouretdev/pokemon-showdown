@@ -20624,7 +20624,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Triple Axel",
 		pp: 10,
 		priority: 0,
-		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, kick: 1},
 		multihit: 3,
 		multiaccuracy: true,
 		secondary: null,
@@ -20650,9 +20650,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	triplekick: {
 		num: 167,
 		accuracy: 90,
-		basePower: 10,
+		basePower: 20,
 		basePowerCallback(pokemon, target, move) {
-			return 10 * move.hit;
+			return 20 * move.hit;
 		},
 		category: "Physical",
 		name: "Triple Kick",
@@ -23930,6 +23930,111 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Ghost",
+		contestType: "Clever",
+	},
+	flamingboulder: {
+		num: 10072,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Flaming Boulder",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, defrost: 1, metronome: 1, missile: 1, bullet: 1},
+		thawsTarget: true,
+		secondary: {
+			chance: 30,
+			status: 'brn',
+		},
+		target: "normal",
+		type: "Rock",
+	},
+	tectonicdrive: {
+		num: 10073,
+		accuracy: 95,
+		basePower: 150,
+		category: "Physical",
+		name: "Tectonic Drive",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1, metronome: 1, rush: 1},
+		self: {
+			volatileStatus: 'mustrecharge',
+		},
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Tough",
+	},
+	skydrumkick: {
+		num: 10074,
+		accuracy: 90,
+		basePower: 40,
+		basePowerCallback(pokemon, target, move) {
+			return 20 * move.hit;
+		},
+		category: "Physical",
+		name: "Skydrum Kick",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, kick: 1},
+		multihit: 2,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		zMove: {basePower: 120},
+		maxMove: {basePower: 80},
+		contestType: "Cool",
+	},
+	magneticpulse: {
+		num: 10075,
+		accuracy: 100,
+		basePower: 60,
+		category: "Status",
+		name: "Magnetic Pulse",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
+		volatileStatus: 'magneticpulse',
+		condition: {
+			duration: 5,
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(pokemon, source, effect) {
+				if (
+					this.queue.willMove(pokemon) ||
+					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
+				) {
+					this.effectState.duration--;
+				}
+				for (const moveslot of pokemon.moveSlots) {
+					let move = this.dex.moves.get(moveslot.id);
+					if (move.type === 'Electric') this.add('-start', pokemon, 'Magnetic Pulse', move);
+				}
+			},
+			onResidualOrder: 17,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Magnetic Pulse');
+			},
+			onBeforeMovePriority: 7,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && move.id === this.effectState.move) {
+					this.add('cant', attacker, 'Magnetic Pulse', move);
+					return false;
+				}
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.id === this.effectState.move) {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 	},
 };

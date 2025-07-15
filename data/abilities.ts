@@ -5947,7 +5947,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(pokemon) {
 			if (pokemon.side.faintedThisTurn) {
 				this.add('-ability', pokemon, 'Sorrow Fueled');
-				this.boost({atk: 1}, pokemon);
+				this.boost({atk: 2}, pokemon);
 			}
 		},
 		flags: {},
@@ -8040,5 +8040,238 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Dazzle",
 		rating: 0.5,
 		num: 10132,
+	},
+	seasonal: {
+		// implemented directly in conditions.ts
+		flags: {},
+		name: "Seasonal",
+		rating: 0.5,
+		num: 10133,
+	},
+	recycler: {
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.hp && !pokemon.item && this.dex.items.get(pokemon.lastItem)) {
+				pokemon.setItem(pokemon.lastItem);
+				pokemon.lastItem = '';
+				this.add('-item', pokemon, pokemon.getItem(), '[from] ability: Recycler');
+			}
+		},
+		flags: {},
+		name: "Recycler",
+		rating: 2.5,
+		num: 10134,
+	},
+	relentless: {
+		onModifyDamage(damage, source, target, move) {
+			return this.chainModify([5324, 4096]);
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag) {
+				this.damage(source.baseMaxhp / 10, source, source, this.dex.abilities.get('relentless'));
+			}
+		},
+		flags: {},
+		name: "Relentless",
+		rating: 2.5,
+		num: 10135,
+	},
+	playdead: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Normal') {
+				this.add('-immune', target, '[from] ability: Play Dead');
+				return null;
+			}
+		},
+		flags: {breakable: 1},
+		name: "Play Dead",
+		rating: 3.5,
+		num: 10136,
+	},
+	sappurge: {
+		onTryHealPriority: 1,
+		onTryHeal(damage, target, source, effect) {
+			const heals = ['drain', 'leechseed', 'ingrain', 'aquaring', 'strengthsap'];
+			if (heals.includes(effect.id)) {
+				return this.chainModify([5324, 4096]);
+			}
+		},
+		flags: {breakable: 1},
+		name: "Sap Purge",
+		rating: 3.5,
+		num: 10137,
+	},
+	myprecious: {
+		onTakeItem(item, pokemon, source) {
+			if (!this.activeMove) throw new Error("Battle.activeMove is null");
+			if (!pokemon.hp || pokemon.item === 'stickybarb') return;
+			if ((source && source !== pokemon) || this.activeMove.id === 'knockoff') {
+				this.add('-activate', pokemon, 'ability: My Precious');
+				this.boost({atk: 12}, pokemon, pokemon);
+			}
+		},
+		flags: {breakable: 1},
+		name: "My Precious",
+		rating: 1.5,
+		num: 10138,
+	},
+	luringglow: {
+		onFoeTrapPokemon(pokemon) {
+			if (pokemon.hasType('Bug') && pokemon.isAdjacent(this.effectState.target)) {
+				pokemon.tryTrap(true);
+			}
+		},
+		onFoeMaybeTrapPokemon(pokemon, source) {
+			if (!source) source = this.effectState.target;
+			if (!source || !pokemon.isAdjacent(source)) return;
+			if (!pokemon.knownType || pokemon.hasType('Bug')) {
+				pokemon.maybeTrapped = true;
+			}
+		},
+		flags: {},
+		name: "Luring Glow",
+		rating: 4,
+		num: 10139,
+	},
+	openscars: {
+		onModifyMove(move, pokemon, target) {
+			if (move.flags['contact']) {
+				target?.addVolatile('openscars');
+			}
+		},
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.flags['contact'] && pokemon !== target && target.volatiles['openscars']) {
+				return basePower + 30;
+			}
+		},
+		condition: {
+			onStart(pokemon, source) {
+				this.add('-start', pokemon, 'Open Scars', '[of] ' + source);
+			},
+		},
+		flags: {},
+		name: "Open Scars",
+		rating: 2,
+		num: 10140,
+	},
+	windsurge: {
+		onStart(pokemon) {
+			const side = pokemon.side;
+			const tailwind = side.sideConditions['tailwind'];
+			if (!tailwind) {
+				this.add('-activate', pokemon, 'ability: Wind Surge');
+				side.addSideCondition('tailwind', pokemon);
+			}
+		},
+		flags: {},
+		name: "Wind Surge",
+		rating: 2,
+		num: 10141,
+	},
+	sacredveil: {
+		onStart(pokemon) {
+			const side = pokemon.side;
+			const safeguard = side.sideConditions['safeguard'];
+			if (!safeguard) {
+				this.add('-activate', pokemon, 'ability: Sacred Veil');
+				side.addSideCondition('safeguard', pokemon);
+			}
+		},
+		flags: {},
+		name: "Sacred Veil",
+		rating: 2,
+		num: 10142,
+	},
+	splashing: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Splashing');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					if (target.getTypes().join() === 'Water' || !target.setType('Water')) {
+						this.add('-fail', target);
+						return null;
+					}
+					this.add('-start', target, 'typechange', 'Water');
+				}
+			}
+		},
+		flags: {},
+		name: "Splashing",
+		rating: 2,
+		num: 10143,
+	},
+	basiliskglare: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Basilisk Glare');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					if (target.getTypes().join() === 'Rock' || !target.setType('Rock')) {
+						this.add('-fail', target);
+						return null;
+					}
+					this.add('-start', target, 'typechange', 'Rock');
+				}
+			}
+		},
+		flags: {},
+		name: "Basilisk Glare",
+		rating: 2,
+		num: 10144,
+	},
+	lastdeny: {
+		onDamagingHitOrder: 1,
+		onDamagingHit(damage, target, source, move) {
+			if (!target.hp) {
+				let move: Move | ActiveMove | null = source.lastMove;
+				if (!move || move.isZ) return false;
+				if (move.isMax && move.baseMove) move = this.dex.moves.get(move.baseMove);
+
+				const ppDeducted = source.deductPP(move.id, source.lastMove?.pp);
+				if (!ppDeducted) return false;
+				this.add("-activate", target, 'ability: Last Deny', move.name, ppDeducted);
+			}
+		},
+		flags: {},
+		name: "Last Deny",
+		rating: 2,
+		num: 10145,
+	},
+	kicker: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['kick']) {
+				this.debug('Kicker boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Kicker",
+		rating: 3,
+		num: 10146,
+	},
+	crescentedge: {
+		onModifyMove(move, pokemon, target) {
+			if (['dusk'].includes(pokemon.effectiveWeather())) {
+				this.debug('Crescent Edge unchecked crit');
+				move.willCrit = true;
+			}
+		},
+		flags: {breakable: 1},
+		name: "Crescent Edge",
+		rating: 3,
+		num: 10147,
 	},
 };
