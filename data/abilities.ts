@@ -7170,7 +7170,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if ((warnTarget as Pokemon)?.volatiles['disable']) return;
 			const move = this.dex.moves.get(warnMoveName as Move);
 			if (move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
-				(warnTarget as Pokemon)?.addVolatile('disable', this.effectState.target);
+				(warnTarget as Pokemon)?.addVolatile('preventivedisable');
 			}
 		},
 		flags: {},

@@ -24038,4 +24038,80 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 	},
+	preventivedisable: {
+		num: 10076,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		name: "Preventive Disable",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, bypasssub: 1, metronome: 1},
+		volatileStatus: 'preventivedisable',
+		onTryHit(target) {
+			if (!target.lastMove || target.lastMove.isZ || target.lastMove.isMax || target.lastMove.id === 'struggle') {
+				return false;
+			}
+		},
+		condition: {
+			duration: 5,
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(pokemon) {
+				if (
+					this.queue.willMove(pokemon) ||
+					(pokemon === this.activePokemon && this.activeMove && !this.activeMove.isExternal)
+				) {
+					this.effectState.duration--;
+				}
+				let warnMoves: (Move | Pokemon)[][] = [];
+				let warnBp = 1;
+				for (const target of pokemon.foes()) {
+					for (const moveSlot of target.moveSlots) {
+						const move = this.dex.moves.get(moveSlot.move);
+						let bp = move.basePower;
+						if (move.ohko) bp = 150;
+						if (move.id === 'counter' || move.id === 'metalburst' || move.id === 'mirrorcoat') bp = 120;
+						if (bp === 1) bp = 80;
+						if (!bp && move.category !== 'Status') bp = 80;
+						if (bp > warnBp) {
+							warnMoves = [[move, target]];
+							warnBp = bp;
+						} else if (bp === warnBp) {
+							warnMoves.push([move, target]);
+						}
+					}
+				}
+				if (!warnMoves.length) return;
+				const [warnMoveName, warnTarget] = this.sample(warnMoves);
+				if ((warnTarget as Pokemon)?.volatiles['disable']) return;
+				const move = this.dex.moves.get(warnMoveName as Move);
+				if (move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
+					this.add('-start', (warnTarget as Pokemon), 'Preventive Disable', move.name);
+				}
+			},
+			onResidualOrder: 17,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Preventive Disable');
+			},
+			onBeforeMovePriority: 7,
+			onBeforeMove(attacker, defender, move) {
+				if (!move.isZ && move.id === this.effectState.move) {
+					this.add('cant', attacker, 'Preventive Disable', move);
+					return false;
+				}
+			},
+			onDisableMove(pokemon) {
+				for (const moveSlot of pokemon.moveSlots) {
+					if (moveSlot.id === this.effectState.move) {
+						pokemon.disableMove(moveSlot.id);
+					}
+				}
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		zMove: {effect: 'clearnegativeboost'},
+		contestType: "Clever",
+	},
 };
