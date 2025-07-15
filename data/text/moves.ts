@@ -7917,4 +7917,13 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		desc: "Hits two times. Power increases to 80 for the second hit. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit three times.",
 		shortDesc: "Hits 2 times. Each hit can miss, but power rises.",
 	},
+	magneticpulse: {
+		name: "Magnetic Pulse",
+		desc: "For 4 turns, the target's Electric moves become disabled.",
+		shortDesc: "For 4 turns, disables the target's Electric moves.",
+
+		start: "  [POKEMON]'s [MOVE] was disabled!",
+		end: "  [POKEMON]'s move is no longer disabled!",
+		cant: "[POKEMON]'s [MOVE] is disabled!",
+	},
 };

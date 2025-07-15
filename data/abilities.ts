@@ -7167,7 +7167,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (!warnMoves.length) return;
 			const [warnMoveName, warnTarget] = this.sample(warnMoves);
 			this.add('-activate', pokemon, 'ability: Preventive', warnMoveName, '[of] ' + warnTarget);
-			// (warnTarget as Pokemon)?.disableMove(warnMoveName.name);
+			if ((warnTarget as Pokemon)?.volatiles['disable']) return;
+			const move = this.dex.moves.get(warnMoveName as Move);
+			if (move.isMax && !move.flags['futuremove'] && move.id !== 'struggle') {
+				(warnTarget as Pokemon)?.addVolatile('disable', this.effectState.target);
+			}
 		},
 		flags: {},
 		name: "Preventive",
