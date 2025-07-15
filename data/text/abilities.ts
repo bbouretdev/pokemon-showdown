@@ -2728,9 +2728,6 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Preventive",
 		desc: "On switch-in, this Pokemon disables the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
 		shortDesc: "On switch-in, this Pokemon disables the foes' move with the highest power.",
-
-		activate: "  [TARGET]'s [MOVE] was disabled!",
-		activateNoTarget: "  [POKEMON]'s Preventive disabled [MOVE]!",
 	},
 	swifttactics: {
 		name: "Swift Tactics",

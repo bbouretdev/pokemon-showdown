@@ -24079,6 +24079,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				const move = this.dex.moves.get(warnMoveName as Move);
 				if (!move.flags['futuremove'] && move.id !== 'struggle') {
 					this.add('-start', pokemon, 'Preventive Disable', move.name);
+					this.effectState.move = move.id;
 				}
 			},
 			onResidualOrder: 17,

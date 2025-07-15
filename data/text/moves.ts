@@ -7926,4 +7926,13 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 		end: "  [POKEMON]'s move is no longer disabled!",
 		cant: "[POKEMON]'s [MOVE] is disabled!",
 	},
+	preventivedisable: {
+		name: "Preventive Disable",
+		desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move was a Max or G-Max Move.",
+		shortDesc: "For 4 turns, disables the target's last move used.",
+
+		start: "  [POKEMON]'s [MOVE] was disabled!",
+		end: "  [POKEMON]'s move is no longer disabled!",
+		cant: "[POKEMON]'s [MOVE] is disabled!",
+	},
 };
