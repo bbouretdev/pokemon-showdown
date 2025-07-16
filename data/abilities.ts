@@ -8331,7 +8331,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					const targetBestStat = target.getBestStat(true, true);
 					if (pokemon.getStat(targetBestStat, false, true) < target.getStat(targetBestStat, false, true)) {
 						this.add('-ability', pokemon, 'Morphogenic');
-						this.boost({[targetBestStat]: length}, pokemon);
+						this.boost({[targetBestStat]: 1}, pokemon);
 					}
 				}
 			}
