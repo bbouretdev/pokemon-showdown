@@ -8256,4 +8256,76 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: 10147,
 	},
+	hydroenergy: {
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				target.addVolatile('charge');
+			}
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				target.addVolatile('charge');
+			}
+		},
+		flags: {},
+		name: "Hydro Energy",
+		rating: 1.5,
+		num: 10148,
+	},
+	chainstriker: {
+		onStart(pokemon) {
+			pokemon.addVolatile('chainstriker');
+		},
+		condition: {
+			onStart(pokemon) {
+				this.effectState.lastMove = '';
+				this.effectState.numConsecutive = 0;
+			},
+			onTryMovePriority: -2,
+			onTryMove(pokemon, target, move) {
+				if (!pokemon.hasAbility('chainstriker')) {
+					pokemon.removeVolatile('chainstriker');
+					return;
+				}
+				if (move.callsMove) return;
+				if (this.effectState.lastMove === move.id && pokemon.moveLastTurnResult) {
+					this.effectState.numConsecutive++;
+				} else if (pokemon.volatiles['twoturnmove']) {
+					if (this.effectState.lastMove !== move.id) {
+						this.effectState.numConsecutive = 1;
+					} else {
+						this.effectState.numConsecutive++;
+					}
+				} else {
+					this.effectState.numConsecutive = 0;
+				}
+				this.effectState.lastMove = move.id;
+			},
+			onModifyDamage(damage, source, target, move) {
+				const dmgMod = [4096, 4915, 5734, 6553, 7372, 8192];
+				const numConsecutive = this.effectState.numConsecutive > 5 ? 5 : this.effectState.numConsecutive;
+				this.debug(`Current Chain Striker boost: ${dmgMod[numConsecutive]}/4096`);
+				return this.chainModify([dmgMod[numConsecutive], 4096]);
+			},
+		},
+		flags: {},
+		name: "Chain Striker",
+		rating: 1.5,
+		num: 10149,
+	},
+	morphogenic: {
+		onStart(pokemon) {
+			if (!pokemon.baseSpecies.id.includes('ditto') || !pokemon.species.id.includes('ditto')) {
+				return;
+			}
+			const forme = "Ditto-Core";
+			if (pokemon.species.name === forme) return;
+			pokemon.formeChange(forme);
+		},
+		name: "Morphogenic",
+		gen: 6,
+		rating: 4.5,
+		num: 10150,
+	},
 };

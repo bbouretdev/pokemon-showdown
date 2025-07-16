@@ -761,6 +761,9 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		tier: "OU",
 		doublesTier: "(DUU)",
 	},
+	dittocore: {
+		tier: "Illegal",
+	},
 	eevee: {
 		tier: "LC",
 	},

@@ -3010,4 +3010,13 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		desc: "Every move used by this Pokemon will always crit if weather is Dusk.",
 		shortDesc: "Every move used by this Pokemon will always crit if weather is Dusk.",
 	},
+	hydroenergy: {
+		name: "Hydro Energy",
+		desc: "If Rain Dance is active or when hit by Water moves, this Pokemon gains Charge effect.",
+		shortDesc: "If Rain Dance is active or when hit by Water moves, this Pokemon gains Charge effect.",
+	},
+	chainstriker: {
+		name: "Chain Striker",
+		shortDesc: "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
+	},
 };

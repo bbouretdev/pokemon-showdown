@@ -2451,4 +2451,12 @@ export const ItemsText: {[id: IDEntry]: ItemText} = {
 
 		heal: "  [POKEMON] restored a little HP using its Blazing Ember!",
 	},
+	reactivearmor: {
+		name: "Reactive Armor",
+		shortDesc: "Holder's Def is 1.5x, but it can only select damaging moves.",
+	},
+	bagofcaltrops: {
+		name: "Bag of Caltrops",
+		desc: "When the user holding this faints a layer of spikes is set-up on the opponent's side of the field.",
+	},
 };

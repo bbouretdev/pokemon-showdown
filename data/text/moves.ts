@@ -7928,11 +7928,28 @@ export const MovesText: {[id: IDEntry]: MoveText} = {
 	},
 	preventivedisable: {
 		name: "Preventive Disable",
-		desc: "For 4 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move was a Max or G-Max Move.",
-		shortDesc: "For 4 turns, disables the target's last move used.",
+		desc: "For 4 turns, disables the move with the highest power, at random, known by an opposing Pokemon. This effect considers OHKO moves to have 150 power, Counter, Mirror Coat, and Metal Burst to have 120 power, every other attacking move with an unspecified power to have 80 power, and non-damaging moves to have 1 power.",
+		shortDesc: "For 4 turns, disables the foes' move with the highest power.",
 
 		start: "  [POKEMON]'s [MOVE] was disabled!",
 		end: "  [POKEMON]'s move is no longer disabled!",
 		cant: "[POKEMON]'s [MOVE] is disabled!",
+	},
+	mindpunch: {
+		name: "Mind Punch",
+		desc: "Deals damage to the target based on its Special Defense instead of Defense.",
+		shortDesc: "Damages target based on Sp. Def, not Def.",
+	},
+	shurikentoss: {
+		name: "Shuriken Toss",
+		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. Has a higher chance for a critical hit.",
+		shortDesc: "Hits 2-5 times in one turn. High critical hit ratio.",
+	},
+	sugarrush: {
+		name: "Sugar Rush",
+		shortDesc: "If the opposing Pokemon has eaten a Berry, this move have its priority increased by 1 and its Power doubles.",
+		gen6: {
+			shortDesc: "If the opposing Pokemon has eaten a Berry, priority +1 and power x2.",
+		},
 	},
 };

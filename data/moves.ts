@@ -24107,4 +24107,63 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Clever",
 	},
+	mindpunch: {
+		num: 10077,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		overrideDefensiveStat: 'spd',
+		name: "Mind Punch",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1},
+		secondary: null,
+		target: "normal",
+		type: "Psychic",
+		contestType: "Beautiful",
+	},
+	shurikentoss: {
+		num: 10078,
+		accuracy: 95,
+		basePower: 20,
+		category: "Physical",
+		name: "Shuriken Toss",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1, bullet: 1, missile: 1, slicing: 1},
+		multihit: [2, 5],
+		secondary: null,
+		target: "normal",
+		critRatio: 2,
+		type: "Steel",
+		zMove: {basePower: 140},
+		maxMove: {basePower: 130},
+		contestType: "Tough",
+	},
+	sugarrush: {
+		num: 10079,
+		accuracy: 100,
+		basePower: 70,
+		basePowerCallback(pokemon, target, move) {
+			if (target.ateBerry) {
+				this.debug('BP doubled from berry eaten');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+		onModifyPriority(priority, pokemon, target, move) {
+			if (target.ateBerry) return priority + 1;
+			return priority;
+		},
+		category: "Physical",
+		name: "Sugar Rush",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1, contact :1},
+		secondary: null,
+		target: "normal",
+		type: "Insect",
+		zMove: {basePower: 160},
+		contestType: "Clever",
+	},
 };
