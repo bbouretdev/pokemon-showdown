@@ -8323,6 +8323,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (pokemon.species.name === forme) return;
 			pokemon.formeChange(forme);
 		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 2,
+		onResidual(pokemon) {
+			if (pokemon.activeTurns) {
+				for (const target of pokemon.adjacentFoes()) {
+					const targetBestStat = target.getBestStat(true, true);
+					if (pokemon.getStat(targetBestStat, false, true) < target.getStat(targetBestStat, false, true)) {
+						this.add('-ability', pokemon, 'Morphogenic');
+						this.boost({[targetBestStat]: length}, pokemon);
+					}
+				}
+			}
+		},
 		name: "Morphogenic",
 		gen: 6,
 		rating: 4.5,
