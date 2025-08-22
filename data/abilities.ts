@@ -8333,6 +8333,24 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						this.add('-ability', pokemon, 'Morphogenic');
 						this.boost({[targetBestStat]: 1}, pokemon);
 					}
+					const move = target.lastMove;
+					if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
+						return false;
+					}
+					if (move.isZ || move.isMax) return false;
+					const mimicIndex = this.random(4);
+				
+					pokemon.moveSlots[mimicIndex] = {
+						move: move.name,
+						id: move.id,
+						pp: move.pp,
+						maxpp: move.pp,
+						target: move.target,
+						disabled: false,
+						used: false,
+						virtual: true,
+					};
+					this.add('-start', pokemon, 'Mimic', move.name);
 				}
 			}
 		},
