@@ -8328,11 +8328,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onResidual(pokemon) {
 			if (pokemon.activeTurns) {
 				for (const target of pokemon.adjacentFoes()) {
+					// Boost part
 					const targetBestStat = target.getBestStat(true, true);
 					if (pokemon.getStat(targetBestStat, false, true) < target.getStat(targetBestStat, false, true)) {
-						this.add('-ability', pokemon, 'Morphogenic');
 						this.boost({[targetBestStat]: 1}, pokemon);
 					}
+					// Moveset part
 					const move = target.lastMove;
 					if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
 						return false;
@@ -8350,7 +8351,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						used: false,
 						virtual: true,
 					};
-					this.add('-start', pokemon, 'Mimic', move.name);
+					// Type part
+					const targetTypes = target.getTypes().join();
+					let type = '';
+					if (targetTypes.length == 1) type = targetTypes[0];
+					if (targetTypes.length == 2) type = targetTypes[this.random(2)];
+					if (pokemon.hasType(type) || !pokemon.setType(type)) return false;
+					this.add('-start', pokemon, 'typechange', type);
+
+					this.add('-ability', pokemon, 'Morphogenic');
 				}
 			}
 		},
@@ -8358,5 +8367,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		gen: 6,
 		rating: 4.5,
 		num: 10150,
+	},
+	corrosiveacid: {
+		onModifyMove(move, pokemon, target) {
+			if (move.category === 'Special') {
+				move.secondaries?.push({
+					chance: 100,
+					boosts: {
+						def: -1,
+						spd: -1,
+					},
+				});
+			}
+		},
+		flags: {},
+		name: "Corrosive Acid",
+		rating: 3,
+		num: 10151,
 	},
 };

@@ -20437,14 +20437,14 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	ditto: {
 		learnset: {
-			transform: ["9M", "9L1", "8L1", "8V", "7L1", "7V", "7S0", "6L1", "5L1", "4L1", "3L1"],
+			// transform: ["9M", "9L1", "8L1", "8V", "7L1", "7V", "7S0", "6L1", "5L1", "4L1", "3L1"],
 			protect: ["9M"],
-			toxic: ["9M"],
-			curse: ["9M"],
-			bodyslam: ["9M"],
-			triattack: ["9M"],
-			copycat: ["9M"],
-			encore: ["9M", "8M"],
+			// toxic: ["9M"],
+			// curse: ["9M"],
+			// bodyslam: ["9M"],
+			// triattack: ["9M"],
+			// copycat: ["9M"],
+			// encore: ["9M", "8M"],
 		},
 		eventData: [
 			{generation: 7, level: 10, moves: ["transform"], pokeball: "cherishball"},
