@@ -8352,15 +8352,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						virtual: true,
 					};
 					// Type part
-					// const oldTypes = pokemon.getTypes();
-					// if (oldTypes.join() === types.join() || !pokemon.setType(types)) return;
 					const targetTypes = target.getTypes();
-					// if (targetTypes.length == 1) type = targetTypes[0];
-					// if (targetTypes.length == 2) type = targetTypes[this.random(2)];
+					console.log(targetTypes);
+					console.log(targetTypes.join('/'));
 					if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
 					this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
-
-					this.add('-ability', pokemon, 'Morphogenic');
 				}
 			}
 		},
