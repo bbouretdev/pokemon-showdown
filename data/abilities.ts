@@ -8358,7 +8358,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					// if (targetTypes.length == 1) type = targetTypes[0];
 					// if (targetTypes.length == 2) type = targetTypes[this.random(2)];
 					if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
-					this.add('-start', pokemon, 'typechange');
+					this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
 
 					this.add('-ability', pokemon, 'Morphogenic');
 				}
