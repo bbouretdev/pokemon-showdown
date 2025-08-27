@@ -8342,7 +8342,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 
 					// Iterate over move slots to find an empty one
 					let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
-
+					console.log(mimicIndex);
 					if (mimicIndex === -1) {
 					  // If no empty slot, a random one is chosen
 					  mimicIndex = this.random(4);
@@ -8350,7 +8350,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 
 					console.log(move);
 					console.log(mimicIndex);
-				
+
 					pokemon.moveSlots[mimicIndex] = {
 						move: move.name,
 						id: move.id,
@@ -8359,8 +8359,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						target: move.target,
 						disabled: false,
 						used: false,
-						// virtual: true,
+						virtual: true,
 					};
+					this.add('-start', pokemon, 'Mimic', move.name);
 					// // Type part
 					// const targetTypes = target.getTypes();
 					// console.log(targetTypes);
