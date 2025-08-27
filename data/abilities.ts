@@ -8339,7 +8339,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						return false;
 					}
 					if (move.isZ || move.isMax) return false;
-					const mimicIndex = this.random(4);
+
+					// Iterate over move slots to find an empty one
+					let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
+
+					if (mimicIndex === -1) {
+					  // If no empty slot, a random one is chosen
+					  mimicIndex = this.random(4);
+					}
 				
 					pokemon.moveSlots[mimicIndex] = {
 						move: move.name,
@@ -8351,12 +8358,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						used: false,
 						virtual: true,
 					};
-					// Type part
-					const targetTypes = target.getTypes();
-					console.log(targetTypes);
-					console.log(targetTypes.join('/'));
-					if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
-					this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
+					// // Type part
+					// const targetTypes = target.getTypes();
+					// console.log(targetTypes);
+					// console.log(targetTypes.join('/'));
+					// if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
+					// this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
 				}
 			}
 		},
