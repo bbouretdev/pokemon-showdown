@@ -8333,35 +8333,35 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (pokemon.getStat(targetBestStat, false, true) < target.getStat(targetBestStat, false, true)) {
 						this.boost({[targetBestStat]: 1}, pokemon);
 					}
-					// Moveset part
-					const move = target.lastMove;
-					if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
-						return false;
-					}
-					if (move.isZ || move.isMax) return false;
+					// // Moveset part
+					// const move = target.lastMove;
+					// if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
+					// 	return false;
+					// }
+					// if (move.isZ || move.isMax) return false;
 
-					// Iterate over move slots to find an empty one
-					let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
-					console.log(mimicIndex);
-					if (mimicIndex === -1) {
-					  // If no empty slot, a random one is chosen
-					  mimicIndex = this.random(4);
-					}
+					// // Iterate over move slots to find an empty one
+					// let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
+					// console.log(mimicIndex);
+					// if (mimicIndex === -1) {
+					//   // If no empty slot, a random one is chosen
+					//   mimicIndex = this.random(4);
+					// }
 
-					console.log(move);
-					console.log(mimicIndex);
+					// console.log(move);
+					// console.log(mimicIndex);
 
-					pokemon.moveSlots[mimicIndex] = {
-						move: move.name,
-						id: move.id,
-						pp: move.pp,
-						maxpp: move.pp,
-						target: move.target,
-						disabled: false,
-						used: false,
-						virtual: true,
-					};
-					this.add('-start', pokemon, 'Mimic', move.name);
+					// pokemon.moveSlots[mimicIndex] = {
+					// 	move: move.name,
+					// 	id: move.id,
+					// 	pp: move.pp,
+					// 	maxpp: move.pp,
+					// 	target: move.target,
+					// 	disabled: false,
+					// 	used: false,
+					// 	virtual: true,
+					// };
+					// this.add('-start', pokemon, 'Mimic', move.name);
 					// // Type part
 					// const targetTypes = target.getTypes();
 					// console.log(targetTypes);
