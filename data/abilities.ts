@@ -8340,9 +8340,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 					if (move.isZ || move.isMax) return false;
 
-					// // Iterate over move slots to find an empty one
-					// let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
-					// console.log(mimicIndex);
+					// Iterate over move slots to find an empty one
+					let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
+					console.log(mimicIndex);
 					// if (mimicIndex === -1) {
 					//   // If no empty slot, a random one is chosen
 					//   mimicIndex = this.random(4);
