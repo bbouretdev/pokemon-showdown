@@ -8347,6 +8347,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					  // If no empty slot, a random one is chosen
 					  mimicIndex = this.random(4);
 					}
+
+					console.log(move);
+					console.log(mimicIndex);
 				
 					pokemon.moveSlots[mimicIndex] = {
 						move: move.name,
