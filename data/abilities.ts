@@ -8333,12 +8333,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					if (pokemon.getStat(targetBestStat, false, true) < target.getStat(targetBestStat, false, true)) {
 						this.boost({[targetBestStat]: 1}, pokemon);
 					}
-					// // Moveset part
-					// const move = target.lastMove;
-					// if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
-					// 	return false;
-					// }
-					// if (move.isZ || move.isMax) return false;
+					// Moveset part
+					const move = target.lastMove;
+					if (pokemon.transformed || !move || move.flags['failmimic'] || pokemon.moves.includes(move.id)) {
+						return false;
+					}
+					if (move.isZ || move.isMax) return false;
 
 					// // Iterate over move slots to find an empty one
 					// let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
