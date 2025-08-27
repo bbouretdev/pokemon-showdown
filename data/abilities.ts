@@ -8354,9 +8354,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						pp: move.pp,
 						maxpp: move.pp,
 						target: move.target,
-						disabled: false,
-						used: false,
-						virtual: true,
+						// disabled: false,
+						// used: false,
+						// virtual: true,
 					};
 					// // Type part
 					// const targetTypes = target.getTypes();
