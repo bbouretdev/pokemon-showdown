@@ -8342,11 +8342,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 
 					// Iterate over move slots to find an empty one
 					let mimicIndex = 0;
-
-					for (const moveSlot of pokemon.moveSlots) {
-						console.log(moveSlot);
-					}
-
 					for (let i = 0; i < 4; i++) {
 						mimicIndex = i;
 						if (!pokemon.moveSlots[i]) break;
@@ -8363,14 +8358,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						used: false,
 						virtual: true,
 					};
-					// this.add('-start', pokemon, 'Mimic', move.name);
+					this.add('-start', pokemon, 'Mimic', move.name);
 
-					// // Type part
-					// const targetTypes = target.getTypes();
-					// console.log(targetTypes);
-					// console.log(targetTypes.join('/'));
-					// if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
-					// this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
+					// Type part
+					const targetTypes = target.getTypes();
+					console.log(targetTypes);
+					console.log(targetTypes.join('/'));
+					if (pokemon.hasType(targetTypes) || !pokemon.setType(targetTypes)) return false;
+					this.add('-start', pokemon, 'typechange', targetTypes.join('/'), '[from] ability: Morphogenic');
 				}
 			}
 		},
