@@ -8351,6 +8351,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						mimicIndex = i;
 						if (!pokemon.moveSlots[i]) break;
 					}
+					if (pokemon.moveSlots.length == 4) mimicIndex = this.random(4);
 
 					pokemon.moveSlots[mimicIndex] = {
 						move: move.name,
@@ -8363,7 +8364,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						virtual: true,
 					};
 					// this.add('-start', pokemon, 'Mimic', move.name);
-					
+
 					// // Type part
 					// const targetTypes = target.getTypes();
 					// console.log(targetTypes);
