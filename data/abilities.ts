@@ -8340,25 +8340,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					}
 					if (move.isZ || move.isMax) return false;
 
-					// <!does not work!> -> always gives -1 Iterate over move slots to find an empty one
-					// let mimicIndex = pokemon.moveSlots.findIndex(slot => !slot);
-					// temporary fixed value to 1
-					let mimicIndex = 1;
+					// Iterate over move slots to find an empty one
+					let mimicIndex = 0;
 
 					for (const moveSlot of pokemon.moveSlots) {
 						console.log(moveSlot);
 					}
 
-					console.log(pokemon.moveSlots[1]);
-
-					// console.log(mimicIndex);
-					// if (mimicIndex === -1) {
-					//   // If no empty slot, a random one is chosen
-					//   mimicIndex = this.random(4);
-					// }
-
-					// console.log(move);
-					// console.log(mimicIndex);
+					for (let i = 0; i < 4; i++) {
+						mimicIndex = i;
+						if (!pokemon.moveSlots[i]) break;
+					}
 
 					pokemon.moveSlots[mimicIndex] = {
 						move: move.name,
@@ -8371,6 +8363,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 						virtual: true,
 					};
 					// this.add('-start', pokemon, 'Mimic', move.name);
+					
 					// // Type part
 					// const targetTypes = target.getTypes();
 					// console.log(targetTypes);
