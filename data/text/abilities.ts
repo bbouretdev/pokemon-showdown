@@ -3019,4 +3019,9 @@ export const AbilitiesText: {[id: IDEntry]: AbilityText} = {
 		name: "Chain Striker",
 		shortDesc: "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
 	},
+	oceancleaner: {
+		name: "Ocean Cleaner",
+		desc: "This Pokemon's offensive Water-type moves removes subtitutes from all active Pokemon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides..",
+		shortDesc: "This Pokemon's Water moves clear all substitutes/hazards.",
+	},
 };
